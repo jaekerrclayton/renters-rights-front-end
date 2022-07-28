@@ -20,6 +20,7 @@ function App() {
             <Link to="/contact">Contact Us</Link> | {" "}
             <Link to="/newsletter">Newsletter</Link> | {" "}
             <Link to="/volunteer">Volunteer</Link> | {" "}
+            <Link to="/invoices">EXAMPLE ROUTE</Link> | {" "}
           
           </nav>
           <Outlet />
