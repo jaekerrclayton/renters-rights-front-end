@@ -1,5 +1,4 @@
 import React from 'react';
-import './evictionType.css'
 import './evictionTypesData.json'
 import evictionTypesJson from './evictionTypesData.json';
 

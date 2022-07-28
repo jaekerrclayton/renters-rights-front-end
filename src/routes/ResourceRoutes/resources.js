@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   NavLink, 
   Outlet,
@@ -9,14 +10,14 @@ import {
 // but stores and sets the state 
 // in the URL search params instead of in memory.
 // import Invoice from "./invoice";
-import { getInvoices } from "../data";
+import { getResources } from "./data";
 
-const Invoices = () => {
-let invoices = getInvoices();
+const Resources = () => {
+let resources = getResources();
 let [searchParams, setSearchParams] = useSearchParams();
 return (
   <main>
-  <h2>Invoices</h2>
+  <h2>Resources</h2>
   <div style={{ display: "flex "}}>
     <nav 
       style={{
@@ -35,14 +36,14 @@ return (
               }
             }}
           />
-        {invoices
-          .filter((invoice) => {
+        {resources
+          .filter((resource) => {
             let filter = searchParams.get("filter");
             if (!filter) return true;
-            let name = invoice.name.toLowerCase();
+            let name = resource.name.toLowerCase();
             return name.startsWith(filter.toLowerCase());
           })
-          .map((invoice) => ( 
+          .map((resource) => ( 
             <NavLink 
             // function
             // <NavLink className={({ isActive }) => isActive ? "red" : "blue"} />
@@ -51,10 +52,10 @@ return (
                   margin: "1rem 0",
                   color: isActive ? "red" : "",
                 })}
-                to={`/invoices/${invoice.number}`}
-                key={invoice.number}
+                to={`/resources/${resource.number}`}
+                key={resource.number}
             >
-                {invoice.name}
+                {resource.name}
             </NavLink>
         ))}
     </nav>
@@ -65,4 +66,4 @@ return (
 }
 
 
-export default Invoices;
+export default Resources;

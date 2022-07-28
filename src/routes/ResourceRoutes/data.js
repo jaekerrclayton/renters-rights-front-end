@@ -1,8 +1,8 @@
 /**
- * @type {Invoice[]}
+ * @type {Resource[]}
  */
 
- let invoices = [
+let resources = [
   {
     name: "Santa Monica",
     number: 1995,
@@ -35,20 +35,20 @@
   },
 ];
 
-export function getInvoices() {
-  return invoices;
+export function getResources() {
+  return resources;
 };
 
 
-export function getInvoice(number) {
-  return invoices.find(
-    (invoice) => invoice.number === number
+export function getResource(number) {
+  return resources.find(
+    (resource) => resource.number === number
   );
 };
 
 
-export function deleteInvoice(number) {
-  invoices = invoices.filter(
-    (invoice) => invoice.number !== number
+export function deleteResource(number) {
+  resources = resources.filter(
+    (resource) => resource.number !== number
   );
 }

@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import Resources from './routes/resourcesRoutes/resources';
-import Invoices from './routes/invoicesRoutes/invoices';
-import Invoice from './routes/invoicesRoutes/invoice'; 
+import Resources from './routes/ResourceRoutes/resources';
+import Resource from './routes/ResourceRoutes/resource';
 import reportWebVitals from './reportWebVitals';
 import EvictionType from './routes/evictionTypesRoutes/evictionType';
 import EvictionTypes from './routes/evictionTypesRoutes/evictionTypes';
+import EvictionStage from './routes/evictionStagesRoutes/evictionStage';
+import EvictionStages from './routes/evictionStagesRoutes/evictionStages';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,21 +17,20 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="eviction-map" element={<EvictionStages />} />
-        <Route path="kyr" element={<KnowYourRights />} />
-        <Route path="resources" element={<Resources />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="newsletter" element={<Newsletter/>} />
-        <Route path="eviction-type" element={<EvictionTypes />}/>
-        <Route path="invoices" element={<Invoices />}>
+        {/* <Route path="kyr" element={<KnowYourRights />} /> */}
+        {/* <Route path="contact" element={<Contact />} /> */}
+        {/* <Route path="newsletter" element={<Newsletter/>} /> */}
+        <Route path="eviction-types" element={<EvictionTypes />}/>
+        <Route path="resources" element={<Resources />}>
           <Route
             index
             element={
               <main style={{ padding: "1rem" }}>
-                <p>Select an invoice</p>
+                <p>Select an resource</p>
               </main>
             }
           />
-          <Route path=":invoiceId" element={<Invoice />} />
+          <Route path=":resourceId" element={<Resource />} />
         </Route>
         <Route
           path="*"
