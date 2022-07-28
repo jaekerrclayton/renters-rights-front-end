@@ -1,15 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import EvictionTypeList from './components/evictionTypesComponents/evictionTypesList';
+import evictionTypesJson from './components/evictionTypesComponents/evictionTypesData.json';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <EvictionTypeList types={evictionTypesJson}/>
         <a
           className="App-link"
           href="https://reactjs.org"
