@@ -16,7 +16,18 @@ root.render(
 <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="eviction-map" element={<EvictionStages />} />
+        <Route path="eviction-map" element={<EvictionStages />}>
+          <Route
+            index
+            element={
+              <main style={{ padding: "1rem" }}>
+                <p>Select an resource</p>
+              </main>
+            }
+          />
+          <Route path=":stageId" element={<EvictionStage />} /> 
+        </Route>
+        
         {/* <Route path="kyr" element={<KnowYourRights />} /> */}
         {/* <Route path="contact" element={<Contact />} /> */}
         {/* <Route path="newsletter" element={<Newsletter/>} /> */}
