@@ -3,7 +3,7 @@ import EvictionType from './evictionType';
 import evictionTypesJson from './evictionTypesData.json';
 
 const EvictionTypes = (types) => {
-    const getEvictionTypeListJSX = (evictTypes) => {
+    const getEvictionTypesJSX = (evictTypes) => {
         return evictTypes.map((evictType) => {
             return (
                 <EvictionType

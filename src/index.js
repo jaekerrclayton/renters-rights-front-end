@@ -5,6 +5,8 @@ import './index.css';
 import App from './App';
 import Resources from './routes/resourcesRoutes/resources';
 import reportWebVitals from './reportWebVitals';
+import EvictionType from './routes/evictionTypesRoutes/evictionType';
+import EvictionTypes from './routes/evictionTypesRoutes/evictionTypes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
