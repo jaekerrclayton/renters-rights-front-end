@@ -10,7 +10,7 @@ import evictionTypesJson from './evictionTypesData.json';
 //     renterRights: string
 // }
 
-const EvictionType = (CauseProps) => {
+const EvictionType = (CauseProps: any) => {
     return (
         <span>
             <h2> {CauseProps.title}</h2>

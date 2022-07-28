@@ -2,9 +2,9 @@ import React from 'react';
 import EvictionType from './evictionType';
 import evictionTypesJson from './evictionTypesData.json';
 
-export default function EvictionTypeList(types) {
-    const getEvictionTypeListJSX = (evictTypes) => {
-        return evictTypes.map((evictType) => {
+export default function EvictionTypeList(types: any) {
+    const getEvictionTypeListJSX = (evictTypes: any) => {
+        return evictTypes.map((evictType: any) => {
             return (
                 <EvictionType
                     cause={evictType.cause}
