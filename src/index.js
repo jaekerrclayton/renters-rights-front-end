@@ -27,11 +27,22 @@ root.render(
           />
           <Route path=":stageId" element={<EvictionStage />} /> 
         </Route>
-        
         {/* <Route path="kyr" element={<KnowYourRights />} /> */}
         {/* <Route path="contact" element={<Contact />} /> */}
         {/* <Route path="newsletter" element={<Newsletter/>} /> */}
-        <Route path="eviction-types" element={<EvictionTypes />}/>
+        <Route path="eviction-types" element={<EvictionTypes />}>
+          <Route
+              index
+              element={
+                <main style={{ padding: "1rem" }}>
+                  <h2>Select the Cause Given By Your Landlord</h2>
+                  <h3>Need help finding the cause? Look at the examples below.</h3>
+                  <p>**picture examples will go here**</p>
+                </main>
+              }
+            />
+            <Route path=":typeId" element={<EvictionType />} />
+          </Route>
         <Route path="resources" element={<Resources />}>
           <Route
             index
