@@ -6,8 +6,6 @@ import {
   import { getStage } from "./evictionstagesdata";
   
   export default function EvictionStage() {
-    let navigate = useNavigate();
-    let location = useLocation();
     let params = useParams();
     let stage = getStage(parseInt(params.stageId, 10));
   
@@ -22,7 +20,10 @@ import {
         </div>
         <div>
           <p>THIS IS WHER U SEE THE PIC OF A DOC/ SOMETHING</p>
-          <p>{stage.photo}</p>
+          <div id={stage.photo}>
+            <p>{stage.photo}</p>
+          </div>
+          
           <p>About notice : {stage.about_notice}</p>
         </div>
         <p>Next Steps: {stage.next_steps}</p>

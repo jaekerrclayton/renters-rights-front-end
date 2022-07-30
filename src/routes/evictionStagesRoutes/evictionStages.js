@@ -1,4 +1,5 @@
 import React from "react";
+import './evictionStages.css'
 import {
     NavLink, 
     Outlet,
@@ -17,44 +18,71 @@ const EvictionStages = () => {
 //   let [searchParams, setSearchParams] = useSearchParams();
   return (
     <main>
-    <h2>Eviction Stages Map</h2>
-    <div style={{ display: "flex "}}>
-      <nav 
-        style={{
-          borderRight: "solid 1px",
-          padding: "1rem",
-        }}
-        >
-          {/* <input
-              value={searchParams.get("filter") || ""}
-              onChange={(event) => {
-                let filter = event.target.value;
-                if (filter) {
-                  setSearchParams({ filter });
-                } else {
-                  setSearchParams({});
-                }
-              }}
-            /> */}
-          {stages
-            .map((stage) => ( 
-              <NavLink 
-              // function
-              // <NavLink classtitle={({ isActive }) => isActive ? "red" : "blue"} />
-                style={({ isActive }) => ({
-                    display: "block", 
-                    margin: "1rem 0",
-                    color: isActive ? "red" : "",
-                  })}
-                  to={`/eviction-map/${stage.stage_id}`}
-                  key={stage.stage_id}
-              >
-                  {stage.title}
-              </NavLink>
-          ))}
-      </nav>
-      <Outlet />
-    </div>
+        <div className="eviction-stages">
+            <h2>Eviction Stages :</h2>
+            <h4>select photo most similar to your notice</h4>
+            {/* <div>
+                <h3>What does Your Eviction Notice Look Like ? </h3>
+                {stages
+                    .map((stage) => ( 
+                    <NavLink 
+                    // function
+                    // <NavLink classtitle={({ isActive }) => isActive ? "red" : "blue"} />
+                        style={({ isActive }) => ({
+                            display: "block", 
+                            margin: "1rem 0",
+                            color: isActive ? "red" : "",
+                        })}
+                        to={`/eviction-map/${stage.stage_id}`}
+                        key={stage.stage_id}
+                    >
+                        <div id="stage-photo">
+                        {stage.photo};
+                        </div>
+                        
+                        
+                    </NavLink>
+                ))}
+            </div> */}
+        </div>
+        <div className="main-notices">
+            <nav className="notice-thumbn"
+                style={{
+                borderRight: "solid 1px",
+                padding: "1rem",
+                }}
+                >
+                {/* <input
+                    value={searchParams.get("filter") || ""}
+                    onChange={(event) => {
+                        let filter = event.target.value;
+                        if (filter) {
+                        setSearchParams({ filter });
+                        } else {
+                        setSearchParams({});
+                        }
+                    }}
+                    /> */}
+                {stages
+                    .map((stage) => ( 
+                    <NavLink 
+                    // function
+                    // <NavLink classtitle={({ isActive }) => isActive ? "red" : "blue"} />
+                        style={({ isActive }) => ({
+                            display: "block", 
+                            margin: "1rem 0",
+                            color: isActive ? "red" : "",
+                        })}
+                        to={`/eviction-map/${stage.stage_id}`}
+                        key={stage.stage_id}
+                    >
+                        {stage.title}
+                        
+                    </NavLink>
+                ))}
+            </nav>
+        <Outlet />
+        </div>
   </main>
   );
   }

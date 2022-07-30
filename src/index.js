@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
@@ -11,49 +11,49 @@ import EvictionTypes from './routes/evictionTypesRoutes/evictionTypes';
 import EvictionStage from './routes/evictionStagesRoutes/evictionStage';
 import EvictionStages from './routes/evictionStagesRoutes/evictionStages';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-<BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}>
-        <Route path="eviction-map" element={<EvictionStages />}>
+const root = ReactDOM.render(
+  <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route path="eviction-map" element={<EvictionStages />}>
+            <Route
+              index
+              element={
+                <main style={{ padding: "1rem" }}>
+                  <p>Select an resource</p>
+                </main>
+              }
+            />
+            <Route path=":stageId" element={<EvictionStage />} /> 
+          </Route>
+          
+          {/* <Route path="kyr" element={<KnowYourRights />} /> */}
+          {/* <Route path="contact" element={<Contact />} /> */}
+          {/* <Route path="newsletter" element={<Newsletter/>} /> */}
+          <Route path="eviction-types" element={<EvictionTypes />}/>
+          <Route path="resources" element={<Resources />}>
+            <Route
+              index
+              element={
+                <main style={{ padding: "1rem" }}>
+                  <p>Select an resource</p>
+                </main>
+              }
+            />
+            <Route path=":resourceId" element={<Resource />} />
+          </Route>
           <Route
-            index
+            path="*"
             element={
               <main style={{ padding: "1rem" }}>
-                <p>Select an resource</p>
+                <p>There's nothing here!</p>
               </main>
             }
           />
-          <Route path=":stageId" element={<EvictionStage />} /> 
         </Route>
-        
-        {/* <Route path="kyr" element={<KnowYourRights />} /> */}
-        {/* <Route path="contact" element={<Contact />} /> */}
-        {/* <Route path="newsletter" element={<Newsletter/>} /> */}
-        <Route path="eviction-types" element={<EvictionTypes />}/>
-        <Route path="resources" element={<Resources />}>
-          <Route
-            index
-            element={
-              <main style={{ padding: "1rem" }}>
-                <p>Select an resource</p>
-              </main>
-            }
-          />
-          <Route path=":resourceId" element={<Resource />} />
-        </Route>
-        <Route
-          path="*"
-          element={
-            <main style={{ padding: "1rem" }}>
-              <p>There's nothing here!</p>
-            </main>
-          }
-        />
-      </Route>
-    </Routes>
-  </BrowserRouter>
+      </Routes>
+    </BrowserRouter>,
+    document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

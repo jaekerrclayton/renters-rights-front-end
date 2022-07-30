@@ -1,3 +1,5 @@
+
+
 let courtPrep = [
 
   {
@@ -56,7 +58,7 @@ let evictionStages = [
     title: "Notice To Vacate",
     sub_title: "This is the first notice",
     info: "This is the first warning -- you are not currently being evicted, but you need to prepare! Read on to understand your eviction and see what the next steps are",
-    photo: "Link to photo",
+    photo: ["vacate_1"],
     about_notice: ["about notice div info", "second div info", "third div info"], 
     next_steps: "link to next",
     additional_resources: ["where to reach out- maybe hover", "another place to talk to maybe route to other page? ", "aaand another resource"]
@@ -67,7 +69,7 @@ let evictionStages = [
     title: "Possession of Property",
     sub_title: "You have a court hearing approaching",
     info: "You have been summoned to court to argue against eviction",
-    photo: "Link to photo",
+    photo: ["court_order"],
     about_notice: ["first div info", "second div info", "third div info"], 
     next_steps: "link to next",
     additional_resources: ["where to reach out", "another place to talk to ", "aaand another resource"]
@@ -78,35 +80,38 @@ let evictionStages = [
     title: "Preparing For Court",
     sub_title: "Documents to gather & things to do!",
     info: "Here are some things to consider before your eviction hearing",
-    photo: "NO PHOTO (maybe just import janes place info on what to bring to court?? ) --- link to other (nested) route :: what happens if (i go to court / don't go / appeal before court)",
+    photo: ["vacate_1"],
     about_notice: [ "maybe instead : about_notice is just where  courtPrep data Comes in???"], 
     next_steps: "link to next",
     additional_resources: ["where to reach out", "another place to talk to ", "aaand another resource"]
 
   },
+
+
   {
     stage_id: 4, 
-    title: "After Court Hearing",
-    sub_title: "Depending on the outcome of your hearing, you have some options",
-    info: "Potential Outcomes ( -- maybe make separte route to if you win / lose / appeal / didn't go)",
-    photo: "NO PHOTO --- link to other route :: what happens if (i go to court / don't go / appeal before court)",
+    title: "Writ of Possession",
+    sub_title: "You have lost your case (or didn't go) & here is what to do next",
+    info: "Potential Outcomes (route to if you win / lose etc )",
+    photo: "possession_photo.jpg",
     about_notice: ["first div info", "second div info", "third div info"], 
-    next_steps: "link to next",
+    next_steps: "link to next (link to nested route of timeline of post-losing eviction)",
     additional_resources: ["where to reach out", "another place to talk to ", "aaand another resource"]
 
   },
 
   {
     stage_id: 5, 
-    title: "Writ of Possession",
-    sub_title: "You have lost your case (or didn't go) & here is what to do next",
-    info: "Potential Outcomes (route to if you win / lose etc )",
-    photo: "NO PHOTO --- link to other route :: what happens if (i go to court / don't go / appeal before court)",
+    title: "After Court Hearing",
+    sub_title: "Depending on the outcome of your hearing, you have some options",
+    info: "Potential Outcomes ( -- maybe make separte route to if you win / lose / appeal / didn't go)",
+    photo: ["vacate_1"],
     about_notice: ["first div info", "second div info", "third div info"], 
-    next_steps: "link to next (link to nested route of timeline of post-losing eviction)",
+    next_steps: "link to next",
     additional_resources: ["where to reach out", "another place to talk to ", "aaand another resource"]
 
   },
+
 
 
 
@@ -127,4 +132,8 @@ export function getStage(stage_id) {
     (stage) => stage.stage_id === stage_id
   );
 };
+
+// some kind of function to loop through 
+// a list of photos ? return list of photo 
+// names to map to doc examples
 

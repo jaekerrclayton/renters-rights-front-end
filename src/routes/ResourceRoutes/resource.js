@@ -15,11 +15,11 @@ export default function Resource() {
   return (
     <main style={{ padding: "1rem" }}>
       <h2>{resource.name}</h2>
-      <h2>Total Due: {resource.amount}</h2>
-      <p>
-        {resource.name}: {resource.number}
-      </p>
-      <p>Due Date: {resource.due}</p>
+      <h4>Phone number: {resource.contact}</h4>
+      <h4>
+        {resource.amount}
+      </h4>
+ 
       <p>
         <button
           onClick={() => {
