@@ -5,7 +5,8 @@ import { Outlet } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import ControlledCarousel from "./BootstrapCarouselComponent";
+import ControlledCarousel from "./evictionDocsCarousel";
+import DropdownStages from "./stageDropdown";
 
 const EvicMap = () => {
   return (
@@ -16,7 +17,7 @@ const EvicMap = () => {
             <Col sm={8}>
                <ControlledCarousel />  
             </Col>  
-            <Col sm={4}><Outlet/></Col>
+            <Col sm={4}><DropdownStages/></Col>
           </Row>
      
       </Container>

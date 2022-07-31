@@ -1,5 +1,8 @@
 import React from "react";
 import './stage.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 import {
@@ -20,22 +23,31 @@ const Stage = () => {
 
   return (
     <main >
-      <div class="container" id="stage-title-info">
-        
-        <h3>{stage.title}</h3>
-        <h7>{stage.sub_title}</h7>
-      </div>
-      <div>{stage.info}</div>
-      <section className="doc-information">
-      <div class="document-translate" id={stage.photo}> 
-          <p>About notice : {stage.about_notice}</p>
-        </div>
-        <div class="document-photo"> 
-          <div class={stage.photo}>&nbsp;</div>
-          <p>THIS IS WHER U SEE THE PIC OF A DOC/ SOMETHING</p>
-        </div>
-      </section>
-      <p>Next steps: {stage.next_steps}</p>
+      <Container fluid>
+            <Row>
+                <Col className="evic-doc" id={stage.photo}></Col>
+
+                <Col id="stage-info">
+                  <Row>
+                      <h3>{stage.title}</h3>
+                      <h6>{stage.sub_title}</h6>
+                  </Row>
+                  <Row>
+                    <h3>information about this stage:</h3>
+                  </Row>
+                  <Row>{stage.info}</Row>
+                  <Row>
+                    <h3>information about document !! THIS IS WHERE BOXES COME IN:</h3>
+                  </Row>
+                  <Row>{stage.about_notice}</Row>
+                  <Row>
+                    <h3>link To additional resources:</h3>
+                  </Row>
+                  <Row>{stage.additional_resources}</Row>
+                </Col>
+            </Row>
+      </Container>
+
 
     </main>
   );

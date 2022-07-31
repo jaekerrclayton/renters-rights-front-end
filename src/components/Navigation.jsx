@@ -9,10 +9,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-function OffcanvasExample() {
+function OffCanvasNav() {
   return (
     <>
-      {['sm'].map((expand) => (
+      {['false'].map((expand) => (
         <Navbar key={expand} bg="dark" variant='dark' expand={expand} className="mb-3">
           <Container fluid>
                 <NavLink className="navbar-brand" to="/">
@@ -27,7 +27,7 @@ function OffcanvasExample() {
                       >
                         <Offcanvas.Header closeButton>
                               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                                Offcanvas
+                                Renters Rights : New Orleans
                               </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
@@ -45,6 +45,28 @@ function OffcanvasExample() {
                                   <NavLink className="nav-link" to="/blog">
                                     News Letter 
                                   </NavLink>
+
+{/* 
+                            <Dropdown.Item href="#/action-1" active>
+                                Stages of Eviction
+                                </Dropdown.Item>
+                                        <nav>
+                                            {stages
+                                                .map((stage) => ( 
+                                                <NavLink 
+                                                    style={({ isActive }) => ({
+                                                        display: "block", 
+                                                        margin: "1rem 0",
+                                                        
+                                                    })}
+                                                    to={`/eviction-map/${stage.stage_id}`}
+                                                    key={stage.stage_id}
+                                                >
+                                                    {stage.title}
+                                                    
+                                                </NavLink>
+                                            ))}
+                                        </nav> */}
 
                           {/* DROPDOWN LIST FOR NAV */}
                                 <NavDropdown
@@ -71,4 +93,4 @@ function OffcanvasExample() {
   );
 }
 
-export default OffcanvasExample;
+export default OffCanvasNav;

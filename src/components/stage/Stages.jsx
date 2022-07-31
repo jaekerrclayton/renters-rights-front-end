@@ -1,5 +1,6 @@
 import React from "react";
-import './stage.css';
+import './stages.css';
+
 import {
         NavLink, 
         Outlet,
@@ -25,52 +26,28 @@ const Stages = () => {
     //   let [searchParams, setSearchParams] = useSearchParams();
     return (
         <div>
-                     
-            <Row></Row>
-            <Row>
-            <div className="main-notices">
-                <nav>
+             <div id="navbar">
+             <nav>
                     {stages
                         .map((stage) => ( 
                         <NavLink 
-                        // function
-                        // <NavLink classtitle={({ isActive }) => isActive ? "red" : "blue"} />
-                            style={({ isActive }) => ({
-                                display: "block", 
-                                margin: "1rem 0",
-                                
-                            })}
                             to={`/eviction-map/${stage.stage_id}`}
                             key={stage.stage_id}
                         >
-                            {stage.title}
-                            
+                            {stage.title}                            
                         </NavLink>
                     ))}
                 </nav>
-            </div>
-            </Row>
+            </div> 
             <Row><Outlet /></Row>
-
-            <div>         
-                <DropdownButton
-                id="dropdown-button-dark-example2"
-                variant="secondary"
-                menuVariant="dark"
-                title="Dropdown button"
-                className="mt-2"
-            >
-                <Dropdown.Item href="#/action-1" active>
-                Action
-                </Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item href="#/action-4">Separated link</Dropdown.Item>
-            </DropdownButton></div>
         </div>
     );
 }
 
 
 export default Stages;
+
+
+
+
+
