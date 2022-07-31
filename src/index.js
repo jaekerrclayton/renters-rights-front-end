@@ -1,62 +1,81 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './index.css';
-import App from './App';
-import Resources from './routes/ResourceRoutes/resources';
-import Resource from './routes/ResourceRoutes/resource';
-import reportWebVitals from './reportWebVitals';
-import EvictionType from './routes/evictionTypesRoutes/evictionType';
-import EvictionTypes from './routes/evictionTypesRoutes/evictionTypes';
-import EvictionStage from './routes/evictionStagesRoutes/evictionStage';
-import EvictionStages from './routes/evictionStagesRoutes/evictionStages';
+import React, {Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import ReactDOM from "react-dom";
+import "./index.css";
+import * as serviceWorker from "./serviceWorker";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  Navigation,
+  Footer,
+  Home,
+  About,
+  Resource,
+  Resources,
+  Contact,
+  Blog,
+  Posts,
+  Post,
+  EvicMap,
+  Stages,
+  Stage,
+  Type,
+  Types,
+} from "./components";
 
-const root = ReactDOM.render(
-  <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route path="eviction-map" element={<EvictionStages />}>
+ReactDOM.render(
+  <Router>
+    <Navigation />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="resources" element={<Resources />}>
             <Route
               index
               element={
                 <main style={{ padding: "1rem" }}>
-                  <p>Select an resource</p>
-                </main>
-              }
-            />
-            <Route path=":stageId" element={<EvictionStage />} /> 
-          </Route>
-          
-          {/* <Route path="kyr" element={<KnowYourRights />} /> */}
-          {/* <Route path="contact" element={<Contact />} /> */}
-          {/* <Route path="newsletter" element={<Newsletter/>} /> */}
-          <Route path="eviction-types" element={<EvictionTypes />}/>
-          <Route path="resources" element={<Resources />}>
-            <Route
-              index
-              element={
-                <main style={{ padding: "1rem" }}>
-                  <p>Select an resource</p>
                 </main>
               }
             />
             <Route path=":resourceId" element={<Resource />} />
           </Route>
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/map-home" element={<EvicMap />}>
+        <Route path="" element={<Stages />} />
+      </Route>
+      <Route path="/eviction-map" element={<Stages />}>
+            {/* <Route path="" element={<EvicMap/>} /> */}
+            <Route path=""
+              index
+              // element={
+              //   <main>
+              //     <p>S!!!!!</p>
+              //   </main>
+              // }
+            />
+            <Route path=":stageId" element={<Stage />} /> 
+      </Route>
+      <Route path="/blog" element={<Blog />}>
+        <Route path="" element={<Posts />} />
+        <Route path=":postSlug" element={<Post />} />
+      </Route>
+      <Route path="eviction-types" element={<Types />}>
           <Route
-            path="*"
-            element={
-              <main style={{ padding: "1rem" }}>
-                <p>There's nothing here!</p>
-              </main>
-            }
-          />
-        </Route>
-      </Routes>
-    </BrowserRouter>,
-    document.getElementById("root")
+              index
+              element={
+                <main style={{ padding: "1rem" }}>
+                  <h2>Select the Cause Given By Your Landlord</h2>
+                  <h3>Need help finding the cause? Look at the examples below.</h3>
+                  <p>**picture examples will go here**</p>
+                </main>
+              }
+            />
+            <Route path=":typeId" element={<Type />} />
+          </Route>
+    </Routes>
+    <Footer />
+  </Router>,
+
+  document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+serviceWorker.unregister();

@@ -10,7 +10,7 @@ import {
 // but stores and sets the state 
 // in the URL search params instead of in memory.
 // import Invoice from "./invoice";
-import { getResources } from "./data";
+import { getResources } from "./resourcedata";
 
 const Resources = () => {
 let resources = getResources();

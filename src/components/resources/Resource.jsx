@@ -4,7 +4,7 @@ import {
   useNavigate,
   useLocation,
 } from "react-router-dom";
-import { getResource, deleteResource } from "./data";
+import { getResource, deleteResource } from "./resourcedata";
 
 export default function Resource() {
   let navigate = useNavigate();
