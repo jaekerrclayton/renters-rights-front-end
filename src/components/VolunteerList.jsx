@@ -2,18 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Volunteer from './Volunteer';
 
-const VolunteerList = (volunteers) => {
-    console.log(volunteers);
-    const getVolunteers = volunteers.map((volunteer) => {
+const Volunteers = (props) => {
+    // console.log(volunteers);
+    const getVolunteers = props.volunteers.map((volunteer) => {
         return (
-        <Volunteer 
-                id={volunteer.volunteerId} 
-                name={volunteer.name} 
-                email={volunteer.email} 
-                status={volunteer.status} 
-                type={volunteer.type}
-                language={volunteer.language}
-        />
+
+            <li>
+
+                <Volunteer 
+                        key={volunteer.volunteerId}
+                        volunteerId={volunteer.volunteerId} 
+                        name={volunteer.name} 
+                        email={volunteer.email} 
+                        status={volunteer.status} 
+                        type={volunteer.type}
+                        language={volunteer.language}
+                />
+            </li>
+
         );
     });
 
@@ -24,5 +30,10 @@ const VolunteerList = (volunteers) => {
     )
 }
 
+Volunteers.propTypes = {
+    volunteers: PropTypes.arrayOf(PropTypes.object)
 
-export default VolunteerList;
+}
+
+
+export default Volunteers;

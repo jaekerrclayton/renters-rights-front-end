@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import VolunteerList from "./VolunteerList";
-import Volunteer from "./Volunteer";
+// import VolunteerList from "./VolunteerList";
+import Volunteers from './VolunteerList'; 
 
 export const URL='https://renters-rights-back-end.herokuapp.com/admin/';
 
 function Admin() {
   const [volunteers, setVolunteers] = useState([]);
+  const [volunteer, setVolunteer] = useState();
   const [schedules, setSchedules] = useState();
   const [numberOnline, setNumberOnline] = useState(0);
 
@@ -66,6 +67,27 @@ function Admin() {
       console.log(err);
     });
   }
+
+  // const getVolunteer = (volunteers) => {
+  //   axios
+  //     .get(URL + 'volunteers')
+  //     .then((res) => {
+  //       setVolunteer(res.data);
+  //     });
+    
+
+  // }; 
+
+  // const volunteer = ''
+  // for (const volunteer of volunteers){
+  //   let volunteer = 
+  //     {volunteerId: volunteer.id}
+    
+  // };
+
+
+
+
   
   const v = (numberOnline !== 1 ? 'volunteers' : 'volunteer');
 
@@ -73,8 +95,15 @@ function Admin() {
     <div>
       <h1>Volunteers</h1>
       <button onClick={getSchedules}>Get Schedules</button>
+      <p>{Volunteers}</p>
       {/* <VolunteerList volunteers={volunteers} /> */}
       <h4>{numberOnline} {v} online now!</h4>
+      <li>
+        <Volunteers 
+          volunteers={volunteers}
+        /> 
+      </li>
+
     </div>
   );
 }
