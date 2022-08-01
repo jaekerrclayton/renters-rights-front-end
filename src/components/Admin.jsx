@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
+import VolunteerList from "./VolunteerList";
+import Volunteer from "./Volunteer";
 
 export const URL='https://renters-rights-back-end.herokuapp.com/admin/';
 
-function Contact() {
-  const [volunteers, setVolunteers] = useState();
+function Admin() {
+  const [volunteers, setVolunteers] = useState([]);
   const [schedules, setSchedules] = useState();
+  const [numberOnline, setNumberOnline] = useState(0);
 
   useEffect(() => {
     axios 
@@ -24,7 +27,14 @@ function Contact() {
         });
         console.log(newVolunteers);
         setVolunteers(newVolunteers);
-        console.log("hello?")
+        let count = 0;
+        for (let volunteer of newVolunteers) {
+          console.log(volunteer.status);
+          if (volunteer.status === 'online') {
+            count += 1;
+          }
+          setNumberOnline(count);
+        }
       })
       .catch((err) => {
         console.log(err);
@@ -57,13 +67,17 @@ function Contact() {
     });
   }
   
+  const v = (numberOnline !== 1 ? 'volunteers' : 'volunteer');
+
   return (
     <div>
       <h1>Volunteers</h1>
       <button onClick={getSchedules}>Get Schedules</button>
+      {/* <VolunteerList volunteers={volunteers} /> */}
+      <h4>{numberOnline} {v} online now!</h4>
     </div>
   );
 }
 
-export default Contact;
+export default Admin;
 
