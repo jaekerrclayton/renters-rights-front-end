@@ -1,34 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from 'axios';
+
+export const REACT_APP_BACKEND_URL='https://renters-rights-back-end.herokuapp.com/admin/';
 
 function Contact() {
+  const [volunteers, setVolunteers] = useState([]);
+  useEffect(() => {
+    axios 
+      .get(REACT_APP_BACKEND_URL + 'volunteers')
+      .then((res) =>{
+        console.log(res.data);
+        const newVolunteers = res.data.map((volunteer) => {
+          return {
+            volunteer_id: volunteer.volunteerId,
+            name: volunteer.name,
+            email: volunteer.email,
+            status: volunteer.status,
+            type: volunteer.type,
+            language: volunteer.language
+          };
+        });
+        setVolunteers(newVolunteers);
+        console.log(newVolunteers);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  },[]);
+  
   return (
-    <div className="contact">
-      <div class="container">
-        <div class="row align-items-center my-5">
-          <div class="col-lg-7">
-            <img
-              class="img-fluid rounded mb-4 mb-lg-0"
-              src=""
-              alt=""
-            />
-          </div>
-          <div class="col-lg-5">
-            <h1 class="font-weight-light">Contact</h1>
-            <p>
-              The intention of this website, how to get in touch with us 
-              ---- link to filling out 
-                  1. vol form 
-                  2. request meeting form 
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
-      </div>
+    <div>
+      <h1>Volunteers</h1>
+      <ul>{volunteers}</ul>
     </div>
   );
 }
 
 export default Contact;
+
