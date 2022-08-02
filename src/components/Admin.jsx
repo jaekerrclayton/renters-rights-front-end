@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 // import VolunteerList from "./VolunteerList";
 import Volunteers from './VolunteerList'; 
+import NewVolForm from "./NewVolForm";
 
 export const URL='https://renters-rights-back-end.herokuapp.com/admin/';
 
@@ -68,6 +69,24 @@ function Admin() {
     });
   }
 
+  const addNewVol = (volunteerInfo) => {
+    axios
+      .post(URL + 'volunteers', volunteerInfo )
+      .then((res) => {
+        const newVolunteer = {
+          "name": res.data.volunteers.name, 
+          "email": res.data.volunteers.email, 
+          "status" : res.data.volunteers.status, 
+          "type": res.data.volunteers.type, 
+          "language": res.data.volunteers.language, 
+        }
+        setVolunteers([...volunteers, newVolunteer]);
+      })
+      
+
+  }
+
+
   // const getVolunteer = (volunteers) => {
   //   axios
   //     .get(URL + 'volunteers')
@@ -93,18 +112,23 @@ function Admin() {
 
   return (
     <div>
-      <h1>Volunteers</h1>
-      <button onClick={getSchedules}>Get Schedules</button>
-      <p>{Volunteers}</p>
-      {/* <VolunteerList volunteers={volunteers} /> */}
-      <h4>{numberOnline} {v} online now!</h4>
-      <li>
-        <Volunteers 
-          volunteers={volunteers}
-        /> 
-      </li>
+        <h1>Volunteers</h1>
+        <button onClick={getSchedules}>Get Schedules</button>
 
-    </div>
+        <p>{Volunteers}</p>
+
+        <h4>{numberOnline} {v} online now!</h4>
+        <li>
+          <Volunteers 
+            volunteers={volunteers}
+          /> 
+        </li>
+        <div>
+              <NewVolForm onAddVolCallback={addNewVol}/> 
+        </div>
+          </div>
+
+
   );
 }
 

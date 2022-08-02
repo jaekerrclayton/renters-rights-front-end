@@ -23,6 +23,7 @@ Volunteer.propTypes =  {
     email: PropTypes.string,
     status: PropTypes.string,
     type: PropTypes.string,
+    language: PropTypes.string,
 
 
 
