@@ -25,6 +25,7 @@ function Admin() {
             status: volunteer.status,
             type: volunteer.type,
             language: volunteer.language,
+            schedule: volunteer.schedule
           };
         });
         console.log(newVolunteers);

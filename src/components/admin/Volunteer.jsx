@@ -1,8 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
+import Schedule from './Schedule';
 
 const Volunteer = (props) => {
+    console.log(props.schedule);
+    const getSchedule = (schedule) => {
+        return (
+            <>
+                <Schedule
+                        props={schedule}
+                />
+            </>
+        );
+    };
     return (
         <div>
             <h4>name: {props.name}</h4>
@@ -11,6 +22,7 @@ const Volunteer = (props) => {
             <p>status: {props.status}</p>
             <p>type: {props.type}</p>
             <p>language: {props.language}</p>
+            <p><button style={{display: props.schedule===null ? 'none': ''}} onClick={getSchedule}>get schedule</button></p>
         </div>
     )
 }

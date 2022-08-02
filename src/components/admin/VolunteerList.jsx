@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Volunteer from './Volunteer';
+import Schedule from './Schedule';
 
 const Volunteers = (props) => {
     // console.log(volunteers);
@@ -17,6 +18,7 @@ const Volunteers = (props) => {
                         status={volunteer.status} 
                         type={volunteer.type}
                         language={volunteer.language}
+                        schedule={volunteer.schedule}
                 />
             </>
 
