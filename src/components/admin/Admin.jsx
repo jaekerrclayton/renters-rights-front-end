@@ -3,6 +3,9 @@ import axios from 'axios';
 // import VolunteerList from "./VolunteerList";
 import Volunteers from './VolunteerList'; 
 import NewVolForm from "./NewVolForm";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export const URL='https://renters-rights-back-end.herokuapp.com/admin/';
 
@@ -88,46 +91,29 @@ function Admin() {
   }
 
 
-  // const getVolunteer = (volunteers) => {
-  //   axios
-  //     .get(URL + 'volunteers')
-  //     .then((res) => {
-  //       setVolunteer(res.data);
-  //     });
-    
-
-  // }; 
-
-  // const volunteer = ''
-  // for (const volunteer of volunteers){
-  //   let volunteer = 
-  //     {volunteerId: volunteer.id}
-    
-  // };
-
-
-
-
   
   const v = (numberOnline !== 1 ? 'volunteers' : 'volunteer');
 
   return (
-    <div>
+    <section>
+      <Row>
         <h1>Volunteers</h1>
-        <button onClick={getSchedules}>Get Schedules</button>
-
-        <p>{Volunteers}</p>
-
-        <h4>{numberOnline} {v} online now!</h4>
-        <li>
-          <Volunteers 
-            volunteers={volunteers}
-          /> 
-        </li>
-        <div>
-              <NewVolForm onAddVolCallback={addNewVol}/> 
-        </div>
-          </div>
+      </Row>
+        <Row>
+          <Col><button onClick={getSchedules}>Get Schedules</button></Col>
+          <Col><h4>{numberOnline} {v} online now!</h4></Col>
+        <Row/>
+      </Row>
+      <Row>
+        <Col>
+            <Volunteers 
+                volunteers={volunteers}/> 
+        </Col>
+        <Col>
+            <NewVolForm onAddVolCallback={addNewVol}/> 
+        </Col>
+      </Row>
+    </section>
 
 
   );
