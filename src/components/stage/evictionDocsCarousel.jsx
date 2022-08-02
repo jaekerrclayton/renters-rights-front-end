@@ -17,7 +17,7 @@ return (
                   </div>
                   {/* <div className="row">
                   <div className="col-12"> */}
-                  <Carousel>
+                  <Carousel showControls interval={10000}>
                         <Carousel.Item>
                               <img
                               className="d-block w-100"

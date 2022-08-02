@@ -56,7 +56,7 @@ function Home() {
                               bulk of the card's content.
                             </Card.Text>
                                 <NavLink className="nav-link" to="/contact">
-                                      <Button variant="primary">Contact</Button>
+                                      <Button variant="primary">Admin</Button>
                                 </NavLink>               
                       </Card.Body>
                   </Card>

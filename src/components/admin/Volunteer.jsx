@@ -5,12 +5,12 @@ import Container from 'react-bootstrap/Container';
 const Volunteer = (props) => {
     return (
         <div>
-            <li>volunteer id: {props.volunteerId}</li>
-            <li>name: {props.name}</li>
-            <li>email: {props.email}</li>
-            <li>status: {props.status}</li>
-            <li>type: {props.type}</li>
-            <li>language: {props.language}</li>
+            <h4>name: {props.name}</h4>
+            <h6>volunteer id: {props.volunteerId}</h6>
+            <p>email: {props.email}</p>
+            <p>status: {props.status}</p>
+            <p>type: {props.type}</p>
+            <p>language: {props.language}</p>
         </div>
     )
 }
