@@ -6,6 +6,7 @@ import NewVolForm from "./NewVolForm";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ScheduleList from './ScheduleList';
 
 export const URL='https://renters-rights-back-end.herokuapp.com/admin/';
 
@@ -110,7 +111,12 @@ function Admin() {
                 volunteers={volunteers}/> 
         </Col>
         <Col>
-            <NewVolForm onAddVolCallback={addNewVol}/> 
+            <ScheduleList props={schedules}/> 
+          <Row>
+          </Row>
+          <Row>
+          <NewVolForm onAddVolCallback={addNewVol}/> 
+          </Row>
         </Col>
       </Row>
     </section>
