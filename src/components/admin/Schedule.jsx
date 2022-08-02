@@ -3,17 +3,31 @@ import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 
 const Schedule = (props) => {
+    console.log(props);
+    console.log(props.props.sun);
     return (
         <div>
-            <h4>Sunday: {props.sun}</h4>
-            <h6>Monday: {props.mon}</h6>
-            <p>Tuesday: {props.tue}</p>
-            <p>Wednesday: {props.wed}</p>
-            <p>Thursday: {props.thu}</p>
-            <p>Friday: {props.fri}</p>
-            <p>Saturday: {props.sat}</p>
+            <p style={{display: props.props.sun===null ? 'none': ''}}>Sunday: {props.props.sun}</p>
+            <p style={{display: props.props.mon===null ? 'none': ''}}>Monday: {props.props.mon}</p>
+            <p style={{display: props.props.tue===null ? 'none': ''}}>Tuesday: {props.props.tue}</p>
+            <p style={{display: props.props.wed===null ? 'none': ''}}>Wednesday: {props.props.wed}</p>
+            <p style={{display: props.props.thu===null ? 'none': ''}}>Thursday: {props.props.thu}</p>
+            <p style={{display: props.props.fri===null ? 'none': ''}}>Friday: {props.props.fri}</p>
+            <p style={{display: props.props.sat===null ? 'none': ''}}>Saturday: {props.props.sat}</p>
         </div>
     )
+}
+
+Schedule.propTypes =  {
+
+    sun: PropTypes.string,
+    mon: PropTypes.string,
+    wed: PropTypes.string,
+    thu: PropTypes.string,
+    fri: PropTypes.string,
+    sat: PropTypes.string
+
+
 }
 
 export default Schedule

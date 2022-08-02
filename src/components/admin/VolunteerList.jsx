@@ -7,9 +7,7 @@ const Volunteers = (props) => {
     // console.log(volunteers);
     const getVolunteers = props.volunteers.map((volunteer) => {
         return (
-
             <>
-
                 <Volunteer 
                         key={volunteer.volunteerId}
                         volunteerId={volunteer.volunteerId} 
@@ -21,7 +19,6 @@ const Volunteers = (props) => {
                         schedule={volunteer.schedule}
                 />
             </>
-
         );
     });
 
