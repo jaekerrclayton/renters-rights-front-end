@@ -51,26 +51,68 @@ const ScheduleList = (props) => {
     return (
         <div>
             <h4>Sunday</h4>
-            <p style={{display: sunAmMap ? '' : 'none'}}>AM: {sunAmMap}</p>
-            <p style={{display: sunAmMap ? '' : 'none'}}>PM: {sunPmMap}</p>
+            <p style={{display: sunAmMap.length > 0 ? '' : 'none'}}>
+                <b>AM:</b> 
+                {sunAmMap}
+            </p>
+            <p style={{display: sunPmMap.length > 0 ? '' : 'none'}}>
+                <b>PM:</b> 
+                {sunPmMap}
+            </p>
             <h4>Monday</h4>
-            <p style={{display: monAmMap ? '' : 'none'}}>AM: {monAmMap}</p>
-            <p style={{display: monAmMap ? '' : 'none'}}>PM: {monPmMap}</p>
+            <p style={{display: monAmMap.length > 0 ? '' : 'none'}}>
+                <b>AM:</b> 
+                {monAmMap}
+            </p>
+            <p style={{display: monPmMap.length > 0 ? '' : 'none'}}>
+                <b>PM:</b>
+                {monPmMap}
+            </p>
             <h4>Tuesday</h4>
-            <p style={{display: tueAmMap ? '' : 'none'}}>AM: {tueAmMap}</p>
-            <p style={{display: tueAmMap ? '' : 'none'}}>PM: {tuePmMap}</p>
+            <p style={{display: tueAmMap.length > 0 ? '' : 'none'}}>
+                <b>AM:</b> 
+                {tueAmMap}
+            </p>
+            <p style={{display: tuePmMap.length > 0 ? '' : 'none'}}>
+                <b>PM:</b> 
+                {tuePmMap}
+            </p>
             <h4>Wednesday</h4>
-            <p style={{display: wedAmMap ? '' : 'none'}}>AM: {wedAmMap}</p>
-            <p style={{display: wedAmMap ? '' : 'none'}}>PM: {wedPmMap}</p>
+            <p style={{display: wedAmMap.length > 0 ? '' : 'none'}}>
+                <b>AM:</b> 
+                {wedAmMap}
+            </p>
+            <p style={{display: wedPmMap.length > 0 ? '' : 'none'}}>
+                <b>PM:</b> 
+                {wedPmMap}
+            </p>
             <h4>Thursday</h4>
-            <p style={{display: thuAmMap ? '' : 'none'}}>AM: {thuAmMap}</p>
-            <p style={{display: thuAmMap ? '' : 'none'}}>PM: {thuPmMap}</p>
+            <p style={{display: thuPmMap.length > 0 ? '' : 'none'}}>
+                <b>AM:</b> 
+                {thuAmMap}
+            </p>
+            <p style={{display: thuAmMap.length > 0 ? '' : 'none'}}>
+                <b>PM:</b> 
+                {thuPmMap}
+            </p>
             <h4>Friday</h4>
-            <p style={{display: friAmMap ? '' : 'none'}}>AM: {friAmMap}</p>
-            <p style={{display: friAmMap ? '' : 'none'}}>PM: {friPmMap}</p>
+            <p style={{display: friPmMap.length > 0 ? '' : 'none'}}>
+                <b>AM:</b> 
+                {friAmMap}
+            </p>
+            <p style={{display: friAmMap.length > 0 ? '' : 'none'}}>
+                <b>PM:</b> 
+                {friPmMap}
+            </p>
             <h4>Saturday</h4>
-            <p style={{display: satAmMap ? '' : 'none'}}>AM: {satAmMap}</p>
-            <p style={{display: satAmMap ? '' : 'none'}}>PM: {satPmMap}</p>
+            <p style={{display: satPmMap.length > 0 ? '' : 'none'}}>
+                <b>AM:</b> 
+                {satAmMap}
+            </p>
+            <p style={{display: satPmMap.length > 0 ? '' : 'none'}}>
+                <b>PM:</b> 
+                {satPmMap}
+            </p>
         </div>
     )
 }

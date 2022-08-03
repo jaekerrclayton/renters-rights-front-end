@@ -109,7 +109,7 @@ function Admin() {
           orderedSchedules
         )
       })
-    setSchedules({'schedules':newSchedules, 'display':true})
+    setSchedules({'schedules':newSchedules, 'display':!schedules.display})
     })
     .catch((err) => {
       console.log(err);
@@ -136,6 +136,7 @@ function Admin() {
 
   
   const v = (numberOnline !== 1 ? 'volunteers' : 'volunteer');
+  const scheduleButton = (schedules.display ? 'Hide' : 'Get');
 
   return (
     <section>
@@ -153,7 +154,7 @@ function Admin() {
         </Col>
         <Col>
           <Row>
-          <Col><button onClick={getSchedules}>Get Schedules</button></Col>
+          <Col><button onClick={getSchedules}>{scheduleButton} Schedules</button></Col>
           <div style={{display: schedules.display? '' : 'none'}}><ScheduleList props={schedules.schedules}/></div>
           </Row>
           <Row>
