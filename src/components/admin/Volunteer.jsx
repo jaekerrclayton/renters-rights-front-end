@@ -4,8 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Schedule from './Schedule';
 
 const Volunteer = (props) => {
-    console.log(props.schedule);
-    // const [displaySchedule, setDisplaySchedule] = useState('false');
+    // console.log(props.schedule);
 
     return (
         <div>
@@ -15,7 +14,6 @@ const Volunteer = (props) => {
             <p>status: {props.status}</p>
             <p>type: {props.type}</p>
             <p>language: {props.language}</p>
-            {/* <p><button style={{display: props.schedule===null ? 'none': ''}} onClick={() => {setDisplaySchedule(!displaySchedule)}}>get schedule</button></p> */}
             <p>{props.schedule===null ? '' : <Schedule props={props.schedule}/>}</p>
         </div>
     )

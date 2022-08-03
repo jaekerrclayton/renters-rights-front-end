@@ -31,7 +31,7 @@ const NewVolForm = ({onAddVolCallback}) => {
 
 
     const submitVolunteerData = (e) => {
-      
+    
         e.preventDefault();
     
         // if (!boardData.title) { return; }

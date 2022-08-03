@@ -13,7 +13,7 @@ export const URL='https://renters-rights-back-end.herokuapp.com/admin/';
 function Admin() {
   const [volunteers, setVolunteers] = useState([]);
   const [volunteer, setVolunteer] = useState();
-  const [schedules, setSchedules] = useState();
+  const [schedules, setSchedules] = useState({'display':false, 'schedules':[{'sun-am':[], 'sun-pm':[], 'mon-am':[], 'mon-pm':[], 'tue-am':[], 'tue-pm':[], 'wed-am':[], 'wed-pm':[], 'thu-am':[], 'thu-pm':[], 'fri-am':[], 'fri-pm':[], 'sat-am':[], 'sat-pm':[]}]});
   const [numberOnline, setNumberOnline] = useState(0);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ function Admin() {
         setVolunteers(newVolunteers);
         let count = 0;
         for (let volunteer of newVolunteers) {
-          console.log(volunteer.status);
+          // console.log(volunteer.status);
           if (volunteer.status === 'online') {
             count += 1;
           }
@@ -52,22 +52,64 @@ function Admin() {
     axios.get(URL + 'schedules')
     .then((res) =>{
       console.log(res.data);
+      let orderedSchedules = {
+        'sun-am':[], 
+        'sun-pm':[], 
+        'mon-am':[], 
+        'mon-pm':[],
+        'tue-am':[], 
+        'tue-pm':[], 
+        'wed-am':[], 
+        'wed-pm':[],
+        'thu-am':[],
+        'thu-pm':[],
+        'fri-am':[],
+        'fri-pm':[],
+        'sat-am':[],
+        'sat-pm':[]
+      }
       const newSchedules = res.data.map((schedule) => {
-        return {
-          sun: schedule.sun,
-          mon: schedule.mon,
-          tue: schedule.tue,
-          wed: schedule.wed,
-          thu: schedule.thu,
-          fri: schedule.fri,
-          sat: schedule.sat,
-          volunteerId: schedule.volunteerBySchedule.volunteerId,
-          name: schedule.volunteerBySchedule.name
+        if (schedule.sun === 'morning') {
+          orderedSchedules['sun-am'].push(schedule.volunteerBySchedule.name);
+        } else if (schedule.sun === 'afternoon') {
+          orderedSchedules['sun-pm'].push(schedule.volunteerBySchedule.name);
+        }
+        if (schedule.mon=== 'morning') {
+          orderedSchedules['mon-am'].push(schedule.volunteerBySchedule.name);
+        } else if (schedule.mon === 'afternoon') {
+          orderedSchedules['mon-pm'].push(schedule.volunteerBySchedule.name);
+        }
+        if (schedule.tue === 'morning') {
+          orderedSchedules['tue-am'].push(schedule.volunteerBySchedule.name);
+        } else if (schedule.tue === 'afternoon') {
+          orderedSchedules['tue-pm'].push(schedule.volunteerBySchedule.name);
+        }
+        if (schedule.wed === 'morning') {
+          orderedSchedules['wed-am'].push(schedule.volunteerBySchedule.name);
+        } else if (schedule.wed === 'afternoon') {
+          orderedSchedules['wed-pm'].push(schedule.volunteerBySchedule.name);
+        }
+        if (schedule.thu === 'morning') {
+          orderedSchedules['thu-am'].push(schedule.volunteerBySchedule.name);
+        } else if (schedule.thu === 'afternoon') {
+          orderedSchedules['thu-pm'].push(schedule.volunteerBySchedule.name);
+        }
+        if (schedule.fri === 'morning') {
+          orderedSchedules['fri-am'].push(schedule.volunteerBySchedule.name);
+        } else if (schedule.fri === 'afternoon') {
+          orderedSchedules['fri-pm'].push(schedule.volunteerBySchedule.name);
+        }
+        if (schedule.sat === 'morning') {
+          orderedSchedules['sat-am'].push(schedule.volunteerBySchedule.name);
+        } else if (schedule.sat === 'afternoon') {
+          orderedSchedules['sat-pm'].push(schedule.volunteerBySchedule.name);
         };
-      });
-      console.log(newSchedules);
-      setSchedules(newSchedules);
-      console.log("schedules?")
+        console.log(orderedSchedules);
+        return (
+          orderedSchedules
+        )
+      })
+    setSchedules({'schedules':newSchedules, 'display':true})
     })
     .catch((err) => {
       console.log(err);
@@ -101,7 +143,6 @@ function Admin() {
         <h1>Volunteers</h1>
       </Row>
         <Row>
-          <Col><button onClick={getSchedules}>Get Schedules</button></Col>
           <Col><h4>{numberOnline} {v} online now!</h4></Col>
         <Row/>
       </Row>
@@ -111,11 +152,12 @@ function Admin() {
                 volunteers={volunteers}/> 
         </Col>
         <Col>
-            <ScheduleList props={schedules}/> 
           <Row>
+          <Col><button onClick={getSchedules}>Get Schedules</button></Col>
+          <div style={{display: schedules.display? '' : 'none'}}><ScheduleList props={schedules.schedules}/></div>
           </Row>
           <Row>
-          <NewVolForm onAddVolCallback={addNewVol}/> 
+            <NewVolForm onAddVolCallback={addNewVol}/> 
           </Row>
         </Col>
       </Row>
