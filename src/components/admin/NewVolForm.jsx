@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-
-
-
+import Form from 'react-bootstrap/Form';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 const kNewVolData = {
     name: '',
@@ -14,97 +14,103 @@ const kNewVolData = {
 
 };
 
-
-
 const NewVolForm = ({onAddVolCallback}) => {
     const [volunteerData, setVolunteerData] = useState(kNewVolData); 
-
+    const [checkboxes, setChecked] = useState({'Legal':false, 'Hotline':false, 'Translation':false, 'Moving':false, 'English':false, 'Spanish':false})
 
     const handleChange = (e) => {
-        const fieldName = e.target.name;
-        const value = e.target.value;
-
-    
-        setVolunteerData(oldData => ({ ...oldData, [fieldName]: value }));
+        let formName = e.target.name;
+        volunteerData[formName] = e.target.value
+        console.log(volunteerData);
+        // const fieldName = e.target.name;
+        // console.log(fieldName);
+        // const value = e.target.value;    
+        // console.log(value);
+        // setVolunteerData(oldData => ({ ...oldData, [fieldName]: value }));
     };
 
-
+    const changeChecked = (e) => {
+        e.preventDefault();
+        let value = e.target.value;
+        checkboxes[value] = !checkboxes[value];
+        console.log(checkboxes);
+    }
 
     const submitVolunteerData = (e) => {
-    
         e.preventDefault();
-    
-        // if (!boardData.title) { return; }
-    
-        // reset the form back to its default values. This won't affect the value
-        // of taskData until React re-renders, so we are still free to use it in
-        // the remainder of this function
-        setVolunteerData(kNewVolData);
-
-
-
+        if (checkboxes.Legal){
+            volunteerData.type += 'Legal, '
+        }
+        if (checkboxes.Hotline){
+            volunteerData.type += 'Hotline, '
+        }
+        if (checkboxes.Translation){
+            volunteerData.type += 'Translation, '
+        }
+        if (checkboxes.Moving){
+            volunteerData.type += 'Moving'
+        }
+        if (checkboxes.English){
+            volunteerData.language += ' English'
+        }
+        if (checkboxes.Spanish){
+            volunteerData.language += ' Spanish'
+        }
+        console.log(volunteerData);
         onAddVolCallback(volunteerData);
     };
 
-
     return (
-    <form onSubmit={submitVolunteerData}>
-        <section>
-            <h2>Add a new volunteer</h2>
-            <div className="new-card-fields">
-                <label htmlFor="name">Name:</label>
-                <input
-                name="name"
-                id="name"
-                value={volunteerData.name}
-                onChange={handleChange}
-                />
-                <label htmlFor="email">Email</label>
-                <input
-                name="email"
-                id="email"
-                value={volunteerData.email}
-                onChange={handleChange}
-                />
-                <label htmlFor="email">Online Status</label>
-                <input
-                name="status"
-                id="status"
-                value={volunteerData.status}
-                onChange={handleChange}
-                />
-                <label htmlFor="type">Type of Volunteer</label>
-                <input
-                name="type"
-                id="type"
-                value={volunteerData.type}
-                onChange={handleChange}
-                />
-                <label htmlFor="language">Languages Spoken</label>
-                <input
-                name="language"
-                id="language"
-                value={volunteerData.languages}
-                onChange={handleChange}
-                />
+        <Form onSubmit={submitVolunteerData}>
+            <Row>
+            <h2>Add a New Volunteer</h2>
+            </Row>
+            <Row>
+                <Col>
+                    <Form.Group className="" controlId="name">
+                        <Form.Label>Name:</Form.Label>
+                        <Form.Control name="name" type="text" placeholder="Enter volunteer's name" onChange={handleChange}/>
+                    </Form.Group>
+                </Col>
+                <Col>
+                    <Form.Group controlId="email">
+                        <Form.Label>Email:</Form.Label>
+                        <Form.Control name="email" type="text" placeholder="Enter volunteer's email" onChange={handleChange}/>
+                    </Form.Group>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <Form.Group controlId="type">
+                        <h4>Type:</h4>
+                        <Form.Check type="checkbox" name="type" label="Hotline" value="Hotline" onChange={changeChecked}/>
+                        <Form.Check type="checkbox" name="type" label="Translation" value="Translation" onChange={changeChecked}/>
+                        <Form.Check type="checkbox" name="type" label="Legal" value="Legal" onChange={changeChecked}/>
+                        <Form.Check type="checkbox" name="type" label="Moving" value="Moving" onChange={changeChecked}/>
+                    </Form.Group>
+                </Col>
+                <Col>
+                    <Form.Group controlId="language">
+                        <h4>Language:</h4>
+                        <Form.Check type="checkbox" label="English" value="English" onChange={changeChecked}/>
+                        <Form.Check type="checkbox" label="Spanish" value="Spanish" onChange={changeChecked}/>
+                        <Form.Control type="text" name='language' placeholder="other" onChange={handleChange}/>
+                    </Form.Group>
+                </Col>
+            </Row>
                 <button className="button-new-board-submit" type="submit">
                 Add New Volunteer 
                 </button>
-            </div>
-        </section>
-    </form>
+    </Form>
     );
 };
 
 NewVolForm.propTypes = {
     onAddVolCallback: PropTypes.func.isRequired,
-    name: PropTypes.string.isRequired,
-    email: PropTypes.string.isRequired,
-    status: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
-    status: PropTypes.string.isRequired,
-    language: PropTypes.string.isRequired,
-
+    // name: PropTypes.string.isRequired,
+    // email: PropTypes.string.isRequired,
+    // // type: PropTypes.string.isRequired,
+    // language: PropTypes.string.isRequired,
 };
 
 

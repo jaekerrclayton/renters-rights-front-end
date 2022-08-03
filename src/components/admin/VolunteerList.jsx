@@ -23,7 +23,7 @@ const Volunteers = (props) => {
     });
 
     return (
-        <div>
+        <div class="ml-3">
             {getVolunteers}
         </div>
     )
