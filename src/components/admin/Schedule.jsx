@@ -4,11 +4,10 @@ import Container from 'react-bootstrap/Container';
 
 const Schedule = (props) => {
     let schedule = props;
-    console.log(schedule);
+    // console.log(schedule);
     if (schedule.props.sun){
         schedule = schedule.props;
     }
-    // console.log(props.props.sun);
     return (
         <div>
             <p style={{display: schedule.sun===null ? 'none': ''}}>Sunday: {schedule.sun}</p>

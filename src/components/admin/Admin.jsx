@@ -8,6 +8,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ScheduleList from './ScheduleList';
 import Accordion from 'react-bootstrap/Accordion';
+import Form from 'react-bootstrap/Form';
+import ScheduleChangeDropDown from "./ScheduleChangeDropdown";
 
 export const URL='https://renters-rights-back-end.herokuapp.com/admin/';
 
@@ -186,6 +188,21 @@ function Admin() {
         })
   }
 
+  const changeSched = (id, schedule) => {
+    axios
+      .put(URL + 'schedules/' + id, schedule)
+      .then(() => {
+        const updatedVolSchedules = volunteers.map((volunteer) => {
+          if (volunteer.volunteerID === id) {
+            volunteer.schedule = schedule;
+          }
+          return volunteer;
+        })
+        setVolunteers(updatedVolSchedules)
+        getSchedules();
+      })
+  };
+
   const v = (numberOnline !== 1 ? 'volunteers' : 'volunteer');
   const scheduleButton = (schedules.display ? 'Hide' : 'Get');
 
@@ -218,8 +235,15 @@ function Admin() {
         </Col>
         <Col>
           <Row>
-          <Col><button onClick={getSchedules}>{scheduleButton} Schedules</button></Col>
-          <div style={{display: schedules.display? '' : 'none'}}><ScheduleList props={schedules.schedules}/></div>
+            <Col>
+              <button onClick={getSchedules}>{scheduleButton} Schedules</button>
+            </Col>
+            <Col>
+              <ScheduleChangeDropDown volunteers={volunteers} changeSchedule={changeSched}/>
+            </Col>
+          </Row>
+          <Row>
+            <div style={{display: schedules.display? '' : 'none'}}><ScheduleList props={schedules.schedules}/></div>
           </Row>
           <Row>
             <NewVolForm onAddVolCallback={addNewVol}/> 

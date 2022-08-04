@@ -5,7 +5,6 @@ import Schedule from './Schedule';
 
 const Volunteers = (props) => {
     const getVolunteers = props.volunteers.map((volunteer) => {
-        // console.log(volunteer);
         return (
             <>
                 <Volunteer
@@ -26,7 +25,7 @@ const Volunteers = (props) => {
     });
 
     return (
-        <div class="ml-3">
+        <div>
             {getVolunteers}
         </div>
     )

@@ -1,24 +1,19 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import Container from 'react-bootstrap/Container';
 import Schedule from './Schedule';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import EditVolForm from './EditVolunteerForm';
 
 const Volunteer = (props, onEditVolCallback, onDeleteVolCallback, changeStatus) => {
-    // console.log(typeof props.changeStatus);
     const [displayForm, setDisplayForm] = useState({display: false})
     const originallyChecked = props.status === 'online' ? true : false;
     const [checked, setChecked] = useState(originallyChecked);
-    // console.log(props.language);
 
     const handleChange = () => {
         setChecked(!checked);
         const currentStatus = checked === true? 'offline' : 'online';
         const request = { status : currentStatus }
-        // console.log(props.volunteerId);
-        // console.log(status);
         props.changeStatus(props.volunteerId, request);
     };
 
