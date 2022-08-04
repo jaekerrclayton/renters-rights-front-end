@@ -4,11 +4,10 @@ import Volunteer from './Volunteer';
 import Schedule from './Schedule';
 
 const Volunteers = (props) => {
-    // console.log(volunteers);
     const getVolunteers = props.volunteers.map((volunteer) => {
         return (
             <>
-                <Volunteer 
+                <Volunteer
                         key={volunteer.volunteerId}
                         volunteerId={volunteer.volunteerId} 
                         name={volunteer.name} 
@@ -17,6 +16,8 @@ const Volunteers = (props) => {
                         type={volunteer.type}
                         language={volunteer.language}
                         schedule={volunteer.schedule}
+                        onEditVolCallback={props.onEdit}
+                        onDeleteVolCallback={props.onDelete}
                 />
             </>
         );
@@ -30,8 +31,8 @@ const Volunteers = (props) => {
 }
 
 Volunteers.propTypes = {
-    volunteers: PropTypes.arrayOf(PropTypes.object)
-
+    volunteers: PropTypes.arrayOf(PropTypes.object),
+    onEdit : PropTypes.func.isRequired,
 }
 
 

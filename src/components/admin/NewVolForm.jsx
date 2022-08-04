@@ -9,9 +9,7 @@ const kNewVolData = {
     email: '',
     status: '', 
     type: '',
-    language: '',
-    // schedule: {}
-
+    language: ''
 };
 
 const NewVolForm = ({onAddVolCallback}) => {
@@ -21,12 +19,10 @@ const NewVolForm = ({onAddVolCallback}) => {
     const handleChange = (e) => {
         let formName = e.target.name;
         volunteerData[formName] = e.target.value
+        if (formName === 'language') {
+            volunteerData[formName] += ', '
+        }
         console.log(volunteerData);
-        // const fieldName = e.target.name;
-        // console.log(fieldName);
-        // const value = e.target.value;    
-        // console.log(value);
-        // setVolunteerData(oldData => ({ ...oldData, [fieldName]: value }));
     };
 
     const changeChecked = (e) => {
@@ -106,11 +102,7 @@ const NewVolForm = ({onAddVolCallback}) => {
 };
 
 NewVolForm.propTypes = {
-    onAddVolCallback: PropTypes.func.isRequired,
-    // name: PropTypes.string.isRequired,
-    // email: PropTypes.string.isRequired,
-    // // type: PropTypes.string.isRequired,
-    // language: PropTypes.string.isRequired,
+    onAddVolCallback: PropTypes.func.isRequired
 };
 
 

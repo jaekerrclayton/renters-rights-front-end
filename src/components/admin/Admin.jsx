@@ -41,6 +41,7 @@ function Admin() {
             count += 1;
           }
           setNumberOnline(count);
+          console.log(typeof editVol)
         }
       })
       .catch((err) => {
@@ -126,11 +127,44 @@ function Admin() {
           "email": res.data.email, 
           "type": res.data.type, 
           "language": res.data.language, 
-          "status": res.data.status,
           "schedule": res.data.schedule
         }
         setVolunteers([...volunteers, newVolunteer]);
       })
+  }
+
+  const editVol = (volunteerInfo) => {
+    const updatedVolunteer = {
+      'name': volunteerInfo.name,
+      'email' : volunteerInfo.email,
+      'status' : volunteerInfo.status,
+      'type' : volunteerInfo.type,
+      'language': volunteerInfo.lanaguage
+    }
+    axios
+      .put(URL + 'volunteers/' + volunteerInfo.volunteerId, volunteerInfo )
+      .then(() => {
+        const updatedVolunteers = volunteers.map((volunteer) => {
+          if (volunteer.volunteerId === volunteerInfo.volunteerId) {
+            volunteer.name = volunteerInfo.name;
+            volunteer.email = volunteerInfo.email;
+            volunteer.status = volunteerInfo.status;
+            volunteer.type = volunteerInfo.type;
+            volunteer.language = volunteerInfo.language;
+          };
+        setVolunteers(updatedVolunteers);
+      })
+      .catch((err) => console.log(err));
+  })
+  }
+
+  const deleteVol = (id) => {
+    axios
+      .delete(URL + 'volunteers/' + id)
+      .then(() => {
+        const afterDelete = volunteers.filter((volunteer) => volunteer.volunteerId !== id);
+        setVolunteers(afterDelete);
+        })
   }
 
   const v = (numberOnline !== 1 ? 'volunteers' : 'volunteer');
@@ -148,7 +182,10 @@ function Admin() {
       <Row>
         <Col>
             <Volunteers 
-                volunteers={volunteers}/> 
+                volunteers={volunteers} 
+                onEdit={editVol}
+                onDelete={deleteVol}
+            /> 
         </Col>
         <Col>
           <Row>
