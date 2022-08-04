@@ -27,12 +27,12 @@ const DropdownStages = () => {
         <div>
             <div>         
                 <DropdownButton
-                id="dropdown-button-light"
-                variant="secondary"
-                menuVariant="dark"
-                title="Stages of Eviction"
-                className="mt-2"
-            >
+                    id="dropdown-button-light"
+                    variant="secondary"
+                    menuVariant="dark"
+                    title="Stages of Eviction"
+                    className="mt-2"
+                >
                 <Dropdown.Item active>
                 Eviction Stages
                 </Dropdown.Item>
@@ -41,7 +41,7 @@ const DropdownStages = () => {
                                 .map((stage) => ( 
                                 <NavLink 
                                     style={({ isActive }) => ({
-                                        display: "block", 
+                                        display: "flex", 
                                         margin: "1rem 0",
                                         
                                     })}

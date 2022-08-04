@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import order2 from './stage/evictionNotices/order2.jpeg';
 
 
 
@@ -17,8 +17,8 @@ function Home() {
      <Container fluid>
           <Row>
             <Col>
-                  <Card style={{ width: '18rem' }}>
-                      <Card.Img variant="top" src="https://picsum.photos/500/300?img=1" />
+                  <Card style={{ height: '50rem' }}>
+                      <Card.Img variant="top" src={order2} />
                           <Card.Body>
                             <Card.Title>Eviction Map</Card.Title>
                             <Card.Text>

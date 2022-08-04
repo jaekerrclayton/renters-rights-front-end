@@ -13,25 +13,25 @@
 
 
 
-
+/* 
 #vacate_1 {
     margin: 5em; 
     height:100vw;
     /* background-position:center; */
-    background-image: url(/src/components/stage/evictionNotices/vacate_1.jpg);
+    /* background-image: url(/src/components/stage/evictionNotices/vacate_1.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; */
 
-}
 
-#court_order {
+/* 
+#court_order { */
 
     /* background-position:center; */
-    background-image: url(/src/components/stage/evictionNotices/court_order.png);
+    /* background-image: url(/src/components/stage/evictionNotices/court_order.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; */
 
-}
+
 
 
 /* #court_order {
