@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Schedule from './Schedule';
 
 const ScheduleList = (props) => {
-    console.log(props.props[0]);
+    // console.log(props.props[0]);
     // let schedules = props.props[0];
     const sunAmMap = props.props[0]['sun-am'].map((vol) =>
         <li>{vol}</li>

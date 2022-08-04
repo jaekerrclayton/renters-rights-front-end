@@ -3,17 +3,20 @@ import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 
 const Schedule = (props) => {
-    console.log(props);
-    console.log(props.props.sun);
+    let schedule = props;
+    if (schedule.props.sun){
+        schedule = schedule.props;
+    }
+    // console.log(props.props.sun);
     return (
         <div>
-            <p style={{display: props.props.sun===null ? 'none': ''}}>Sunday: {props.props.sun}</p>
-            <p style={{display: props.props.mon===null ? 'none': ''}}>Monday: {props.props.mon}</p>
-            <p style={{display: props.props.tue===null ? 'none': ''}}>Tuesday: {props.props.tue}</p>
-            <p style={{display: props.props.wed===null ? 'none': ''}}>Wednesday: {props.props.wed}</p>
-            <p style={{display: props.props.thu===null ? 'none': ''}}>Thursday: {props.props.thu}</p>
-            <p style={{display: props.props.fri===null ? 'none': ''}}>Friday: {props.props.fri}</p>
-            <p style={{display: props.props.sat===null ? 'none': ''}}>Saturday: {props.props.sat}</p>
+            <p style={{display: schedule.sun===null ? 'none': ''}}>Sunday: {schedule.sun}</p>
+            <p style={{display: schedule.mon===null ? 'none': ''}}>Monday: {schedule.mon}</p>
+            <p style={{display: schedule.tue===null ? 'none': ''}}>Tuesday: {schedule.tue}</p>
+            <p style={{display: schedule.wed===null ? 'none': ''}}>Wednesday: {schedule.wed}</p>
+            <p style={{display: schedule.thu===null ? 'none': ''}}>Thursday: {schedule.thu}</p>
+            <p style={{display: schedule.fri===null ? 'none': ''}}>Friday: {schedule.fri}</p>
+            <p style={{display: schedule.sat===null ? 'none': ''}}>Saturday: {schedule.sat}</p>
         </div>
     )
 }

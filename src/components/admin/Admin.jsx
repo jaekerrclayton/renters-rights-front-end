@@ -20,7 +20,7 @@ function Admin() {
     axios 
       .get(URL + 'volunteers')
       .then((res) =>{
-        console.log(res.data);
+        // console.log(res.data);
         const newVolunteers = res.data.map((volunteer) => {
           return {
             volunteerId: volunteer.volunteerId,
@@ -32,7 +32,7 @@ function Admin() {
             schedule: volunteer.schedule
           };
         });
-        console.log(newVolunteers);
+        // console.log(newVolunteers);
         setVolunteers(newVolunteers);
         let count = 0;
         for (let volunteer of newVolunteers) {
@@ -51,7 +51,7 @@ function Admin() {
   const getSchedules= () => {
     axios.get(URL + 'schedules')
     .then((res) =>{
-      console.log(res.data);
+      // console.log(res.data);
       let orderedSchedules = {
         'sun-am':[], 
         'sun-pm':[], 
@@ -120,21 +120,19 @@ function Admin() {
     axios
       .post(URL + 'volunteers', volunteerInfo )
       .then((res) => {
+        console.log(res.data);
         const newVolunteer = {
-          "name": res.data.volunteers.name, 
-          "email": res.data.volunteers.email, 
-          "status" : res.data.volunteers.status, 
-          "type": res.data.volunteers.type, 
-          "language": res.data.volunteers.language, 
+          "name": res.data.name, 
+          "email": res.data.email, 
+          "type": res.data.type, 
+          "language": res.data.language, 
+          "status": res.data.status,
+          "schedule": res.data.schedule
         }
         setVolunteers([...volunteers, newVolunteer]);
       })
-      
-
   }
 
-
-  
   const v = (numberOnline !== 1 ? 'volunteers' : 'volunteer');
   const scheduleButton = (schedules.display ? 'Hide' : 'Get');
 
@@ -163,8 +161,6 @@ function Admin() {
         </Col>
       </Row>
     </section>
-
-
   );
 }
 
