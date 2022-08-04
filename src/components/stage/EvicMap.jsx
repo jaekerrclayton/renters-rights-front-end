@@ -16,7 +16,7 @@ const EvicMap = () => {
           <Row style={{ width: '30rem' }}><ControlledCarousel /></Row>  
            
           {/* <Row><DropdownStages/></Row> */}
-          /* <Row><PopoverPositionedExample/></Row> */}
+          <Row><PopoverPositionedExample/></Row> 
     
       </Container>
 
