@@ -12,7 +12,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 function OffCanvasNav() {
   return (
     <>
-      {['sm'].map((expand) => (
+      {[false].map((expand) => (
         <Navbar key={expand} bg="dark" variant='dark' expand={expand} className="mb-3">
           <Container fluid>
                 <NavLink className="navbar-brand" to="/">

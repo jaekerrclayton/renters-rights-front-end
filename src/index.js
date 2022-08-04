@@ -72,7 +72,7 @@ ReactDOM.render(
             <Route path=":typeId" element={<Type />} />
           </Route>
     </Routes>
-    <Footer />
+    {/* <Footer /> */}
   </Router>,
 
   document.getElementById("root")

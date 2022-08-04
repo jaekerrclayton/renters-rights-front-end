@@ -21,11 +21,32 @@ import Nav from 'react-bootstrap/Nav';
 
 import { getStages } from "./stagesdata";
 
+
+// import React from "react";
+
+// function Footer() {
+//   return (
+//     <div className="footer">
+//       <footer class="py-5 bg-dark fixed-bottom">
+//         <div class="container">
+//           <p class="m-0 text-center text-white">
+//             link ! news letter
+//           </p>
+//         </div>
+//       </footer>
+//     </div>
+//   );
+// }
+
+// export default Footer;
+
 const Stages = () => {
     let stages = getStages();
     //   let [searchParams, setSearchParams] = useSearchParams();
     return (
         <div>
+             <Row><Outlet /></Row>
+{/*              
              <div id="navbar">
              <nav>
                     {stages
@@ -38,8 +59,8 @@ const Stages = () => {
                         </NavLink>
                     ))}
                 </nav>
-            </div> 
-            <Row><Outlet /></Row>
+            </div>  */}
+           
         </div>
     );
 }

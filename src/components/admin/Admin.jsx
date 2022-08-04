@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ScheduleList from './ScheduleList';
+import Accordion from 'react-bootstrap/Accordion';
 
 export const URL='https://renters-rights-back-end.herokuapp.com/admin/';
 
@@ -181,11 +182,20 @@ function Admin() {
       </Row>
       <Row>
         <Col>
-            <Volunteers 
-                volunteers={volunteers} 
-                onEdit={editVol}
-                onDelete={deleteVol}
-            /> 
+          <Accordion>
+            <Accordion.Item eventKey="1">
+                  <Accordion.Header>All Current Volunteers</Accordion.Header>
+                  <Accordion.Body>
+                          <div>
+                          <Volunteers 
+                                volunteers={volunteers}
+                                onEdit={editVol}
+                                onDelete={deleteVol}
+                          /> 
+                          </div>
+                  </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
         </Col>
         <Col>
           <Row>
