@@ -7,13 +7,15 @@ import { NavLink } from "react-router-dom";
 import vacate1 from './evictionNotices/vacate1.jpeg';
 import vacate2 from './evictionNotices/vacate2.jpeg';
 import vacate3 from './evictionNotices/vacate3.jpeg';
+import order1 from './evictionNotices/order1.jpeg';
+import order2 from './evictionNotices/order2.jpeg';
 
 
 
 class EvictionDocuments extends React.Component {
 render() {
 return (
-      <div style={{ height:'50rem' }}>
+      <div>
         <div >
             <div className="row">
                 <div className="col-sm-12">
@@ -22,11 +24,11 @@ return (
                   </div>
                   {/* <div className="row">
                   <div className="col-12"> */}
-                  <Carousel showControls>
+                  <Carousel variant="dark" slide={false}>
                         <Carousel.Item>
-                              <NavLink className="nav-link" to="/eviction-map/1">
-                                  <Button variant="dark">Notice To Vacate</Button>
-                              </NavLink>
+                        <NavLink className="nav-link" to="/eviction-map/1">
+                            <Button>Notice To Vacate</Button>
+                        </NavLink>
                               <img
                               className="d-block w-100"
                               src={vacate1}
@@ -34,44 +36,81 @@ return (
                                 />
                                 <Carousel.Caption> 
                                       
-                                    {/* <h3>First slide label</h3> */}
-                                    {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
 
                                  </Carousel.Caption>
+                          </Carousel.Item>
+                          <Carousel.Item>
+                                <NavLink className="nav-link" to="/eviction-map/1">
+                                    <Button>Notice To Vacate</Button>
+                                </NavLink>
+                              <img
+                              className="d-block w-100"
+                              src={vacate2}
+                              alt="second slide"
+                                />
+                                <Carousel.Caption> 
+                                </Carousel.Caption>
+                          </Carousel.Item>
+                          <Carousel.Item>
+                                <NavLink className="nav-link" to="/eviction-map/1">
+                                    <Button>Notice To Vacate</Button>
+                                </NavLink>
+                              <img
+                              className="d-block w-100"
+                              src={vacate3}
+                              alt="third"
+                                />
+                                <Carousel.Caption> 
+                                </Carousel.Caption>
                           </Carousel.Item>
 
 
                           <Carousel.Item>
-
                                   <NavLink className="nav-link" to="/eviction-map/2">
                                       <Button>Court Order</Button>
                                   </NavLink>
                                   <img
                                         className="d-block w-100"
-                                        src={vacate2}
+                                        src={order1}
                                         alt="Second slide"
                                   />
                                   <Carousel.Caption>
                                       <h3>Second slide label</h3>
                                   </Carousel.Caption>
                           </Carousel.Item>
+
+
                           <Carousel.Item>
-                          <img
-                          className="d-block w-100"
-                          src="https://picsum.photos/500/300?img=3"
-                          alt="Third slide"
-                          />
-                          <Carousel.Caption>
-                          <h3>Third slide label</h3>
-                          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                          </Carousel.Caption>
+                          <NavLink className="nav-link" to="/eviction-map/2">
+                                      <Button>Court Order</Button>
+                                  </NavLink>
+                                  <img
+                                        className="d-block w-100"
+                                        src={order2}
+                                        alt="Second slide"
+                                  />
+                                  <Carousel.Caption>
+                                      <h3>Second slide label</h3>
+                                  </Carousel.Caption>
                           </Carousel.Item>
-              </Carousel>
-        {/* </div>
-        </div> */}
+                                            {/* <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src="https://picsum.photos/500/300?img=3"
+                                            alt="Third slide"
+                                            />
+                                            <Carousel.Caption>
+                                            <h3>Third slide label</h3>
+                                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                            </Carousel.Caption>
+                                            </Carousel.Item> */}
+                  </Carousel>
+
         </div>
       </div>
-)
-};
+    )
+  };
 }
+
+
 export default EvictionDocuments;

@@ -24,40 +24,45 @@ const DropdownStages = () => {
     let stages = getStages();
     //   let [searchParams, setSearchParams] = useSearchParams();
     return (
-        <div>
-            <div>         
-                <DropdownButton
-                    id="dropdown-button-light"
-                    variant="secondary"
-                    menuVariant="dark"
-                    title="Stages of Eviction"
-                    className="mt-2"
-                >
-                <Dropdown.Item active>
-                Eviction Stages
-                </Dropdown.Item>
-                        <nav>
+        // <div>
+        //     <div>         
+        //         <DropdownButton
+        //             id="dropdown-button-light"
+        //             variant="secondary"
+        //             menuVariant="dark"
+        //             title="Stages of Eviction"
+        //             className="mt-2"
+        //         >
+        //         <Dropdown.Item active>
+        //         Eviction Stages
+        //         </Dropdown.Item>
+                    <Nav justify variant="tabs" >
                             {stages
                                 .map((stage) => ( 
+                            <Nav.Item>
                                 <NavLink 
                                     style={({ isActive }) => ({
-                                        display: "flex", 
-                                        margin: "1rem 0",
+                                        // display: "flex", 
+                                        // margin: "1rem 0",
                                         
                                     })}
                                     to={`/eviction-map/${stage.stage_id}`}
                                     key={stage.stage_id}
                                 >
-                                    {stage.title}
+                                    <h6>{stage.stage_id}</h6>
+                                    {/* <p>{stage.title}</p> */}
                                     
                                 </NavLink>
+                            </Nav.Item>
+                            
                             ))}
-                        </nav>
-                <Dropdown.Divider />
-                <Dropdown.Item href="#/action-4">Separated link</Dropdown.Item>
-            </DropdownButton>
-            </div>
-        </div>
+                        
+                    </Nav>
+        //         <Dropdown.Divider />
+        //         <Dropdown.Item href="#/action-4">Separated link</Dropdown.Item>
+        //     </DropdownButton>
+        //     </div>
+        // </div>
     );
 }
 

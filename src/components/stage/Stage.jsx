@@ -36,16 +36,17 @@ const Stage = () => {
 
   return (
     
-      <Container fluid>
-          <Row>
-                  <Col>
-                  <Card style={{ width: '25rem' }}>
+      <Container>
+        <Row><DropdownStages/></Row>
+          {/* <Row> */}
+                  {/* <Col> */}
+                  {/* <Card style={{ width: '25rem' }}> */}
                       {/* <Card.Img variant="top" src={stage.photo} /> */}
-                          <Card.Body>
-                              <Card.Title>{stage.title}</Card.Title>
-                              <Card.Text>
-                              <h6>{stage.sub_title}</h6>
-                              </Card.Text>
+                          {/* <Card.Body> */}
+                              {/* <Card.Title>{stage.title}</Card.Title> */}
+                              {/* <Card.Text> */}
+                              {/* <h6>{stage.sub_title}</h6> */}
+                              {/* </Card.Text> */}
                               {/* <Accordion>
                                     <Accordion.Item eventKey="1">
                                       <Accordion.Header>{stage.sub_title}</Accordion.Header>
@@ -104,13 +105,13 @@ const Stage = () => {
                                 {/* <NavLink className="nav-link" to="/map-home">
                                       <Button variant="primary">Eviction Map</Button>
                                 </NavLink>                */}
-                                <Row><DropdownStages/></Row>
-                      </Card.Body>
-                  </Card>
-                  </Col>
+                                
+                      {/* </Card.Body> */}
+                  {/* </Card> */}
+                  {/* </Col> */}
             
                     
-          </Row>
+          {/* </Row> */}
 
               
                 </Container>
