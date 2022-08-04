@@ -42,7 +42,7 @@ function Admin() {
             count += 1;
           }
           setNumberOnline(count);
-          console.log(typeof editVol)
+          // console.log(typeof editVol)
         }
       })
       .catch((err) => {
@@ -106,7 +106,7 @@ function Admin() {
         } else if (schedule.sat === 'afternoon') {
           orderedSchedules['sat-pm'].push(schedule.volunteerBySchedule.name);
         };
-        console.log(orderedSchedules);
+        // console.log(orderedSchedules);
         return (
           orderedSchedules
         )
@@ -132,9 +132,28 @@ function Admin() {
         }
         setVolunteers([...volunteers, newVolunteer]);
       })
-  }
+  };
+
+  const changeStatus = (id, status) => {
+    console.log(id);
+    const updatedVolunteers = volunteers.map((volunteer) => {
+      if (volunteer.volunteerId === id) {
+        console.log('call made');
+        volunteer.status = status.status;
+        }
+      return volunteer;
+      })
+    axios
+      .patch(URL + 'volunteers/' + id, status)
+      .then(() => {
+        setVolunteers(updatedVolunteers);
+        console.log(volunteers);
+    })
+  };
 
   const editVol = (volunteerInfo) => {
+    console.log(volunteerInfo);
+    console.log(volunteerInfo.volunteerId);
     const updatedVolunteer = {
       'name': volunteerInfo.name,
       'email' : volunteerInfo.email,
@@ -143,13 +162,12 @@ function Admin() {
       'language': volunteerInfo.lanaguage
     }
     axios
-      .put(URL + 'volunteers/' + volunteerInfo.volunteerId, volunteerInfo )
+      .patch(URL + 'volunteers/' + volunteerInfo.volunteerId, updatedVolunteer)
       .then(() => {
         const updatedVolunteers = volunteers.map((volunteer) => {
           if (volunteer.volunteerId === volunteerInfo.volunteerId) {
             volunteer.name = volunteerInfo.name;
             volunteer.email = volunteerInfo.email;
-            volunteer.status = volunteerInfo.status;
             volunteer.type = volunteerInfo.type;
             volunteer.language = volunteerInfo.language;
           };
@@ -191,6 +209,7 @@ function Admin() {
                                 volunteers={volunteers}
                                 onEdit={editVol}
                                 onDelete={deleteVol}
+                                changeStatus={changeStatus}
                           /> 
                           </div>
                   </Accordion.Body>

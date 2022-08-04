@@ -5,12 +5,6 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 const EditVolForm = ({onDeleteVolCallback, onEditVolCallback, name, email, status, type, language, id}) => {
-    console.log(name);
-    console.log(email);
-    console.log(status);
-    console.log(type);
-    console.log(language);
-    console.log(id);
     const kNewVolData = {
         'name': name,
         'email': email,

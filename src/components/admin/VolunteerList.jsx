@@ -5,6 +5,7 @@ import Schedule from './Schedule';
 
 const Volunteers = (props) => {
     const getVolunteers = props.volunteers.map((volunteer) => {
+        // console.log(volunteer);
         return (
             <>
                 <Volunteer
@@ -18,6 +19,7 @@ const Volunteers = (props) => {
                         schedule={volunteer.schedule}
                         onEditVolCallback={props.onEdit}
                         onDeleteVolCallback={props.onDelete}
+                        changeStatus={props.changeStatus}
                 />
             </>
         );

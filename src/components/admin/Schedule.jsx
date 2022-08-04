@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 
 const Schedule = (props) => {
     let schedule = props;
+    console.log(schedule);
     if (schedule.props.sun){
         schedule = schedule.props;
     }

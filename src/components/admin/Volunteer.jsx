@@ -3,20 +3,68 @@ import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import Schedule from './Schedule';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import EditVolForm from './EditVolunteerForm';
 
-const Volunteer = (props, onEditVolCallback, onDeleteVolCallback) => {
+const Volunteer = (props, onEditVolCallback, onDeleteVolCallback, changeStatus) => {
+    // console.log(typeof props.changeStatus);
     const [displayForm, setDisplayForm] = useState({display: false})
-    console.log(props.language);
+    const originallyChecked = props.status === 'online' ? true : false;
+    const [checked, setChecked] = useState(originallyChecked);
+    // console.log(props.language);
+
+    const handleChange = () => {
+        setChecked(!checked);
+        const currentStatus = checked === true? 'offline' : 'online';
+        const request = { status : currentStatus }
+        // console.log(props.volunteerId);
+        // console.log(status);
+        props.changeStatus(props.volunteerId, request);
+    };
 
     return (
-        <div class="m-3">
-            <Row> {props.name}</Row>
-            <Row><b>id:</b> {props.volunteerId}</Row>
-            <Row><b>email:</b> {props.email}</Row>
-            <Row><b>status:</b> {props.status}</Row>
-            <Row><b>type:</b> {props.type}</Row>
-            <Row><b>language:</b> {props.language}</Row>
+        <div>
+            <Row><h3>{props.name}</h3></Row>
+            <Row>
+                <Col>
+                    <b>id:</b> 
+                </Col>
+                <Col>
+                    {props.volunteerId}
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <b>email:</b>
+                </Col>
+                <Col>
+                    {props.email}
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <b>status:</b> 
+                </Col>
+                <Col>
+                    <input type="checkbox" checked={checked} onChange={handleChange} />{props.status}
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <b>type:</b>
+                </Col>
+                <Col>
+                    {props.type}
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <b>language:</b> 
+                </Col>
+                <Col>
+                    {props.language}
+                </Col>
+            </Row>
             <Row>{props.schedule===null ? '' : <Schedule props={props.schedule}/>}</Row>
             <Row><button onClick={() => {setDisplayForm({'display':!displayForm.display})}}>Edit {props.name} Profile</button></Row>
             <Row>
@@ -25,7 +73,6 @@ const Volunteer = (props, onEditVolCallback, onDeleteVolCallback) => {
                     onEditVolCallback={props.onEditVolCallback} 
                     name={props.name} 
                     email={props.email} 
-                    status={props.status} 
                     type={props.type} 
                     language={props.language}
                     id={props.volunteerId}
@@ -39,7 +86,6 @@ const Volunteer = (props, onEditVolCallback, onDeleteVolCallback) => {
 
 
 Volunteer.propTypes =  {
-
     volunteerId: PropTypes.number,
     name: PropTypes.string,
     email: PropTypes.string,
@@ -47,8 +93,6 @@ Volunteer.propTypes =  {
     type: PropTypes.string,
     language: PropTypes.string,
     schedule: PropTypes.any,
-
-
 }
 
 
