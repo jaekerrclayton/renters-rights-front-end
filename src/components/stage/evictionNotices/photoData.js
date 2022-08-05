@@ -2,12 +2,12 @@
 
 
 
-let order1Info = [
+const orderFirstinfo = [
   {
     order_id: 1, 
     title: "Cause of Eviction",
     sub_title: "The order is required to explain the reason you are being evicted", 
-    placement: "top"
+    placement: "bottom"
   }
   , 
 
@@ -23,7 +23,7 @@ let order1Info = [
     order_id: 3, 
     title: "Date of Hearing", 
     sub_title: "This is the location and time of your hearing. Check if a room is specified, and prepare to show up early.", 
-    placement: "right"
+    placement: "bottom"
   },
 
   {order_id: 4,
@@ -38,8 +38,8 @@ let order1Info = [
 
 
 
-export function getOrderInfo() {
-  return order1Info;
+export function getOrderFirstInfo() {
+  return orderFirstinfo;
 
 };
 

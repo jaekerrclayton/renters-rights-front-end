@@ -9,11 +9,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
+// ariant="dark" bg="dark" expand="lg">
+// <Container fluid></Container>
+// <nav className="navbar navbar-expand navbar-dark bg-dark">
+
 function OffCanvasNav() {
   return (
     <>
-      {[false].map((expand) => (
-        <Navbar key={expand} bg="dark" variant='dark' expand={expand} className="mb-3">
+      {['sm'].map((expand) => (
+        <Navbar key={expand} bg="dark" variant='dark' expand={expand} className="mb-5">
           <Container fluid>
                 <NavLink className="navbar-brand" to="/">
                   Renters Rights : New Orleans, Louisiana

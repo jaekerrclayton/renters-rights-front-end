@@ -13,6 +13,7 @@ const EvicMap = () => {
   return (
 
       <Container>
+        <h6>Please select the photo most similar to the document you have received </h6>
           <Row style={{ width: '30rem' }}><ControlledCarousel /></Row>  
            
           {/* <Row><DropdownStages/></Row> */}

@@ -44,6 +44,7 @@ const DropdownStages = () => {
                                     style={({ isActive }) => ({
                                         // display: "flex", 
                                         // margin: "1rem 0",
+                                        color: isActive ? "blue" : "",
                                         
                                     })}
                                     to={`/eviction-map/${stage.stage_id}`}
