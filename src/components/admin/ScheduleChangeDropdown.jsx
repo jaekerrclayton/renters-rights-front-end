@@ -10,7 +10,7 @@ const ScheduleChangeDropDown = (volunteers) => {
     const getChangeForm = (e) => {
         e.preventDefault();
         console.log(e.target.value);
-        setChangeForm({display:!changeForm.display, id:e.target.value});
+        setChangeForm({'display':!changeForm.display, 'id':e.target.value});
         console.log(changeForm.display);
     };
 
@@ -32,7 +32,7 @@ const ScheduleChangeDropDown = (volunteers) => {
                 </Dropdown.Menu>
             </Dropdown>
             <div style={{display: changeForm.display ? '' : 'none'}}>
-                <ChangeScheduleForm type='button' id={changeForm.id} onChangeSchedCallback={volunteers.changeSchedule}/>
+                <ChangeScheduleForm type='button' volunteerId={changeForm.id} onChangeSchedCallback={volunteers.changeSchedule}/>
             </div>
         </div>
     )

@@ -4,11 +4,10 @@ import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-const EditVolForm = ({onDeleteVolCallback, onEditVolCallback, name, email, status, type, language, id}) => {
+const EditVolForm = ({onDeleteVolCallback, onEditVolCallback, name, email, type, language, id}) => {
     const kNewVolData = {
         'name': name,
         'email': email,
-        'status': status, 
         'type': type,
         'language': language,
         'volunteerId':id
@@ -23,6 +22,7 @@ const EditVolForm = ({onDeleteVolCallback, onEditVolCallback, name, email, statu
 
     const submitVolunteerData = (e) => {
         e.preventDefault();
+        console.log(volunteerData);
         onEditVolCallback(volunteerData);
     };
 

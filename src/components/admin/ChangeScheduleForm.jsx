@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
-const ChangeScheduleForm = (props) => {
-    console.log(props.id);
+const ChangeScheduleForm = ({volunteerId, onChangeSchedCallback}) => {
+    console.log(volunteerId);
     const [scheduleData, setScheduleData] = useState({'sun':null, 'mon':null, 'tue':null, 'wed':null, 'thu':null, 'fri':null, 'sat':null});
 
     const handleChange = (e) => {
@@ -14,7 +14,7 @@ const ChangeScheduleForm = (props) => {
     const submitScheduleData = (e) => {
         e.preventDefault();
         console.log(scheduleData);
-        props.onChangeSchedCallback(scheduleData);
+        onChangeSchedCallback(scheduleData);
     };
 
     return (

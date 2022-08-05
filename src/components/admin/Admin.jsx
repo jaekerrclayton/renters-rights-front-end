@@ -143,6 +143,11 @@ function Admin() {
     const updatedVolunteers = volunteers.map((volunteer) => {
       if (volunteer.volunteerId === id) {
         console.log('call made');
+        if (status.status === 'online') {
+          setNumberOnline(numberOnline + 1);
+        } else {
+          setNumberOnline(numberOnline -1);
+        }
         volunteer.status = status.status;
         }
       return volunteer;
@@ -161,12 +166,11 @@ function Admin() {
     const updatedVolunteer = {
       'name': volunteerInfo.name,
       'email' : volunteerInfo.email,
-      'status' : volunteerInfo.status,
       'type' : volunteerInfo.type,
-      'language': volunteerInfo.lanaguage
+      'language': volunteerInfo.language
     }
     axios
-      .patch(URL + 'volunteers/' + volunteerInfo.volunteerId, updatedVolunteer)
+      .put(URL + 'volunteers/' + volunteerInfo.volunteerId, updatedVolunteer)
       .then(() => {
         const updatedVolunteers = volunteers.map((volunteer) => {
           if (volunteer.volunteerId === volunteerInfo.volunteerId) {
@@ -175,11 +179,11 @@ function Admin() {
             volunteer.type = volunteerInfo.type;
             volunteer.language = volunteerInfo.language;
           };
-        setVolunteers(updatedVolunteers);
+        return volunteer;
       })
+      setVolunteers(updatedVolunteers);})
       .catch((err) => console.log(err));
-  })
-  }
+    }
 
   const deleteVol = (id) => {
     axios

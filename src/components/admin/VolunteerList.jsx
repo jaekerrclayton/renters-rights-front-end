@@ -4,6 +4,7 @@ import Volunteer from './Volunteer';
 import Schedule from './Schedule';
 
 const Volunteers = (props) => {
+    // console.log(typeof props.onEdit);
     const getVolunteers = props.volunteers.map((volunteer) => {
         return (
             <>
