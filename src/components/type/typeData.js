@@ -20,6 +20,8 @@ let evictionTypes = [
         description: "Landlords may not bring a second lawsuit about the same lease violation incident according to the doctrine of res judicata."
         }]
     },
+
+
     {typeId: 3,
     cause: "Nonpayment",
     description: "A landlord can start an eviction when a tenant has failed to pay rent on time.",
@@ -57,4 +59,22 @@ export function getType(type_id) {
     return evictionTypes.find(
         (type) => type.typeId === type_id
     );
+
+
+// export function getdefense(evictionTypes) {
+//     {evictionTypes.map((evictionType.renterRights) => 
+//         )}
+
+//     let defense = evictionTypes.rentersRights.defense; 
+//     let description = evictionTypes.rentersRights.description; 
+    
+//     return defense
+// }; 
+
+// export function getDescription() {
+//     let description = evictionTypes.rentersRights.description; 
+//     return description
+
+
+
 };
