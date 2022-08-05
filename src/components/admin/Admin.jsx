@@ -19,6 +19,8 @@ function Admin() {
   const [schedules, setSchedules] = useState({'display':false, 'schedules':[{'sun-am':[], 'sun-pm':[], 'mon-am':[], 'mon-pm':[], 'tue-am':[], 'tue-pm':[], 'wed-am':[], 'wed-pm':[], 'thu-am':[], 'thu-pm':[], 'fri-am':[], 'fri-pm':[], 'sat-am':[], 'sat-pm':[]}]});
   const [numberOnline, setNumberOnline] = useState(0);
 
+
+  // admin dataManager.get volunteers 
   useEffect(() => {
     axios 
       .get(URL + 'volunteers')

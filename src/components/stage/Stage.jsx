@@ -9,6 +9,7 @@ import DropdownStages from "./stageDropdown";
 import Types from '../type/Types'; 
 
 
+
 import {
     Link,
     useParams,
@@ -17,6 +18,7 @@ import {
   } from "react-router-dom";
 
 import { getStage } from "./stagesdata";
+import OrderFirst from "./evictionNotices/orderFirst";
   
 const Stage = () => {
 
@@ -81,14 +83,22 @@ const Stage = () => {
                                                     <p>{stage.info}</p>
                                                     <p>{stage.about_notice}</p>
                                                     <p>{stage.additional_resources}</p>
+                                                    {/* <p>{stage.photo}</p> */}
                                                     </Accordion.Body>
+
                   
                                                 </Accordion.Item>
                                                 </Accordion>
 
                                             </div>
-                                              
-                                         <Card.Img variant="bottom" src={stage.photo} />
+                                            <div><OrderFirst/></div>
+                                            
+                                      
+
+                                            <div class="image-container"> 
+                                            <Card.Img variant="bottom" src={stage.photo} class='document-image' id={stage.photo}/>
+                                            </div> 
+                                            
                                       </Accordion.Body>
                                     </Accordion.Item>
 
