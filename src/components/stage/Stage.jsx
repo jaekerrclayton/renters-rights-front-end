@@ -87,8 +87,10 @@ const Stage = () => {
                                                 </Accordion>
 
                                             </div>
-                                              
-                                         <Card.Img variant="bottom" src={stage.photo} />
+
+                                            <div class="image-container"> 
+                                            <Card.Img variant="bottom" src={stage.photo} class='document-image' id={stage.photo}/>
+                                            </div> 
                                       </Accordion.Body>
                                     </Accordion.Item>
 
