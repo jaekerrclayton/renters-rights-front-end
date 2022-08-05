@@ -17,7 +17,7 @@ function Home() {
      <Container fluid>
           <Row>
             <Col>
-                  <Card style={{ height: '50rem' }}>
+                  <Card style={{ width: '18rem'}}>
                       <Card.Img variant="top" src={order2} />
                           <Card.Body>
                             <Card.Title>Eviction Map</Card.Title>

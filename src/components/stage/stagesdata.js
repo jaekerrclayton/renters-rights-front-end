@@ -78,22 +78,24 @@ let stages = [
 
   {
     stage_id: 2, 
-    title: "Possession of Property",
-    sub_title: "You have a court hearing approaching",
-    info: "You have been summoned to court to argue against eviction. It is important that you secure a lawyer if you plan to go to court, read on to figure out how to understand your eviction notice & what you can do to prepare for court",
-    photo: order1,
-    about_notice: ["first div info", "second div info", "third div info"], 
-    next_steps: "link to next",
-    additional_resources: ["where to reach out", "another place to talk to ", "aaand another resource"]
-
-  },
-  {
-    stage_id: 3, 
     title: "Preparing For Court",
     sub_title: "Documents to gather & things to do!",
     info: "Here are some things to consider before your eviction hearing. Here are some tips about what kinds of documents you want to gather, texts you should save to show to a judge, thinking about if you have potential witnesses to come with you & how to try to appeal ur eviction before it even begins",
     photo: vacate2,
     about_notice: [ "maybe instead : about_notice is just where  courtPrep data Comes in???"], 
+    next_steps: "link to next",
+    additional_resources: ["where to reach out", "another place to talk to ", "aaand another resource"]
+
+  },
+
+
+  {
+    stage_id: 3, 
+    title: "Possession of Property",
+    sub_title: "You have a court hearing approaching",
+    info: "You have been summoned to court to argue against eviction. It is important that you secure a lawyer if you plan to go to court, read on to figure out how to understand your eviction notice & what you can do to prepare for court",
+    photo: order1,
+    about_notice: ["first div info", "second div info", "third div info"], 
     next_steps: "link to next",
     additional_resources: ["where to reach out", "another place to talk to ", "aaand another resource"]
 

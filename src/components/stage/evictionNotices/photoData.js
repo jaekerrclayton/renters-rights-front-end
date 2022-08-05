@@ -35,6 +35,32 @@ const orderFirstinfo = [
 
 ]
 
+const orderTwoInfo = [
+  {
+    order_id: "",
+    title: "",
+    sub_title: "",
+    placement: "",
+
+  },
+  {
+    order_id: "",
+    title: "", 
+    sub_title: "",
+    placement: "",
+    
+  },
+  {
+    order_id: "",
+    title: "",
+    sub_title: "",
+    placement: "",
+    
+  }
+
+
+
+] 
 
 
 
