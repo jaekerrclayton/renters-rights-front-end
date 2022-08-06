@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
-const ChangeScheduleForm = ({volunteerId, onChangeSchedCallback}) => {
-    console.log(volunteerId);
+const ChangeScheduleForm = (props) => {
+    console.log(props.volunteerId);
+    console.log(typeof props.onChangeSchedCallback);
     const [scheduleData, setScheduleData] = useState({'sun':null, 'mon':null, 'tue':null, 'wed':null, 'thu':null, 'fri':null, 'sat':null});
 
     const handleChange = (e) => {
@@ -14,7 +15,7 @@ const ChangeScheduleForm = ({volunteerId, onChangeSchedCallback}) => {
     const submitScheduleData = (e) => {
         e.preventDefault();
         console.log(scheduleData);
-        onChangeSchedCallback(scheduleData);
+        props.onChangeSchedCallback(scheduleData);
     };
 
     return (

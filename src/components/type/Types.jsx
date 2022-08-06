@@ -4,9 +4,10 @@ import {
     Outlet,
 } from "react-router-dom"; 
 import { getTypes } from './typeData';
+import typeDataJson from './evictionTypesData.json';
 
 const Types = () => {
-    let types = getTypes();
+    let types = typeDataJson;
     return (
         <main>
         <h2>Causes for Eviction</h2>
@@ -25,10 +26,11 @@ const Types = () => {
                                 margin: "1rem 0",
                                 color: isActive ? "red" : "",
                                 })}
-                                to={`/eviction-types/${type.typeId}`}
-                                key={type.typeId}
+                            to={{pathname:`/eviction-types/${type.typeId}`, 
+                                typeProps:{typeId:type.typeId, cause:type.Cause},}}
+                            key={type.typeId}
                         >
-                            {type.cause}
+                            {type.Cause}
                         </NavLink>
                     ))}
         </nav>

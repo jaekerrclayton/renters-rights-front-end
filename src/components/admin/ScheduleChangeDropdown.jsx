@@ -9,15 +9,14 @@ const ScheduleChangeDropDown = (volunteers) => {
 
     const getChangeForm = (e) => {
         e.preventDefault();
-        console.log(e.target.value);
-        setChangeForm({'display':!changeForm.display, 'id':e.target.value});
-        console.log(changeForm.display);
+        const newId = e.target.target;
+        setChangeForm({'display':!changeForm.display, 'id':newId});
     };
 
     const getDropDown = volunteers.volunteers.map((volunteer) => {
         console.log(volunteer.volunteerId);
         return (
-            <Dropdown.Item value={volunteer.volunteerId} onClick={getChangeForm}>{volunteer.name}</Dropdown.Item>
+            <Dropdown.Item target={volunteer.volunteerId} onClick={getChangeForm}>{volunteer.name}</Dropdown.Item>
         )
     })
 

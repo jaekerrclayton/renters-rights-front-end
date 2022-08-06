@@ -37,16 +37,13 @@ function Admin() {
             schedule: volunteer.schedule
           };
         });
-        // console.log(newVolunteers);
         setVolunteers(newVolunteers);
         let count = 0;
         for (let volunteer of newVolunteers) {
-          // console.log(volunteer.status);
           if (volunteer.status === 'online') {
             count += 1;
           }
           setNumberOnline(count);
-          // console.log(typeof editVol)
         }
       })
       .catch((err) => {
@@ -57,7 +54,6 @@ function Admin() {
   const getSchedules= () => {
     axios.get(URL + 'schedules')
     .then((res) =>{
-      // console.log(res.data);
       let orderedSchedules = {
         'sun-am':[], 
         'sun-pm':[], 
@@ -110,7 +106,6 @@ function Admin() {
         } else if (schedule.sat === 'afternoon') {
           orderedSchedules['sat-pm'].push(schedule.volunteerBySchedule.name);
         };
-        // console.log(orderedSchedules);
         return (
           orderedSchedules
         )
@@ -196,7 +191,7 @@ function Admin() {
 
   const changeSched = (id, schedule) => {
     axios
-      .put(URL + 'schedules/' + id, schedule)
+      .put(URL + 'volunteers/' + id + '/schedules', schedule)
       .then(() => {
         const updatedVolSchedules = volunteers.map((volunteer) => {
           if (volunteer.volunteerID === id) {
@@ -204,7 +199,7 @@ function Admin() {
           }
           return volunteer;
         })
-        setVolunteers(updatedVolSchedules)
+        setVolunteers(updatedVolSchedules);
         getSchedules();
       })
   };

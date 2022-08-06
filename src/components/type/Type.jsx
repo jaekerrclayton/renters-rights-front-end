@@ -3,43 +3,39 @@ import {
     useNavigate,
     useLocation,
     } from "react-router-dom";
-import React from 'react';
-import { getType } from './typeData';
+import React, { useEffect, useState } from 'react';
+import typeDataJson from './evictionTypesData.json';
 import './evictionType.css';
 
+
 const Type = () => {
-    let navigate = useNavigate();
-    let location = useLocation();
-    let params = useParams();
-    let type = getType(parseInt(params.typeId, 10));
+  let { typeId } = useParams();
+  const [typeData, setTypeData] = useState([]);
 
-    return (
-        <main class='type' style={{ padding: "1rem" }}>
-            <h2 class='type-title'>cause : {type.cause}</h2>
-            <h4 class='type-description'>description: {type.description}</h4>
-            <div>
-                <p>landlordNeeds: {type.landlordNeeds}</p>
-            </div>
-            <h4>You may have a defense to eviction if any of the following apply:</h4>
+  useEffect(() => {
+    setTypeData(typeDataJson.find((type) => String(type.typeId) === typeId));
+  }, [typeId])
 
-            <div>
-                {type.renterRights.map((right) => (
-                    <div>
-                        <h1>Defense: {right.defense}</h1>
-                        <p>{right.description}</p>
-                    </div>
-                ) )}
-            </div>
-
-            {/* {type.renterRights.map((nestedInfo) => {
-
-                <h1>DEFENSE: {nestedInfo}</h1>
-                 */}
-                
-            {/* } )} */}
-                {/* <p>rentersRights: {type.rentersRights}</p> */}
-        </main>
-    );
+  console.log(typeData);
+  const rights = typeData['Renter Rights'];
+  return (
+      <main class='type' style={{ padding: "1rem" }}>
+          <h2 class='type-title'>{typeData.Cause}</h2>
+          <h4 class='type-description'>{typeData.Description}</h4>
+          <div>
+              <p>{typeData['Landlord Needs']}</p>
+          </div>
+          <h4>You may have a defense to eviction if any of the following apply:</h4>
+          <div>
+              {rights.map((right) => (
+                  <div>
+                      <h1>{right.Defense}</h1>
+                      <p>{right.Description}</p>
+                  </div>
+              ) )}
+          </div>
+      </main>
+  );
 }
 
 /* <div>
@@ -67,4 +63,4 @@ const Type = () => {
 //     description: "Landlords may not bring a second lawsuit about the same lease violation incident according to the doctrine of res judicata."
 //     }]
 
-export default Type; 
+export default Type;
