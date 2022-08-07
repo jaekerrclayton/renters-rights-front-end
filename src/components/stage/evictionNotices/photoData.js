@@ -2,7 +2,7 @@
 
 
 
-const orderFirstinfo = [
+const order1Info = [
   {
     order_id: 1, 
     title: "Cause of Eviction",
@@ -65,7 +65,7 @@ const orderTwoInfo = [
 
 
 export function getOrderFirstInfo() {
-  return orderFirstinfo;
+  return order1Info;
 
 };
 
