@@ -43,21 +43,9 @@ ReactDOM.render(
         <Route path="" element={<Stages />} />
       </Route>
       <Route path="/eviction-map" element={<Stages />}>
-<<<<<<< HEAD
+
             <Route path="" index />
-            <Route path=":stageId" element={<Stage />} /> 
-=======
-            {/* <Route path="" element={<EvicMap/>} /> */}
-            <Route path=""
-              index
-              // element={
-              //   <main>
-              //     <p>S!!!!!</p>
-              //   </main>
-              // }
-            />
             <Route path=":stage_id" element={<Stage />} /> 
->>>>>>> jae-documents
       </Route>
       <Route path="/blog" element={<Blog />}>
         <Route path="" element={<Posts />} />

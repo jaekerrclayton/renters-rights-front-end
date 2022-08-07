@@ -93,12 +93,13 @@ const Stage = () => {
                   </div>
                   <Accordion>
                         <Accordion.Item eventKey="1">
-                          <Accordion.Header>Causes for Eviction </Accordion.Header>
-                          <Accordion.Body>
-                          <p><Types /></p>
-                          {/* <p>{stage.about_notice}</p>
-                          <p>{stage.additional_resources}</p> */}
-                          </Accordion.Body>
+                        <Accordion.Header>Causes for Eviction </Accordion.Header>
+                                      <Accordion.Body>
+                                      <p><Types /></p>
+                                      <p><TypesAbbr /></p>
+                                      {/* <p>{stage.about_notice}</p>
+                                      <p>{stage.additional_resources}</p> */}
+                                      </Accordion.Body>
                         </Accordion.Item>
 
                   </Accordion>
