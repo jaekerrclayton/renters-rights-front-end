@@ -52,7 +52,7 @@ ReactDOM.render(
               //   </main>
               // }
             />
-            <Route path=":stageId" element={<Stage />} /> 
+            <Route path=":stage_id" element={<Stage />} /> 
       </Route>
       <Route path="/blog" element={<Blog />}>
         <Route path="" element={<Posts />} />

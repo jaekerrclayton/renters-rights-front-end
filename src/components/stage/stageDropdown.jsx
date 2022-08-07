@@ -10,6 +10,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
+import stagesData from './stagesData.json'; 
 
 // React Router makes it easy to read and manipulate 
 // the search params with useSearchParams. It works a 
@@ -17,8 +18,10 @@ import Nav from 'react-bootstrap/Nav';
 // but stores and sets the state 
 // in the URL search params instead of in memory.
 // import evictionStage from "./evictionStage";
+const getStages = () => {
+    return stagesData; 
+}
 
-import { getStages } from "./stagesdata";
 
 const DropdownStages = () => {
     let stages = getStages();

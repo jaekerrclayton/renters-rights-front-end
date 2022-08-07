@@ -1,9 +1,10 @@
 import React from "react";
-import './stages.css';
+// import './stages.css';
 
 import {
         NavLink, 
         Outlet,
+        useSearchParams,
 } from "react-router-dom"; 
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
@@ -11,57 +12,56 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
-
-// React Router makes it easy to read and manipulate 
-// the search params with useSearchParams. It works a 
-// lot like React.useState() 
-// but stores and sets the state 
-// in the URL search params instead of in memory.
-// import evictionStage from "./evictionStage";
-
-import { getStages } from "./stagesdata";
+import stageData from './stagesData.json'; 
 
 
-// import React from "react";
 
-// function Footer() {
-//   return (
-//     <div className="footer">
-//       <footer class="py-5 bg-dark fixed-bottom">
-//         <div class="container">
-//           <p class="m-0 text-center text-white">
-//             link ! news letter
-//           </p>
-//         </div>
-//       </footer>
-//     </div>
-//   );
-// }
-
-// export default Footer;
 
 const Stages = () => {
+
+    const getStages = () => {
+        return stageData; 
+    }
+    
     let stages = getStages();
-    //   let [searchParams, setSearchParams] = useSearchParams();
+    console.log(stages); 
+    
+    
+    let [searchParams, setSearchParams] = useSearchParams();
     return (
-        <div>
-             <Row><Outlet /></Row>
-{/*              
-             <div id="navbar">
-             <nav>
-                    {stages
-                        .map((stage) => ( 
-                        <NavLink 
-                            to={`/eviction-map/${stage.stage_id}`}
-                            key={stage.stage_id}
-                        >
-                            {stage.title}                            
-                        </NavLink>
-                    ))}
-                </nav>
-            </div>  */}
-           
+        <main>
+            
+           <div>
+               <Nav justify variant="tabs" >
+                            {stages
+                                .map((stage) => ( 
+                            <Nav.Item>
+                                <NavLink 
+                                    style={({ isActive }) => ({
+                                        // display: "flex", 
+                                        // margin: "1rem 0",
+                                        color: isActive ? "blue" : "",
+                                        
+                                    })}
+                                    to={`/eviction-map/${stage.stage_id}`}
+                                    key={stage.stage_id}
+                                >
+                                    <h6>{stage.stage_id}</h6>
+                                    {/* <p>{stage.title}</p> */}
+                                    
+                                </NavLink>
+                            </Nav.Item>
+                            
+                            ))}
+                        
+                    </Nav>
+                
+            <Outlet />
+
         </div>
+                {/* <Outlet /> */}
+        
+        </main>
     );
 }
 

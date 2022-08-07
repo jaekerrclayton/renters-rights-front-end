@@ -50,6 +50,16 @@ function OffCanvasNav() {
                                     News Letter 
                                   </NavLink>
 
+
+                                  <NavDropdown
+                                  title="Eviction"
+                                  id={`offcanvasNavbarDropdown-expand-${expand}`}
+                                > 
+                                  <NavLink className="nav-link" to="/map-home">
+                                    Eviction Map
+                                  </NavLink>
+                                 </NavDropdown>
+
 {/* 
                             <Dropdown.Item href="#/action-1" active>
                                 Stages of Eviction
@@ -77,7 +87,8 @@ function OffCanvasNav() {
                                   title="Contact"
                                   id={`offcanvasNavbarDropdown-expand-${expand}`}
                                 > 
-                                  <NavLink className="nav-link" to="/contact">Contact</NavLink>`
+                                
+                                  <NavLink className="nav-link" to="/contact">Contact</NavLink>
 
                                         <NavDropdown.Item href="#action4">
                                           Another action

@@ -1,4 +1,4 @@
-.image-container {
+/* .image-container {
     position: relative; 
     width: 100%; 
 
@@ -13,4 +13,56 @@
     align-items: center;
    
 
+} */
+
+.docCarousel {
+    width: 30em;
+    height: 40em;
+    
+      
+      
+    /* background-color: rgb(204, 180, 112); */
+}
+
+
+
+ #vacate1 { 
+    
+    background-image: url(./evictionNotices/vacate1.jpeg);
+    background-size: contain;
+} 
+
+#vacate2 { 
+    
+    background-image: url(./evictionNotices/vacate2.jpeg);
+    background-size: contain;
+} 
+
+#vacate3 { 
+    
+    background-image: url(./evictionNotices/vacate3.jpeg);
+    background-size: contain;
+} 
+
+#order1 { 
+    
+    background-image: url(./evictionNotices/order1.jpeg);
+    background-size: contain;
+} 
+
+#order2 { 
+    
+    background-image: url(./evictionNotices/order2.jpeg);
+    background-size: contain;
+} 
+
+#judgment1 { 
+    
+    background-image: url(./evictionNotices/judgment1.jpeg);
+    background-size: contain;
+} 
+
+#judgment2{
+    background-image: url(./evictionNotices/judgment2.jpeg);
+    background-size: contain;
 }

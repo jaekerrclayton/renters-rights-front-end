@@ -1,5 +1,7 @@
-import React from "react";
+import React,  {useState} from "react";
 import './stage.css';
+import './stageCarousel'; 
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,9 +9,7 @@ import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
 import DropdownStages from "./stageDropdown";
 import Types from '../type/Types'; 
-
-
-
+import Carousel from 'react-bootstrap/Carousel';
 import {
     Link,
     useParams,
@@ -17,8 +17,23 @@ import {
     useLocation,
   } from "react-router-dom";
 
-import { getStage } from "./stagesdata";
-import OrderFirst from "./evictionNotices/orderFirst";
+import stageData from './stagesData.json'; 
+
+  
+const getStage = (stage_id) => {
+  return stageData.find(
+    (stage) => stage.stage_id === stage_id
+  ); 
+}
+
+
+
+// const stage_docs = stage.documents.map(doc){
+//   if (doc == str(doc))
+// }
+
+// import { getStage } from "./stagesdata";
+// import OrderFirst from "./evictionNotices/orderFirst";
   
 const Stage = () => {
 
@@ -29,104 +44,92 @@ const Stage = () => {
   //   );
   // };
   
-
-  // let photo =
-  
-  // this establishes what the endpoint will be
   let params = useParams();
-  let stage = getStage(parseInt(params.stageId, 10));
+  // let photo =
+  let stage = getStage(parseInt(params.stage_id, 10));
+  console.log(stage); 
+  console.log(stage.title);
+
+  console.log(stage.documents);
+
+  // for (document of doc_list){
+  //   if str(document) == 
+
+  // }
+
+  // const [index, setIndex] = useState(0);
+
+  // const handleSelect = (selectedIndex, e) => {
+  //   setIndex(selectedIndex);
+  // };
+ 
 
   return (
-    
-      <Container>
-        <Row><DropdownStages/></Row>
-          {/* <Row> */}
-                  {/* <Col> */}
-                  {/* <Card style={{ width: '25rem' }}> */}
-                      {/* <Card.Img variant="top" src={stage.photo} /> */}
-                          {/* <Card.Body> */}
-                              {/* <Card.Title>{stage.title}</Card.Title> */}
-                              {/* <Card.Text> */}
-                              {/* <h6>{stage.sub_title}</h6> */}
-                              {/* </Card.Text> */}
-                              {/* <Accordion>
-                                    <Accordion.Item eventKey="1">
-                                      <Accordion.Header>{stage.sub_title}</Accordion.Header>
-                                      <Accordion.Body>
-                                      <p>{stage.info}</p>
-                                      <p>{stage.about_notice}</p>
-                                      <p>{stage.additional_resources}</p>
-                                      </Accordion.Body>
-                                    </Accordion.Item>
+    <main style={{ padding: "1rem" }}>
+      {/* <div><DropdownStages/></div> */}
 
-                              </Accordion> */}
-                              <Accordion>
-                                    <Accordion.Item eventKey="1">
-                                      <Accordion.Header>Causes for Eviction </Accordion.Header>
-                                      <Accordion.Body>
-                                      <p><Types /></p>
-                                      {/* <p>{stage.about_notice}</p>
-                                      <p>{stage.additional_resources}</p> */}
-                                      </Accordion.Body>
-                                    </Accordion.Item>
 
-                              </Accordion>
-                              <Accordion defaultActiveKey={['0']} alwaysOpen>
-                                    <Accordion.Item eventKey="0">
-                                      <Accordion.Header><h4>{stage.title}</h4></Accordion.Header>
-                                      <Accordion.Body>
-                                            <div>
-                                            <Accordion>
-                                                  <Accordion.Item eventKey="1">
-                                                    <Accordion.Header>{stage.sub_title}</Accordion.Header>
-                                                    <Accordion.Body>
-                                                    <p>{stage.info}</p>
-                                                    <p>{stage.about_notice}</p>
-                                                    <p>{stage.additional_resources}</p>
-                                                    {/* <p>{stage.photo}</p> */}
-                                                    </Accordion.Body>
+      <Accordion defaultActiveKey={['0']} alwaysOpen>
+        <Accordion.Item eventKey="0">
+          <Accordion.Header><h4>{stage.title}</h4></Accordion.Header>
+          <Accordion.Body>
+                <div>
+                  <Accordion>
+                        <Accordion.Item eventKey="1">
+                          <Accordion.Header>{stage.sub_title}</Accordion.Header>
+                          <Accordion.Body>
+                          <p>{stage.info}</p>
+                          <p>{stage.about_notice}</p>
+                          <p>{stage.additional_resources}</p>
+                          {/* <p>{stage.photo}</p> */}
+                          </Accordion.Body>
+                      </Accordion.Item>
+                      </Accordion>
 
+                  </div>
+                  <Accordion>
+                        <Accordion.Item eventKey="1">
+                          <Accordion.Header>Causes for Eviction </Accordion.Header>
+                          <Accordion.Body>
+                          <p><Types /></p>
+                          {/* <p>{stage.about_notice}</p>
+                          <p>{stage.additional_resources}</p> */}
+                          </Accordion.Body>
+                        </Accordion.Item>
+
+                  </Accordion>
                   
-                                                </Accordion.Item>
-                                                </Accordion>
-
-                                            </div>
-                                            
-                                            
-                                      
-
-                                            <div class="image-container"> 
-                                            <Card.Img variant="bottom" src={stage.photo} class='document-image' id={stage.photo}/>
-                                            </div> 
 
                                             
-                                            <div><OrderFirst/></div>
-                                      </Accordion.Body>
-                                    </Accordion.Item>
 
-                              </Accordion>
-                              
-                              {/* <Card.Img variant="bottom" src={stage.photo} /> */}
-                             
+          </Accordion.Body>
+      </Accordion.Item>
 
-                            {/* <Card.Title>Eviction Map</Card.Title> */}
-                            {/* <Card.Text>
-                              Some quick example text to build on the card title and make up the
-                              bulk of the card's content.
-                            </Card.Text> */}
-                                {/* <NavLink className="nav-link" to="/map-home">
-                                      <Button variant="primary">Eviction Map</Button>
-                                </NavLink>                */}
-                                
-                      {/* </Card.Body> */}
-                  {/* </Card> */}
-                  {/* </Col> */}
-            
-                    
-          {/* </Row> */}
+</Accordion>
+    
+    <h2>{stage.title}</h2>
+    
+    <Carousel variant="dark" slide={false}>
+        {stage.documents.map((document) => (
+        <Carousel.Item className="docCarousel" id={document}>
+          {/* <img
+            id="{document}"
+            className="d-block w-100"
+            // src='document'
+            alt="doc-pic"
+          /> */}
+        </Carousel.Item>
+         ))
 
-              
-                </Container>
+        }
+       
+      </Carousel>
+
+
+    <p>{stage.sub_title}</p>
+
+    
+  </main>
 
 
    
