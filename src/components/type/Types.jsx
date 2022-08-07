@@ -2,8 +2,7 @@ import React from 'react';
 import {
     NavLink, 
     Outlet,
-} from "react-router-dom"; 
-import { getTypes } from './typeData';
+} from "react-router-dom";
 import typeDataJson from './evictionTypesData.json';
 
 const Types = () => {
@@ -26,11 +25,10 @@ const Types = () => {
                                 margin: "1rem 0",
                                 color: isActive ? "red" : "",
                                 })}
-                            to={{pathname:`/eviction-types/${type.typeId}`, 
-                                typeProps:{typeId:type.typeId, cause:type.Cause},}}
+                            to={`/eviction-types/${type.typeId}`}
                             key={type.typeId}
                         >
-                            {type.Cause}
+                            {type.cause}
                         </NavLink>
                     ))}
         </nav>

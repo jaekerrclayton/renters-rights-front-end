@@ -1,9 +1,9 @@
 [
     {"typeId": "1",
-    "Cause": "Termination of Lease",
-    "Description":"The landlord can evict tenant upon exiration of lease term.",
-    "Landlord Needs": "The landlord is required to provide the tenant with a Notice to Vacate.",
-    "Renter Rights":[
+    "cause": "Termination of Lease",
+    "description":"The landlord can evict tenant upon exiration of lease term.",
+    "landlordNeeds": "The landlord is required to provide the tenant with a Notice to Vacate.",
+    "renterRights":[
         {"Defense":"Inadequate Notice to Vacate", 
         "Description": "The Notice to Vacate must allow at least five days for the tenant to vacate the property. If a Rule for Possesion is filed before the sixth day after delivery of the Notice to Vacate, the tenant may be able to delay the eviction based on the inadequate notice."},
         {"Defense":"Landlord Accepts Rent After Notice to Vacate", 
@@ -11,19 +11,19 @@
         ]
     },
     {"typeId":"2",
-    "Cause":"Lease Violation",
-    "Description" : "A landlord can start an eviction when a tenant has violated the lease.",
-    "Landlord Needs": "The landlord needs to provide evidence that a tenant has violated the lease. Some leases also require the landlord provide a warning and time to correct a lease violation before bringing an eviction.",
-    "Renter Rights" : [
-        {"Defense":"Res Judicata"},
-        {"Description":"Landlords may not bring a second lawsuit about the same lease violation incident according to the doctrine of res judicata."}
+    "cause":"Lease Violation",
+    "description" : "A landlord can start an eviction when a tenant has violated the lease.",
+    "landlordNeeds": "The landlord needs to provide evidence that a tenant has violated the lease. Some leases also require the landlord provide a warning and time to correct a lease violation before bringing an eviction.",
+    "renterRights" : [
+        {"Defense":"Res Judicata",
+        "Description":"Landlords may not bring a second lawsuit about the same lease violation incident according to the doctrine of res judicata."}
         ]
     },
     {"typeId": "3",
-    "Cause" : "Nonpayment",
-    "Description" : "A landlord can start an eviction when a tenant has failed to pay rent on time.",
-    "Landlord Needs" : "",
-    "Renter Rights" : [
+    "cause" : "Nonpayment",
+    "description" : "A landlord can start an eviction when a tenant has failed to pay rent on time.",
+    "landlordNeeds" : "",
+    "renterRights" : [
         {"Defense":"Tenant Paid Rent",
         "Description":"If you paid rent on time or the landlord accepted rent after the Notice to Vacate, you have a defense to eviction."},
         {"Defense":"Landlord Refused Rent", 
@@ -37,10 +37,10 @@
         ]
     },
     {"typeId":"4",
-    "Cause":"No Cause",
-    "Description":"The landlord does not give a cause for eviction.",
-    "Landlord Needs" : "",
-    "Renter Rights" : [
+    "cause":"No Cause",
+    "description":"The landlord does not give a cause for eviction.",
+    "landlordNeeds" : "",
+    "renterRights" : [
         {"Defense":"Active Lease",
         "Description":"A landlord cannot legally evict you before the expiration of your written lease without a cause."}
         ]
