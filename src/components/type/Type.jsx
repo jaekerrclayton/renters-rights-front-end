@@ -7,9 +7,9 @@ import './evictionType.css';
 import Defense from "./Defense";
 
 
-const Type = () => {
-    let { typeId } = useParams();
+const Type = (id) => {
     const [typeData, setTypeData] = useState({'renterRights':[]});
+    let { typeId } = useParams();
 
     useEffect(() => {
         setTypeData(typeDataJson.find((type) => type.typeId === typeId));

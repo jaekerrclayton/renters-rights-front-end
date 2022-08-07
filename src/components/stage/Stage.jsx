@@ -7,6 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
 import DropdownStages from "./stageDropdown";
 import Types from '../type/Types'; 
+import TypesAbbr from '../type/TypesAbbr';
 
 
 
@@ -64,7 +65,7 @@ const Stage = () => {
                                     <Accordion.Item eventKey="1">
                                       <Accordion.Header>Causes for Eviction </Accordion.Header>
                                       <Accordion.Body>
-                                      <p><Types /></p>
+                                      <p><TypesAbbr /></p>
                                       {/* <p>{stage.about_notice}</p>
                                       <p>{stage.additional_resources}</p> */}
                                       </Accordion.Body>

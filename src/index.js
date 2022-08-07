@@ -43,15 +43,7 @@ ReactDOM.render(
         <Route path="" element={<Stages />} />
       </Route>
       <Route path="/eviction-map" element={<Stages />}>
-            {/* <Route path="" element={<EvicMap/>} /> */}
-            <Route path=""
-              index
-              // element={
-              //   <main>
-              //     <p>S!!!!!</p>
-              //   </main>
-              // }
-            />
+            <Route path="" index />
             <Route path=":stageId" element={<Stage />} /> 
       </Route>
       <Route path="/blog" element={<Blog />}>
