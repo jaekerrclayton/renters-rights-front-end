@@ -1,0 +1,103 @@
+[
+
+    {   "resourceId": 1, 
+        "type": "Legal Aid", 
+        "about_resource": "general summary of what legal aid can offer", 
+        "resource_list": [
+
+                            {   "resource_id": 1,
+                                "title": "SLLS", 
+                                "phone_number": "987298729",
+                                "email": "this@email.com",
+                                "summary": "quick summary",
+                                "about": "can offer legal aid"
+                            
+                            },
+                            {   "resource_id": 2,
+                                "title": "LAFHAC", 
+                                "phone_number": "987298729",
+                                "email": "another@email.com",
+                                "summary": "quick summary",
+                                "about": "can offer legal aid and to who"
+                            
+                            }
+                        ]
+
+
+    },
+    {   "resourceId": 2, 
+        "type": "Mutual Aid", 
+        "about_resource": "general summary of what mutual aid can offer", 
+        "resource_list": [
+
+                            {   "resource_id": 1,
+                                "title": "SLLS", 
+                                "phone_number": "987298729",
+                                "email": "this@email.com",
+                                "summary": "quick summary",
+                                "about": "can offer legal aid"
+                            
+                            },
+                            {   "resource_id": 2,
+                                "title": "LAFHAC", 
+                                "phone_number": "987298729",
+                                "email": "another@email.com",
+                                "summary": "quick summary",
+                                "about": "can offer legal aid and to who"
+                            
+                            }
+                        ]
+
+    },
+    {   "resourceId": 3, 
+        "type": "Financial Aid", 
+        "about_resource": "general summary of what financial aid can offer", 
+        "resource_list": [
+
+                            {   "resource_id": 1,
+                                "title": "SLLS", 
+                                "phone_number": "987298729",
+                                "email": "this@email.com",
+                                "summary": "quick summary",
+                                "about": "can offer legal aid"
+                            
+                            },
+                            {   "resource_id": 2,
+                                "title": "a thing for $", 
+                                "phone_number": "987298729",
+                                "email": "another@email.com",
+                                "summary": "quick summary",
+                                "about": "can offer legal aid and to who"
+                            
+                            }
+                        ]
+
+    }, 
+    {   "resourceId": 4, 
+        "type": "Moving Support", 
+        "about_resource": "general summary of how to get moving support ", 
+        "resource_list": [
+
+                            {   "resource_id": 1,
+                                "title": "SLLS", 
+                                "phone_number": "987298729",
+                                "email": "this@email.com",
+                                "summary": "quick summary",
+                                "about": "can offer legal aid"
+                            
+                            },
+                            {   "resource_id": 2,
+                                "title": "a thing for $", 
+                                "phone_number": "987298729",
+                                "email": "another@email.com",
+                                "summary": "quick summary",
+                                "about": "can offer legal aid and to who"
+                            
+                            }
+                        ]
+
+    }
+
+
+
+]

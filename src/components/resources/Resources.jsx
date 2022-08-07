@@ -10,10 +10,18 @@ import {
 // but stores and sets the state 
 // in the URL search params instead of in memory.
 // import Invoice from "./invoice";
-import { getResources } from "./resourcedata";
+// import { getResources } from "./resourcedata";
+import resourceData from './resourceData.json'; 
+
+
 
 const Resources = () => {
-let resources = getResources();
+  const getResources = () => {
+    return resourceData; 
+  }
+let resources = getResources(); 
+console.log(resources); 
+
 let [searchParams, setSearchParams] = useSearchParams();
 return (
   <main>
@@ -40,7 +48,7 @@ return (
           .filter((resource) => {
             let filter = searchParams.get("filter");
             if (!filter) return true;
-            let name = resource.name.toLowerCase();
+            let name = resource.type.toLowerCase();
             return name.startsWith(filter.toLowerCase());
           })
           .map((resource) => ( 
@@ -52,10 +60,10 @@ return (
                   margin: "1rem 0",
                   color: isActive ? "red" : "",
                 })}
-                to={`/resources/${resource.number}`}
-                key={resource.number}
+                to={`/resources/${resource.resourceId}`}
+                key={resource.resourceId}
             >
-                {resource.name}
+                {resource.type}
             </NavLink>
         ))}
     </nav>
