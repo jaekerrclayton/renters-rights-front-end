@@ -13,7 +13,7 @@ import {
   Resource,
   Resources,
   Contact,
-  Blog,
+  Admin, 
   Posts,
   Post,
   EvicMap,
@@ -39,6 +39,7 @@ ReactDOM.render(
             <Route path=":resourceId" element={<Resource />} />
           </Route>
       <Route path="/contact" element={<Contact />} />
+      <Route path="/admin" element={<Admin />} />
       <Route path="/map-home" element={<EvicMap />}>
         <Route path="" element={<Stages />} />
       </Route>
@@ -47,10 +48,10 @@ ReactDOM.render(
             <Route path="" index />
             <Route path=":stage_id" element={<Stage />} /> 
       </Route>
-      <Route path="/blog" element={<Blog />}>
+      {/* <Route path="/blog" element={<Blog />}>
         <Route path="" element={<Posts />} />
         <Route path=":postSlug" element={<Post />} />
-      </Route>
+      </Route> */}
       <Route path="eviction-types" element={<Types />}>
           <Route
               index
@@ -65,7 +66,7 @@ ReactDOM.render(
             <Route path=":typeId" element={<Type />} />
           </Route>
     </Routes>
-    {/* <Footer /> */}
+    <Footer />
   </Router>,
 
   document.getElementById("root")

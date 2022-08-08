@@ -17,7 +17,7 @@ function OffCanvasNav() {
   return (
     <>
       {[false].map((expand) => (
-        <Navbar key={expand} bg="dark" variant='dark' expand={expand} className="mb-5">
+        <Navbar  key={expand} bg="dark" variant='dark' expand={expand} className="mb-5">
           <Container fluid>
                 <NavLink className="navbar-brand" to="/">
                   Renters Rights : New Orleans, Louisiana
@@ -46,8 +46,8 @@ function OffCanvasNav() {
                                   <NavLink className="nav-link" to="/resources">
                                     Resources
                                   </NavLink>
-                                  <NavLink className="nav-link" to="/blog">
-                                    News Letter 
+                                  <NavLink className="nav-link" to="/contact">
+                                    Contact
                                   </NavLink>
 
 
@@ -84,18 +84,19 @@ function OffCanvasNav() {
 
                           {/* DROPDOWN LIST FOR NAV */}
                                 <NavDropdown
-                                  title="Contact"
+                                  title="For Volunteers"
                                   id={`offcanvasNavbarDropdown-expand-${expand}`}
                                 > 
                                 
-                                  <NavLink className="nav-link" to="/contact">Contact</NavLink>
+                                  {/* <NavLink className="nav-link" to="/contact">Contact</NavLink> */}
 
                                         <NavDropdown.Item href="#action4">
-                                          Another action
+                                          Volunteer With Us ! 
                                         </NavDropdown.Item>
                                         <NavDropdown.Divider />
                                         <NavDropdown.Item href="#action5">
-                                          Something else here
+                          
+                                          <NavLink className="nav-link" to="/admin">Admin</NavLink>
                                         </NavDropdown.Item>
                             </NavDropdown>
                             </Nav>

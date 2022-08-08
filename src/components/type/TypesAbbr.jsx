@@ -26,20 +26,20 @@ const TypesAbbr = () => {
     return (
         <main>
         <h2>Causes for Eviction</h2>
-        <div style={{ display: "flex "}}>
+        {/* <div style={{ display: "flex "}}> */}
         <Row>
-            <nav style={{
+            {/* <nav style={{
                 borderRight: "solid 1px",
                 padding: "1rem",
             }}
-            >
+            > */}
                 {types
                     .map((type) => ( 
                         <button value={type.typeId} onClick={displayType}>
                             {type.cause}
                         </button>
                     ))}
-            </nav>
+            {/* </nav> */}
         </Row>
         <Row>
             <div>
@@ -60,7 +60,7 @@ const TypesAbbr = () => {
                 <p style={{display: displayTypes[4] ? 'none': ''}}> <Type /></p> */}
             </div>
         </Row>
-    </div>
+    {/* </div> */}
     </main>
     );
 }
