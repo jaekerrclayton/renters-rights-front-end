@@ -1,26 +1,20 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-// import VolunteerList from "./VolunteerList";
 import Volunteers from './VolunteerList'; 
 import NewVolForm from "./NewVolForm";
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ScheduleList from './ScheduleList';
-import Accordion from 'react-bootstrap/Accordion';
-import Form from 'react-bootstrap/Form';
 import ScheduleChangeDropDown from "./ScheduleChangeDropdown";
 
 export const URL='https://renters-rights-back-end.herokuapp.com/admin/';
 
 function Admin() {
   const [volunteers, setVolunteers] = useState([]);
-  const [volunteer, setVolunteer] = useState();
   const [schedules, setSchedules] = useState({'display':false, 'schedules':[{'sun-am':[], 'sun-pm':[], 'mon-am':[], 'mon-pm':[], 'tue-am':[], 'tue-pm':[], 'wed-am':[], 'wed-pm':[], 'thu-am':[], 'thu-pm':[], 'fri-am':[], 'fri-pm':[], 'sat-am':[], 'sat-pm':[]}]});
   const [numberOnline, setNumberOnline] = useState(0);
 
 
-  // admin dataManager.get volunteers 
   useEffect(() => {
     axios 
       .get(URL + 'volunteers')
@@ -209,45 +203,36 @@ function Admin() {
 
   return (
     <section>
-      <Row>
-        <h1>Volunteers</h1>
-      </Row>
         <Row>
-          <Col><h4>{numberOnline} {v} online now!</h4></Col>
+          <Col><h4 className='section_title'>{numberOnline} {v} online now!</h4></Col>
         <Row/>
       </Row>
       <Row>
-        <Col>
-          <Accordion>
-            <Accordion.Item eventKey="1">
-                  <Accordion.Header>All Current Volunteers</Accordion.Header>
-                  <Accordion.Body>
-                          <div>
-                          <Volunteers 
-                                volunteers={volunteers}
-                                onEdit={editVol}
-                                onDelete={deleteVol}
-                                changeStatus={changeStatus}
-                          /> 
-                          </div>
-                  </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-        </Col>
-        <Col>
+      <Col>
           <Row>
-            <Col>
-              <button onClick={getSchedules}>{scheduleButton} Schedules</button>
-            </Col>
-            <Col>
-              <ScheduleChangeDropDown volunteers={volunteers} changeSchedule={changeSched}/>
-            </Col>
+            <h4>Volunteers</h4>
           </Row>
           <Row>
-            <div style={{display: schedules.display? '' : 'none'}}><ScheduleList props={schedules.schedules}/></div>
+          <Volunteers 
+                volunteers={volunteers}
+                onEdit={editVol}
+                onDelete={deleteVol}
+                changeStatus={changeStatus}
+          />
           </Row>
           <Row>
             <NewVolForm onAddVolCallback={addNewVol}/> 
+          </Row>
+        </Col>
+        <Col>
+          <Row>
+            <h4>Schedules</h4>
+          </Row>
+          <Row>
+            <ScheduleList />
+          </Row>
+          <Row>
+            <ScheduleChangeDropDown className='section_title' volunteers={volunteers} changeSchedule={changeSched}/>
           </Row>
         </Col>
       </Row>

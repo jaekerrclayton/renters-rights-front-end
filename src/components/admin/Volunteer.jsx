@@ -19,7 +19,6 @@ const Volunteer = (props, onEditVolCallback, onDeleteVolCallback, changeStatus) 
 
     return (
         <div>
-            <Row><h3>{props.name}</h3></Row>
             <Row>
                 <Col>
                     <b>id:</b> 
