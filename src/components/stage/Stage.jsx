@@ -13,6 +13,7 @@ import Types from '../type/Types';
 import TypesAbbr from '../type/TypesAbbr';
 import VacateCarousel from "./evictionNotices/vacate/vacateCarousel";
 import JudgmentCarousel from './evictionNotices/judgment/judgmentCarousel'; 
+import OrderCarousel from "./evictionNotices/order/orderCarousel";
 
 
 
@@ -134,6 +135,7 @@ const Stage = () => {
 
       <div><VacateCarousel/></div>
       <div><JudgmentCarousel/></div>
+      <div><OrderCarousel/></div>
 
 
     <p>{stage.sub_title}</p>
