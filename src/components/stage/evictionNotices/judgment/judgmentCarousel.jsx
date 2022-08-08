@@ -6,7 +6,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import Carousel from 'react-bootstrap/Carousel';
 // import './orderfirst.css'; 
-import { getJudgmentDocs} from '../../../data/english_data/judgementData'; 
+import documentData from '../../../data/english_data/documentData'; 
 import './judgmentCarousel.css'
 
 
@@ -15,7 +15,9 @@ import './judgmentCarousel.css'
 
 
 const JudgmentCarousel = () => {
-    let judgmentDocs = getJudgmentDocs(); 
+
+
+    let judgmentDocs = documentData[5]; 
   
 
   return (

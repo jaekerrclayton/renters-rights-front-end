@@ -1,24 +1,20 @@
 import React from "react";
-import vacateData from "../../../data/english_data/vacateData"; 
+import vacateData from "../../../data/english_data/documentData"; 
 import { Outlet } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import Carousel from 'react-bootstrap/Carousel';
-// import './orderfirst.css'; 
-import { getvacateDocs} from '../../../data/english_data/vacateData'; 
+import documentData from '../../../data/english_data/documentData'; 
 import './vacateCarousel.css'; 
 
 
-// import {getOrderFirstInfo } from './photoData'; 
-
-
 const VacateCarousel = () => {
-    let vacateDocs = getvacateDocs(); 
+    let vacateDocs = documentData[1]; 
   
 
   return (
-    // <div>
+
 
     <div className="col-sm-12"class="my-container">
     <Carousel variant="dark" slide={false}>

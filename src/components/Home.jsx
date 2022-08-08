@@ -6,8 +6,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import order2 from './data/documents/order2.jpeg';
-import evictionMap from './stage/evictionNotices/evictionMap.png'
-import repairs from './stage/evictionNotices/repairs.png'
+import evictionMap from './data/documents/evictionMap.png'
+import repairs from './data/documents/repairs.png'
 
 
 

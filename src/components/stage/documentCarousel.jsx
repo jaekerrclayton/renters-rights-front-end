@@ -1,26 +1,17 @@
 import React from "react";
-// import vacateData from "./vacateBoxData"; 
 import { Outlet } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import Carousel from 'react-bootstrap/Carousel';
-// import './orderfirst.css'; 
-import { getJudgmentDocs} from '../data/english_data/judgementData'; 
-import {getOrderData } from '../data/english_data/orderData'; 
-import {getvacateDocs } from '../data/english_data/vacateData'; 
-// import './judgmentCarousel.css'
-
-
-
-// import {getOrderFirstInfo } from './photoData'; 
+import documentData from '../data/english_data/documentData'; 
 
 
 const DocumentCarousel = ({stage_id}) => {
     console.log(stage_id)
-    let vacateDocs = getvacateDocs();
-    let orderDocs = getOrderData();  
-    let judgmentDocs = getJudgmentDocs(); 
+    let vacateDocs = documentData[1];
+    let orderDocs = documentData[2];  
+    let judgmentDocs = documentData[5]; 
     let documents = []
   if (stage_id === 1){
       documents = vacateDocs; 

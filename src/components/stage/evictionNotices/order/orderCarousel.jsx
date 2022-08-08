@@ -5,21 +5,20 @@ import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import Carousel from 'react-bootstrap/Carousel';
-// import './orderfirst.css'; 
-import { getOrderData} from '../../../data/english_data/orderData'; 
+
+import documentData from '../../../data/english_data/documentData';  
 import './orderCarousel.css'
 
 
 
-// import {getOrderFirstInfo } from './photoData'; 
 
 
 const OrderCarousel = () => {
-    let orderDocs = getOrderData(); 
+    let orderDocs = documentData[2]; 
   
 
   return (
-    // <div>
+
 
     <div className="col-sm-12"class="my-container">
     <Carousel variant="dark" slide={false}>
