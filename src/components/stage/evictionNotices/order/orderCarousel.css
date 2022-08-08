@@ -17,7 +17,7 @@
 }
 
 
-.my-container #btn-1 {
+.my-container #btn-17 {
     position: absolute; 
     top: 25%; 
     left: 32%; 
@@ -32,7 +32,7 @@
 
 
 
-.my-container #btn-2{
+.my-container #btn-18{
     position: absolute; 
     top: 25%; 
     left: 70%; 
@@ -46,7 +46,7 @@
 }
 
 
-.my-container #btn-3{
+.my-container #btn-19{
     position: absolute; 
     top: 50%; 
     left: 50%; 
@@ -59,7 +59,7 @@
 
 }
 
-.my-container #btn-4{
+.my-container #btn-20{
     position: absolute; 
     top: 84%; 
     left: 49%; 
@@ -72,7 +72,7 @@
 
 }
 
-.my-container #btn-5{
+.my-container #btn-21{
     position: absolute; 
     top: 11%; 
     left: 48%; 
@@ -84,7 +84,7 @@
     border-radius: 1rem; 
 
 }
-.my-container #btn-6{
+.my-container #btn-22{
     position: absolute; 
     top: 48%; 
     left: 49%; 
@@ -96,7 +96,7 @@
     border-radius: 1rem; 
 
 }
-.my-container #btn-7{
+.my-container #btn-23{
     position: absolute; 
     top: 75%; 
     left: 49%; 
