@@ -6,6 +6,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import order2 from './stage/evictionNotices/order2.jpeg';
+import evictionMap from './stage/evictionNotices/evictionMap.png'
+import repairs from './stage/evictionNotices/repairs.png'
+
 
 
 
@@ -18,7 +21,7 @@ function Home() {
           <Row>
             <Col>
                   <Card style={{ width: '18rem'}}>
-                      <Card.Img variant="top" src={order2} />
+                      <Card.Img variant="top" src={evictionMap} />
                           <Card.Body>
                             <Card.Title>Eviction Map</Card.Title>
                             <Card.Text>
@@ -48,7 +51,7 @@ function Home() {
             </Col>
             <Col>
                   <Card style={{ width: '18rem' }}>
-                      <Card.Img variant="top" src="https://picsum.photos/500/300?img=1" />
+                      <Card.Img variant="top" src={repairs} />
                           <Card.Body>
                             <Card.Title>Contact</Card.Title>
                             <Card.Text>
