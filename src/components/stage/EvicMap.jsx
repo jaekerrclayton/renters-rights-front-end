@@ -11,9 +11,10 @@ import ControlledCarousel from "./evictionDocsCarousel";
 const EvicMap = () => {
   return (
 
-      <Container>
+      <Container style={{ width: '100rem' }}>
         <h6>Please select the photo most similar to the document you have received </h6>
-          <Row style={{ width: '30rem' }}><ControlledCarousel /></Row>  
+          <Row><ControlledCarousel /></Row>
+          <Row><h1>Some stuff</h1></Row>  
            
 
 

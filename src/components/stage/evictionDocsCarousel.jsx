@@ -64,9 +64,18 @@ const EvictionDocuments = () => {
                           
       
                           <Carousel.Item>
-                            <NavLink className="nav-link" to={`/eviction-map/${document.stage_id}`}>
+
+                              <div className="d-grid gap-2">
+                                  <Button variant="outline-secondary" size="lg">
+                                  <NavLink className="nav-link" to={`/eviction-map/${document.stage_id}`}>
+                                      {document.stage_title}
+                                    </NavLink>
+                                  </Button>
+                              </div>
+                            
+                            {/* <NavLink className="nav-link" to={`/eviction-map/${document.stage_id}`}>
                                 <Button>{document.stage_title}</Button>
-                            </NavLink>
+                            </NavLink> */}
                             
                               <img
                                     className="d-block w-100"

@@ -1,6 +1,6 @@
 import React,  {useState} from "react";
 import './stage.css';
-import './stageCarousel'; 
+// import './stageCarousel'; 
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -11,9 +11,6 @@ import Carousel from 'react-bootstrap/Carousel';
 import DropdownStages from "./stageDropdown";
 import Types from '../type/Types'; 
 import TypesAbbr from '../type/TypesAbbr';
-import VacateCarousel from "./evictionNotices/vacate/vacateCarousel";
-import JudgmentCarousel from './evictionNotices/judgment/judgmentCarousel'; 
-import OrderCarousel from "./evictionNotices/order/orderCarousel";
 import DocumentCarousel from './documentCarousel'; 
 
 

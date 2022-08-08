@@ -1,0 +1,342 @@
+.my-container{
+    position:relative;
+    width: auto; 
+    height: auto; 
+    background-color: rgba(67, 104, 141, 0.678);
+    /* justify-content: center; */
+
+
+}
+
+#doc-image{
+    padding: 10%;
+    width: 100%;
+    height: auto;
+    margin: auto; 
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+
+/* VACATE BUTTONS */
+
+.my-container #btn-1 {
+    position: absolute; 
+    top: 16%; 
+    left: 30%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 3% 12%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+
+
+.my-container #btn-2{
+    position: absolute; 
+    top: 17%; 
+    left: 67%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 5% 10%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+
+.my-container #btn-3{
+    position: absolute; 
+    top: 36%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 8% 33%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-4{
+    position: absolute; 
+    top: 26%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 3% 15%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+
+.my-container #btn-5{
+    position: absolute; 
+    top: 44%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 10% 32%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-6{
+    position: absolute; 
+    top: 23%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 8% 29%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-7{
+    position: absolute; 
+    top: 44%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 10% 32%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-8{
+    position: absolute; 
+    top: 67%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 8% 32%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+
+
+/* JUDGMENT CAROUSEL BUTTONS  */
+
+
+.my-container #btn-9 {
+    position: absolute; 
+    top: 20%; 
+    left: 70%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 150, 18, 0.349);
+    padding: 8% 18%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+
+
+.my-container #btn-10{
+    position: absolute; 
+    top: 48%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 10% 37%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+
+.my-container #btn-11{
+    position: absolute; 
+    top: 62%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 5% 37%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-12{
+    position: absolute; 
+    top: 18%; 
+    left: 73%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 10% 14%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+
+.my-container #btn-13{
+    position: absolute; 
+    top: 40%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 4% 38%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-14{
+    position: absolute; 
+    top: 52%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 3% 38%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-15{
+    position: absolute; 
+    top: 63%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 4% 38%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-16{
+    position: absolute; 
+    top: 74%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 2% 38%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+
+
+/* ORDER CAROUSEL BUTTONS */
+
+
+
+.my-container #btn-17 {
+    position: absolute; 
+    top: 25%; 
+    left: 32%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(175, 50, 50, 0);
+    padding: 10% 20%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+
+
+.my-container #btn-18{
+    position: absolute; 
+    top: 25%; 
+    left: 70%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(175, 50, 50, 0);
+    padding: 5% 10%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+
+.my-container #btn-19{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(175, 50, 50, 0);
+    padding: 11% 35%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-20{
+    position: absolute; 
+    top: 84%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(175, 50, 50, 0);
+    padding: 8% 35%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-21{
+    position: absolute; 
+    top: 11%; 
+    left: 48%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(175, 50, 50, 0);
+    padding: 3% 31%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+.my-container #btn-22{
+    position: absolute; 
+    top: 48%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(175, 50, 50, 0);
+    padding: 14% 32%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+.my-container #btn-23{
+    position: absolute; 
+    top: 75%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(175, 50, 50, 0);
+    padding: 9% 33%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
