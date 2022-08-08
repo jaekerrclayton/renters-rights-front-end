@@ -48,23 +48,23 @@ const orderData = [
             [
                     {
                     info_id: 21,
-                    title: "",
-                    sub_title: "",
-                    placement: "",
+                    title: "asdfasd",
+                    sub_title: "asdfasd",
+                    placement: "top",
                 
                     },
                     {
                     info_id: 22,
-                    title: "", 
-                    sub_title: "",
-                    placement: "",
+                    title: "asdf", 
+                    sub_title: "asdfasdf",
+                    placement: "bottom",
                     
                     },
                     {
                     info_id: 23,
-                    title: "",
-                    sub_title: "",
-                    placement: "",
+                    title: "asdfad",
+                    sub_title: "asdf",
+                    placement: "top",
                     
                     }
             

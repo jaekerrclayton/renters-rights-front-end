@@ -10,6 +10,7 @@ const judgmentData = [
 
     
     {   id: judgment1, 
+        stage_id: 4, 
         docInfo : [
                 {info_id: 9,
                 title: "Your name versus your landlord", 
@@ -30,7 +31,8 @@ const judgmentData = [
             }
                 ]
     } , 
-    {   id: judgment2, 
+    {   id: judgment2,
+        stage_id: 4,  
         docInfo: [
                     {
                     info_id: 12, 

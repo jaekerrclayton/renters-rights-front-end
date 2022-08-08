@@ -14,6 +14,7 @@ import TypesAbbr from '../type/TypesAbbr';
 import VacateCarousel from "./evictionNotices/vacate/vacateCarousel";
 import JudgmentCarousel from './evictionNotices/judgment/judgmentCarousel'; 
 import OrderCarousel from "./evictionNotices/order/orderCarousel";
+import DocumentCarousel from './documentCarousel'; 
 
 
 
@@ -116,26 +117,13 @@ const Stage = () => {
 </Accordion>
     
     <h2>{stage.title}</h2>
-    
-    <Carousel variant="dark" slide={false}>
-        {stage.documents.map((document) => (
-        <Carousel.Item className="docCarousel" id={document}>
-          {/* <img
-            id="{document}"
-            className="d-block w-100"
-            // src='document'
-            alt="doc-pic"
-          /> */}
-        </Carousel.Item>
-         ))
 
-        }
-       
-      </Carousel>
+    <DocumentCarousel stage_id={stage.stage_id}  />
 
-      <div><VacateCarousel/></div>
+
+      {/* <div><VacateCarousel/></div>
       <div><JudgmentCarousel/></div>
-      <div><OrderCarousel/></div>
+      <div><OrderCarousel/></div> */}
 
 
     <p>{stage.sub_title}</p>
