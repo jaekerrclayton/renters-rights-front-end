@@ -9,6 +9,8 @@ import vacate2 from './evictionNotices/vacate2.jpeg';
 import vacate3 from './evictionNotices/vacate3.jpeg';
 import order1 from './evictionNotices/order1.jpeg';
 import order2 from './evictionNotices/order2.jpeg';
+import judgment1 from './evictionNotices/judgment1.jpeg';
+import judgment2 from './evictionNotices/judgment1.jpeg';
 
 
 

@@ -1,0 +1,128 @@
+.my-container{
+    position:relative;
+    width: auto; 
+    height: auto; 
+    background-color: rgba(67, 104, 141, 0.678);
+    /* justify-content: center; */
+
+
+}
+
+#doc-image{
+    padding: 10%;
+    width: 100%;
+    height: auto;
+    margin: auto; 
+    justify-content: center;
+    /* text-align: center; */
+
+}
+
+
+.my-container #btn-1 {
+    position: absolute; 
+    top: 16%; 
+    left: 30%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 3% 12%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+
+
+.my-container #btn-2{
+    position: absolute; 
+    top: 17%; 
+    left: 67%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 5% 10%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+
+.my-container #btn-3{
+    position: absolute; 
+    top: 36%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 8% 33%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-4{
+    position: absolute; 
+    top: 26%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 3% 15%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+
+.my-container #btn-5{
+    position: absolute; 
+    top: 44%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 10% 32%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-6{
+    position: absolute; 
+    top: 23%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 8% 29%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-7{
+    position: absolute; 
+    top: 44%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 10% 32%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-8{
+    position: absolute; 
+    top: 67%; 
+    left: 49%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(238, 173, 76, 0.288);
+    padding: 8% 32%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}

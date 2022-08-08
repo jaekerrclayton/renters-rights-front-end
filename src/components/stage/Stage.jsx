@@ -11,6 +11,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import DropdownStages from "./stageDropdown";
 import Types from '../type/Types'; 
 import TypesAbbr from '../type/TypesAbbr';
+import VacateCarousel from "./evictionNotices/vacateInformation/vacateCarousel";
 
 
 
@@ -129,6 +130,8 @@ const Stage = () => {
         }
        
       </Carousel>
+
+      <div><VacateCarousel/></div>
 
 
     <p>{stage.sub_title}</p>
