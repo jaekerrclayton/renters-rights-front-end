@@ -6,8 +6,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ControlledCarousel from "./evictionDocsCarousel";
-// import DropdownStages from "./stageDropdown";
-import PopoverPositionedExample from './poppppp';
+
+
 
 const EvicMap = () => {
   return (
@@ -16,8 +16,8 @@ const EvicMap = () => {
         <h6>Please select the photo most similar to the document you have received </h6>
           <Row style={{ width: '30rem' }}><ControlledCarousel /></Row>  
            
-          {/* <Row><DropdownStages/></Row> */}
-          <Row><PopoverPositionedExample/></Row> 
+
+
     
       </Container>
 

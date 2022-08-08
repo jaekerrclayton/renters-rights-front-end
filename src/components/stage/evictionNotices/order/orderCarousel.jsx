@@ -6,7 +6,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import Carousel from 'react-bootstrap/Carousel';
 // import './orderfirst.css'; 
-import { getOrderData} from './orderData'; 
+import { getOrderData} from '../../../data/english_data/orderData'; 
 import './orderCarousel.css'
 
 

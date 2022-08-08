@@ -1,12 +1,12 @@
 import React from "react";
-import vacateData from "./vacateData"; 
+import vacateData from "../../../data/english_data/vacateData"; 
 import { Outlet } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import Carousel from 'react-bootstrap/Carousel';
 // import './orderfirst.css'; 
-import { getvacateDocs} from './vacateData'; 
+import { getvacateDocs} from '../../../data/english_data/vacateData'; 
 import './vacateCarousel.css'; 
 
 

@@ -1,5 +1,5 @@
-import order1 from '../order1.jpeg';
-import order2 from '../order2.jpeg'; 
+import order1 from '../documents/order1.jpeg';
+import order2 from '../documents/order2.jpeg'; 
 
 
 

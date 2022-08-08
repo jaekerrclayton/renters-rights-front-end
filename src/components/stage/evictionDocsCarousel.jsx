@@ -4,13 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink } from "react-router-dom";
 
 // import courtVacate from './evictionNotices/5d-court-vacate.jpg';
-import vacate1 from './evictionNotices/vacate1.jpeg';
-import vacate2 from './evictionNotices/vacate2.jpeg';
-import vacate3 from './evictionNotices/vacate3.jpeg';
-import order1 from './evictionNotices/order1.jpeg';
-import order2 from './evictionNotices/order2.jpeg';
-import judgment1 from './evictionNotices/judgment1.jpeg';
-import judgment2 from './evictionNotices/judgment1.jpeg';
+import vacate1 from '../data/documents/vacate1.jpeg';
+import vacate2 from '../data/documents/vacate2.jpeg';
+import vacate3 from '../data/documents/vacate3.jpeg';
+import order1 from '../data/documents/order1.jpeg';
+import order2 from '../data/documents/order2.jpeg';
+import judgment1 from '../data/documents/judgment1.jpeg';
+import judgment2 from '../data/documents/judgment1.jpeg';
 
 
 

@@ -25,7 +25,7 @@ import {
     useLocation,
   } from "react-router-dom";
 
-import stageData from './stagesData.json'; 
+import stageData from '../data/english_data/stagesData.json'; 
 
   
 const getStage = (stage_id) => {

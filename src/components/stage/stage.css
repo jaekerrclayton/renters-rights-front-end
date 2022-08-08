@@ -28,41 +28,41 @@
 
  #vacate1 { 
     
-    background-image: url(./evictionNotices/vacate1.jpeg);
+    background-image: url(../data/documents/vacate1.jpeg);
     background-size: contain;
 } 
 
 #vacate2 { 
     
-    background-image: url(./evictionNotices/vacate2.jpeg);
+    background-image: url(../data/documents/vacate2.jpeg);
     background-size: contain;
 } 
 
 #vacate3 { 
     
-    background-image: url(./evictionNotices/vacate3.jpeg);
+    background-image: url(../data/documents/vacate3.jpeg);
     background-size: contain;
 } 
 
 #order1 { 
     
-    background-image: url(./evictionNotices/order1.jpeg);
+    background-image: url(../data/documents/order1.jpeg);
     background-size: contain;
 } 
 
 #order2 { 
     
-    background-image: url(./evictionNotices/order2.jpeg);
+    background-image: url(../data/documents/order2.jpeg);
     background-size: contain;
 } 
 
 #judgment1 { 
     
-    background-image: url(./evictionNotices/judgment1.jpeg);
+    background-image: url(../data/documents/judgment1.jpeg);
     background-size: contain;
 } 
 
 #judgment2{
-    background-image: url(./evictionNotices/judgment2.jpeg);
+    background-image: url(../data/documents/judgment2.jpeg);
     background-size: contain;
 }

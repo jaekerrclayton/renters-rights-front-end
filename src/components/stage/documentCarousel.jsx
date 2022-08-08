@@ -6,9 +6,9 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import Carousel from 'react-bootstrap/Carousel';
 // import './orderfirst.css'; 
-import { getJudgmentDocs} from './evictionNotices/judgment/judgementData'; 
-import {getOrderData } from './evictionNotices/order/orderData'; 
-import {getvacateDocs } from './evictionNotices/vacate/vacateData'; 
+import { getJudgmentDocs} from '../data/english_data/judgementData'; 
+import {getOrderData } from '../data/english_data/orderData'; 
+import {getvacateDocs } from '../data/english_data/vacateData'; 
 // import './judgmentCarousel.css'
 
 
