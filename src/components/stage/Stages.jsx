@@ -30,37 +30,27 @@ const Stages = () => {
     let [searchParams, setSearchParams] = useSearchParams();
     return (
         <main>
-            
-           <div>
-               <Nav justify variant="tabs" >
+            <div>
+                <Nav justify variant="tabs" >
                             {stages
                                 .map((stage) => ( 
                             <Nav.Item>
                                 <NavLink 
                                     style={({ isActive }) => ({
-                                        // display: "flex", 
-                                        // margin: "1rem 0",
                                         color: isActive ? "blue" : "",
                                         
                                     })}
                                     to={`/eviction-map/${stage.stage_id}`}
                                     key={stage.stage_id}
                                 >
-                                    <h6>{stage.stage_id}</h6>
-                                    {/* <p>{stage.title}</p> */}
-                                    
+                                    <h6>{stage.stage_id}</h6>                                    
                                 </NavLink>
                             </Nav.Item>
-                            
                             ))}
-                        
                     </Nav>
-                
             <Outlet />
-
         </div>
                 {/* <Outlet /> */}
-        
         </main>
     );
 }

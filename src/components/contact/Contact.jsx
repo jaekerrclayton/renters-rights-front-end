@@ -3,6 +3,7 @@ import axios from 'axios';
 import './blog.css'; 
 import Row from 'react-bootstrap/Row';
 import NewQuestion from "./QuestionForm";
+import Posts from './Posts';
 
 
 export const URL='https://renters-rights-back-end.herokuapp.com/admin/';
@@ -41,6 +42,9 @@ function Contact() {
         </Row>
         <Row>
           <h6>Frequently Asked Questions</h6>
+          <div style={{'overflow-y': 'scroll'}}>
+            <Posts />
+          </div>
         </Row>
         <Row>
           <p>If you have a question that is not covered in the FAQ, you can submit a question anonymously in the form below. Answers to questions are posted on Tuesdays.</p>
