@@ -1,4 +1,12 @@
-.my-container{
+* {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+/* .my-container{
     position:relative;
     width: auto; 
     height: auto; 
@@ -6,18 +14,17 @@
     /* text-align: center; */
 
 
-}
+/* } */
 
-.my-container img{
+/* .my-container img{
     padding: 10%;
     width: 100%;
     height: auto;
     /* text-align: center; */
+/* }  */
 
-}
 
-
-.my-container #btn-1 {
+/* .my-container #btn-1 {
     position: absolute; 
     top: 25%; 
     left: 32%; 
@@ -28,11 +35,11 @@
     border:burlywood; 
     border-radius: 1rem; 
 
-}
+} */
 
 
 
-.my-container #btn-2{
+/* .my-container #btn-2{
     position: absolute; 
     top: 25%; 
     left: 70%; 
@@ -43,9 +50,9 @@
     border:burlywood; 
     border-radius: 1rem; 
 
-}
+} */
 
-
+/* 
 .my-container #btn-3{
     position: absolute; 
     top: 50%; 
@@ -57,9 +64,9 @@
     border:burlywood; 
     border-radius: 1rem; 
 
-}
+} */
 
-.my-container #btn-4{
+/* .my-container #btn-4{
     position: absolute; 
     top: 84%; 
     left: 49%; 
@@ -70,7 +77,7 @@
     border:burlywood; 
     border-radius: 1rem; 
 
-}
+} */
 
 
 
