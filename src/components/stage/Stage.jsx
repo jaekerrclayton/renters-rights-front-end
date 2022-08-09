@@ -12,6 +12,7 @@ import DropdownStages from "./stageDropdown";
 import Types from '../type/Types'; 
 import TypesAbbr from '../type/TypesAbbr';
 import DocumentCarousel from './documentCarousel'; 
+import Stack from 'react-bootstrap/Stack';
 
 
 
@@ -72,38 +73,41 @@ const Stage = () => {
   return (
     <main style={{ padding: "1rem" }}>
       {/* <div><DropdownStages/></div> */}
+      <h4>{stage.title}</h4>
+      <Accordion>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>{stage.sub_title}</Accordion.Header>
+              <Accordion.Body>
+              <p>{stage.info}</p>
+              <p>{stage.about_notice}</p>
+              <p>{stage.additional_resources}</p>
+              {/* <p>{stage.photo}</p> */}
+              </Accordion.Body>
+          </Accordion.Item>
+          </Accordion>
+          <Accordion>
+              <Accordion.Item eventKey="1">
+              <Accordion.Header>Causes for Eviction </Accordion.Header>
+                            <Accordion.Body>
+                            {/* <p><Types /></p> */}
+                            <p><TypesAbbr /></p>
+                            {/* <p>{stage.about_notice}</p>
+                            <p>{stage.additional_resources}</p> */}
+                            </Accordion.Body>
+              </Accordion.Item>
 
+      </Accordion>
 
       <Accordion defaultActiveKey={['0']} alwaysOpen>
         <Accordion.Item eventKey="0">
           <Accordion.Header><h4>{stage.title}</h4></Accordion.Header>
           <Accordion.Body>
                 <div>
-                  <Accordion>
-                        <Accordion.Item eventKey="1">
-                          <Accordion.Header>{stage.sub_title}</Accordion.Header>
-                          <Accordion.Body>
-                          <p>{stage.info}</p>
-                          <p>{stage.about_notice}</p>
-                          <p>{stage.additional_resources}</p>
-                          {/* <p>{stage.photo}</p> */}
-                          </Accordion.Body>
-                      </Accordion.Item>
-                      </Accordion>
+                <DocumentCarousel stage_id={stage.stage_id}  />
+
 
                   </div>
-                  <Accordion>
-                        <Accordion.Item eventKey="1">
-                        <Accordion.Header>Causes for Eviction </Accordion.Header>
-                                      <Accordion.Body>
-                                      {/* <p><Types /></p> */}
-                                      <p><TypesAbbr /></p>
-                                      {/* <p>{stage.about_notice}</p>
-                                      <p>{stage.additional_resources}</p> */}
-                                      </Accordion.Body>
-                        </Accordion.Item>
-
-                  </Accordion>
+                  
                   
 
                                             
@@ -113,9 +117,9 @@ const Stage = () => {
 
 </Accordion>
     
-    <h2>{stage.title}</h2>
 
-    <DocumentCarousel stage_id={stage.stage_id}  />
+
+    
 
 
       {/* <div><VacateCarousel/></div>

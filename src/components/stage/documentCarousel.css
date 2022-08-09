@@ -1,14 +1,15 @@
 .my-container{
-    position:relative;
+    position:absolute;
     width: auto; 
     height: auto; 
     background-color: rgba(67, 104, 141, 0.678);
-    /* justify-content: center; */
-
+    justify-content: center;
 
 }
 
+
 #doc-image{
+    max-width: 750px;
     padding: 10%;
     width: 100%;
     height: auto;
