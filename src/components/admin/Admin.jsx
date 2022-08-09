@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import ScheduleList from './ScheduleList';
 import ScheduleChangeDropDown from "./ScheduleChangeDropdown";
 
-export const URL='https://renters-rights-back-end.herokuapp.com/admin/';
+export const URL= process.env.REACT_APP_BACKEND_URL;
 
 function Admin() {
   const [volunteers, setVolunteers] = useState([]);

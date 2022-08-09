@@ -3,7 +3,7 @@ import {
     NavLink, 
     Outlet,
 } from "react-router-dom";
-import typeDataJson from './evictionTypesData.json';
+import typeDataJson from '../data/english_data/evictionTypesData.json';
 
 const Types = () => {
     let types = typeDataJson;

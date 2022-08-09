@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Row from 'react-bootstrap/Row';
-import typeDataJson from './evictionTypesData.json';
+import typeDataJson from '../data/english_data/evictionTypesData.json';
 import Defense from './Defense';
 
 const TypesAbbr = () => {

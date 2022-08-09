@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import order2 from './data/documents/order2.jpeg';
 import evictionMap from './data/documents/evictionMap.png'
 import repairs from './data/documents/repairs.png'
 
@@ -15,9 +14,9 @@ import repairs from './data/documents/repairs.png'
 function Home() {
   return (
     <div className="home">
-     <h1>Homepage</h1>
+      <h1>Homepage</h1>
 
-     <Container fluid>
+      <Container fluid>
           <Row>
             <Col>
                   <Card style={{ width: '18rem'}}>

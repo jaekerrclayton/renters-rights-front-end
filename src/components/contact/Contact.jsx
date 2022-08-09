@@ -1,6 +1,6 @@
 import React, {useState, useEffect}from "react";
 import axios from 'axios';
-import './blog.css'; 
+import './contact.css'; 
 import Row from 'react-bootstrap/Row';
 import NewQuestion from "./QuestionForm";
 import Posts from './Posts';
@@ -36,15 +36,12 @@ function Contact() {
   const v = (numberOnline !== 1 ? 'volunteers' : 'volunteer');
 
   return (
-      <div>
+      <div id='contactInfo'>
         <Row>
           <h3>Contact Us</h3>
         </Row>
         <Row>
-          <h6>Frequently Asked Questions</h6>
-          <div style={{'overflow-y': 'scroll'}}>
             <Posts />
-          </div>
         </Row>
         <Row>
           <p>If you have a question that is not covered in the FAQ, you can submit a question anonymously in the form below. Answers to questions are posted on Tuesdays.</p>

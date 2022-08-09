@@ -2,7 +2,7 @@ import {
     useParams
     } from "react-router-dom";
 import React, { useEffect, useState } from 'react';
-import typeDataJson from './evictionTypesData.json';
+import typeDataJson from '../data/english_data/evictionTypesData.json';
 import './evictionType.css';
 import Defense from "./Defense";
 

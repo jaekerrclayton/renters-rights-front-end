@@ -46,10 +46,6 @@ ReactDOM.render(
             <Route path="" index />
             <Route path=":stage_id" element={<Stage />} /> 
       </Route>
-      {/* <Route path="/blog" element={<Blog />}>
-        <Route path="" element={<Posts />} />
-        <Route path=":postSlug" element={<Post />} />
-      </Route> */}
       <Route path="eviction-types" element={<Types />}>
           <Route
               index
