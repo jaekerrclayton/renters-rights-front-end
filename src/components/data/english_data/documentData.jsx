@@ -10,14 +10,9 @@ import judgment2 from '../documents/judgment2.jpeg';
 const documentData = {
 
     1 : [
-
-    
         {   id: vacate1,
             stage_id:  1,
-            stage_title: "Notice to Vacate",
-
-           
-    
+            stage_title: "Notice to Vacate",    
             docInfo : [
                     {info_id: 1,
                     title: "Your name versus your landlord", 
@@ -58,7 +53,6 @@ const documentData = {
                 ]   
         
         }, 
-        
         
         {   id: vacate3, 
             stage_id: 1,

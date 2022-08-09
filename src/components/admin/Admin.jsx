@@ -199,7 +199,6 @@ function Admin() {
   };
 
   const v = (numberOnline !== 1 ? 'volunteers' : 'volunteer');
-  const scheduleButton = (schedules.display ? 'Hide' : 'Get');
 
   return (
     <section>

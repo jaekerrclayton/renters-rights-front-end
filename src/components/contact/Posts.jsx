@@ -1,11 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import answeredQuestions from "../data/english_data/answeredQuestions.json";
+import Accordion from 'react-bootstrap/Accordion';
+import Row from 'react-bootstrap/Row'
 
 function Posts() {
+  const getPosts = answeredQuestions.map((question) => {
+      console.log(question);
+      return(
+        <Accordion.Item eventKey={question.q_id}>
+          <Accordion.Header>{question.Question}</Accordion.Header>
+          <Accordion.Body>
+            {question.Answer}
+          </Accordion.Body>
+        </Accordion.Item>
+      )
+    });
+
   return (
     <div>
       <div class="container">
-        <Link to="/blog/this-is-a-post-title">
           <div class="row align-items-center my-5">
             <div class="col-lg-7">
               <img
@@ -14,15 +27,15 @@ function Posts() {
                 alt=""
               />
             </div>
-            <div class="col-lg-5">
-              <h1 class="font-weight-light">POSTSSS FILE</h1>
-              <p>
-                some text : but this is referring how how all posts should show up 
-                --- like alist of al the Posts
-              </p>
-            </div>
+            <Row>
+              <h1 class="font-weight-light">Frequently Asked Questions</h1>
+            </Row>
+            <Row>
+              <Accordion>
+                {getPosts}
+              </Accordion>
+            </Row>
           </div>
-        </Link>
       </div>
     </div>
   );
