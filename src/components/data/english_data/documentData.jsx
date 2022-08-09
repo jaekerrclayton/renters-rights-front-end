@@ -15,20 +15,20 @@ const documentData = {
             stage_title: "Notice to Vacate",    
             docInfo : [
                     {info_id: 1,
-                    title: "Your name versus your landlord", 
-                    sub_title: "Check if this information is accurate. Is this the person you pay your lease to ? Consider contacting your landlord to see if there is a way of preventing your eviction from happening. Check out above 'Causes for Evicion' to learn about potential defenses!" ,  
+                    title: "SSDPANISH", 
+                    sub_title: "Check SPANISISIIHHH this information is accurate. Is this the person you pay your lease to ? Consider contacting your landlord to see if there is a way of preventing your eviction from happening. Check out above 'Causes for Evicion' to learn about potential defenses!" ,  
                     placement: "bottom" 
                 }, 
                     {
                     info_id: 2,
-                    title: "Court Location", 
-                    sub_title: "This might look like an official eviciton - but it is just a warning that a hearing could take place. If you do end up facing eviction, this is likely where the court will be held", 
+                    title: "SSDPANISH", 
+                    sub_title: "Check SPANISISIIHHH thiight look like an official eviciton - but it is just a warning that a hearing could take place. If you do end up facing eviction, this is likely where the court will be held", 
                     placement: "bottom" 
                 }, 
                     {
                     info_id: 3,
-                    title: "Cause of Eviction" , 
-                    sub_title: "Why you're being evicted - is there something you could do to change the situation ? Consider causes of eviction above, and check out potential defenses." , 
+                    title: "SSDPANISH", 
+                    sub_title: "Check SPANISISIIHHH thi're being evicted - is there something you could do to change the situation ? Consider causes of eviction above, and check out potential defenses." , 
                     placement: "top" 
                 }
                     ]
@@ -39,15 +39,15 @@ const documentData = {
             docInfo: [
                         {
                         info_id: 4, 
-                        title: "Time given to respond to eviction",
-                        sub_title: "From the day you have received this notice, the Landlord has given you 5 days to respond. After these five days, the landlord can go to court to request a hearing.", 
+                        title: "SSDPANISH", 
+                    sub_title: "Check SPANISISIIHHH thihe day you have received this notice, the Landlord has given you 5 days to respond. After these five days, the landlord can go to court to request a hearing.", 
                         placement: "top"
     
                         }, 
                         {
                         info_id: 5,
-                        title: "Cause for Eviction" , 
-                        sub_title: "Your notice should say why you're being evicted. Look above for different defenses for types of evictions.", 
+                        title: "SSDPANISH", 
+                        sub_title: "Check SPANISISIIHHH thisay why you're being evicted. Look above for different defenses for types of evictions.", 
                         placement: "bottom"
                     }
                 ]   
@@ -60,20 +60,20 @@ const documentData = {
             docInfo : [ 
                     {
                         info_id: 6,
-                        title: "Date of notice", 
-                        sub_title:  "five business days after receiving this notice, your landlord can go to court to request a hearing.",
+                        title: "SSDPANISH", 
+                    sub_title: "Check SPANISISIIHHH thi your landlord can go to court to request a hearing.",
                         placement: "right"  
                     }, 
     
                     {
                         info_id: 7,
-                        title: "Cause of Eviction", 
-                        sub_title: "Why you're being evicted:  key words to look for are -- NONPAYMENT OF RENT, VIOLATION OF LEASE, TERMINATION OF LEASE, scroll up to see potential defenses.", 
+                        title: "SSDPANISH", 
+                    sub_title: "Check SPANISISIIHHH thivicted:  key words to look for are -- NONPAYMENT OF RENT, VIOLATION OF LEASE, TERMINATION OF LEASE, scroll up to see potential defenses.", 
                         placement: "top" 
                     },
                     {   info_id: 8,
-                        title: "Your landlord's contact information.", 
-                        sub_title: "Depending on your relationship with your landlord, you may consider communicating with your landlord to try to prevent the eviction from happening",
+                        title: "SSDPANISH", 
+                    sub_title: "Check SPANISISIIHHH thiyour landlord, you may consider communicating with your landlord to try to prevent the eviction from happening",
                         placement: "right"  
                     } 
                 ]
@@ -86,34 +86,34 @@ const documentData = {
     [
         {   id: order1, 
             stage_id: 2,
-            stage_title: "Order of Possession", 
+            stage_title: "Order of PPPPPPossession", 
             docInfo: [
     
                 {info_id: 17, 
-                title: "Cause of Eviction",
-                sub_title: "The order is required to explain the reason you are being evicted", 
+                    title: "SSDPANISH", 
+                    sub_title: "Check SPANISISIIHHH thin you are being evicted", 
                 placement: "bottom"
                 }
                 , 
             
                 {
                 info_id: 18,
-                title: "Case Number",
-                sub_title: "You can call the court at any time to request a translator in advance, or request an extension. Your case number is important in gathering any additional information you may need to provide to the court",
+                title: "SSDPANISH", 
+                sub_title: "Check SPANISISIIHHH thia translator in advance, or request an extension. Your case number is important in gathering any additional information you may need to provide to the court",
                 placement: "bottom"
                 }
                 , 
             
                 {
                 info_id: 19, 
-                title: "Date of Hearing", 
-                sub_title: "This is the location and time of your hearing. Check if a room is specified, and prepare to show up early.", 
+                title: "SSDPANISH", 
+                sub_title: "Check SPANISISIIHHH thi Check if a room is specified, and prepare to show up early.", 
                 placement: "bottom"
                 },
             
                 {info_id: 20,
-                title: "Location of Court", 
-                sub_title: "This is the number to call for any questions or continuances",
+                title: "SSDPANISH", 
+                sub_title: "Check SPANISISIIHHH thitions or continuances",
                 placement: "top"
             
             } 
@@ -133,22 +133,22 @@ const documentData = {
                 [
                         {
                         info_id: 21,
-                        title: "asdfasd",
-                        sub_title: "asdfasd",
+                        title: "asdfaSPANISHHHHHsd",
+                        sub_title: "asSPANISHdfasd",
                         placement: "top",
                     
                         },
                         {
                         info_id: 22,
-                        title: "asdf", 
-                        sub_title: "asdfasdf",
+                        title: "asSPANISHdf", 
+                        sub_title: "asdfSPANNNISHasdf",
                         placement: "bottom",
                         
                         },
                         {
                         info_id: 23,
-                        title: "asdfad",
-                        sub_title: "asdf",
+                        title: "asdfSPANISHad",
+                        sub_title: "SPANISHasdf",
                         placement: "top",
                         
                         }
