@@ -7,7 +7,6 @@ import { Accordion } from 'react-bootstrap';
 const ScheduleList = () => {
     const [schedules, setSchedules] = useState([{sunAm:[], sunPm:[], monAm:[], monPm:[], tueAm:[], tuePm:[], wedAm:[], wedPm:[], thuAm:[], thuPm:[], friAm:[], friPm:[], satAm:[], satPm:[]}]);
 
-    console.log(schedules[0]);
     useEffect(() => {
         axios.get('https://renters-rights-back-end.herokuapp.com/admin/schedules')
         .then((res) =>{
@@ -74,7 +73,7 @@ const ScheduleList = () => {
         .catch((err) => {
             console.log(err);
         });
-    }, [schedules]);
+    }, []);
 
     const sunAmMap = schedules[0].sunAm.map((vol) =>
         <li>{vol}</li>

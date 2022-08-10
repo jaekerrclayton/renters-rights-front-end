@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Container from 'react-bootstrap/Container';
 
 const Schedule = (props) => {
     let schedule = props;
-    // console.log(schedule);
-    if (schedule.props.sun){
+    console.log(schedule);
+    if (schedule.props){
         schedule = schedule.props;
     }
     return (

@@ -4,8 +4,9 @@ import Schedule from './Schedule';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import EditVolForm from './EditVolunteerForm';
+import ChangeScheduleForm from './ChangeScheduleForm';
 
-const Volunteer = (props, onEditVolCallback, onDeleteVolCallback, changeStatus) => {
+const Volunteer = (props) => {
     const [displayForm, setDisplayForm] = useState({display: false})
     const originallyChecked = props.status === 'online' ? true : false;
     const [checked, setChecked] = useState(originallyChecked);
@@ -59,7 +60,7 @@ const Volunteer = (props, onEditVolCallback, onDeleteVolCallback, changeStatus) 
                     {props.language}
                 </Col>
             </Row>
-            <Row>{props.schedule===null ? '' : <Schedule props={props.schedule}/>}</Row>
+            <Row>{props.schedule===null ? <ChangeScheduleForm volunteerId={props.volunteerId} onChangeSchedCallback={props.onAddSchedCallback}/> : <Schedule props={props.schedule}/>}</Row>
             <Row><button onClick={() => {setDisplayForm({'display':!displayForm.display})}}>Edit {props.name} Profile</button></Row>
             <Row>
                 <div style={{display: displayForm.display ? '' : 'none'}}>

@@ -1,19 +1,22 @@
 import { Dropdown } from "react-bootstrap"
 import ChangeScheduleForm from "./ChangeScheduleForm";
 import React, { useState } from 'react';
+import { convertToObject } from "typescript";
 
 
 
 const ScheduleChangeDropDown = (volunteers) => {
-    const [changeForm, setChangeForm] = useState({'display':false, 'id':0});
-
+    const [changeForm, setChangeForm] = useState({'display':false, 'id':0, 'sched':null});
     const getChangeForm = (e) => {
         e.preventDefault();
-        const newId = e.target.target;
-        setChangeForm({'display':!changeForm.display, 'id':newId});
+        const newId = Number(e.target.target);
+        let newVolunteer = volunteers.volunteers.filter((volunteer) => volunteer.volunteerId === newId)
+        setChangeForm({'display':!changeForm.display, 'id':newId, 'sched':newVolunteer.schedule});
     };
 
-    const getDropDown = volunteers.volunteers.map((volunteer) => {
+    const filteredVolunteers = volunteers.volunteers.filter((volunteer) => volunteer.schedule != null);
+
+    const getDropDown = filteredVolunteers.map((volunteer) => {
         console.log(volunteer.volunteerId);
         return (
             <Dropdown.Item target={volunteer.volunteerId} onClick={getChangeForm}>{volunteer.name}</Dropdown.Item>
@@ -22,7 +25,7 @@ const ScheduleChangeDropDown = (volunteers) => {
 
     return (
         <div>
-            <Dropdown>
+            <Dropdown id='scheduleChangeDropdown' autoClose='true'>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
                     Change a Volunteer's Schedule
                 </Dropdown.Toggle>
@@ -31,7 +34,7 @@ const ScheduleChangeDropDown = (volunteers) => {
                 </Dropdown.Menu>
             </Dropdown>
             <div style={{display: changeForm.display ? '' : 'none'}}>
-                <ChangeScheduleForm type='button' volunteerId={changeForm.id} onChangeSchedCallback={volunteers.changeSchedule}/>
+                <ChangeScheduleForm type='button' volunteerId={changeForm.id} sched={changeForm.sched} onChangeSchedCallback={volunteers.changeSchedule}/>
             </div>
         </div>
     )

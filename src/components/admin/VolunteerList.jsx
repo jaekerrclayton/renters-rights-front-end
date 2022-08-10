@@ -21,6 +21,7 @@ const Volunteers = (props) => {
                             schedule={volunteer.schedule}
                             onEditVolCallback={props.onEdit}
                             onDeleteVolCallback={props.onDelete}
+                            onAddSchedCallback={props.addSched}
                             changeStatus={props.changeStatus}
                     />
                 </Accordion.Body>

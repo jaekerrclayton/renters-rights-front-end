@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ScheduleList from './ScheduleList';
 import ScheduleChangeDropDown from "./ScheduleChangeDropdown";
+import './Admin.css';
 
 export const URL= process.env.REACT_APP_BACKEND_URL;
 
@@ -44,6 +45,35 @@ function Admin() {
         console.log(err);
       });
   },[]);
+
+  const resetVolunteers = () => {
+    axios 
+    .get(URL + 'volunteers')
+    .then((res) =>{
+      const newVolunteers = res.data.map((volunteer) => {
+        return {
+          volunteerId: volunteer.volunteerId,
+          name: volunteer.name,
+          email: volunteer.email,
+          status: volunteer.status,
+          type: volunteer.type,
+          language: volunteer.language,
+          schedule: volunteer.schedule
+        };
+      });
+      setVolunteers(newVolunteers);
+      let count = 0;
+      for (let volunteer of newVolunteers) {
+        if (volunteer.status === 'online') {
+          count += 1;
+        }
+        setNumberOnline(count);
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  }
 
   const getSchedules= () => {
     axios.get(URL + 'schedules')
@@ -183,12 +213,29 @@ function Admin() {
         })
   }
 
-  const changeSched = (id, schedule) => {
+  const addSched = (id, schedule) => {
+    console.log(schedule);
     axios
-      .put(URL + 'volunteers/' + id + '/schedules', schedule)
+      .post(URL + 'volunteers/' + id + '/schedules', schedule)
       .then(() => {
         const updatedVolSchedules = volunteers.map((volunteer) => {
-          if (volunteer.volunteerID === id) {
+          if (volunteer.volunteerId === id) {
+            volunteer.schedule = schedule;
+          }
+          return volunteer;
+        })
+        setVolunteers(updatedVolSchedules);
+        getSchedules();
+      })
+  };
+
+  const changeSched = (id, schedule) => {
+    console.log(schedule);
+    axios
+      .put(URL + 'schedules/' + id, schedule)
+      .then(() => {
+        const updatedVolSchedules = volunteers.map((volunteer) => {
+          if (volunteer.volunteerId === id) {
             volunteer.schedule = schedule;
           }
           return volunteer;
@@ -217,6 +264,7 @@ function Admin() {
                 onEdit={editVol}
                 onDelete={deleteVol}
                 changeStatus={changeStatus}
+                addSched={addSched}
           />
           </Row>
           <Row>
