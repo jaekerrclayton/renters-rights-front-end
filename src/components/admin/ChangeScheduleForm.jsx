@@ -93,7 +93,7 @@ const ChangeScheduleForm = (props) => {
                 </Col>
                 <Col>
                     <button className="button-new-board-submit" type="submit">
-                    Update Schedule for Volunteer
+                    Update Volunteer Schedule
                     </button>
                 </Col>
             </Row>
