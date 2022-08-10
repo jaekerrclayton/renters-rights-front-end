@@ -15,20 +15,20 @@ const documentData = {
             stage_title: "Notice to Vacate",    
             docInfo : [
                     {info_id: 1,
-                    title: "Your name versus your landlord", 
-                    sub_title: "Check if this information is accurate. Is this the person you pay your lease to ? Consider contacting your landlord to see if there is a way of preventing your eviction from happening. Check out above 'Causes for Evicion' to learn about potential defenses!" ,  
+                    title: "SSDPANISH", 
+                    sub_title: "Check if this SSDPANISH",
                     placement: "bottom" 
                 }, 
                     {
                     info_id: 2,
                     title: "Court Location", 
-                    sub_title: "This might look like an official eviciton - but it is just a warning that a hearing could take place. If you do end up facing eviction, this is likely where the court will be held", 
+                    sub_title: "Thisasdfsdaicial eviciton - but it is just a warning that a hearing could take place. If you do end up facing eviction, this is likely where the court will be held", 
                     placement: "bottom" 
                 }, 
                     {
                     info_id: 3,
                     title: "Cause of Eviction" , 
-                    sub_title: "Why you're being evicted - is there something you could do to change the situation ? Consider causes of eviction above, and check out potential defenses." , 
+                    sub_title: "Why you're asdfasdfhing you could do to change the situation ? Consider causes of eviction above, and check out potential defenses." , 
                     placement: "top" 
                 }
                     ]
@@ -40,14 +40,14 @@ const documentData = {
                         {
                         info_id: 4, 
                         title: "Time given to respond to eviction",
-                        sub_title: "From the day you have received this notice, the Landlord has given you 5 days to respond. After these five days, the landlord can go to court to request a hearing.", 
+                        sub_title: "From the daasdfasdf the Landlord has given you 5 days to respond. After these five days, the landlord can go to court to request a hearing.", 
                         placement: "top"
     
                         }, 
                         {
                         info_id: 5,
                         title: "Cause for Eviction" , 
-                        sub_title: "Your notice should say why you're being evicted. Look above for different defenses for types of evictions.", 
+                        sub_title: "Your notice asdfasng evicted. Look above for different defenses for types of evictions.", 
                         placement: "bottom"
                     }
                 ]   
@@ -61,19 +61,19 @@ const documentData = {
                     {
                         info_id: 6,
                         title: "Date of notice", 
-                        sub_title:  "five business days after receiving this notice, your landlord can go to court to request a hearing.",
+                        sub_title:  "five busasdfasfthis notice, your landlord can go to court to request a hearing.",
                         placement: "right"  
                     }, 
     
                     {
                         info_id: 7,
                         title: "Cause of Eviction", 
-                        sub_title: "Why you're being evicted:  key words to look for are -- NONPAYMENT OF RENT, VIOLATION OF LEASE, TERMINATION OF LEASE, scroll up to see potential defenses.", 
+                        sub_title: "Why youSPANISHAPSNISHook for are -- NONPAYMENT OF RENT, VIOLATION OF LEASE, TERMINATION OF LEASE, scroll up to see potential defenses.", 
                         placement: "top" 
                     },
                     {   info_id: 8,
-                        title: "Your landlord's contact information.", 
-                        sub_title: "Depending on your relationship with your landlord, you may consider communicating with your landlord to try to prevent the eviction from happening",
+                        title: "Your landuSPANISHAPSNISHook formation.", 
+                        sub_title: "DeuSPANISHAPSNISHook ationship with your landlord, you may consider communicating with your landlord to try to prevent the eviction from happening",
                         placement: "right"  
                     } 
                 ]
@@ -91,7 +91,7 @@ const documentData = {
     
                 {info_id: 17, 
                 title: "Cause of Eviction",
-                sub_title: "The order is required to explain the reason you are being evicted", 
+                sub_title: "The orduSPANISHAPSNISHook reason you are being evicted", 
                 placement: "bottom"
                 }
                 , 
@@ -99,7 +99,7 @@ const documentData = {
                 {
                 info_id: 18,
                 title: "Case Number",
-                sub_title: "You can call the court at any time to request a translator in advance, or request an extension. Your case number is important in gathering any additional information you may need to provide to the court",
+                sub_title: "You can call theuSPANISHAPSNISHook quest a translator in advance, or request an extension. Your case number is important in gathering any additional information you may need to provide to the court",
                 placement: "bottom"
                 }
                 , 
@@ -107,13 +107,13 @@ const documentData = {
                 {
                 info_id: 19, 
                 title: "Date of Hearing", 
-                sub_title: "This is the location and time of your hearing. Check if a room is specified, and prepare to show up early.", 
+                sub_title: "This isuSPANISHAPSNISHook ring. Check if a room is specified, and prepare to show up early.", 
                 placement: "bottom"
                 },
             
                 {info_id: 20,
                 title: "Location of Court", 
-                sub_title: "This is the number to call for any questions or continuances",
+                sub_title: "ThisuSPANISHAPSNISHook questions or continuances",
                 placement: "top"
             
             } 
@@ -157,62 +157,6 @@ const documentData = {
                     ] 
                 }
     ], 
-
-
-    3: [
-
-        {
-            id: courtPrep, 
-            stage_id: 3, 
-            docInfo: [
-
-                {
-
-                    info_id: 24, 
-                    title: "Photographic evidence", 
-                    sub_title: "Bring any photos of your unit you may want to show to the judge", 
-                    placement: "top"
-
-
-                }, 
-                {
-
-                    info_id: 25, 
-                    title: "Text messages", 
-                    sub_title: "Any text messages or written correspondance with your landlord", 
-                    placement: "left"
-
-                }, 
-
-
-                {
-
-                    info_id: 26, 
-                    title: "Witnesses", 
-                    sub_title: "Anyone who can support your side of the story - friend, neighbor, family", 
-                    placement: "left"
-
-                }, 
-
-
-                {
-
-                    info_id: 27, 
-                    title: "All important documents!", 
-                    sub_title: "Bring a copy of your lease if you have one, any reciepts from repairs you may have done, or any evidence that may help you", 
-                    placement: "top"
-
-                }, 
-
-
-
-            ]
-        }
-
-
-
-
-    ]
 
 
 

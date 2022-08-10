@@ -159,62 +159,6 @@ const documentData = {
     ], 
 
 
-    3: [
-
-        {
-            id: courtPrep, 
-            stage_id: 3, 
-            docInfo: [
-
-                {
-
-                    info_id: 24, 
-                    title: "Photographic evidence", 
-                    sub_title: "Bring any photos of your unit you may want to show to the judge", 
-                    placement: "top"
-
-
-                }, 
-                {
-
-                    info_id: 25, 
-                    title: "Text messages", 
-                    sub_title: "Any text messages or written correspondance with your landlord", 
-                    placement: "left"
-
-                }, 
-
-
-                {
-
-                    info_id: 26, 
-                    title: "Witnesses", 
-                    sub_title: "Anyone who can support your side of the story - friend, neighbor, family", 
-                    placement: "left"
-
-                }, 
-
-
-                {
-
-                    info_id: 27, 
-                    title: "All important documents!", 
-                    sub_title: "Bring a copy of your lease if you have one, any reciepts from repairs you may have done, or any evidence that may help you", 
-                    placement: "top"
-
-                }, 
-
-
-
-            ]
-        }
-
-
-
-
-    ]
-
-
 
     5: 
     [
