@@ -4,6 +4,7 @@ import './contact.css';
 import Row from 'react-bootstrap/Row';
 import NewQuestion from "./QuestionForm";
 import Posts from './Posts';
+import ResourcesAbbr from "../resources/ResourceAbbr";
 
 
 export const URL='https://renters-rights-back-end.herokuapp.com/admin/';
@@ -46,15 +47,15 @@ function Contact() {
         <Row>
           <p>If you have a question that is not covered in the FAQ, you can submit a question anonymously in the form below. Answers to questions are posted on Tuesdays.</p>
         </Row>
-        <Row>
+        <Row id='questionBox'>
           <NewQuestion />
         </Row>
         <Row>
-          <p>For URGENT questions, you can call (or text?) the hotline at <h5>555-5555</h5> </p>
+          <div>For URGENT questions, you can call (or text?) the hotline at <h5>555-5555</h5> </div>
           <h6 className='section_title'>We have {numberOnline} {v} currently available to speak with you.</h6>
         </Row>
         <Row>
-          <p>link to legal aid (all resources -> auto generate legal aid first resources)</p>
+          <ResourcesAbbr />
         </Row>
       </div>
   );

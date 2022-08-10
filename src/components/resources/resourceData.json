@@ -31,19 +31,19 @@
         "resource_list": [
 
                             {   "resource_id": 1,
-                                "title": "SLLS", 
+                                "title": "LLS", 
                                 "phone_number": "987298729",
                                 "email": "this@email.com",
                                 "summary": "quick summary",
-                                "about": "can offer legal aid"
+                                "about": "can offer mutual aid"
                             
                             },
                             {   "resource_id": 2,
-                                "title": "LAFHAC", 
+                                "title": "LAF", 
                                 "phone_number": "987298729",
                                 "email": "another@email.com",
                                 "summary": "quick summary",
-                                "about": "can offer legal aid and to who"
+                                "about": "can offer mutual aid and to who"
                             
                             }
                         ]
@@ -55,11 +55,11 @@
         "resource_list": [
 
                             {   "resource_id": 1,
-                                "title": "SLLS", 
+                                "title": "FLLS", 
                                 "phone_number": "987298729",
                                 "email": "this@email.com",
                                 "summary": "quick summary",
-                                "about": "can offer legal aid"
+                                "about": "can offer financial aid"
                             
                             },
                             {   "resource_id": 2,
@@ -67,7 +67,7 @@
                                 "phone_number": "987298729",
                                 "email": "another@email.com",
                                 "summary": "quick summary",
-                                "about": "can offer legal aid and to who"
+                                "about": "can offer financial aid and to who"
                             
                             }
                         ]
@@ -79,19 +79,19 @@
         "resource_list": [
 
                             {   "resource_id": 1,
-                                "title": "SLLS", 
+                                "title": "MLLS", 
                                 "phone_number": "987298729",
                                 "email": "this@email.com",
                                 "summary": "quick summary",
-                                "about": "can offer legal aid"
+                                "about": "can offer moving aid"
                             
                             },
                             {   "resource_id": 2,
-                                "title": "a thing for $", 
+                                "title": "a thing for moving", 
                                 "phone_number": "987298729",
                                 "email": "another@email.com",
                                 "summary": "quick summary",
-                                "about": "can offer legal aid and to who"
+                                "about": "can offer moving aid and to who"
                             
                             }
                         ]
