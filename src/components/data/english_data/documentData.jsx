@@ -5,7 +5,7 @@ import order1 from '../documents/order1.jpeg';
 import order2 from '../documents/order2.jpeg'; 
 import judgment1 from '../documents/judgment1.jpeg';
 import judgment2 from '../documents/judgment2.jpeg';
-import courtPrep from './courtPrep.png'; 
+import courtPrep from '../documents/courtPrep.png'; 
 
 
 const documentData = {
@@ -213,7 +213,7 @@ const documentData = {
 
 
 
-    ]
+    ],
 
 
 

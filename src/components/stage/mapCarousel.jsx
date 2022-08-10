@@ -8,13 +8,10 @@ import documentData from '../data/english_data/documentData';
 
 
 
-
-
-
-const EvictionDocuments = () => { 
+const MapCarousel = () => { 
 
     return (
-      <div id="evic-carousel" className="col-sm-12"class="my-container">
+      <div id="evic-carousel">
             <Carousel variant="dark" slide={false}>
                         {documentData[1].map((document) => (
                         <Carousel.Item>                          
@@ -90,4 +87,4 @@ const EvictionDocuments = () => {
 
 
 
-export default EvictionDocuments;
+export default MapCarousel;

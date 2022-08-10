@@ -8,16 +8,19 @@ import documentData from '../data/english_data/documentData';
 import './documentCarousel.css'; 
 
 
-const DocumentCarousel = ({stage_id}) => {
+const AllDocumentsCarousel = ({stage_id}) => {
     console.log(stage_id)
     let vacateDocs = documentData[1];
-    let orderDocs = documentData[2];  
+    let orderDocs = documentData[2]; 
+    let courtPrep = documentData[3] 
     let judgmentDocs = documentData[5]; 
     let documents = []
   if (stage_id === 1){
       documents = vacateDocs; 
   }else if (stage_id === 2 ) {
       documents = orderDocs; 
+    }else if (stage_id === 3 ) {
+        documents = courtPrep; 
   }else if (stage_id === 5) {
       documents = judgmentDocs; 
   }
@@ -25,7 +28,7 @@ const DocumentCarousel = ({stage_id}) => {
   return (
     // <div>
 
-    <div className="col-sm-12"class="my-container">
+    <div class="my-container">
     <Carousel variant="dark" slide={false}>
     {documents.map((doc) => (
          <Carousel.Item interval={10000000} className="docCarousel">
@@ -70,4 +73,4 @@ const DocumentCarousel = ({stage_id}) => {
   );
 }
 
-export default DocumentCarousel;
+export default AllDocumentsCarousel;

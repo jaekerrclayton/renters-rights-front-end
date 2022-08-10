@@ -11,7 +11,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import DropdownStages from "./stageDropdown";
 import Types from '../type/Types'; 
 import TypesAbbr from '../type/TypesAbbr';
-import DocumentCarousel from './documentCarousel'; 
+import DocumentCarousel from './allDocumentsCarousel'; 
 import Stack from 'react-bootstrap/Stack';
 
 
@@ -95,38 +95,11 @@ const Stage = () => {
 
       </Accordion>
 
-      <Accordion defaultActiveKey={['0']} alwaysOpen>
-        <Accordion.Item eventKey="0">
-          <Accordion.Header><h4>{stage.title}</h4></Accordion.Header>
-          <Accordion.Body>
-                <div>
-                <DocumentCarousel stage_id={stage.stage_id}  />
 
+    <div>
+      <DocumentCarousel stage_id={stage.stage_id}  />
+    </div>
 
-                  </div>
-                  
-                  
-
-                                            
-
-          </Accordion.Body>
-      </Accordion.Item>
-
-</Accordion>
-    
-
-
-    
-
-
-      {/* <div><VacateCarousel/></div>
-      <div><JudgmentCarousel/></div>
-      <div><OrderCarousel/></div> */}
-
-
-    <p>{stage.sub_title}</p>
-
-    
   </main>
 
 
