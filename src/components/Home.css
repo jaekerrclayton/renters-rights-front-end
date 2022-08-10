@@ -4,3 +4,12 @@ div {
     text-align: center;
     margin: 0 auto;
 }
+
+@media only screen 
+    and (width: 375px) 
+    and (height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) { 
+        .welcome-message {
+            width: 20em;
+        }
+}

@@ -13,9 +13,9 @@ import '../Home.css';
 const EvicMap = () => {
   return (
 
-      <Container style={{ width: '70rem' }}>
-        <Row>
-          <AlertDismissible/>
+      <Container style={{ width: '50rem' }}>
+        <Row className="welcome-message">
+          <AlertDismissible />
         </Row>
       
         <h6>Please select the photo most similar to the document you have received </h6>

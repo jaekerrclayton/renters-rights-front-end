@@ -23,7 +23,7 @@ const EvictionDocuments = () => {
                                   src={document.id}
                                   alt="vacate docs"
                             />
-                               <Carousel.Caption id="doc-button-link">
+                              <Carousel.Caption id="doc-button-link">
                                   <NavLink className="nav-link" to={`/eviction-map/${document.stage_id}`}>
                                     <Button>{document.stage_title}</Button>
                                   </NavLink>
