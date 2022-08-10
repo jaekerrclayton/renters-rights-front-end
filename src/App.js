@@ -65,7 +65,7 @@ const App = () => {
                                   <Route path=":typeId" element={<Type />} />
                                 </Route>
                           </Routes>
-               <Footer />
+              <Footer />
             {/* </Router>   */}
 
           </div> 
