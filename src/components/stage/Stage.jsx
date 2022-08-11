@@ -46,11 +46,12 @@ const Stage = () => {
 
     <Container>
       <Row>
-      <Col xm={6} md={4}>
+      <Col xm={6} md={5}>
       <Accordion>
             <Accordion.Item eventKey="1">
               <Accordion.Header><h4>{stage.title}</h4></Accordion.Header>
               <Accordion.Body>
+              <TypesAbbr />
               <p>{stage.info}</p>
               <p>{stage.about_notice}</p>
               <p>{stage.additional_resources}</p>
@@ -58,18 +59,8 @@ const Stage = () => {
               </Accordion.Body>
           </Accordion.Item>
           </Accordion>
-          <Accordion>
-              <Accordion.Item eventKey="1">
-              <Accordion.Header>Causes for Eviction </Accordion.Header>
-                            <Accordion.Body>
-                            <div><TypesAbbr /></div>
-                            </Accordion.Body>
-              </Accordion.Item>
-
-      </Accordion>
-      
       </Col>
-      <Col xs={12} md={8}>
+      <Col xs={12} md={7}>
         <div>
               <DocumentCarousel stage_id={stage.stage_id}  />
           </div>
