@@ -1,5 +1,5 @@
 import React from "react";
-import './stage.css';
+
 // import './stageCarousel'; 
 
 import Container from 'react-bootstrap/Container';

@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink } from "react-router-dom";
-import './evictionDocsCarousel.css'; 
+// import './evictionDocsCarousel.css'; 
 
 // import documentData from '../data/english_data/documentData'; 
 

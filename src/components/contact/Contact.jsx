@@ -1,6 +1,5 @@
 import React, {useState, useEffect}from "react";
 import axios from 'axios';
-import './contact.css'; 
 import Row from 'react-bootstrap/Row';
 import NewQuestion from "./QuestionForm";
 import Posts from './Posts';
