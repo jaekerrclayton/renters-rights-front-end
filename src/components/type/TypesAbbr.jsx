@@ -39,7 +39,7 @@ const TypesAbbr = () => {
         <>
 
         <Button variant="secondary" onClick={handleShow}  className="me-2">Causes for Eviction</Button>
-        <Offcanvas placement='bottom' scroll={true} backdrop={true} show={show} onHide={handleClose}>
+        <Offcanvas placement='start' scroll={true} backdrop={true} show={show} onHide={handleClose}>
             <Offcanvas.Header closeButton>
                 <Offcanvas.Title>
                 {types

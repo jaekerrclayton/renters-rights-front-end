@@ -1,21 +1,4 @@
-#doc-button-link{
-    position:absolute;
-    top: 45%; 
-    left: 50%; 
-    text-align: center;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 173, 76, 0);
-    border:burlywood; 
-    border-radius: 1rem; 
 
-
-}
-
-#evic-carousel {
-
-    text-align: center;
-} 
 
 
 /* .my-container #btn-1 {

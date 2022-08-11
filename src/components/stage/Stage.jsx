@@ -60,10 +60,10 @@ const Stage = () => {
           </Accordion.Item>
           </Accordion>
       </Col>
-      <Col xs={12} md={7}>
+      <Col xs={12} md={5}>
         <div>
               <DocumentCarousel stage_id={stage.stage_id}  />
-          </div>
+        </div>
       </Col>
       </Row>
        

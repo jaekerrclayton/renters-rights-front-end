@@ -1,27 +1,10 @@
-.my-container{
-    position:absolute;
-    width: auto; 
-    height: auto; 
-    background-color: rgba(41, 143, 184, 0.678);
-    justify-content: center;
 
-}
+/* ****** POSITION OF BOXES FOR INDIVIDUAL DOCUMENTS******* */
 
 
-#doc-image{
-    /* max-width: 750px; */
-    padding: 10%;
-    width: 100%;
-    /* height: auto; */
-    /* margin: auto;  */
-    justify-content: center;
-
-    text-align: center;
-
-} 
-
-
+/* *********************************************************** */
 /* VACATE BUTTONS */
+/* *********************************************************** */
 
 .my-container #btn-1 {
     position: absolute; 
@@ -35,7 +18,6 @@
     border-radius: 1rem; 
 
 }
-
 
 
 .my-container #btn-2{
@@ -132,9 +114,9 @@
 }
 
 
-
+/* *********************************************************** */
 /* JUDGMENT CAROUSEL BUTTONS  */
-
+/* *********************************************************** */
 
 .my-container #btn-9 {
     position: absolute; 
@@ -149,8 +131,6 @@
 
 }
 
-
-
 .my-container #btn-10{
     position: absolute; 
     top: 48%; 
@@ -163,7 +143,6 @@
     border-radius: 1rem; 
 
 }
-
 
 .my-container #btn-11{
     position: absolute; 
@@ -190,7 +169,6 @@
     border-radius: 1rem; 
 
 }
-
 
 .my-container #btn-13{
     position: absolute; 
@@ -244,11 +222,9 @@
 
 }
 
-
-
+/* *********************************************************** */
 /* ORDER CAROUSEL BUTTONS */
-
-
+/* *********************************************************** */
 
 .my-container #btn-17 {
     position: absolute; 
@@ -263,8 +239,6 @@
 
 }
 
-
-
 .my-container #btn-18{
     position: absolute; 
     top: 25%; 
@@ -277,7 +251,6 @@
     border-radius: 1rem; 
 
 }
-
 
 .my-container #btn-19{
     position: absolute; 
@@ -337,6 +310,66 @@
     -ms-transform: translate(-50%, -50%);
     background-color: rgba(175, 50, 50, 0);
     padding: 9% 33%;
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+/* *********************************************************** */
+/* PREPARING FOR COURT */
+/* *********************************************************** */
+
+.my-container #btn-24{
+    position: absolute; 
+    top: 34%; 
+    left: 30%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(230, 29, 29, 0);
+    padding: 12% 12%;
+    border: solid; 
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-25{
+    position: absolute; 
+    top: 24%; 
+    left: 68%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(230, 29, 29, 0);
+    padding: 12% 12%;
+    border: solid; 
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-26{
+    position: absolute; 
+    top: 70%; 
+    left: 30%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(230, 29, 29, 0);
+    padding: 17% 13%;
+    border: solid; 
+    border:burlywood; 
+    border-radius: 1rem; 
+
+}
+
+.my-container #btn-27{
+    position: absolute; 
+    top: 65%; 
+    left: 68%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(230, 29, 29, 0);
+    padding: 17% 13%;
+    border: solid; 
     border:burlywood; 
     border-radius: 1rem; 
 
