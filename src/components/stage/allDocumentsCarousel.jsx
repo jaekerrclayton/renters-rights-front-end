@@ -35,7 +35,7 @@ const AllDocumentsCarousel = ({stage_id}) => {
          <img
             id="doc-image"
             class="doc-image"
-            className="d-block w-100"
+            // className="d-block w-100"
             src={doc.id}
             alt="doc-pic"
             />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Row from 'react-bootstrap/Row';
-import resourceData from './resourceData.json'; 
+import resourceData from '../data/english_data/resourceData.json'; 
 
 const ResourcesAbbr = () => {
     let resources = resourceData;

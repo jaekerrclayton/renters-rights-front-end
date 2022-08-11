@@ -5,7 +5,7 @@ import {
   useLocation,
 } from "react-router-dom";
 // import { getResource, deleteResource } from "./resourcedata";
-import resourceData from './resourceData.json'; 
+import resourceData from '../data/english_data/resourceData.json'; 
 
 
 const getResource = (resourceId) =>  {
@@ -37,7 +37,7 @@ const Resource = () => {
       // let contacts = resource.resource_list; 
 
       return (
-        <main style={{ padding: "1rem" }}>
+        <main>
           <h2>{resource.type}</h2>
           <p>{resource.about_resource}</p>
           {resource.resource_list.map((contact) => (

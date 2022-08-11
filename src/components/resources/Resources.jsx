@@ -11,7 +11,7 @@ import {
 // in the URL search params instead of in memory.
 // import Invoice from "./invoice";
 // import { getResources } from "./resourcedata";
-import resourceData from './resourceData.json'; 
+import resourceData from '../data/english_data/resourceData.json'; 
 
 
 
@@ -26,13 +26,8 @@ let [searchParams, setSearchParams] = useSearchParams();
 return (
   <main>
   <h2>Resources</h2>
-  <div style={{ display: "flex "}}>
-    <nav 
-      style={{
-        borderRight: "solid 1px",
-        padding: "1rem",
-      }}
-      >
+  <div>
+    <nav>
         <input
             value={searchParams.get("filter") || ""}
             onChange={(event) => {
@@ -55,15 +50,10 @@ return (
             <NavLink 
             // function
             // <NavLink className={({ isActive }) => isActive ? "red" : "blue"} />
-              style={({ isActive }) => ({
-                  display: "block", 
-                  margin: "1rem 0",
-                  color: isActive ? "red" : "",
-                })}
                 to={`/resources/${resource.resourceId}`}
                 key={resource.resourceId}
             >
-                {resource.type}
+                <button>{resource.type}</button>
             </NavLink>
         ))}
     </nav>

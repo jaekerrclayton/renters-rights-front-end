@@ -2,23 +2,23 @@
     position:absolute;
     width: auto; 
     height: auto; 
-    background-color: rgba(67, 104, 141, 0.678);
+    background-color: rgba(41, 143, 184, 0.678);
     justify-content: center;
 
 }
 
 
 #doc-image{
-    max-width: 750px;
+    /* max-width: 750px; */
     padding: 10%;
     width: 100%;
-    height: auto;
-    margin: auto; 
+    /* height: auto; */
+    /* margin: auto;  */
     justify-content: center;
 
     text-align: center;
 
-}
+} 
 
 
 /* VACATE BUTTONS */

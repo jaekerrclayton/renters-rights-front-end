@@ -14,14 +14,10 @@ const EvicMap = () => {
   return (
 
       <Container style={{ width: '30rem' }}>
-        <Row className="welcome-message">
+        {/* <Row className="welcome-message">
           <AlertDismissible />
-        </Row>
-      
-        <h6>Please select the photo most similar to the document you have received </h6>
+        </Row> */}
           <Row><MapCarousel /></Row>
-          <Row><p>some text</p></Row>
-          <Row><p>some more text</p></Row>
       </Container>
   
   );
