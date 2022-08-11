@@ -11,7 +11,7 @@
         "mapDescription":"description of eviction process",
         "resourceDescription":"description of resources",
         "questionDescription":"description of question page",
-        "footer":"Legal Help: Contact a Lawyer"
+        "footer":"Legal Help: Contact a Lawyer && LEGAL DISCLAIMER"
     },
     "es":
     {
@@ -25,6 +25,6 @@
         "mapDescription":"SPANISH description of eviction process",
         "resourceDescription":"SPANISH description of resources",
         "questionDescription":"SPANISH description of question page",
-        "footer":"SPANISH Legal Help: Contact a Lawyer"
+        "footer":"SPANISH Legal Help: Contact a Lawyer && LEGAL DISCLAIMER"
     }
 }
