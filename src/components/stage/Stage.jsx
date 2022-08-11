@@ -13,6 +13,7 @@ import Types from '../type/Types';
 import TypesAbbr from '../type/TypesAbbr';
 import DocumentCarousel from './allDocumentsCarousel'; 
 import Stack from 'react-bootstrap/Stack';
+import Alert from 'react-bootstrap/Alert';
 
 
 
@@ -44,34 +45,38 @@ const Stage = () => {
   return (
     <>
 
-    <Container>
+    <Container className="stages-all-map">
       <Row>
-      <Col xm={6} md={4}>
-      <Accordion>
-            <Accordion.Item eventKey="1">
-              <Accordion.Header><h4>{stage.title}</h4></Accordion.Header>
-              <Accordion.Body>
-              <TypesAbbr />
-              <p>{stage.info}</p>
-              <p>{stage.about_notice}</p>
-              <p>{stage.additional_resources}</p>
-              {/* <p>{stage.photo}</p> */}
-              </Accordion.Body>
-          </Accordion.Item>
-          </Accordion>
+      <Col sm>
+        
+          <Alert id="about-notice" variant="success">
+                  <Alert.Heading>{stage.title}</Alert.Heading>
+                      <p>
+                          <p>{stage.info}</p>
+                          {stage.about_notice.map((fact) => (
+                              <p>{fact}</p>
+                          ))}
+                          {stage.additional_resources.map((resource)=> (
+                            <p>resource</p>
+                          ))}
+                      </p>
+                      <hr />
+                      <p className="mb-0">
+                  <TypesAbbr />
+                  </p>
+          </Alert>
+      
       </Col>
-      <Col xs={12} md={8}>
-        <div>
-              <DocumentCarousel stage_id={stage.stage_id}  />
-        </div>
-      </Col>
-      </Row>
-       
+      <Col sm>
 
+            <div>
+                  <DocumentCarousel stage_id={stage.stage_id}  />
+            </div>
+          </Col>
+      </Row>
   </Container>
 
   </>
-
 
    
   );

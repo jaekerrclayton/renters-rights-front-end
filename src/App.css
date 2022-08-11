@@ -63,14 +63,30 @@ body {
 }
 
 
+
 /* ******************************************************* */
 /* EVICTION STAGE (by stage) */
 /* ******************************************************* */
+.stages-all-map{
+    padding-top: 2em;
+    padding-bottom: 5em;
+    height: 60vh; 
+}
+
+#about-notice {
+    width: auto;
+    
+}
+
 .my-container{
+    max-width: 600px;
     position:absolute;
     width: auto; 
-    height: auto; 
-    /* padding: 10%;  */
+    max-height: fit-content;
+    padding-bottom: 10%; 
+    padding-top: 0%; 
+
+    /* padding-bottom: 10%;  */
     /* background-color: rgba(41, 143, 184, 0.678); */
     justify-content: center;
 
