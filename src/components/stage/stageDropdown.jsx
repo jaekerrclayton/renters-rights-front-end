@@ -10,7 +10,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
-import stagesData from '../data/english_data/stagesData.json'; 
+import stagesData from '../../data/english_data/stagesData.json'; 
 
 // React Router makes it easy to read and manipulate 
 // the search params with useSearchParams. It works a 

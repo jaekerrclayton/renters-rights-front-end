@@ -1,0 +1,30 @@
+{
+    "en":
+    {
+        "main":"Renters Rights: New Orleans, Louisiana",
+        "map":"Eviction Process",
+        "resources":"Resources",
+        "questions":"Questions",
+        "volunteers":"For Volunteers",
+        "apply":"Volunteer with Us!",
+        "admin":"Admin",
+        "mapDescription":"description of eviction process",
+        "resourceDescription":"description of resources",
+        "questionDescription":"description of question page",
+        "footer":"Legal Help: Contact a Lawyer"
+    },
+    "es":
+    {
+        "main":"SPANISH Renters Rights: New Orleans, Louisiana",
+        "map":"Proceso de Desalojo",
+        "resources":"Recursos",
+        "questions":"Preguntas",
+        "volunteers":"Para Voluntarios",
+        "apply":"SPANISH Volunteer with Us!",
+        "admin":"SPANISH Admin",
+        "mapDescription":"SPANISH description of eviction process",
+        "resourceDescription":"SPANISH description of resources",
+        "questionDescription":"SPANISH description of question page",
+        "footer":"SPANISH Legal Help: Contact a Lawyer"
+    }
+}

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Row from 'react-bootstrap/Row';
-import resourceData from '../data/english_data/resourceData.json'; 
+// import resourceData from '../data/english_data/resourceData.json'; 
 
-const ResourcesAbbr = () => {
-    let resources = resourceData;
+const ResourcesAbbr = ({resourceData}) => {
+    console.log(resourceData.resources);
+    let resources = resourceData.resources;
     const [currentResource, setCurrentResource] = useState(resources[0]);
     const [displayResources, setDisplayResources] = useState({1:true, 2:false, 3:false, 4:false});
 
@@ -21,13 +22,13 @@ const ResourcesAbbr = () => {
         <div>
             <h4>{resource.title}</h4>
             <p>{resource.about}</p>
-            <p>Phone Number: {resource.phone_number}</p>
-            <p>Email: {resource.email}</p>
+            <p>{resourceData.phone}: {resource.phone_number}</p>
+            <p>{resourceData.email}: {resource.email}</p>
         </div>))
 
     return (
         <main>
-            <h2>Resources</h2>
+            <h2>{resourceData.title}</h2>
             <Row>
                 <nav style={{
                     borderRight: "solid 1px",

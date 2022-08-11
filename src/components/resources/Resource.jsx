@@ -5,7 +5,7 @@ import {
   useLocation,
 } from "react-router-dom";
 // import { getResource, deleteResource } from "./resourcedata";
-import resourceData from '../data/english_data/resourceData.json'; 
+import resourceData from '../../data/english_data/resourceData.json'; 
 
 
 const getResource = (resourceId) =>  {

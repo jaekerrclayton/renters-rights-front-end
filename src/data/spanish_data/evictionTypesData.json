@@ -1,6 +1,6 @@
 [
     {"typeId": "1",
-    "cause": "Termination of Lease",
+    "cause": "SPANISH Termination of Lease",
     "description":"The landlord can evict tenant upon exiration of lease term.",
     "landlordNeeds": "The landlord is required to provide the tenant with a Notice to Vacate.",
     "renterRights":[
@@ -11,7 +11,7 @@
         ]
     },
     {"typeId":"2",
-    "cause":"Lease Violation",
+    "cause":"SPANISH Lease Violation",
     "description" : "A landlord can start an eviction when a tenant has violated the lease.",
     "landlordNeeds": "The landlord needs to provide evidence that a tenant has violated the lease. Some leases also require the landlord provide a warning and time to correct a lease violation before bringing an eviction.",
     "renterRights" : [
@@ -20,7 +20,7 @@
         ]
     },
     {"typeId": "3",
-    "cause" : "Nonpayment",
+    "cause" : "SPANISH Nonpayment",
     "description" : "A landlord can start an eviction when a tenant has failed to pay rent on time.",
     "landlordNeeds" : "",
     "renterRights" : [
@@ -37,7 +37,7 @@
         ]
     },
     {"typeId":"4",
-    "cause":"No Cause",
+    "cause":"SPNAISH No Cause",
     "description":"The landlord does not give a cause for eviction.",
     "landlordNeeds" : "",
     "renterRights" : [

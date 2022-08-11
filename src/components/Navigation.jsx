@@ -13,7 +13,14 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 // <Container fluid></Container>
 // <nav className="navbar navbar-expand navbar-dark bg-dark">
 
-function OffCanvasNav() {
+function OffCanvasNav({changeLanguage, translations}) {
+  
+  const changeLanguageCallback = (e) => {
+    e.preventDefault();
+    console.log(e.target);
+    changeLanguage(e.target.value);
+  };
+  
   return (
     //lang switch hook to 
     <>
@@ -21,9 +28,10 @@ function OffCanvasNav() {
         <Navbar  key={expand} bg="dark" variant='dark' expand={expand} className="mb-5">
           <Container fluid>
                 <NavLink className="navbar-brand" to="/">
-                  Renters Rights : New Orleans, Louisiana
-
+                  {translations.main}
                 </NavLink>
+                  <Button value='es' onClick={changeLanguageCallback}>Spanish</Button>
+                  <Button value='en' onClick={changeLanguageCallback}>English</Button>
                       <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                       <Navbar.Offcanvas
                         id={`offcanvasNavbar-expand-${expand}`}
@@ -32,72 +40,32 @@ function OffCanvasNav() {
                       >
                         <Offcanvas.Header closeButton>
                               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                                Renters Rights : New Orleans
+                                {translations.main}
                               </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                          {/* MAIN CAT FOR HEAD NAV */}
                                   <Nav className="justify-content-end flex-grow-1 pe-3">
                                   <NavLink className="nav-link" to="/map-home">
-                                    Eviction Map
-                                  </NavLink>
-                                  <NavLink className="nav-link" to="/eviction-types">
-                                    Eviction Types
+                                    {translations.map}
                                   </NavLink>
                                   <NavLink className="nav-link" to="/resources">
-                                    Resources
+                                    {translations.resources}
                                   </NavLink>
                                   <NavLink className="nav-link" to="/contact">
-                                    Contact
+                                    {translations.questions}
                                   </NavLink>
-
-
-                                  <NavDropdown
-                                  title="Eviction"
-                                  id={`offcanvasNavbarDropdown-expand-${expand}`}
-                                > 
-                                  <NavLink className="nav-link" to="/map-home">
-                                    Eviction Map
-                                  </NavLink>
-                                 </NavDropdown>
-
-{/* 
-                            <Dropdown.Item href="#/action-1" active>
-                                Stages of Eviction
-                                </Dropdown.Item>
-                                        <nav>
-                                            {stages
-                                                .map((stage) => ( 
-                                                <NavLink 
-                                                    style={({ isActive }) => ({
-                                                        display: "block", 
-                                                        margin: "1rem 0",
-                                                        
-                                                    })}
-                                                    to={`/eviction-map/${stage.stage_id}`}
-                                                    key={stage.stage_id}
-                                                >
-                                                    {stage.title}
-                                                    
-                                                </NavLink>
-                                            ))}
-                                        </nav> */}
-
-                          {/* DROPDOWN LIST FOR NAV */}
                                 <NavDropdown
-                                  title="For Volunteers"
+                                  title={translations.volunteers}
                                   id={`offcanvasNavbarDropdown-expand-${expand}`}
                                 > 
-                                
-                                  {/* <NavLink className="nav-link" to="/contact">Contact</NavLink> */}
-
                                         <NavDropdown.Item href="#action4">
-                                          Volunteer With Us ! 
+                                          {translations.apply}
                                         </NavDropdown.Item>
                                         <NavDropdown.Divider />
                                         <NavDropdown.Item href="#action5">
-                          
-                                          <NavLink className="nav-link" to="/admin">Admin</NavLink>
+                                          <NavLink className="nav-link" to="/admin">
+                                            {translations.admin}
+                                          </NavLink>
                                         </NavDropdown.Item>
                             </NavDropdown>
                             </Nav>

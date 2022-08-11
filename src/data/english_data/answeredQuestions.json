@@ -1,4 +1,12 @@
-[
+{   "title": "Contact Us",
+    "FAQ":"Frequently Asked Questions",
+    "instructions":"If you have a question that is not covered in the FAQ, you can submit a question anonymously in the form below. Answers to questions are posted on Tuesdays.",
+    "question":"Question",
+    "send":"send",
+    "disclaimer":"Do NOT include identifying information",
+    "urgent":"SPANISH For URGENT questions, you can call (or text?) the hotline at 555-5555",
+    "current":"SPANISH volunteer(s) currently available to speak with you",
+    "answers" : [
     {
         "q_id": 1, 
         "Question": "Example Question 111111111111111111111111111111 hello? is this wokring? IS THIS TOO LONG????????? maybe?",
@@ -19,4 +27,4 @@
         "Question": "Example Question 4",
         "Answer": "Example Answer 4 aaaaaaaaaaaaaaaaaa"
     }
-]
+]}

@@ -4,7 +4,7 @@ import emailjs, { init } from '@emailjs/browser';
 init("Nuw2iJ96uZj1BoDyP");
 
 
-const NewQuestion = () => {
+const NewQuestion = ({answeredQuestions}) => {
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -26,11 +26,11 @@ const NewQuestion = () => {
     return (
         <div>
             <form ref={form} onSubmit={sendEmail}>
-                <label>Question</label>
+                <label>{answeredQuestions.question}</label>
                 <Row>
-                    <textarea name="message" rows={5} columns={5} placeholder="do NOT include identifying information"/>
+                    <textarea name="message" rows={5} columns={5} placeholder={answeredQuestions.disclaimer}/>
                 </Row>
-                <input type="submit" value="Send" />
+                <input type="submit" value={answeredQuestions.send} />
             </form>
         </div>
         );

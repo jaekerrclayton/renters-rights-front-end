@@ -4,11 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink } from "react-router-dom";
 import './evictionDocsCarousel.css'; 
 
-import documentData from '../data/english_data/documentData'; 
+// import documentData from '../data/english_data/documentData'; 
 
 
 
-const MapCarousel = () => { 
+const MapCarousel = ({documentData}) => { 
 
     return (
       <div id="evic-carousel">

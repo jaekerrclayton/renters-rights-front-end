@@ -8,11 +8,15 @@ import judgment2 from '../documents/judgment2.jpeg';
 
 
 const documentData = {
-
+    title:'TITLE TILTE',
+    introduction:'??????????',
+    close:'clos me',
+    browse:'Browse document examples',
+    notice:'Do any of these look like your notice?',
     1 : [
         {   id: vacate1,
             stage_id:  1,
-            stage_title: "Notice to Vacate",    
+            stage_title: "Noticia de Vaciar",    
             docInfo : [
                     {info_id: 1,
                     title: "SSDPANISH", 

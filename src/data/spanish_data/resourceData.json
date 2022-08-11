@@ -1,7 +1,10 @@
-[
+{   "title":"Recursos",
+    "phone":"Número de Teléfono",
+    "email":"Correo Electrónico",
+    "resources":[
 
     {   "resourceId": 1, 
-        "type": "Legal Aid", 
+        "type": "Spanish Legal Aid", 
         "about_resource": "general summary of what legal aid can offer", 
         "resource_list": [
 
@@ -26,7 +29,7 @@
 
     },
     {   "resourceId": 2, 
-        "type": "Mutual Aid", 
+        "type": "Spanish Mutual Aid", 
         "about_resource": "general summary of what mutual aid can offer", 
         "resource_list": [
 
@@ -100,4 +103,4 @@
 
 
 
-]
+]}

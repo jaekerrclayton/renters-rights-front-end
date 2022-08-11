@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Row from 'react-bootstrap/Row';
-import typeDataJson from '../data/english_data/evictionTypesData.json';
 import Defense from './Defense';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
@@ -8,7 +7,7 @@ import { OffcanvasBody, OffcanvasHeader } from 'react-bootstrap';
 
 
 
-const TypesAbbr = () => {
+const TypesAbbr = ({typeDataJson}) => {
 
     let types = typeDataJson;
     const [currentType, setCurrentType] = useState({'renterRights':[]});

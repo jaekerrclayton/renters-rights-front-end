@@ -8,8 +8,5 @@ export { default as Posts } from "./contact/Posts";
 export { default as EvicMap } from "./stage/EvicMap";
 export { default as Stage } from "./stage/Stage";
 export { default as Stages } from "./stage/Stages";
-export { default as Resources } from "./resources/Resources";
 export { default as Resource } from './resources/Resource';
-export { default as Type } from './type/Type'; 
-export { default as Types } from './type/Types';
 

@@ -12,7 +12,7 @@ import Modal from 'react-bootstrap/Modal';
 
 
 
-const EvicMap = () => {
+const EvicMap = ({documentData}) => {
 
   const [show, setShow] = useState(false);
   
@@ -20,10 +20,10 @@ const EvicMap = () => {
 
       <Container style={{ width: '30rem' }}>
         <Row className="welcome-message">
-          <AlertDismissible />
+          <AlertDismissible documentData={documentData}/>
         </Row>
         <Button variant="primary" onClick={() => setShow(true)}>
-        Browse document examples
+        {documentData.browse}
       </Button>
 
       <Modal
@@ -34,12 +34,12 @@ const EvicMap = () => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="example-custom-modal-styling-title">
-            Do any of these look like your notice? 
+            {documentData.notice} 
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>
-              <MapCarousel />
+              <MapCarousel documentData={documentData}/>
           </p>
         </Modal.Body>
       </Modal>
