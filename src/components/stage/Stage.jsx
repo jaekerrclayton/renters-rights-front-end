@@ -46,7 +46,7 @@ const Stage = () => {
 
     <Container>
       <Row>
-      <Col xm={6} md={5}>
+      <Col xm={6} md={4}>
       <Accordion>
             <Accordion.Item eventKey="1">
               <Accordion.Header><h4>{stage.title}</h4></Accordion.Header>
@@ -60,7 +60,7 @@ const Stage = () => {
           </Accordion.Item>
           </Accordion>
       </Col>
-      <Col xs={12} md={5}>
+      <Col xs={12} md={8}>
         <div>
               <DocumentCarousel stage_id={stage.stage_id}  />
         </div>

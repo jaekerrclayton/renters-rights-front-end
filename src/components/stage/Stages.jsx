@@ -13,6 +13,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import stageData from '../data/english_data/stagesData.json'; 
+import Stage from './Stage'; 
 
 
 

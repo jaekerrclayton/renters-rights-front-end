@@ -30,7 +30,7 @@ const TypesAbbr = () => {
 
     const rights = currentType.renterRights.map((right) => (
         <div>
-            <b>You may have a defense to eviction if any of the following apply:</b>
+            {/* <b>You may have a defense to eviction if any of the following apply:</b> */}
             <h4>{right.Defense}</h4>
             <p>{right.Description}</p>
         </div>))
