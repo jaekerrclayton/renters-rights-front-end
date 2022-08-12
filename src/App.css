@@ -26,7 +26,6 @@ body {
   a {
     text-decoration: none;
     color: black;
-    margin: 1em;
   }
   a:hover {
     text-decoration: none;
@@ -71,13 +70,16 @@ body {
   color: #204d68;
   font-size: 2rem;
   width: 4rem;
-  border-radius: 7px;
+  border-radius: 1.5rem;
+  padding: 0;
+  margin: 0;
 }
 .number-button:hover{
   border: 3px solid #204d68;
   background-color: #E0FBFC;
-  border-radius: 7px;
+  border-radius: 1.5rem;
 }
+
 /* ******************************************************* */
 /* EVICTION-MAP HOME */
 /* ******************************************************* */

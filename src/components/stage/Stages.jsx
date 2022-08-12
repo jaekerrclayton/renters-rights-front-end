@@ -1,10 +1,10 @@
-import React , { useState }  from "react";
+import React from "react";
 import {
         NavLink, 
         Outlet,
-        useSearchParams,
 } from "react-router-dom"; 
 import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container'
 
 
 
@@ -18,13 +18,11 @@ const Stages = ({stageData}) => {
     
     let stages = getStages();
     console.log(stages); 
-    
-    
-    let [searchParams, setSearchParams] = useSearchParams();
+
     return (
         <main>
-            <div>
-                <Nav justify variant="tabs" >
+            <Container flex>
+                <Nav justify flex>
                             {stages
                                 .map((stage) => ( 
                             <Nav.Item>
@@ -42,7 +40,7 @@ const Stages = ({stageData}) => {
                             ))}
                     </Nav>
             <Outlet />
-        </div>
+        </Container>
                 {/* <Outlet /> */}
         </main>
     );
