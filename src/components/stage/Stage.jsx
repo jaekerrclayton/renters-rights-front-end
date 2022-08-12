@@ -38,6 +38,7 @@ const Stage = ({documentData, stageData, typeData}) => {
           <Alert id="about-notice" variant="success">
                   <Alert.Heading>{stage.title}</Alert.Heading>
                       <p>
+                          <p>{stage.sub_title}</p>
                           <p>{stage.info}</p>
                           {stage.about_notice.map((fact) => (
                               <p>{fact}</p>
@@ -45,6 +46,8 @@ const Stage = ({documentData, stageData, typeData}) => {
                           {stage.additional_resources.map((resource)=> (
                             <p>resource</p>
                           ))}
+                          <p>{stage.nextSteps}</p>
+                          <p>{stage.next_steps}</p>
                       </p>
                       <hr />
                       <p className="mb-0">

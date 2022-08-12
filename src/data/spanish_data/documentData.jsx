@@ -9,11 +9,11 @@ import courtPrep from '../documents/courtPrep.png';
 
 
 const documentData = {
-    title:'TITLE TILTE',
-    introduction:'??????????',
+    title:'Que es un desalojo?',
+    introduction:'El desalojo es un proceso legal en el cual el propietario solicita a la corte una Orden de Posesión de su propia casa. En este sitio, estamos para guiarle sobre el proceso legal de un desalojo, para que usted sepa sus derechos a paso. Si usted recibe un aviso de desahuicio, es recomando que se consulta con un abogado sobre las opciones disponibles.',
     close:'clos me',
-    browse:'Browse document examples',
-    notice:'Do any of these look like your notice?',
+    browse:'Haz click para ver ejemplos de documentos:',
+    notice:'Usted ha recibido un documento aparecido? Se puede seleccionarlo para ver mas informacion',
     1 : [
         {   id: vacate1,
             stage_id:  1,
@@ -95,16 +95,16 @@ const documentData = {
             docInfo: [
     
                 {info_id: 17, 
-                title: "Cause of Eviction",
-                sub_title: "The orduSPANISHAPSNISHook reason you are being evicted", 
+                title: "Motivo de Desalojo",
+                sub_title: "Debe estar en el orden, y por el mismo motivo que figura en la Notificacion de Desalojo ", 
                 placement: "bottom"
                 }
                 , 
             
                 {
                 info_id: 18,
-                title: "Case Number",
-                sub_title: "You can call theuSPANISHAPSNISHook quest a translator in advance, or request an extension. Your case number is important in gathering any additional information you may need to provide to the court",
+                title: "El Numero de su Caso",
+                sub_title: "Se puede llamar al corte para pedir ayuda de interpretacion antes de su caso.",
                 placement: "bottom"
                 }
                 , 
@@ -118,7 +118,7 @@ const documentData = {
             
                 {info_id: 20,
                 title: "Location of Court", 
-                sub_title: "ThisuSPANISHAPSNISHook questions or continuances",
+                sub_title: "La ubicacion del Corte: Aunque si usted desalojara antes que la fecha de su caso, AUN SI debe comunicarse con la corte antes que la fecha de su caso -- prodria expedir un aviso de desahuicio en su contra que quedaria registrado en su expediente",
                 placement: "top"
             
             } 

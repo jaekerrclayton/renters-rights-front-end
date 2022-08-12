@@ -1,25 +1,26 @@
 {   "title": "Conectate con Nosotros",
     "FAQ":"Preguntas Frequentes",
-    "instructions":"SPANISH - If you have a question that is not covered in the FAQ, you can submit a question anonymously in the form below. Answers to questions are posted on Tuesdays.",
-    "question":"Preguntas",
-    "send":"Spanish send",
+    "instructions":"Si tiene una pregunta que no está cubierta en las preguntas frecuentes, puede enviar una pregunta de forma anónima en el siguiente formulario. Las respuestas a las preguntas se publican semanalmente",
+    "question":"Comparte sus Preguntas",
+    "send":"enviar",
     "disclaimer":"SPANISH do NOT include identifying information",
-    "urgent":"SPANISH For URGENT questions, you can call (or text?) the hotline at 555-5555",
-    "current":"SPANISH volunteer(s) currently available to speak with you",
+    "urgent":"Para preguntas URGENTES, puede llamar (o enviar un mensaje de texto) a la línea directa al 555-5555. Por favor , si usted es víctima de violencia doméstica en su casa, hay recursos disponibles para usted. Llame a Centro de Justicia Familiar ( Family Justice Center ) al ( 504) 592-4005 o a su línea directa (504) 866-9554 disponible 24 horas.",
+    "current":" voluntario(s) disponible para hablar en este momento" ,
     "answers" : [
     {
         "q_id": 1, 
-        "Question": "ESPANOLn 1",
-        "Answer": "Exampasdfasdf SPANISHaaaa"
+        "Question": "¿Qué ocurre si mi propietario me desaloja sin notificación?",
+        "Answer": "Un desalojo solo es legal si viene de la corte y con la orden de un juez. Si su propietario cambia las cerraduras, saca sus cosas a la calle, o le hecha sin la orden de un juez, el desalojo es ilegal."
     },
     {
         "q_id": 2, 
-        "Question": "ESPANOLn 1",
-        "Answer": "Exampasdfasdf SPANISHaaaa"
+        "Question": "¿Puedo renunciar a pagar mi renta si mi propietario no quiere reparar algo en la casa? ",
+        "Answer": "No, en Luisiana usted no puede detener la renta. Si usted tiene un contrato, léalo detenidamente para ver qué dice sobre reparaciones y quien tiene que realizarlas. Generalmente los propietarios legalmente tienen que asegurarse de que su casa sea segura y habitable. Si su propietario rechaza hacer reparaciones necesarias, a veces usted puede pagar por ellos y después deducir los costos de la renta. Este proceso es arriesgado  y le recomendamos que documente todo cuidadosamente, tenga prueba escrita de todas las reparaciones, y busque ayuda legal si usted decide hacer las reparaciones por su cuenta. Si tiene más preguntas sobre el proceso , puede llamar a nuestra línea directa de atención. Si usted es un inquilino de mes a mes, su propietario podría responder a sus reparaciones notificándose con un desalojo para el mes próximo. Es posible que sea mejor intentar mudarse." 
+        
     },
     {
         "q_id": 3, 
-        "Question": "ESPANOLn 1",
+        "Question":" ¿Qué hacer si no puedo pagar mi renta? Mi propietario me amenaza con  el desalojo si no pago?", 
         "Answer": "Exampasdfasdf SPANISHaaaa"
     },
     {

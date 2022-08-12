@@ -1,34 +1,37 @@
 [
     {
       "stage_id": 1, 
-      "title": "Noticia de Vaciar",
-      "sub_title": "spanish spanish",
-      "info": "This is the faaaàasdlkjfadlkjafldkj to prepare! Read on to understand your eviction and see what the next steps are",
+      "title": "Noticia de Vaciar: Notice to Vacate",
+      "sub_title": "El propietario le tiene que notificar con 5 días previos",
+      "info": "La notificación no tiene que ser de la corte, pero necesita haber sido puesta en la puerta de su casa. Puede ser escrita a mano o escrita a máquina o computadora.",
       "documents": ["vacate1", "vacate2", "vacate3"],
-      "about_notice": ["abasdflkasdkjkàdiv info"], 
-      "next_steps": "aasdfasdfaasdfext",
+      "about_notice": ["**OJO** En Louisiana  se puede renunciar a esta notificación en el contrato. Busque en su contrato por 'Waiver of Notice' , lo que significa que su propietario no tiene que avisar con 5 días de prioridad."], 
+      "nextSteps": "Pasos Siguientes:",
+      "next_steps": "Si usted no desocupa, su propietario tendrá que presentar una demanda en la corte para desalojarlo",
       "additional_resources": ["whasdflkjasfe hover", "anotherasdfasdfmaybe route to other page? ", "aaand another resource"]
     },
 
 
     {
       "stage_id": 2, 
-      "title": "Possessionnnnnn of Property",
-      "sub_title": "spanish spanish",
-      "info": "This is the faaaàasdlkjfadlkjafldkj to prepare! Read on to understand your eviction and see what the next steps are",
+      "title": "Rule for Possession / Order : Orden de Desalojo",
+      "sub_title": "Si usted no desocupa despues de la Notica de Vaciar, su propietario tendrá que presentar una demanda en la corte para desalojarlo",
+      "info": " El orden indica la fecha en la que tiene que ir a corte.  Esta fecha no será hasta después de 3 días después de la citación. La citación se pegará en su puerta. Si usted vive en el East Bank , también se le enviará por correo. La noticia tiene que clarificar el causa del desalojo.",
       "documents": ["vacate1", "vacate2", "vacate3"],
-      "about_notice": ["abasdflkasdkjkàdiv info"], 
+      "about_notice": ["Es muy recomendable  que usted se ponga en contacto con los servicios legales si tiene la intención de discutir su caso en la corte."], 
+      "nextSteps": "Pasos Siguientes:",
       "next_steps": "aasdfasdfaasdfext",
-      "additional_resources": ["whasdflkjasfe hover", "anotherasdfasdfmaybe route to other page? ", "aaand another resource"]
+      "additional_resources": ["Es muy recomendable  que usted se ponga en contacto con los servicios legales si tiene la intención de discutir su caso en la corte.", "anotherasdfasdfmaybe route to other page? ", "aaand another resource"]
     },
   
     {
       "stage_id": 3, 
       "title": "Prreparandoooo For Court",
       "sub_title": "spanish spanish",
-      "info": "This is the faaaàasdlkjfadlkjafldkj to prepare! Read on to understand your eviction and see what the next steps are",
+      "info": "Lleve consigo todas las evidencias que tenga a la corte - por ejemplo evidencias de pago, testigos, mensajes/ texto/ correos electrónicos con su propietario . Este es el momento que tiene para defenderse.",
       "documents": ["vacate1", "vacate2", "vacate3"],
-      "about_notice": ["abasdflkasdkjkàdiv info"], 
+      "about_notice": ["Es muy recomendable  que usted se ponga en contacto con los servicios legales si tiene la intención de discutir su caso en la corte." ],
+      "nextSteps": "Pasos Siguientes:", 
       "next_steps": "aasdfasdfaasdfext",
       "additional_resources": ["whasdflkjasfe hover", "anotherasdfasdfmaybe route to other page? ", "aaand another resource"]
     },
@@ -36,11 +39,12 @@
       
     {
       "stage_id": 4, 
-      "title": "After Courtrrrrrr Hearing",
-      "sub_title": "Depending on the outcome of your hearing, you have some options",
-      "info": "Pasdlkfjaslkfjsames ( -- maasdlfkjad;flkajs;fldk to if you win / lose / appeal / didn't go) :: If your court date has past and you have lost or did not go, it's important you prepare quickly. But also, there are things your landlord cannot legally do even when you don't leave ",
+      "title": "Despues de la Corte",
+      "sub_title": "Si tiene éxito, su desalojo se cancelará",
+      "info": "Si no tiene éxito , usted será desalojado, pero hay opctiones: Tiene que actuar rapidamente",
       "documents": ["vacate1"],
-      "about_notice": ["firstasdf;sdlfkas;ldfkv info", "third div info"], 
+      "about_notice": ["firstasdf;sdlfkas;ldfkv info", "third div info"],
+      "nextSteps": "Pasos Siguientes:", 
       "next_steps": "link to next",
       "additional_resources": ["wherasdlfkjas;ldkfj to talk to ", "aaand another resource"]
   
@@ -53,6 +57,7 @@
       "sub_title": "Yoasdflksajf go) & here is what to do next",
       "info": "Potentiasdlfkjasdfwin / lose etc ): If you've gotten this notice, it is important that you move out as soon as posisble. Here is what to expect within 24 hours of receiving this notice. Some tips on how to move out to avoid losing your deposit or having to deal with the constable/sheriff",
       "documents": ["judgment1", "judgment2"], 
+      "nextSteps": "Pasos Siguientes:",
       "about_notice": ["first dasdfhird div info"], 
       "next_steps": "link to next (link to nestedasdfa of post-losing eviction)",
       "additional_resources": ["where to reach out", "another place to talk to ", "aaand another resource"]
