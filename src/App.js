@@ -1,24 +1,17 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import ReactDOM from "react-dom";
-import "./index.css";
 import './App.css'; 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   Navigation,
   Footer,
   Home,
-  About,
-  Resource,
-  Resources,
   Contact,
   Admin, 
   EvicMap,
   Stages,
   Stage,
-  Type,
-  Types,
 } from "./components";
 import ResourcesAbbr from './components/resources/ResourceAbbr';
 import resourceData from './data/english_data/resourceData.json'; 
@@ -64,21 +57,20 @@ const App = () => {
   return (
 
     <div className="App"> 
-              <Navigation changeLanguage={changeLanguage} translations={language.general}/>  
-                          <Routes>
-                            <Route path="/" element={<Home translations={language.general}/>} />
-                            <Route path="resources" element={<ResourcesAbbr resourceData={language.resources}/>} />
-                            <Route path="/contact" element={<Contact resourceData={language.resources} answeredQuestions={language.questions}/>} />
-                            <Route path="/admin" element={<Admin />} />
-                            <Route path="/map-home" element={<EvicMap documentData={language.documents}/>} />
-                            <Route path="/eviction-map" element={<Stages stageData={language.stages}/>}>
-                                  <Route path="" index />
-                                  <Route path=":stage_id" element={<Stage stageData={language.stages} documentData={language.documents} typeData={language.types}/>} /> 
-                            </Route>
-                          </Routes>
-              <Footer translations={language.general}/>
-
-          </div> 
+      <Navigation changeLanguage={changeLanguage} translations={language.general}/>  
+      <Routes>
+        <Route path="/" element={<Home translations={language.general}/>} />
+        <Route path="resources" element={<ResourcesAbbr resourceData={language.resources}/>} />
+        <Route path="/contact" element={<Contact resourceData={language.resources} answeredQuestions={language.questions}/>} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/map-home" element={<EvicMap documentData={language.documents}/>} />
+        <Route path="/eviction-map" element={<Stages stageData={language.stages}/>}>
+          <Route path="" index />
+          <Route path=":stage_id" element={<Stage stageData={language.stages} documentData={language.documents} typeData={language.types}/>} /> 
+        </Route>
+      </Routes>
+      <Footer translations={language.general}/>
+    </div> 
 
 
 );

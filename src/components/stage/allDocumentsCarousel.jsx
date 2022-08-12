@@ -1,10 +1,8 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import Carousel from 'react-bootstrap/Carousel';
-// import documentData from '../data/english_data/documentData'; 
 import './documentCarousel.css'; 
 
 

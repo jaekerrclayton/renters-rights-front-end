@@ -5,8 +5,6 @@ import { NavLink } from "react-router-dom";
 function Navigation() {
   return (
     <div className="navigation">
-      {/* ariant="dark" bg="dark" expand="lg"> */}
-      <Container fluid></Container>
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
