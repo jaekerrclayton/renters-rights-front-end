@@ -11,7 +11,8 @@
         "mapDescription":"Learn about your rights during the eviction process",
         "resourceDescription":"Find local resources",
         "questionDescription":"Submit your own question, or browse most frequently asked questions",
-        "footer":"This site provides legal information, not advice. For Legal Aid : Contact a Lawyer"
+        "footer":"This site provides legal information, not advice. For Legal Aid : Contact a Lawyer",
+        "lngButton":"Español"
     },
     "es":
     {
@@ -25,6 +26,7 @@
         "mapDescription":"Conozca el proceso de desalojo y sus derechos",
         "resourceDescription":"Encuentre recursos locales",
         "questionDescription":"Envíe su propia pregunta o explore las preguntas más frecuentes",
-        "footer":"Este sitio proporciona información legal, no asesoramiento. Para asistencia legal: Póngase en contacto con un abogado"
+        "footer":"Este sitio proporciona información legal, no asesoramiento. Para asistencia legal: Póngase en contacto con un abogado",
+        "lngButton":"English"
     }
 }

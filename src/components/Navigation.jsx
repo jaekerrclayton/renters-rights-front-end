@@ -18,7 +18,11 @@ function OffCanvasNav({changeLanguage, translations}) {
   const changeLanguageCallback = (e) => {
     e.preventDefault();
     console.log(e.target);
-    changeLanguage(e.target.value);
+    let value = 'es';
+    if (e.target.value === 'English') {
+      value = 'en'
+    }
+    changeLanguage(value);
   };
   
   return (
@@ -31,8 +35,7 @@ function OffCanvasNav({changeLanguage, translations}) {
                 <NavLink className="navbar-brand" to="/">
                   {translations.main}
                 </NavLink>
-                  <Button value='es' onClick={changeLanguageCallback}>Spanish</Button>
-                  <Button value='en' onClick={changeLanguageCallback}>English</Button>
+                  <Button value={translations.lngButton} onClick={changeLanguageCallback}>{translations.lngButton}</Button>
                       <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                       <Navbar.Offcanvas
                         id={`offcanvasNavbar-expand-${expand}`}

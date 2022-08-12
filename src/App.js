@@ -34,56 +34,49 @@ import typeDataJson from './data/english_data/evictionTypesData.json';
 import esTypeDataJson from './data/spanish_data/evictionTypesData.json';
 
 const App = () => {
-  const [language, setLanguage] = useState();
+  const [language, setLanguage] = useState({general:translations.en, resources:resourceData, questions:answeredQuestions, documents:documentData, stages:stageData, types:typeDataJson});
 
   const changeLanguage = (lng) => {
     console.log(lng);
-    setLanguage(lng);
+    let newLanguageSetting = {}
+    if (String(lng) === 'en'){
+      newLanguageSetting = {
+        general:translations.en,
+        resources:resourceData,
+        questions:answeredQuestions,
+        documents:documentData,
+        stages:stageData,
+        types:typeDataJson
+      }
+    } else {
+      newLanguageSetting = {
+        general: translations.es,
+        resources: esResourceData,
+        questions:esAnsweredQuestions,
+        documents:esDocumentData,
+        stages:esStageData,
+        types:esTypeDataJson
+      }
+    }
+    setLanguage(newLanguageSetting);
   };
 
   return (
 
     <div className="App"> 
-            {/* <Router> */}
-              <Navigation changeLanguage={changeLanguage} translations={language==='en'? translations.en : translations.es}/>  
+              <Navigation changeLanguage={changeLanguage} translations={language.general}/>  
                           <Routes>
-                            <Route path="/" element={<Home translations={language==='en'? translations.en : translations.es}/>} />
-                            <Route path="resources" element={<ResourcesAbbr resourceData={language==='en'? resourceData : esResourceData}/>}>
-                                  {/* <Route
-                                    index
-                                    element={
-                                      <main style={{ padding: "1rem" }}>
-                                      </main>
-                                    }
-                                  /> */}
-                                  {/* <Route path=":resourceId" element={<Resource />} /> */}
-                                </Route>
-                            <Route path="/contact" element={<Contact resourceData={language==='en'? resourceData : esResourceData} answeredQuestions={language==='en'? answeredQuestions : esAnsweredQuestions}/>} />
+                            <Route path="/" element={<Home translations={language.general}/>} />
+                            <Route path="resources" element={<ResourcesAbbr resourceData={language.resources}/>} />
+                            <Route path="/contact" element={<Contact resourceData={language.resources} answeredQuestions={language.questions}/>} />
                             <Route path="/admin" element={<Admin />} />
-                            <Route path="/map-home" element={<EvicMap documentData={language==='en' ? documentData : esDocumentData}/>}>
-                              {/* <Route path="" element={<Stages stageData={language==='en' ? stageData : esStageData} />} /> */}
-                            </Route>
-                            <Route path="/eviction-map" element={<Stages stageData={language==='en' ? stageData : esStageData}/>}>
-
+                            <Route path="/map-home" element={<EvicMap documentData={language.documents}/>} />
+                            <Route path="/eviction-map" element={<Stages stageData={language.stages}/>}>
                                   <Route path="" index />
-                                  <Route path=":stage_id" element={<Stage stageData={language==='en' ? stageData : esStageData} documentData={language==='en' ? documentData : esDocumentData} typeData={language==='en'? typeDataJson : esTypeDataJson}/>} /> 
+                                  <Route path=":stage_id" element={<Stage stageData={language.stages} documentData={language.documents} typeData={language.types}/>} /> 
                             </Route>
-                            {/* <Route path="eviction-types" element={<Types />}>
-                                <Route
-                                    index
-                                    element={
-                                          <main style={{ padding: "1rem" }}>
-                                            <h2>Select the Cause Given By Your Landlord</h2>
-                                            <h3>Need help finding the cause? Look at the examples below.</h3>
-                                            <p>**picture examples will go here**</p>
-                                          </main>
-                                        }
-                                />
-                                  <Route path=":typeId" element={<Type />} />
-                                </Route> */}
                           </Routes>
-              <Footer translations={language==='en'? translations.en : translations.es}/>
-            {/* </Router>   */}
+              <Footer translations={language.general}/>
 
           </div> 
 
