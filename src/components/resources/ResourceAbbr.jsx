@@ -3,9 +3,9 @@ import Row from 'react-bootstrap/Row';
 // import resourceData from '../data/english_data/resourceData.json'; 
 
 const ResourcesAbbr = ({resourceData}) => {
-    console.log(resourceData.resources);
+    console.log(resourceData.resources[0]);
     let resources = resourceData.resources;
-    const [currentResource, setCurrentResource] = useState(resources[0]);
+    const [currentResource, setCurrentResource] = useState(resources[1]);
     const [displayResources, setDisplayResources] = useState({1:true, 2:false, 3:false, 4:false});
 
     const displayResource = (e) => {
@@ -44,14 +44,12 @@ const ResourcesAbbr = ({resourceData}) => {
             </Row>
             <Row>
                 <div>
-                    <p style={{display: displayResources[1] ? 'none': ''}}>
-                        <main class='type' style={{ padding: "1rem" }}>
-                            <h4 class='type-title'>{currentResource.title}</h4>
-                            <div>
-                                {resourceList}
-                            </div>
-                        </main>
-                    </p>
+                    <main class='type' style={{ padding: "1rem" }}>
+                        <h4 class='type-title'>{currentResource.title}</h4>
+                        <div>
+                            {resourceList}
+                        </div>
+                    </main>
                 </div>
             </Row>
         </main>

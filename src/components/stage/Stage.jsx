@@ -1,7 +1,4 @@
 import React from "react";
-
-// import './stageCarousel'; 
-
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -13,7 +10,6 @@ import {
     useParams,
   } from "react-router-dom";
 
-  
 const Stage = ({documentData, stageData, typeData}) => {
   const getStage = (stage_id) => {
     return stageData.find(
