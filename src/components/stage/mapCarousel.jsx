@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Button } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink } from "react-router-dom";
 
@@ -16,7 +16,7 @@ const MapCarousel = ({documentData}) => {
               />
               <Carousel.Caption id="doc-button-link">
                 <NavLink className="nav-link" to={`/eviction-map/${document.stage_id}`}>
-                  <button>{document.stage_title}</button>
+                  <button className="button">{document.stage_title}</button>
                 </NavLink>
               </Carousel.Caption>
             </Carousel.Item>
@@ -30,7 +30,7 @@ const MapCarousel = ({documentData}) => {
               />
               <Carousel.Caption id="doc-button-link">
                 <NavLink className="nav-link" to={`/eviction-map/${document.stage_id}`}>
-                  <button>{document.stage_title}</button>
+                  <button className="button">{document.stage_title}</button>
                 </NavLink>
               </Carousel.Caption>
             </Carousel.Item>
@@ -46,7 +46,7 @@ const MapCarousel = ({documentData}) => {
               />
               <Carousel.Caption id="doc-button-link"> 
                 <NavLink className="nav-link" to={`/eviction-map/${document.stage_id}`}>
-                  <button>{document.stage_title}</button>
+                  <button className="button">{document.stage_title}</button>
                 </NavLink>
               </Carousel.Caption>
             </Carousel.Item>

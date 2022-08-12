@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import MapCarousel from "./mapCarousel";
 import AlertDismissible from './mapIntroAlert'; 
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 

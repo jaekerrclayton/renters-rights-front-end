@@ -1,22 +1,10 @@
 import React , { useState }  from "react";
-// import './stages.css';
-
 import {
         NavLink, 
         Outlet,
         useSearchParams,
 } from "react-router-dom"; 
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import ToggleButton from 'react-bootstrap/ToggleButton';
-// import stageData from '../data/english_data/stagesData.json'; 
-import Stage from './Stage'; 
 
 
 
