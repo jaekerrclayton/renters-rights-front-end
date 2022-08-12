@@ -1,53 +1,56 @@
-[
-    {"typeId": "1",
-    "cause": "Termination of Lease : Finalización del Contrato",
-    "description":"El propietario no renueva su alquiler (sea tipo mes a mes o anual)",
-    "landlordNeeds":  "El propietario le debe notificar 10 días antes de la finalización del contrato si es mes a mes, y 30 días antes de la finalización del contrato si es anual. Si usted no se muda, su propietario tiene que ir a la corte para presentar la demanda de desalojo.",
-    "renterRights":[
-        {"Defense":"Defensa: El propietario no le da noticia a tiempo", 
-        "Description": "El propietario le tiene que notificar con 5 días previos. La notificación no tiene que ser de la corte, pero necesita haber sido puesta en la puerta de su casa. Puede ser escrita a mano o escrita a máquina o computadora . En Louisiana  se puede renunciar a esta  notificación en el contrato. Busque en su contrato por “ waiver of notice “ , lo que significa que su propietario no tiene que avisar con 5 días de prioridad y puede pasar directamente al paso 2"},
+{   "button_title": "Causa Por El Desalojo", 
+    "evictionTypes" : 
+    
+            [
+            {"typeId": "1",
+            "cause": "Termination of Lease : Finalización del Contrato",
+            "description":"El propietario no renueva su alquiler (sea tipo mes a mes o anual)",
+            "landlordNeeds":  "El propietario le debe notificar 10 días antes de la finalización del contrato si es mes a mes, y 30 días antes de la finalización del contrato si es anual. Si usted no se muda, su propietario tiene que ir a la corte para presentar la demanda de desalojo.",
+            "renterRights":[
+                {"Defense":"Defensa: El propietario no le da noticia a tiempo", 
+                "Description": "El propietario le tiene que notificar con 5 días previos. La notificación no tiene que ser de la corte, pero necesita haber sido puesta en la puerta de su casa. Puede ser escrita a mano o escrita a máquina o computadora . En Louisiana  se puede renunciar a esta  notificación en el contrato. Busque en su contrato por “ waiver of notice “ , lo que significa que su propietario no tiene que avisar con 5 días de prioridad y puede pasar directamente al paso 2"},
 
-        {"Defense":"Defensa: El propietario acepta pago despues de darle la noticia de vaciar : 'Notice to Vacate'.", 
-        "Description":"Si su arrendador acepta el alquiler después de la entrega del Aviso de Desalojo y antes de la sentencia de desalojo, es posible que tenga una defensa contra el desalojo, y puede tener un contrato de arrendamiento reconducido mes a mes. Si se encuentra en esta situación, puede asistir al juicio de desalojo y hacerle saber al juez que su arrendador aceptó el alquiler. El propietario aún tiene derecho a entregar un Aviso de Desalojo para desalojarlo sin causa, siempre que lo haga a más tardar 10 días antes del final del mes de alquiler actual. Si desea quedarse en su casa, pregúntele a su arrendador sobre la renovación del contrato de arrendamiento."},
-        
-        {"Defense":" Defensa: Si su contracto sigue activa",
-        "Description":"Su propitario no puede desalojarle legalmente antes del vencimiento de su contrato de arrendamiento sin una causa."
-        }]
-     
-    },
-    {"typeId":"2",
-    "cause":"Lease Violation : Violacion del Contrato",
-    "description" : "Un propietario puede comenzar un desalojo cuando un inquilino ha violado el contrato de arrendamiento.",
-    "landlordNeeds": "El propietario debe proporcionar evidencia de la violación del contrato. Algunos contratos de arrendamiento también requieren que el propietario proporcione una advertencia y darle tiempo para corregirlo antes de presentar un desalojo. Busca en su contracto si usted lo tiene",
-    "renterRights" : [
-        {"Defense":"Res Judicata",
-        "Description":"Los propietarios no pueden presentar una segunda demanda sobre el mismo incidente de violación del contrato de arrendamiento de acuerdo con la doctrina de la cosa juzgada."}
-        ]
-    },
-    {"typeId": "3",
-    "cause" : "Nonpayment of Rent: Falta de Pago",
-    "description" : "A landlord can start an eviction when a tenant has failed to pay rent on time.",
-    "landlordNeeds" : "",
-    "renterRights" : [
-        {"Defense":"Tenant Paid Rent",
-        "Description":"If you paid rent on time or the landlord accepted rent after the Notice to Vacate, you have a defense to eviction."},
-        {"Defense":"Landlord Refused Rent", 
-        "Description":"The tenant may have a defense to eviction if the tenant can prove the landlord refused to accept the rent."},
-        {"Defense":"Landlord Usually Accepts Late Rent", 
-        "Description":"There may be a defense to eviction if the tenant paid late and can show proof that the landlord has previously accepted rent late."},
-        {"Defense":"Deductions for Repairs", 
-        "Description": "If you paid rent minus the cost of repairs you did to the property, you will need to show proof that you provided repairs, the cost of repairs, and a request for reimbursment from the landlord"},
-        {"Defense":"Uninhabitable Property",
-        "Description":"If you can provide proof that the unit was uninhabitable at the time of rent due to the landlord, you may have a defense to eviction."}
-        ]
-    },
-    {"typeId":"4",
-    "cause":"Sin Causa: Finalización del Contrato",
-    "description":"El propietario no renueva su alquiler (sea tipo mes a mes o anual)",
-    "landlordNeeds" : "El propietario le debe notificar 10 días antes de la finalización del contrato si es mes a mes, y 30 días antes de la finalización del contrato si es anual. Si usted no se muda, su propietario tiene que ir a la corte para presentar la demanda de desalojo.",
-    "renterRights" : [
-        {"Defense":"Active Lease",
-        "Description":"A landlord cannot legally evict you before the expiration of your written lease without a cause."}
-        ]
-    }
-]
+                {"Defense":"Defensa: El propietario acepta pago despues de darle la noticia de vaciar : 'Notice to Vacate'.", 
+                "Description":"Si su arrendador acepta el alquiler después de la entrega del Aviso de Desalojo y antes de la sentencia de desalojo, es posible que tenga una defensa contra el desalojo, y puede tener un contrato de arrendamiento reconducido mes a mes. Si se encuentra en esta situación, puede asistir al juicio de desalojo y hacerle saber al juez que su arrendador aceptó el alquiler. El propietario aún tiene derecho a entregar un Aviso de Desalojo para desalojarlo sin causa, siempre que lo haga a más tardar 10 días antes del final del mes de alquiler actual. Si desea quedarse en su casa, pregúntele a su arrendador sobre la renovación del contrato de arrendamiento."},
+                
+                {"Defense":" Defensa: Si su contracto sigue activa",
+                "Description":"Su propitario no puede desalojarle legalmente antes del vencimiento de su contrato de arrendamiento sin una causa."
+                }]
+            
+            },
+            {"typeId":"2",
+            "cause":"Lease Violation : Violacion del Contrato",
+            "description" : "Un propietario puede comenzar un desalojo cuando un inquilino ha violado el contrato de arrendamiento.",
+            "landlordNeeds": "El propietario debe proporcionar evidencia de la violación del contrato. Algunos contratos de arrendamiento también requieren que el propietario proporcione una advertencia y darle tiempo para corregirlo antes de presentar un desalojo. Busca en su contracto si usted lo tiene",
+            "renterRights" : [
+                {"Defense":"Res Judicata",
+                "Description":"Los propietarios no pueden presentar una segunda demanda sobre el mismo incidente de violación del contrato de arrendamiento de acuerdo con la doctrina de la cosa juzgada."}
+                ]
+            },
+            {"typeId": "3",
+            "cause" : "Nonpayment of Rent: Falta de Pago",
+            "description" : "A landlord can start an eviction when a tenant has failed to pay rent on time.",
+            "landlordNeeds" : "",
+            "renterRights" : [
+                {"Defense":"Tenant Paid Rent",
+                "Description":"If you paid rent on time or the landlord accepted rent after the Notice to Vacate, you have a defense to eviction."},
+                {"Defense":"Landlord Refused Rent", 
+                "Description":"The tenant may have a defense to eviction if the tenant can prove the landlord refused to accept the rent."},
+                {"Defense":"Landlord Usually Accepts Late Rent", 
+                "Description":"There may be a defense to eviction if the tenant paid late and can show proof that the landlord has previously accepted rent late."},
+                {"Defense":"Deductions for Repairs", 
+                "Description": "If you paid rent minus the cost of repairs you did to the property, you will need to show proof that you provided repairs, the cost of repairs, and a request for reimbursment from the landlord"},
+                {"Defense":"Uninhabitable Property",
+                "Description":"If you can provide proof that the unit was uninhabitable at the time of rent due to the landlord, you may have a defense to eviction."}
+                ]
+            },
+            {"typeId":"4",
+            "cause":"Sin Causa: Finalización del Contrato",
+            "description":"El propietario no renueva su alquiler (sea tipo mes a mes o anual)",
+            "landlordNeeds" : "El propietario le debe notificar 10 días antes de la finalización del contrato si es mes a mes, y 30 días antes de la finalización del contrato si es anual. Si usted no se muda, su propietario tiene que ir a la corte para presentar la demanda de desalojo.",
+            "renterRights" : [
+                {"Defense":"Active Lease",
+                "Description":"A landlord cannot legally evict you before the expiration of your written lease without a cause."}
+                ]
+            }
+        ]}

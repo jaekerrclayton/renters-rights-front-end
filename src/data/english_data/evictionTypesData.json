@@ -1,4 +1,5 @@
-[
+{   "button_title": "Causes for Eviction", 
+    "evictionTypes" : [
     {"typeId": "1",
     "cause": "Termination of Lease",
     "description":"The landlord can evict tenant upon exiration of lease term.",
@@ -45,4 +46,4 @@
         "Description":"A landlord cannot legally evict you before the expiration of your written lease without a cause."}
         ]
     }
-]
+]}

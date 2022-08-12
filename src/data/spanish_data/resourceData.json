@@ -4,26 +4,27 @@
     "resources":[
 
     {   "resourceId": 1, 
-        "type": "Spanish Legal Aid", 
-        "about_resource": "general summary of what legal aid can offer", 
+        "type": "Asistencia Legal", 
+        "about_resource": "Aquí hay algunos recursos que podrían ayudarlo a luchar contra su desalojo de forma gratuita: asegúrese de comunicarse lo antes posible", 
         "resource_list": [
-
                             {   "resource_id": 1,
-                                "title": "SLLS", 
-                                "phone_number": "987298729",
-                                "email": "this@email.com",
-                                "summary": "quick summary",
-                                "about": "can offer legal aid"
+                                "title": " Centro de Acción de Vivienda Justa de Louisiana (LAFHAC) ", 
+                                "phone_number": "(504) 555-5555",
+                                "email": "lafhacemail@email.com",
+                                "summary": "Asistencia para el desalojo y asistencia contra la discriminación : IF YOUR LANDLORD IS THREATENING TO CALL ICE, CALL IMMEDIATELY. ",
+                                "about": "LAFHAC puede proporcionar asistencia legal para desalojos independientemente de su estatus migratorio. Por favor, llame con la mayor anticipación posible para asegurarse de que está representado. Aunque el correo de voz está en inglés, hay trabajadores de habla hispana disponibles para ayudarle."
                             
-                            },
+                            }, 
+
                             {   "resource_id": 2,
-                                "title": "LAFHAC", 
-                                "phone_number": "987298729",
-                                "email": "another@email.com",
+                                "title": "Servicios Legales del Sureste de Louisiana (SLLS)", 
+                                "phone_number": "(504) 555-5555",
+                                "email": "sllsemail@email.com",
                                 "summary": "quick summary",
-                                "about": "can offer legal aid and to who"
+                                "about": "Dependiendo de su estatus migratorio, SLLS puede proporcionar servicios legales gratuitos. Por favor, llame al número de arriba y deje un mensaje. Aunque el servicio de respuesta está en inglés, SLLS proporciona servicios de inerpretación."
                             
                             }
+
                         ]
 
 

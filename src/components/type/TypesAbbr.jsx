@@ -9,7 +9,7 @@ import { OffcanvasBody, OffcanvasHeader } from 'react-bootstrap';
 
 const TypesAbbr = ({typeDataJson}) => {
 
-    let types = typeDataJson;
+    let types = typeDataJson.evictionTypes;
     const [currentType, setCurrentType] = useState({'renterRights':[]});
     const [displayTypes, setDisplayTypes] = useState({1:false, 2:false, 3:false, 4:false});
 
@@ -37,7 +37,7 @@ const TypesAbbr = ({typeDataJson}) => {
     return (
         <>
 
-        <Button variant="secondary" onClick={handleShow}  className="me-2">Causes for Eviction</Button>
+        <Button variant="secondary" onClick={handleShow}  className="me-2">{typeDataJson.button_title}</Button>
         <Offcanvas placement='start' scroll={true} backdrop={true} show={show} onHide={handleClose}>
             <Offcanvas.Header closeButton>
                 <Offcanvas.Title>

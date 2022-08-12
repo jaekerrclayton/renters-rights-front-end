@@ -1,5 +1,5 @@
-{   "title": "Conectate con Nosotros",
-    "FAQ":"Preguntas Frequentes",
+{   "title": "Conéctes con Nosotros",
+    "FAQ":"Preguntas Frecuentes",
     "instructions":"Si tiene una pregunta que no está cubierta en las preguntas frecuentes, puede enviar una pregunta de forma anónima en el siguiente formulario. Las respuestas a las preguntas se publican semanalmente",
     "question":"Comparte sus Preguntas",
     "send":"enviar",
@@ -17,15 +17,5 @@
         "Question": "¿Puedo renunciar a pagar mi renta si mi propietario no quiere reparar algo en la casa? ",
         "Answer": "No, en Luisiana usted no puede detener la renta. Si usted tiene un contrato, léalo detenidamente para ver qué dice sobre reparaciones y quien tiene que realizarlas. Generalmente los propietarios legalmente tienen que asegurarse de que su casa sea segura y habitable. Si su propietario rechaza hacer reparaciones necesarias, a veces usted puede pagar por ellos y después deducir los costos de la renta. Este proceso es arriesgado  y le recomendamos que documente todo cuidadosamente, tenga prueba escrita de todas las reparaciones, y busque ayuda legal si usted decide hacer las reparaciones por su cuenta. Si tiene más preguntas sobre el proceso , puede llamar a nuestra línea directa de atención. Si usted es un inquilino de mes a mes, su propietario podría responder a sus reparaciones notificándose con un desalojo para el mes próximo. Es posible que sea mejor intentar mudarse." 
         
-    },
-    {
-        "q_id": 3, 
-        "Question":" ¿Qué hacer si no puedo pagar mi renta? Mi propietario me amenaza con  el desalojo si no pago?", 
-        "Answer": "Exampasdfasdf SPANISHaaaa"
-    },
-    {
-        "q_id": 4, 
-        "Question": "ESPANOLn 1",
-        "Answer": "Exampasdfasdf SPANISHaaaa"
     }
 ]}

@@ -1,30 +1,21 @@
 {   "title": "Contact Us",
     "FAQ":"Frequently Asked Questions",
-    "instructions":"If you have a question that is not covered in the FAQ, you can submit a question anonymously in the form below. Answers to questions are posted on Tuesdays.",
-    "question":"Question",
+    "instructions":"If you have a question that is not covered in the FAQ, you can submit a question anonymously on the form below. Answers to questions are published weekly",
+    "question":"Write your question here:",
     "send":"send",
     "disclaimer":"Do NOT include identifying information",
-    "urgent":"SPANISH For URGENT questions, you can call (or text?) the hotline at 555-5555",
-    "current":"SPANISH volunteer(s) currently available to speak with you",
+    "urgent":"For URGENT questions, you can call (or text) the hotline at 555-5555. If you are a victim of domestic violence in your home, there are resources available to you. Call the Family Justice Center at (504) 592-4005 or their 24-hour hotline (504) 866-9554.",
+    "current":"volunteer(s) currently available to speak with you",
     "answers" : [
     {
         "q_id": 1, 
-        "Question": "Example Question 111111111111111111111111111111 hello? is this wokring? IS THIS TOO LONG????????? maybe?",
-        "Answer": "Example Answer 1 aaaaaaaaaaaaaaaaaa"
+        "Question": "What happens if my landlord evicts me without notice?",
+        "Answer": "An eviction is only legal if it comes from the court and with a judge's order. If your landlord changes the locks, takes your things out on the street, or done it without a judge's order, the eviction is illegal."
     },
     {
         "q_id": 2, 
-        "Question": "Example Question 2",
-        "Answer": "Example Answer 2 aaaaaaaaaaaaaaaaaa"
-    },
-    {
-        "q_id": 3, 
-        "Question": "Example Question 3",
-        "Answer": "Example Answer 3 aaaaaaaaaaaaaaaaaa"
-    },
-    {
-        "q_id": 4, 
-        "Question": "Example Question 4",
-        "Answer": "Example Answer 4 aaaaaaaaaaaaaaaaaa"
+        "Question":"Can I refuse to pay rent if my landlord will not repair something in the house?",
+        "Answer": "No, in Louisiana you can't refuse to pay rent if repairs are not made. If you have a lease, read it carefully to see what it says about repairs and who has to make them. Generally, homeowners legally have to make sure their home is safe and livable. If your landlord refuses to make necessary repairs, sometimes you can pay for them and then deduct the costs of the rent. This process is risky and we recommend that you document everything carefully, have written proof of all repairs, and seek legal help if you decide to make repairs on your own. If you have further questions about the process, you can call our hotline. If you are a month-to-month tenant, your landlord may respond to request for repairs by notifying you with an eviction for the next month. Seek legal council. "
     }
+
 ]}

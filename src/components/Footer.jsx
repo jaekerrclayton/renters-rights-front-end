@@ -10,7 +10,7 @@ function Footer({translations}) {
         {/* <div class="container"> */}
           <p class="m-0 text-center text-white">
               {/* <p>some text</p> */}
-            <NavLink className="nav-link" to="/resources/1">
+            <NavLink className="nav-link" to="/resources">
                 {translations.footer}
             </NavLink>               
 
