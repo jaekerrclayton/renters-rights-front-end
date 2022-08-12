@@ -26,8 +26,8 @@ const TypesAbbr = ({typeDataJson}) => {
         e.preventDefault();
         console.log(e.target.value);
         setDisplayTypes({1:false, 2:false, 3:false, 4:false});
-        displayTypes[e.target.value] = true;
-        setCurrentType(types.find((type) => type.typeId === e.target.value));
+        displayTypes[e.target.target] = true;
+        setCurrentType(types.find((type) => type.typeId === e.target.target));
     }
 
     const rights = currentType.renterRights.map((right) => (
@@ -56,13 +56,23 @@ const TypesAbbr = ({typeDataJson}) => {
         <Offcanvas placement='start' scroll={true} backdrop={true} show={show} onHide={handleClose}>
             <Offcanvas.Header closeButton>
                 <Offcanvas.Title>
-                {types
+                    <Dropdown>
+                        <Dropdown.Toggle variant="success" id="dropdown-basic">
+                            {typeDataJson.button_title}
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            {types.map((type) => (
+                                <Dropdown.Item target={type.typeId} onClick={displayType}>{type.cause}</Dropdown.Item>
+                            ))}
+                        </Dropdown.Menu>
+                    </Dropdown>
+                {/* {types
                     .map((type) => ( 
                         <Button variant="secondary" value={type.typeId} onClick={displayType}>
                             {type.cause}
                         </Button>
                     ))
-                }
+                } */}
                 </Offcanvas.Title>
             </Offcanvas.Header>
             <OffcanvasBody>
