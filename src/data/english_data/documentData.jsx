@@ -10,8 +10,8 @@ import courtPrep from '../documents/courtPrep.png';
 
 const documentData = {
 
-    title:'TITLE TILTE',
-    introduction:'??????????',
+    title:'What is an eviction?',
+    introduction:'An Eviction is a legal process in which the landlord petitions the court for an Order of Possession of his or her own home. On this site, we are here to guide you through the legal process of an eviction, so you know your rights by step. If you receive a notice of eviction, it is recommending that you consult with an attorney about your available options.',
     close:'close me',
     browse:'Browse document examples',
     notice:'Do any of these look like your notice?',

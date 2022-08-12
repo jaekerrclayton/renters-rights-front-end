@@ -1,4 +1,4 @@
-import React from "react";
+import React , { useState }  from "react";
 // import './stages.css';
 
 import {
@@ -12,6 +12,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import ToggleButton from 'react-bootstrap/ToggleButton';
 // import stageData from '../data/english_data/stagesData.json'; 
 import Stage from './Stage'; 
 
@@ -38,14 +41,14 @@ const Stages = ({stageData}) => {
                                 .map((stage) => ( 
                             <Nav.Item>
                                 <NavLink 
-                                    style={({ isActive }) => ({
-                                        color: isActive ? "grey" : "",
+                                    // style={({ isActive }) => ({
+                                    //     color: isActive ? "grey" : "",
                                         
-                                    })}
+                                    // })}
                                     to={`/eviction-map/${stage.stage_id}`}
                                     key={stage.stage_id}
                                 >
-                                    <h6>{stage.stage_id}</h6>                                    
+                                    <Button class="rounded-pill border border-4" variant="outline-success">{stage.stage_id}</Button>                                 
                                 </NavLink>
                             </Nav.Item>
                             ))}

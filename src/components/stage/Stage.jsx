@@ -37,7 +37,10 @@ const Stage = ({documentData, stageData, typeData}) => {
         
           <Alert id="about-notice" variant="success">
                   <Alert.Heading>{stage.title}</Alert.Heading>
-                      <p>
+                      <p style={{
+                              maxHeight: 'calc(55vh - 210px)',
+                              overflowY: 'auto'
+                            }}>
                           <p>{stage.sub_title}</p>
                           <p>{stage.info}</p>
                           <h5>{stage.important}</h5>

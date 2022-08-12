@@ -17,10 +17,10 @@
       "stage_id": 2, 
       "title": "Rule for Possession / Order : Orden de Desalojo",
       "sub_title": "Si usted no desocupa despues de la Notica de Vaciar, su propietario tendrá que presentar una demanda en la corte para desalojarlo",
-      "important": "SOMETHING IMPORTANT", 
+      "important": "Es muy recomendable  que usted se ponga en contacto con los servicios legales si tiene la intención de discutir su caso en la corte.", 
       "info": "El orden indica la fecha en la que tiene que ir a corte.  Esta fecha no será hasta después de 3 días después de la citación. La citación se pegará en su puerta. Si usted vive en el East Bank , también se le enviará por correo. La noticia tiene que clarificar el causa del desalojo.",
       "documents": ["vacate1", "vacate2", "vacate3"],
-      "about_notice": ["Es muy recomendable  que usted se ponga en contacto con los servicios legales si tiene la intención de discutir su caso en la corte."], 
+      "about_notice": [""], 
       "nextSteps": "Pasos Siguientes:",
       "next_steps": "aasdfasdfaasdfext",
       "additional_resources": ["Es muy recomendable  que usted se ponga en contacto con los servicios legales si tiene la intención de discutir su caso en la corte.", "anotherasdfasdfmaybe route to other page? ", "aaand another resource"]

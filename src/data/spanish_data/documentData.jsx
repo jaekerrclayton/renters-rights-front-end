@@ -9,6 +9,8 @@ import courtPrep from '../documents/courtPrep.png';
 
 
 const documentData = {
+   
+
     title:'Que es un desalojo?',
     introduction:'El desalojo es un proceso legal en el cual el propietario solicita a la corte una Orden de Posesión de su propia casa. En este sitio, estamos para guiarle sobre el proceso legal de un desalojo, para que usted sepa sus derechos a paso. Si usted recibe un aviso de desahuicio, es recomando que se consulta con un abogado sobre las opciones disponibles.',
     close:'clos me',
