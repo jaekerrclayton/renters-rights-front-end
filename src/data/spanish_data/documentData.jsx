@@ -22,20 +22,20 @@ const documentData = {
             stage_title: "Noticia de Vaciar",    
             docInfo : [
                     {info_id: 1,
-                    title: "SSDPANISH", 
-                    sub_title: "Check if this SSDPANISH",
+                    title: "Su nombre versus el nombre de su propietario", 
+                    sub_title: "Verifique si esta información es precisa. ¿Es esta la persona a la que le paga su contrato de arrendamiento? Considere ponerse en contacto con su arrendador para ver si hay una manera de evitar que ocurra su desalojo. ¡Echa un vistazo a 'Causas para el desalojo' para aprender sobre posibles defensas!",
                     placement: "bottom" 
                 }, 
                     {
                     info_id: 2,
-                    title: "Court Location", 
-                    sub_title: "Thisasdfsdaicial eviciton - but it is just a warning that a hearing could take place. If you do end up facing eviction, this is likely where the court will be held", 
+                    title: "Ubicación de la corte", 
+                    sub_title:"Esto podría parecer un desalojo oficial, pero es solo una advertencia de que podría tener lugar una audiencia. Si termina enfrentando el desalojo, es probable que aquí sea donde se llevará a cabo el tribunal.", 
                     placement: "bottom" 
                 }, 
                     {
                     info_id: 3,
-                    title: "Cause of Eviction" , 
-                    sub_title: "Why you're asdfasdfhing you could do to change the situation ? Consider causes of eviction above, and check out potential defenses." , 
+                    title: "Causa de desalojo" , 
+                    sub_title: "¿Por qué estás siendo desalojado, hay algo que puedas hacer para cambiar la situación? Considere las causas de desalojo anteriores y verifique las posibles defensas", 
                     placement: "top" 
                 }
                     ]
@@ -46,15 +46,15 @@ const documentData = {
             docInfo: [
                         {
                         info_id: 4, 
-                        title: "Time given to respond to eviction",
-                        sub_title: "From the daasdfasdf the Landlord has given you 5 days to respond. After these five days, the landlord can go to court to request a hearing.", 
+                        title: "Tiempo dado para responder al desalojo",
+                        sub_title: "Desde el día en que ha recibido este aviso (excluyendo fines de semana), el propietario le ha dado 5 días para responder. Después de estos cinco días, el propietario puede ir a la corte para solicitar una audiencia", 
                         placement: "top"
     
                         }, 
                         {
                         info_id: 5,
-                        title: "Cause for Eviction" , 
-                        sub_title: "Your notice asdfasng evicted. Look above for different defenses for types of evictions.", 
+                        title: "Causa de desalojo"  , 
+                        sub_title: "Haga clic en el botón para ver las causas de desalojo Haga clic en el botón para conocer las causas de desalojo y las defensas posibles", 
                         placement: "bottom"
                     }
                 ]   
@@ -67,20 +67,20 @@ const documentData = {
             docInfo : [ 
                     {
                         info_id: 6,
-                        title: "Date of notice", 
-                        sub_title:  "five busasdfasfthis notice, your landlord can go to court to request a hearing.",
+                        title: "Fecha de la noticia", 
+                        sub_title:  "Desde el día en que ha recibido este aviso (excluyendo fines de semana), el propietario le ha dado 5 días para responder. Después de estos cinco días, el propietario puede ir a la corte para solicitar una audiencia",
                         placement: "right"  
                     }, 
     
                     {
                         info_id: 7,
-                        title: "Cause of Eviction", 
-                        sub_title: "Why youSPANISHAPSNISHook for are -- NONPAYMENT OF RENT, VIOLATION OF LEASE, TERMINATION OF LEASE, scroll up to see potential defenses.", 
+                        title: "Causa de desalojo",
+                        sub_title:"Haga clic en el botón para ver las causas de desalojo Haga clic en el botón para conocer las causas de desalojo y las defensas posibles", 
                         placement: "top" 
                     },
                     {   info_id: 8,
-                        title: "Your landuSPANISHAPSNISHook formation.", 
-                        sub_title: "DeuSPANISHAPSNISHook ationship with your landlord, you may consider communicating with your landlord to try to prevent the eviction from happening",
+                        title: "Como contactarse con su propietario", 
+                        sub_title: "Dependiendo de su relación con su arrendador, puede considerar comunicarse con su arrendador para tratar de evitar que ocurra el desalojo",
                         placement: "right"  
                     } 
                 ]
@@ -114,7 +114,7 @@ const documentData = {
                 {
                 info_id: 19, 
                 title: "Fecha del Caso", 
-                sub_title: "This isuSPANISHAPSNISHook ring. Check if a room is specified, and prepare to show up early.", 
+                sub_title: "Este es el lugar y la hora de su audiencia. Verifique si se especifica una habitación y prepárese para presentarse temprano.", 
                 placement: "bottom"
                 },
             
@@ -174,8 +174,8 @@ const documentData = {
                 {
 
                     info_id: 24, 
-                    title: "Photographic evidence", 
-                    sub_title: "Bring any photos of your unit you may want to show to the judge", 
+                    title: "Evidencia fotográfica", 
+                    sub_title: "Traiga cualquier foto de su apartamento que desee mostrar al juez", 
                     placement: "top"
 
 
@@ -183,8 +183,8 @@ const documentData = {
                 {
 
                     info_id: 25, 
-                    title: "Text messages", 
-                    sub_title: "Any text messages or written correspondance with your landlord", 
+                    title: "Mensajes de Texto o de Correo Electronico", 
+                    sub_title: "Cualquier mensaje de texto o correspondencia escrita con su arrendador LOUISIANA ES UN ESTADO EN CUAL TENEMOS EL DERECHO A GRABAR ** usted está legalmente autorizado a grabar cualquier conversación con su arrendador sin su conocimiento, y puede ser utilizado en la corte para apoyar su caso",
                     placement: "left"
 
                 }, 
@@ -193,8 +193,8 @@ const documentData = {
                 {
 
                     info_id: 26, 
-                    title: "Witnesses", 
-                    sub_title: "Anyone who can support your side of the story - friend, neighbor, family", 
+                    title: "Testigos", 
+                    sub_title: "Cualquiera que pueda apoyar tu versión de la historia: amigo, vecino, familia", 
                     placement: "left"
 
                 }, 
@@ -203,8 +203,8 @@ const documentData = {
                 {
 
                     info_id: 27, 
-                    title: "All important documents!", 
-                    sub_title: "Bring a copy of your lease if you have one, any reciepts from repairs you may have done, or any evidence that may help you", 
+                    title: "¡Todos los documentos importantes!", 
+                    sub_title: "Traiga una copia de su contrato de arrendamiento si tiene uno, cualquier recibo de reparaciones que pueda haber hecho o cualquier evidencia que pueda ayudarle", 
                     placement: "top"
 
                 }, 
@@ -231,13 +231,13 @@ const documentData = {
             stage_title: "Judgment",  
             docInfo : [
                     {info_id: 9,
-                    title: "Your name versus your landlord", 
+                    title: "Su nombre frente a  lo de su arrendador", 
                     sub_title: "Check if this information is accurate. Is this the person you pay your lease to ? Consider contacting your landlord to see if there is a way of preventing your eviction from happening. Check out above 'Causes for Evicion' to learn about potential defenses!" ,  
                     placement: "bottom" 
                 }, 
                     {
                     info_id: 10,
-                    title: "Court Location", 
+                    title: "Ubication de la Corte", 
                     sub_title: "This might look like an official eviciton - but it is just a warning that a hearing could take place. If you do end up facing eviction, this is likely where the court will be held", 
                     placement: "top" 
                 }, 

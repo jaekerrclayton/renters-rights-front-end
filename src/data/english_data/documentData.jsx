@@ -189,7 +189,7 @@ const documentData = {
 
                     info_id: 25, 
                     title: "Text messages", 
-                    sub_title: "Any text messages or written correspondance with your landlord", 
+                    sub_title: "Any text messages or written correspondance with your landlord -- ** LOUISIANA IS A RIGHT TO RECORD STATE ** you are legally allowed to record any conversations with your landlord without their knowledge, and can be used in court to support your case", 
                     placement: "left"
 
                 }, 
