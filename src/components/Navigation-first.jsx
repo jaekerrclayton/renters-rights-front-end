@@ -9,7 +9,6 @@ function Navigation() {
         <div className="container">
           <NavLink className="navbar-brand" to="/">
             Renters Rights : New Orleans, Louisiana
-
           </NavLink>
           <div>
             <ul className="navbar-nav ml-auto">

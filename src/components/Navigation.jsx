@@ -1,7 +1,5 @@
 import React from "react";
-
 import { NavLink } from "react-router-dom";
-// import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -28,7 +26,7 @@ function OffCanvasNav({changeLanguage, translations}) {
               <NavLink className="navbar-brand" to="/">
                 {translations.main}
               </NavLink>
-              <button className='button' value={translations.lngButton} onClick={changeLanguageCallback}>{translations.lngButton}</button>
+              <button className='button' style={{'text-align':'right'}} value={translations.lngButton} onClick={changeLanguageCallback}>{translations.lngButton}</button>
               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
               <Navbar.Offcanvas
                   id={`offcanvasNavbar-expand-${expand}`}

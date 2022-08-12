@@ -48,7 +48,7 @@ const Stages = ({stageData}) => {
                                     to={`/eviction-map/${stage.stage_id}`}
                                     key={stage.stage_id}
                                 >
-                                    <Button class="rounded-pill border border-4" variant="outline-success">{stage.stage_id}</Button>                                 
+                                    <button className='number-button'>{stage.stage_id}</button>                                 
                                 </NavLink>
                             </Nav.Item>
                             ))}

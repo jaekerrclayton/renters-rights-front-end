@@ -32,6 +32,15 @@ body {
     text-decoration: none;
     color: rgba(247, 34, 34, 0.822);
   }
+  /* .btn{
+    /* border:#204d68; */
+  /* }  */
+  .btn:hover {
+    background-color: #95dbd4;
+  }
+  .btn:active {
+    background-color: #95dbd4;
+  }
 
 
 /* ******************************************************* */
@@ -49,12 +58,26 @@ body {
   background-color: #204d68;
   color:#E0FBFC;
   border: none;
+  border-radius:7px;
 }
 .button:hover{
-  background-color: #E0FBFC;
+  background-color: #95dbd4;
+  color:white;
   border: none;
 }
-
+.number-button{
+  border: 3px solid #204d68;
+  background-color: transparent;
+  color: #204d68;
+  font-size: 2rem;
+  width: 4rem;
+  border-radius: 7px;
+}
+.number-button:hover{
+  border: 3px solid #204d68;
+  background-color: #E0FBFC;
+  border-radius: 7px;
+}
 /* ******************************************************* */
 /* EVICTION-MAP HOME */
 /* ******************************************************* */
@@ -149,3 +172,25 @@ body {
 
 
 /* ******************************************************* */
+/* ADMIN */
+
+section {
+  padding: 1em;
+  padding-bottom: 5em;
+  text-align: center;
+}
+
+.days {
+  font-weight: bold;
+}
+
+/* button {
+  background-color: #008B8B;
+  color: white;
+  border-radius: 7px;
+  border-color: black;
+} */
+
+#dropdown-basic {
+  background-color: #204d68;
+}

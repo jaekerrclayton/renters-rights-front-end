@@ -19,9 +19,9 @@ const EvicMap = ({documentData}) => {
         <Row className="welcome-message">
           <AlertDismissible documentData={documentData}/>
         </Row>
-        <Button variant="primary" onClick={() => setShow(true)}>
-        {documentData.browse}
-      </Button>
+        <button className="button" onClick={() => setShow(true)}>
+          {documentData.browse}
+        </button>
 
       <Modal
         show={show}
@@ -40,21 +40,8 @@ const EvicMap = ({documentData}) => {
           </p>
         </Modal.Body>
       </Modal>
-
-
-
-
-
-
-
-
-
-          {/* <Row><MapCarousel /></Row> */}
-      </Container>
-  
+    </Container>
   );
-      
-
 }
 
 export default EvicMap;
