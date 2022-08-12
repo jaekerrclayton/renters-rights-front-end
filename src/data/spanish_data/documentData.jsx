@@ -111,13 +111,13 @@ const documentData = {
             
                 {
                 info_id: 19, 
-                title: "Date of Hearing", 
+                title: "Fecha del Caso", 
                 sub_title: "This isuSPANISHAPSNISHook ring. Check if a room is specified, and prepare to show up early.", 
                 placement: "bottom"
                 },
             
                 {info_id: 20,
-                title: "Location of Court", 
+                title: "Ubicacion del Corte", 
                 sub_title: "La ubicacion del Corte: Aunque si usted desalojara antes que la fecha de su caso, AUN SI debe comunicarse con la corte antes que la fecha de su caso -- prodria expedir un aviso de desahuicio en su contra que quedaria registrado en su expediente",
                 placement: "top"
             

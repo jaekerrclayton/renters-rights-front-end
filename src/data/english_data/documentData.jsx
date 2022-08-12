@@ -16,6 +16,9 @@ const documentData = {
     browse:'Browse document examples',
     notice:'Do any of these look like your notice?',
 
+    landlord_legal: "Can my landlord...?", 
+    options: ["cut power", "call cops", "change locks"], 
+
     1 : [
         {   id: vacate1,
             stage_id:  1,

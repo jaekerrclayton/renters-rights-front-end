@@ -2,6 +2,7 @@
     {
       "stage_id": 1, 
       "title": "Notice To Vacate",
+      "important": "SOMETHING IMPORTANT", 
       "sub_title": "This is the first notice",
       "info": "This is the first warning -- you are not currently being evicted, but you need to prepare! Read on to understand your eviction and see what the next steps are",
       "documents": ["vacate1", "vacate2", "vacate3"],
@@ -15,6 +16,7 @@
     {
       "stage_id": 2, 
       "title": "Possession of Property",
+      "important": "SOMETHING IMPORTANT", 
       "sub_title": "You have a court hearing approaching",
       "info": "You have been summoned to court to argue against eviction. It is important that you secure a lawyer if you plan to go to court, read on to figure out how to understand your eviction notice & what you can do to prepare for court",
       "documents": ["order1", "order2"],
@@ -28,6 +30,7 @@
     {
       "stage_id": 3, 
       "title": "Preparing For Court",
+      "important": "SOMETHING IMPORTANT", 
       "sub_title": "Documents to gather & things to do!",
       "info": "Here are some things to consider before your eviction hearing. Here are some tips about what kinds of documents you want to gather, texts you should save to show to a judge, thinking about if you have potential witnesses to come with you & how to try to appeal ur eviction before it even begins",
       "documents": ["courtPrep"],
@@ -43,6 +46,7 @@
     {
       "stage_id": 4, 
       "title": "After Court Hearing",
+      "important": "SOMETHING IMPORTANT", 
       "sub_title": "Depending on the outcome of your hearing, you have some options",
       "info": "Potential Outcomes ( -- maybe make separte route to if you win / lose / appeal / didn't go) :: If your court date has past and you have lost or did not go, it's important you prepare quickly. But also, there are things your landlord cannot legally do even when you don't leave ",
       "documents": ["vacate1"],

@@ -40,11 +40,12 @@ const Stage = ({documentData, stageData, typeData}) => {
                       <p>
                           <p>{stage.sub_title}</p>
                           <p>{stage.info}</p>
+                          <h5>{stage.important}</h5>
                           {stage.about_notice.map((fact) => (
                               <p>{fact}</p>
                           ))}
                           {stage.additional_resources.map((resource)=> (
-                            <p>resource</p>
+                            <p>{resource}</p>
                           ))}
                           <p>{stage.nextSteps}</p>
                           <p>{stage.next_steps}</p>
