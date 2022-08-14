@@ -2,10 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Volunteer from './Volunteer';
 import Accordion from 'react-bootstrap/Accordion';
-import AccordionBody from 'react-bootstrap/esm/AccordionBody';
 
 const Volunteers = (props) => {
-    // console.log(typeof props.onEdit);
     const getVolunteers = props.volunteers.map((volunteer) => {
         return (
             <Accordion.Item eventKey={volunteer.volunteerId}>

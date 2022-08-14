@@ -8,7 +8,7 @@ const ScheduleList = () => {
     const [schedules, setSchedules] = useState([{sunAm:[], sunPm:[], monAm:[], monPm:[], tueAm:[], tuePm:[], wedAm:[], wedPm:[], thuAm:[], thuPm:[], friAm:[], friPm:[], satAm:[], satPm:[]}]);
 
     useEffect(() => {
-        axios.get('https://renters-rights-back-end.herokuapp.com/admin/schedules')
+        axios.get(URL + 'admin/schedules')
         .then((res) =>{
             let orderedSchedules = {
                 sunAm:[], 
