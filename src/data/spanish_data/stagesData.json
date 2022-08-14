@@ -1,76 +1,69 @@
 [
-    {
-      "stage_id": 1, 
-      "title": "Noticia de Vaciar: Notice to Vacate",
-      "sub_title": "El propietario le tiene que notificar con 5 días previos",
-      "important": "SOMETHING IMPORTANT", 
-      "info": "La notificación no tiene que ser de la corte, pero necesita haber sido puesta en la puerta de su casa. Puede ser escrita a mano o escrita a máquina o computadora.",
-      "documents": ["vacate1", "vacate2", "vacate3"],
-      "about_notice": ["**OJO** En Louisiana  se puede renunciar a esta notificación en el contrato. Busque en su contrato por 'Waiver of Notice' , lo que significa que su propietario no tiene que avisar con 5 días de prioridad."], 
-      "nextSteps": "Pasos Siguientes:",
-      "next_steps": "Si usted no desocupa, su propietario tendrá que presentar una demanda en la corte para desalojarlo",
-      "additional_resources": ["whasdflkjasfe hover", "anotherasdfasdfmaybe route to other page? ", "aaand another resource"]
-    },
+  {
+    "stage_id": 1,
+    "title": "Noticia de Vaciar: Notice to Vacate",
+    "sub_title": "El propietario le tiene que notificar con 5 días previos antes de pedir un desalojo oficial",
+    "important": "Este no es un desalojo oficial y no significa que usted tiene que desocupar la casa de inmediato. El desalojo es un proceso legal, y si usted desee luchar por su caso, se puede",
+    "info": "La notificación no tiene que ser de la corte, pero necesita haber sido puesta en la puerta de su casa. Puede ser escrita a mano o una notificación legal de desalojo. Un mensaje de texto NO es una Notificación de Desalojo. Es el primer paso de un desalojo.",
+    "documents": ["vacate1", "vacate2", "vacate3"],
+    "about_notice": ["**OJO** En Louisiana  se puede renunciar a esta notificación en el contrato. Busque en su contrato por 'Waiver of Notice' , lo que significa que su propietario no tiene que avisar con 5 días de prioridad.", "Si el contrato vence y si el propietario no quiere renovarlo, ellos deben avisar a usted con 30 días de anticipación.", "Si usted trata de un contrato mensual (oral o por escrito), el propietario debe darle minimo 10 dias de anticipacion" ],
+    "nextSteps": "Pasos Siguientes:", 
+    "next_steps": "Si usted no desocupa y no lograra un acuerdo, su propietario tendrá que presentar una demanda en la corte para pedir una 'Regla de Posesión.' ", 
+    "additional_resources": [""]
+  },
 
 
-    {
-      "stage_id": 2, 
-      "title": "Rule for Possession / Order : Orden de Desalojo",
-      "sub_title": "Si usted no desocupa despues de la Notica de Vaciar, su propietario tendrá que presentar una demanda en la corte para desalojarlo",
-      "important": "Es muy recomendable  que usted se ponga en contacto con los servicios legales si tiene la intención de discutir su caso en la corte.", 
-      "info": "El orden indica la fecha en la que tiene que ir a corte.  Esta fecha no será hasta después de 3 días después de la citación. La citación se pegará en su puerta. Si usted vive en el East Bank , también se le enviará por correo. La noticia tiene que clarificar el causa del desalojo.",
-      "documents": ["vacate1", "vacate2", "vacate3"],
-      "about_notice": [""], 
-      "nextSteps": "Pasos Siguientes:",
-      "next_steps": "aasdfasdfaasdfext",
-      "additional_resources": ["Es muy recomendable  que usted se ponga en contacto con los servicios legales si tiene la intención de discutir su caso en la corte.", "anotherasdfasdfmaybe route to other page? ", "aaand another resource"]
-    },
-  
-    {
-      "stage_id": 3, 
-      "title": "Que debo llevar a la corte?",
-      "sub_title": "spanish spanish",
-      "important": "Debe reunir todas sus pruebas y testigos", 
-      "info": "Lleve consigo todas las evidencias que tenga a la corte - Este es el momento que tiene para defenderse.",
-      "documents": ["vacate1", "vacate2", "vacate3"],
-      "about_notice": ["Es muy recomendable  que usted se ponga en contacto con los servicios legales si tiene la intención de discutir su caso en la corte." ],
-      "nextSteps": "Pasos Siguientes:", 
-      "next_steps": "aasdfasdfaasdfext",
-      "additional_resources": ["evidencias de pago", "una copia del contrato", "fotos de su apartamento", "recibos de reparaciones", "testigos ", "mensajes con su propietario" ]
-    },
+  {
+    "stage_id": 2,
+    "title": "Rule for Possession / Order : Orden de Desalojo",
+    "sub_title": "La Regla de Posesión indica la fecha del juicio cuando usted puede ir y presentar su caso ante un juez. El motivo de desalojo debe estar en el orden y debe ser el mismo motivo que figura en la Notificación de Desalojo.",
+    "important": "Es muy recomendable  que usted se ponga en contacto con los servicios legales si tiene la intención de discutir su caso en la corte.",
+    "info": "El orden indica la fecha en la que tiene que ir a corte.  Esta fecha no será hasta después de 3 días después de la citación. La citación se pegará en su puerta. Si usted vive en el East Bank , también se le enviará por correo. La noticia tiene que clarificar el causa del desalojo.",
+    "documents": ["vacate1", "vacate2", "vacate3"],
+    "about_notice": [],
+    "nextSteps": "Pasos Siguientes:",
+    "next_steps": "",
+    "additional_resources": ["Si usted ya hubiera desalojado la propiedad, aún así debe ir a la corte a informarles -- incluso si lo hizo antes de la fecha indicada en la noticia." , "Si no, la corte podría expedir un aviso de desahucio en con contra que quedaría registrado en su expediente."]
+  },
+   {
+    "stage_id": 3,
+    "title": "Qué debo llevar a la corte?",
+    "sub_title": "Alista todas las pruebas que tenga para defenderse en la corte!" ,
+    "important": "Habla con un abogado para obtener más información sobre las posibles defensas! También, debe llamar al corte para pedir interpretación si usted se lo necesita.",
+    "info": "Lleve consigo todas las evidencias que tenga a la corte - Este es el momento que tiene para defenderse.",
+    "documents": ["vacate1", "vacate2", "vacate3"],
+    "about_notice": ["Depende del motivo de desalojo, explora 'Causas de Desalojo' para conocer defensas que usted tal vez tendrá. " ],
+    "nextSteps": "Pasos Siguientes:",
+    "next_steps": "Si usted no tiene defensa legal, siempre puede desocupar entes de la fecha indicad, y siempre debe informar a la corte. Si usted cree que tenga defensa, debe presentar su caso frente del juez",
+    "additional_resources": ["Planificar de antemano - Si usted desea poder apelar la orden y permanecer en su hogar durante la apelación, debe presentar una 'Respuesta' antes de la fecha de corte.", "Si no presenta una respuesta ante la corte, aún puede apelar, pero debe desalojar la propiedad mientras la apelación esté pendiente." ] 
+  },
 
-      
-    {
-      "stage_id": 4, 
-      "title": "Despues de la Corte",
-      "sub_title": "Si tiene éxito, su desalojo se cancelará",
-      "important": "SOMETHING IMPORTANT", 
-      "info": "Si no tiene éxito , usted será desalojado, pero hay opctiones: Tiene que actuar rapidamente",
-      "documents": ["vacate1"],
-      "about_notice": ["firstasdf;sdlfkas;ldfkv info", "third div info"],
-      "nextSteps": "Pasos Siguientes:", 
-      "next_steps": "link to next",
-      "additional_resources": ["wherasdlfkjas;ldkfj to talk to ", "aaand another resource"]
-  
-    },
-  
-  
-    {
-      "stage_id": 5, 
-      "title": "Writ of Possessionnnnnnn",
-      "sub_title": "Yoasdflksajf go) & here is what to do next",
-      "important": "SOMETHING IMPORTANT", 
-      "info": "Potentiasdlfkjasdfwin / lose etc ): If you've gotten this notice, it is important that you move out as soon as posisble. Here is what to expect within 24 hours of receiving this notice. Some tips on how to move out to avoid losing your deposit or having to deal with the constable/sheriff",
-      "documents": ["judgment1", "judgment2"], 
-      "nextSteps": "Pasos Siguientes:",
-      "about_notice": ["first dasdfhird div info"], 
-      "next_steps": "link to next (link to nestedasdfa of post-losing eviction)",
-      "additional_resources": ["where to reach out", "another place to talk to ", "aaand another resource"]
-  
-    }
+   
+  {
+    "stage_id": 4,
+    "title": " ¿Qué sucede en la corte?" ,
+    "sub_title": "Asegúrese de llegar temprano y registrarse con el personal en la sala del tribunal.En la corte, todos los propietarios e inquilinos sientan frente al juez. En este momento, usted tendrá la oportunidad de defenderse y mostrar sus pruebas",
+    "important": "Fallo por Consentimiento: Si su propietario acepta un plan de pago o una fecha de mudanza posterior, puede pedir a la corte un 'Fallo por Consentimiento' - incluso cuando no puedan llegar a un acuerdo antes de ir a la corte. Es una buena manera de evitar un desalojo en su registro.",
+    "info": "Si no tiene éxito , es posible que usted tenga que irse en las siguientes 24 horas a partir de que el 'Judgment' llegue a su puerta",
+    "documents": ["vacate1"],
+    "about_notice": ["El propietario no puede 'probar' su caso por lo que han dicho otras personas - si ellos no están presentes."],
+    "nextSteps": "Pasos Siguientes:",
+    "next_steps": "link to next",
+    "additional_resources": ["Si usted pierde su caso, debe mudarse en el periodo de tiempo determinado en el juicio.", "Si usted piensa que el juez tomo una decision erronea, se puede apelar su caso.", "A menos que tenga una 'Respuesta' que la da permiso de quedarse en casa mientras." ]
+   },
 
-  
-  
-  
-  
-]
+  {
+    "stage_id": 5,
+    "title": "Judgment: Orden por Posesion" , 
+    "sub_title": "Si usted ha recibido este noticia, ya se ha perdido su caso y tiene 24 horas de partir de la casa (no incluso los fines de semana).",
+    "important": "Esta NO es una orden de arresto. Sin embargo, permite que el alguacil pueda venir a sacar a usted y sus pertenencias de la casa. El propietario no puede sacarle de la casa por si mismo, y tiene que sacar el Orden de Posesión ('Writ of Possession' o 'Order of Possession')",
+    "info": "Antes de salir de su casa, tome fotos del apartamento para evitar que el propietario le acusá de cualquier daño que no haya causado. Si desea que le devuelvan su depósito, puede hacerlo después de mudarse.",
+    "documents": ["judgment1", "judgment2"],
+    "nextSteps": "",
+    "about_notice": [""],
+    "next_steps": "",
+    "additional_resources": ["Se puede visitar la página de 'Recursos' para explorar tipos de asistencia que tal vez podemos ofrecerle", "En la página de 'Preguntas Frecuentes' hablemos de cómo apelar su caso."] 
+   } 
+
+
+  ]
