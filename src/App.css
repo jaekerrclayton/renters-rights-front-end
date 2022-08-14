@@ -3,13 +3,14 @@
 body {
     flex-direction: column;
     margin: 0;
-    background: #325288;
-    background-color: #294a66;
+    /* background:rgba(144, 170, 243, 0.466); */
+    background: #dbe0f8;
+    /* background-color: #294a66; */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
       /* FONT COLOR FOR ALL PAGES */
-    color:rgba(129, 66, 29, 0.822);
+    color:rgba(55, 55, 70, 0.822);
     
     /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
@@ -36,7 +37,7 @@ body {
   }
 
   .offcanvas{
-    background-color: #93aba2f1;
+    background-color: #ccdad4d2;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
 
@@ -57,7 +58,7 @@ body {
     color: rgba(65, 178, 223, 0.822);
   }
 
-
+/* 
   .btn{
     border:#204d68;
   }
@@ -68,36 +69,46 @@ body {
   .btn:active {
     background-color: #a895db;
     color:red;
-  }
+  } */
  
 
 /* ******************************************************* */
   /* ALL ACCORDIONS */
 /* ******************************************************* */
- .accordion{
+ .accordion-item{
    /* background-color: rgb(30, 168, 210); */
    /* border-color: rgb(30, 168, 210); */
-   /* border-radius: 16px; */
-   /* border-width: 5px; */
+   border-radius: 16px;
+   background-color: #93aba200;
+   /* border-width: 5px;  */
+   border-color: #93aba200;
    color:rgb(56, 17, 3);
    
  }
 
  .accordion-body{
-  background-color: rgb(30, 168, 210);
-  border-color: rgb(30, 168, 210);
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: #a1425aad;
+  background-color: #93aba260;
+  /* border: 2px double #b6ac96; */
+  border-color: rgb(210, 132, 30);
+  border-radius: 16px;
+  /* color: #1c1947; */
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
  }
+
 
 
  .accordion-button:not(collapsed){
-   background-color: rgb(22, 231, 113)!important;
-   color:rgb(180, 14, 14)
+    border-radius: 16px;
+   background-color: #6c8078 !important;
+   border-color: red;
+   color:#294a66;
  }
 
  .accordion-button:focus{
-   background-color: rgb(17, 6, 88) !important;
-   color: coral;
+  border-radius: 16px;
+   background-color: #abaa93ef !important;
+   color: rgb(19, 67, 95);
  }
 
 
@@ -106,24 +117,29 @@ body {
  /* ******************************************************* */
  .button{
   background-color: #93aba2;
+  border: 2px double #b6ac96;
   color:#E0FBFC;
-  border: none;
-  border-radius:9px;
+  color: #3b3333;
+  padding:.3em;
+  /* border: none; */
+  border-radius:16px;
   margin: .5em;
+  /* padding: .7em; */
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .button:hover{
-  background-color: #95dbd4;
-  color:white;
-  border: none;
+  background-color: #b2dacb;
+  border: 2px double #b6ac96;
+  /* color:white; */
+  /* border: none; */
 }
 
-.button:active{
+/* .button:active{
   background-color: #269e92;
   color:white;
   border: none;
-}
+} */
 
 
 
@@ -133,21 +149,23 @@ body {
 #dropdown-basic {
   background-color: #93aba260;
   border: 2px double #b6ac96;
+  border-radius: 16px;
   color: #3b3333;
-  padding:.5em;
+  padding:.3em;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2), 0 3px 3px 0 rgba(0,0,0,0.19);
 }
 
-.dropdown:hover{
-  color:#72280b
+#dropdown-basic:hover{
+  /* color:#72280b; */
+  background-color: #80a196e0;
 }
 
-a.dropdown-item:hover{
+.dropdown-item:hover{
   background-color: #93aba259;
 }
 
 .dropdown-menu {
-  background-color: #728d83ee;
+  background-color: #6c7a76f8;
   color: #682020;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -162,23 +180,32 @@ a.dropdown-item:hover{
 /* ******************************************************* */
 .home {
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 3em;
     align-items: center;
-    margin: 0 auto;
+  
+    align-items: center;
+    /* text-align:center; */
+    margin: auto;
+    /* margin-left: 7rem; */
 }
+
+/* .container{
+  align-items: center;
+} */
 
 .card{
   background-color: #f3cebb;
   margin:.5em;
   height: 200px;
   width: 300px;
+  /* border-radius: 8000px;  */
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 
 
 }
 .card:hover{
-  background-color: cornflowerblue;
+  background-color: #eeb89d;
 }
 
 /* ******************************************************* */
@@ -201,7 +228,7 @@ a.dropdown-item:hover{
 }
 
 .modal-content{
-  background-color: #93aba2de;
+  background-color: #93aba2f6;
 
 }
 
@@ -209,35 +236,44 @@ a.dropdown-item:hover{
 /* ******************************************************* */
 /* OFF-CANVASE MENU TO LEARN ABOUT EVICTION CAUSES */
 /* ******************************************************* */
-#cause-menu{
+/* #cause-menu{
   background-color: #93aba2e8;
-}
+} */
 
 
 /* ******************************************************* */
 /* OVERRIDE DEFAULT BACKGROUND COLOR FOR 'ALERT' BOXES */
 /* ******************************************************* */
 .text-box{
-  background-color: #fbeedf;
-  border-color: darkmagenta;
+  background-color: #e2b4a283;
+  border-color: #fbeedf3b;
   color: #325288;
+  min-width: 400px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   
 }
+/* 
+.carousel{
+  margin:3%
+} */
 
 /* COLOR / SIZE ETC FOR 5 EVIC STAGE BUTTONS */
 
 .number-button:not(active){
-  border: 2px solid #e6b224;
-  background-color: #1b8fd8;
-  color: #e2c51e;
+  border: 2px solid #fbeedf;
+  background-color: #257aa1f5;
+  color:#fbeedf;
   font-size: 1.5em;
-  width: 400px;
-  height: 2em; 
-  border-radius: 3rem;
-  /* padding: .5em; */
-  padding-inline: .5em;
-  padding-block: .06em;
+  /* width: 5em; */
+  /* height: 500px;  */
+  border-radius: 50px;
+  padding-top: .07em;
+  padding-bottom: .07em;
+  padding-right: .4em;
+  padding-left: .4em;
+
+  /* padding: .05em; */
+
   margin: 0;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -295,6 +331,7 @@ a.dropdown-item:hover{
     /* max-width: 750px; */
     padding: 0%;
     width: 100%;
+    min-width: 400px;
     /* height: auto; */
     /* margin: auto;  */
     justify-content: center;
@@ -304,10 +341,10 @@ a.dropdown-item:hover{
 
 } 
 
-.carousel{
+/* .carousel{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
-}
+} */
 
 /* ******************************************************* */
 
@@ -328,7 +365,7 @@ a.dropdown-item:hover{
 /* ******************************************************* */
 
 #contactInfo {
-    text-align: center;
+    /* text-align: center; */
     padding: 2em;
     padding-bottom: 5em;
 }
