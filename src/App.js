@@ -13,8 +13,9 @@ import {
   EvicMap,
   Stages,
   Stage,
+  ResourcesAbbr,
+  NewVolForm
 } from "./components";
-import ResourcesAbbr from './components/resources/ResourceAbbr';
 import resourceData from './data/english_data/resourceData.json'; 
 import esResourceData from './data/spanish_data/resourceData.json';
 import stageData from './data/english_data/stagesData.json'; 
@@ -56,7 +57,6 @@ const App = () => {
   };
 
   return (
-
     <div className="App"> 
       <Navigation changeLanguage={changeLanguage} translations={language.general}/>  
       <Routes>
@@ -64,6 +64,7 @@ const App = () => {
         <Route path="resources" element={<ResourcesAbbr resourceData={language.resources}/>} />
         <Route path="/contact" element={<Contact resourceData={language.resources} answeredQuestions={language.questions}/>} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/volunteers" element={<NewVolForm />} />
         <Route path="/map-home" element={<EvicMap documentData={language.documents}/>} />
         <Route path="/eviction-map" element={<Stages stageData={language.stages}/>}>
           <Route path="" index />
@@ -72,10 +73,7 @@ const App = () => {
       </Routes>
       <Footer translations={language.general}/>
     </div> 
-
-
-);
-
+  );
 }
 
 

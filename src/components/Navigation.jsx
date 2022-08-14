@@ -54,7 +54,9 @@ function OffCanvasNav({changeLanguage, translations}) {
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     > 
                       <NavDropdown.Item href="#action4">
-                        {translations.apply}
+                        <NavLink className="nav-link" to="/volunteers">
+                          {translations.apply}
+                        </NavLink>
                       </NavDropdown.Item>
                       <NavDropdown.Divider />
                       <NavDropdown.Item href="#action5">

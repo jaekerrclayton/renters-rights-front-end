@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import Volunteers from './VolunteerList'; 
-import NewVolForm from "./NewVolForm";
+import AddVolForm from "./AddVolForm";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ScheduleList from './ScheduleList';
@@ -267,7 +267,7 @@ function Admin() {
           />
           </Row>
           <Row>
-            <NewVolForm onAddVolCallback={addNewVol}/> 
+            <AddVolForm onAddVolCallback={addNewVol}/> 
           </Row>
         </Col>
         <Col>

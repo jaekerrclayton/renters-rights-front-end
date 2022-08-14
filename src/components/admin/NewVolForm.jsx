@@ -1,109 +1,42 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-const kNewVolData = {
-    name: '',
-    email: '',
-    status: '', 
-    type: '',
-    language: ''
-};
 
-const NewVolForm = ({onAddVolCallback}) => {
-    const [volunteerData, setVolunteerData] = useState(kNewVolData); 
-    const [checkboxes, setChecked] = useState({'Legal':false, 'Hotline':false, 'Translation':false, 'Moving':false, 'English':false, 'Spanish':false})
+const NewVolunteer = () => {
+    console.log('????')
+    // console.log(process.env.VOLUNTEER_TEMPLATE_ID);
+    console.log('mb');
+    const form = useRef();
 
-    const handleChange = (e) => {
-        let formName = e.target.name;
-        volunteerData[formName] = e.target.value
-        if (formName === 'language') {
-            volunteerData[formName] += ', '
-        }
-        console.log(volunteerData);
-    };
-
-    const changeChecked = (e) => {
+    const sendEmail = (e) => {
         e.preventDefault();
-        let value = e.target.value;
-        checkboxes[value] = !checkboxes[value];
-        console.log(checkboxes);
+
+        emailjs.sendForm(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
+            form.current,
+            process.env.REACT_APP_USER_ID
+        ).then(
+            result => console.log(result.text),
+            error => console.log(error.text)
+        );
+
+        e.target.reset();
     }
-
-    const submitVolunteerData = (e) => {
-        e.preventDefault();
-        if (checkboxes.Legal){
-            volunteerData.type += 'Legal, '
-        }
-        if (checkboxes.Hotline){
-            volunteerData.type += 'Hotline, '
-        }
-        if (checkboxes.Translation){
-            volunteerData.type += 'Translation, '
-        }
-        if (checkboxes.Moving){
-            volunteerData.type += 'Moving'
-        }
-        if (checkboxes.English){
-            volunteerData.language += ' English'
-        }
-        if (checkboxes.Spanish){
-            volunteerData.language += ' Spanish'
-        }
-        console.log(volunteerData);
-        onAddVolCallback(volunteerData);
-    };
-
+    
     return (
-        <Form onSubmit={submitVolunteerData}>
-            <Row>
-            <h2>Add a New Volunteer</h2>
-            </Row>
-            <Row>
-                <Col>
-                    <Form.Group className="" controlId="name">
-                        <Form.Label>Name:</Form.Label>
-                        <Form.Control name="name" type="text" placeholder="Enter volunteer's name" onChange={handleChange}/>
-                    </Form.Group>
-                </Col>
-                <Col>
-                    <Form.Group controlId="email">
-                        <Form.Label>Email:</Form.Label>
-                        <Form.Control name="email" type="text" placeholder="Enter volunteer's email" onChange={handleChange}/>
-                    </Form.Group>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <Form.Group controlId="type">
-                        <h4>Type:</h4>
-                        <Form.Check type="checkbox" name="type" label="Hotline" value="Hotline" onChange={changeChecked}/>
-                        <Form.Check type="checkbox" name="type" label="Translation" value="Translation" onChange={changeChecked}/>
-                        <Form.Check type="checkbox" name="type" label="Legal" value="Legal" onChange={changeChecked}/>
-                        <Form.Check type="checkbox" name="type" label="Moving" value="Moving" onChange={changeChecked}/>
-                    </Form.Group>
-                </Col>
-                <Col>
-                    <Form.Group controlId="language">
-                        <h4>Language:</h4>
-                        <Form.Check type="checkbox" label="English" value="English" onChange={changeChecked}/>
-                        <Form.Check type="checkbox" label="Spanish" value="Spanish" onChange={changeChecked}/>
-                        <Form.Control type="text" name='language' placeholder="other" onChange={handleChange}/>
-                    </Form.Group>
-                </Col>
-            </Row>
-                <button className='button' type="submit">
-                Add New Volunteer 
-                </button>
-    </Form>
+        <div>
+            <form ref={form} onSubmit={sendEmail}>
+                <label>Name</label>
+                <input type="text" name="user_name" />
+                <label>Email</label>
+                <input type="email" name="user_email" />
+                <label>Message</label>
+                <textarea name="message" />
+                <input type="submit" value="Send" />
+            </form>
+        </div>
     );
 };
 
-NewVolForm.propTypes = {
-    onAddVolCallback: PropTypes.func.isRequired
-};
-
-
-export default NewVolForm;
+export default NewVolunteer;
