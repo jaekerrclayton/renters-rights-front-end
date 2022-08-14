@@ -6,7 +6,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ScheduleList from './ScheduleList';
 import ScheduleChangeDropDown from "./ScheduleChangeDropdown";
-import './Admin.css';
 
 export const URL= process.env.REACT_APP_BACKEND_URL;
 
