@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Row from 'react-bootstrap/Row';
+import { Container } from 'react-bootstrap';
 
 
-const NewVolunteer = () => {
-    console.log('????')
-    // console.log(process.env.VOLUNTEER_TEMPLATE_ID);
-    console.log('mb');
+const NewVolunteer = ({translations}) => {
+    console.log(translations);
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -25,17 +25,28 @@ const NewVolunteer = () => {
     }
     
     return (
-        <div>
+        <Container>
+            <Row>
+                <h4>{translations.apply}</h4>
+            </Row>
+            <Row>
             <form ref={form} onSubmit={sendEmail}>
-                <label>Name</label>
-                <input type="text" name="user_name" />
-                <label>Email</label>
-                <input type="email" name="user_email" />
-                <label>Message</label>
-                <textarea name="message" />
-                <input type="submit" value="Send" />
+                <Row>
+                    <label>{translations.name}:</label>
+                    <input type="text" name="user_name" />
+                </Row>
+                <Row>
+                    <label>{translations.email}:</label>
+                    <input type="email" name="user_email" />
+                </Row>
+                <Row>
+                    <label>{translations.info}</label>
+                    <textarea name="message" />
+                </Row>
+                <input className="button" type="submit" value="send" />
             </form>
-        </div>
+            </Row>
+        </Container>
     );
 };
 
