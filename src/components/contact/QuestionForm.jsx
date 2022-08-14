@@ -30,7 +30,7 @@ const NewQuestion = ({answeredQuestions}) => {
                 <Row>
                     <textarea name="message" rows={5} columns={5} placeholder={answeredQuestions.disclaimer}/>
                 </Row>
-                <input type="submit" value={answeredQuestions.send} />
+                <input className='button' type="submit" value={answeredQuestions.send} />
             </form>
         </div>
         );

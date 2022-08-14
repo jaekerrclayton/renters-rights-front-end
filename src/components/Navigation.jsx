@@ -21,13 +21,13 @@ function OffCanvasNav({changeLanguage, translations}) {
   return (    
     <>
       {[false].map((expand) => (
-        <Navbar  key={expand} bg="dark" variant='dark' expand={expand} className="mb-5">
-          <Container fluid>
-              <NavLink className="navbar-brand" to="/">
+        <Navbar id="nav-nav" key={expand} expand={expand} className="mb-5">
+          <Container id="nav-nav"fluid>
+              <NavLink id="nav-nav" className="navbar-brand" to="/">
                 {translations.main}
               </NavLink>
               <button className='button' style={{'text-align':'right'}} value={translations.lngButton} onClick={changeLanguageCallback}>{translations.lngButton}</button>
-              <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+              <Navbar.Toggle id="menu-button" aria-controls={`offcanvasNavbar-expand-${expand}`} />
               <Navbar.Offcanvas
                   id={`offcanvasNavbar-expand-${expand}`}
                   aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}

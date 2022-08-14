@@ -9,8 +9,8 @@ const Defense = (props) => {
     }
     return (
         rights.map((right) => (
-            <div>
-                <h1>{right.Defense}</h1>
+            <div >
+                <h1 >{right.Defense}</h1>
                 <p>{right.Description}</p>
             </div>))
     );

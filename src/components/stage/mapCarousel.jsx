@@ -1,7 +1,8 @@
 import React from "react";
 import { Carousel } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink } from "react-router-dom";
+
 
 const MapCarousel = ({documentData}) => { 
     return (

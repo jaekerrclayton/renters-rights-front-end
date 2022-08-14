@@ -12,7 +12,7 @@ const ResourcesAbbr = ({resourceData}) => {
         e.preventDefault();
         let id = e.target.value
         console.log(id);
-        setDisplayResources({1:false, 2:false, 3:false, 4:false})
+        setDisplayResources({1:true, 2:false, 3:false, 4:false})
         displayResources[id] = true;
         setCurrentResource(resources.find((resource) => resource.resourceId === Number(id)));
         console.log(currentResource);
@@ -30,13 +30,10 @@ const ResourcesAbbr = ({resourceData}) => {
         <main>
             <h2>{resourceData.title}</h2>
             <Row>
-                <nav style={{
-                    borderRight: "solid 1px",
-                    padding: "1rem",
-                }}>
+                <nav>
                     {resources
                         .map((resource) => ( 
-                            <button value={resource.resourceId} onClick={displayResource}>
+                            <button  className='button' value={resource.resourceId} onClick={displayResource}>
                                 {resource.type}
                             </button>
                         ))}

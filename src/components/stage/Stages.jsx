@@ -26,15 +26,15 @@ const Stages = ({stageData}) => {
                             {stages
                                 .map((stage) => ( 
                             <Nav.Item>
-                                <NavLink 
-                                    // style={({ isActive }) => ({
-                                    //     color: isActive ? "grey" : "",
+                                <NavLink className='number-button'
+                                    style={({ isActive }) => ({
+                                        color: isActive ? "#E0FBFC " : "",
                                         
-                                    // })}
+                                    })}
                                     to={`/eviction-map/${stage.stage_id}`}
                                     key={stage.stage_id}
                                 >
-                                    <button className='number-button'>{stage.stage_id}</button>                                 
+                                    {stage.stage_id}                                 
                                 </NavLink>
                             </Nav.Item>
                             ))}

@@ -50,18 +50,18 @@ const TypesAbbr = ({typeDataJson}) => {
     return (
         <>
         <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
+            <Dropdown.Toggle id="dropdown-basic">
                     {typeDataJson.button_title}
             </Dropdown.Toggle>
                 <Dropdown.Menu>
                     {getDropDown}
                 </Dropdown.Menu>
         </Dropdown>
-        <Offcanvas placement='start' scroll={true} backdrop={true} show={show} onHide={handleClose}>
+        <Offcanvas id="cause-menu" placement='start' scroll={true} backdrop={true} show={show} onHide={handleClose}>
             <Offcanvas.Header closeButton>
                 <Offcanvas.Title>
                     <Dropdown>
-                        <Dropdown.Toggle variant="success" id="dropdown-basic">
+                        <Dropdown.Toggle id="dropdown-basic">
                             {typeDataJson.button_title}
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
@@ -72,15 +72,15 @@ const TypesAbbr = ({typeDataJson}) => {
                     </Dropdown>
                 </Offcanvas.Title>
             </Offcanvas.Header>
-            <OffcanvasBody>
+            <OffcanvasBody >
                             <p style={{display: displayTypes[1] ? 'none': ''}}>
-                                <main class='type' style={{ padding: "1rem" }}>
+                                <main  class='type' style={{ padding: "1rem" }}>
                                     <h4 class='type-title'>{currentType.cause}</h4>
                                     <h6 class='type-description'>{currentType.description}</h6>
-                                    <div>
+                                    <div >
                                         <p>{currentType.landlordNeeds}</p>
                                     </div>
-                                    <div>
+                                    <div >
                                         {/* {rights} */}
                                         <Accordion>
                                             {rights}

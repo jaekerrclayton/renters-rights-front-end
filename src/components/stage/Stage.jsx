@@ -31,10 +31,10 @@ const Stage = ({documentData, stageData, typeData}) => {
       <Row>
       <Col sm>
         
-          <Alert id="about-notice" variant="success">
+          <Alert className="text-box" variant="success">
                   <Alert.Heading>{stage.title}</Alert.Heading>
                       <p style={{
-                              maxHeight: 'calc(55vh - 210px)',
+                              maxHeight: 'calc(65vh - 210px)',
                               overflowY: 'auto'
                             }}>
                           <p>{stage.sub_title}</p>

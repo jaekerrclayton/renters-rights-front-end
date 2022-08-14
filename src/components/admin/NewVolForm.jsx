@@ -94,7 +94,7 @@ const NewVolForm = ({onAddVolCallback}) => {
                     </Form.Group>
                 </Col>
             </Row>
-                <button className="button-new-board-submit" type="submit">
+                <button className='button' type="submit">
                 Add New Volunteer 
                 </button>
     </Form>

@@ -3,8 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import MapCarousel from "./mapCarousel";
-import AlertDismissible from './mapIntroAlert'; 
+// import AlertDismissible from './mapIntroAlert'; 
 import Modal from 'react-bootstrap/Modal';
+import Alert from 'react-bootstrap/Alert';
 
 
 
@@ -14,13 +15,19 @@ const EvicMap = ({documentData}) => {
   
   return (
 
-      <Container style={{ width: '30rem' }}>
+      <Container style={{ width: '20rem' }}>
         <Row className="welcome-message">
-          <AlertDismissible documentData={documentData}/>
-        </Row>
-        <button className="button" onClick={() => setShow(true)}>
-          {documentData.browse}
-        </button>
+              <Alert className="text-box" variant="success">
+              <Alert.Heading>{documentData.title}</Alert.Heading>
+              <p>
+                {documentData.introduction}
+              </p>
+              <button className="button" onClick={() => setShow(true)}>
+                {documentData.browse}
+              </button>
+            </Alert>
+              </Row>
+             
 
       <Modal
         show={show}

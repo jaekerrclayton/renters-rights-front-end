@@ -1,45 +1,160 @@
 /* SET UP FORMATTING FOR ALL PAGES */
+
 body {
     flex-direction: column;
     margin: 0;
-    background: rgba(84, 145, 145, 0.438);
+    background: #325288;
+    background-color: #294a66;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  
-  /* .Outlet{
-    flex-direction: row;
-  
-  }  */
-  
-  /* SELECT FONT FAMILY */
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
+      /* FONT COLOR FOR ALL PAGES */
+    color:rgba(129, 66, 29, 0.822);
+    
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+    
   }
 
-  
+
+    /* SELECT FONT FAMILY */
+  /* code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  } */
+/* ******************************************************* */
+  /* HEADER AND FOOTER BACKGROUND COLOR AND FONT COLOR */
+/* ******************************************************* */
+  #nav-nav{
+    background: #192f55;
+    color: rosybrown;
+    /* box-shadow: 0 5px 5px 0 rgba(105, 90, 90, 0.2), 0 5px 5px 0 rgba(0,0,0,0.19); */
+  }
+
+  #menu-button:not(collapsed){
+    color: blanchedalmond;
+  }
+
+  .offcanvas{
+    background-color: #93aba2f1;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  .offcanvas nav:hover{
+    background-color: cornflowerblue;
+  }
+
+
+    /* ******************************************************* */
+  /* ALL TEXT ON PAGES (EXCEPT NAV BAR & THINGS IN SPECIAL CONTAINERS MENU */
+  /* ******************************************************* */
   a {
+    color:rgba(68, 10, 134, 0.822);
     text-decoration: none;
-    color: black;
   }
   a:hover {
     text-decoration: none;
-    color: rgba(247, 34, 34, 0.822);
+    color: rgba(65, 178, 223, 0.822);
   }
-  /* .btn{
-    /* border:#204d68; */
-  /* }  */
+
+
+  .btn{
+    border:#204d68;
+  }
+
   .btn:hover {
     background-color: #95dbd4;
-  }
+  } 
   .btn:active {
-    background-color: #95dbd4;
+    background-color: #a895db;
+    color:red;
   }
+ 
+
+/* ******************************************************* */
+  /* ALL ACCORDIONS */
+/* ******************************************************* */
+ .accordion{
+   /* background-color: rgb(30, 168, 210); */
+   /* border-color: rgb(30, 168, 210); */
+   /* border-radius: 16px; */
+   /* border-width: 5px; */
+   color:rgb(56, 17, 3);
+   
+ }
+
+ .accordion-body{
+  background-color: rgb(30, 168, 210);
+  border-color: rgb(30, 168, 210);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ }
+
+
+ .accordion-button:not(collapsed){
+   background-color: rgb(22, 231, 113)!important;
+   color:rgb(180, 14, 14)
+ }
+
+ .accordion-button:focus{
+   background-color: rgb(17, 6, 88) !important;
+   color: coral;
+ }
+
+
+/* ******************************************************* */
+ /* BUTTONS FOR ALL PAGES -- EXCEPT DROPDOWN BUTTONS */
+ /* ******************************************************* */
+ .button{
+  background-color: #93aba2;
+  color:#E0FBFC;
+  border: none;
+  border-radius:9px;
+  margin: .5em;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover{
+  background-color: #95dbd4;
+  color:white;
+  border: none;
+}
+
+.button:active{
+  background-color: #269e92;
+  color:white;
+  border: none;
+}
+
+
+
+/* ******************************************************* */
+/* ALL DROPDOWN BUTTONS */
+/* ******************************************************* */
+#dropdown-basic {
+  background-color: #93aba260;
+  border: 2px double #b6ac96;
+  color: #3b3333;
+  padding:.5em;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2), 0 3px 3px 0 rgba(0,0,0,0.19);
+}
+
+.dropdown:hover{
+  color:#72280b
+}
+
+a.dropdown-item:hover{
+  background-color: #93aba259;
+}
+
+.dropdown-menu {
+  background-color: #728d83ee;
+  color: #682020;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/* 
+.dropdown-toggle{
+  background-color: #93aba2 !important;
+} */
 
 
 /* ******************************************************* */
@@ -48,42 +163,29 @@ body {
 .home {
     padding-top: 1em;
     padding-bottom: 1em;
-    text-align: center;
+    align-items: center;
     margin: 0 auto;
 }
 
-/* language toggle button*/
-.button{
-  background-color: #204d68;
-  color:#E0FBFC;
-  border: none;
-  border-radius:7px;
+.card{
+  background-color: #f3cebb;
+  margin:.5em;
+  height: 200px;
+  width: 300px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+
+
 }
-.button:hover{
-  background-color: #95dbd4;
-  color:white;
-  border: none;
-}
-.number-button{
-  border: 3px solid #204d68;
-  background-color: transparent;
-  color: #204d68;
-  font-size: 2rem;
-  width: 4rem;
-  border-radius: 1.5rem;
-  padding: 0;
-  margin: 0;
-}
-.number-button:hover{
-  border: 3px solid #204d68;
-  background-color: #E0FBFC;
-  border-radius: 1.5rem;
+.card:hover{
+  background-color: cornflowerblue;
 }
 
 /* ******************************************************* */
 /* EVICTION-MAP HOME */
 /* ******************************************************* */
-/* set position of clickable button -> proper stage */
+
+/* position of click - button for selecting proper document */
 #doc-button-link{
     position:absolute;
     top: 45%; 
@@ -98,6 +200,63 @@ body {
 
 }
 
+.modal-content{
+  background-color: #93aba2de;
+
+}
+
+
+/* ******************************************************* */
+/* OFF-CANVASE MENU TO LEARN ABOUT EVICTION CAUSES */
+/* ******************************************************* */
+#cause-menu{
+  background-color: #93aba2e8;
+}
+
+
+/* ******************************************************* */
+/* OVERRIDE DEFAULT BACKGROUND COLOR FOR 'ALERT' BOXES */
+/* ******************************************************* */
+.text-box{
+  background-color: #fbeedf;
+  border-color: darkmagenta;
+  color: #325288;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  
+}
+
+/* COLOR / SIZE ETC FOR 5 EVIC STAGE BUTTONS */
+
+.number-button:not(active){
+  border: 2px solid #e6b224;
+  background-color: #1b8fd8;
+  color: #e2c51e;
+  font-size: 1.5em;
+  width: 400px;
+  height: 2em; 
+  border-radius: 3rem;
+  /* padding: .5em; */
+  padding-inline: .5em;
+  padding-block: .06em;
+  margin: 0;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.number-button:hover{
+  border: 3px solid #204d68;
+  background-color: #E0FBFC;
+  border-radius: 1.5rem;
+}
+
+.number-button:active{
+  border: 3px solid #204d68;
+  background-color: #E0FBFC !important;
+  border-radius: 1.5rem;
+}
+
+
+
+
+
 
 
 /* ******************************************************* */
@@ -109,22 +268,25 @@ body {
     height: 60vh; 
 }
 
-#about-notice {
+/* #about-notice {
     width: auto;
     
-}
+} */
 
 .my-container{
-    max-width: 600px;
+    max-width: 550px;
     position:absolute;
     width: auto; 
     max-height: fit-content;
     padding-bottom: 10%; 
     padding-top: 0%; 
+    padding-right: 5%;
+    padding-left: 5%;
 
     /* padding-bottom: 10%;  */
     /* background-color: rgba(41, 143, 184, 0.678); */
     justify-content: center;
+    
 
 }
 
@@ -138,9 +300,14 @@ body {
     justify-content: center;
 
     text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 } 
 
+.carousel{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
 
 /* ******************************************************* */
 
@@ -158,7 +325,7 @@ body {
 
 /* ******************************************************* */
 /* CONTACT PAGE */
-
+/* ******************************************************* */
 
 #contactInfo {
     text-align: center;
@@ -175,6 +342,7 @@ body {
 
 /* ******************************************************* */
 /* ADMIN */
+/* ******************************************************* */
 
 section {
   padding: 1em;
@@ -186,13 +354,4 @@ section {
   font-weight: bold;
 }
 
-/* button {
-  background-color: #008B8B;
-  color: white;
-  border-radius: 7px;
-  border-color: black;
-} */
 
-#dropdown-basic {
-  background-color: #204d68;
-}
