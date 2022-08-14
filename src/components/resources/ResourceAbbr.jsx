@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import Alert from 'react-bootstrap/Alert'; 
 // import resourceData from '../data/english_data/resourceData.json'; 
 
 const ResourcesAbbr = ({resourceData}) => {
@@ -28,8 +30,15 @@ const ResourcesAbbr = ({resourceData}) => {
 
     return (
         <main>
-            <h2>{resourceData.title}</h2>
-            <Row>
+
+
+        <Container style={{ width: '40rem' }}  >
+
+              <Alert className="text-box" variant="success">
+                    <Alert.Heading>{resourceData.title}</Alert.Heading>
+                    <hr />
+
+                <p>
                 <nav>
                     {resources
                         .map((resource) => ( 
@@ -38,8 +47,14 @@ const ResourcesAbbr = ({resourceData}) => {
                             </button>
                         ))}
                 </nav>
-            </Row>
-            <Row>
+     
+              </p>
+              <hr />
+        
+              <p style={{
+                        maxHeight: 'calc(75vh - 210px)',
+                        overflowY: 'auto'
+                    }}>
                 <div>
                     <main class='type' style={{ padding: "1rem" }}>
                         <h4 class='type-title'>{currentResource.title}</h4>
@@ -48,8 +63,15 @@ const ResourcesAbbr = ({resourceData}) => {
                         </div>
                     </main>
                 </div>
-            </Row>
-        </main>
+                </p>
+      
+              
+
+        </Alert>
+        </Container>
+
+          
+</main>
     );
 }
 

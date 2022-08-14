@@ -50,9 +50,9 @@
       "important": "Consent Judgment: If your landlord agrees to a payment plan or a later move date, you can ask the court for a 'Consent Judgment' – even when you can't reach an agreement before going to court. It's a good way to avoid an eviction on your record.", 
       "info": "If you lose your case, you may have to leave within 24 hours of the Judgment coming to your door. You can ask the judge for more time during your trial,",
       "documents": ["vacate1"],
-      "nextSteps": "Next Steps:",
+      "nextSteps": "",
       "about_notice": ["The landlord cannot 'prove' their case by sharing other people have 'said' if they are not present. This is heresay."], 
-      "next_steps": "link to next",
+      "next_steps": "",
       "additional_resources": ["If you lose your case, you must move in the time period determined at trial.", "If you think the judge made a wrong decision, your case can be appealed.", "Unless you have an 'Answer' that gives you permission to remain in your home during the appeal process." ]
   
     },

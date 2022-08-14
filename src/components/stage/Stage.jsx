@@ -33,6 +33,7 @@ const Stage = ({documentData, stageData, typeData}) => {
         
           <Alert className="text-box" variant="success">
                   <Alert.Heading>{stage.title}</Alert.Heading>
+                  <hr />
                       <p style={{
                               maxHeight: 'calc(65vh - 210px)',
                               overflowY: 'auto'

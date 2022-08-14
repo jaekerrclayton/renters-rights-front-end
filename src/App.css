@@ -4,13 +4,13 @@ body {
     flex-direction: column;
     margin: 0;
     /* background:rgba(144, 170, 243, 0.466); */
-    background: #dbe0f8;
+    background: #f9f3e7;
     /* background-color: #294a66; */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
       /* FONT COLOR FOR ALL PAGES */
-    color:rgba(55, 55, 70, 0.822);
+    color:#31302f;
     
     /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
@@ -27,9 +27,14 @@ body {
   /* HEADER AND FOOTER BACKGROUND COLOR AND FONT COLOR */
 /* ******************************************************* */
   #nav-nav{
-    background: #192f55;
-    color: rosybrown;
+    background: #f9f3e7;
+    color:#31302f;
     /* box-shadow: 0 5px 5px 0 rgba(105, 90, 90, 0.2), 0 5px 5px 0 rgba(0,0,0,0.19); */
+  }
+
+  #nav-header{
+    color:#31302f;
+
   }
 
   #menu-button:not(collapsed){
@@ -37,7 +42,7 @@ body {
   }
 
   .offcanvas{
-    background-color: #ccdad4d2;
+    background-color: #d2e5e7e0;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
 
@@ -88,7 +93,7 @@ body {
 
  .accordion-body{
   background-color: #a1425aad;
-  background-color: #93aba260;
+  background-color: #93aba20c;
   /* border: 2px double #b6ac96; */
   border-color: rgb(210, 132, 30);
   border-radius: 16px;
@@ -100,14 +105,14 @@ body {
 
  .accordion-button:not(collapsed){
     border-radius: 16px;
-   background-color: #6c8078 !important;
+   background-color: #ccdad407 !important;
    border-color: red;
    color:#294a66;
  }
 
  .accordion-button:focus{
   border-radius: 16px;
-   background-color: #abaa93ef !important;
+   background-color: #ccdad4da !important;
    color: rgb(19, 67, 95);
  }
 
@@ -116,8 +121,8 @@ body {
  /* BUTTONS FOR ALL PAGES -- EXCEPT DROPDOWN BUTTONS */
  /* ******************************************************* */
  .button{
-  background-color: #93aba2;
-  border: 2px double #b6ac96;
+  background-color: #c6e0e0;
+  border: 1px double #181716;
   color:#E0FBFC;
   color: #3b3333;
   padding:.3em;
@@ -125,7 +130,7 @@ body {
   border-radius:16px;
   margin: .5em;
   /* padding: .7em; */
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
 }
 
 .button:hover{
@@ -147,12 +152,12 @@ body {
 /* ALL DROPDOWN BUTTONS */
 /* ******************************************************* */
 #dropdown-basic {
-  background-color: #93aba260;
-  border: 2px double #b6ac96;
+  background-color: #75928700;
+  border: 1px double #3f3c35;
   border-radius: 16px;
   color: #3b3333;
   padding:.3em;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2), 0 3px 3px 0 rgba(0,0,0,0.19);
+  /* box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2), 0 3px 3px 0 rgba(0,0,0,0.19); */
 }
 
 #dropdown-basic:hover{
@@ -194,12 +199,12 @@ body {
 } */
 
 .card{
-  background-color: #f3cebb;
+  background-color: #f3cebb00;
   margin:.5em;
   height: 200px;
   width: 300px;
   /* border-radius: 8000px;  */
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
 
 
 
@@ -228,7 +233,7 @@ body {
 }
 
 .modal-content{
-  background-color: #93aba2f6;
+  background-color: #899fa5d8;
 
 }
 
@@ -245,11 +250,13 @@ body {
 /* OVERRIDE DEFAULT BACKGROUND COLOR FOR 'ALERT' BOXES */
 /* ******************************************************* */
 .text-box{
-  background-color: #e2b4a283;
-  border-color: #fbeedf3b;
-  color: #325288;
+  background-color: #c6e0e0;
+  border: 1px solid;
+  border-radius: 16px;
+  border-color: #221506;
+  color: #32363d;
   min-width: 400px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
   
 }
 /* 
@@ -260,10 +267,10 @@ body {
 /* COLOR / SIZE ETC FOR 5 EVIC STAGE BUTTONS */
 
 .number-button:not(active){
-  border: 2px solid #fbeedf;
-  background-color: #257aa1f5;
-  color:#fbeedf;
-  font-size: 1.5em;
+  border: 1px solid #131211;
+  /* background-color: #257aa13a; */
+  color:#201f1e;
+  font-size: 1.2em;
   /* width: 5em; */
   /* height: 500px;  */
   border-radius: 50px;
@@ -341,10 +348,7 @@ body {
 
 } 
 
-/* .carousel{
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
-} */
 
 /* ******************************************************* */
 

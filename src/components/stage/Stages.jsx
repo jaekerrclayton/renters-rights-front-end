@@ -28,7 +28,7 @@ const Stages = ({stageData}) => {
                             <Nav.Item>
                                 <NavLink className='number-button'
                                     style={({ isActive }) => ({
-                                        color: isActive ? "#E0FBFC " : "",
+                                        color: isActive ? "#F8D7C1 " : "",
                                         
                                     })}
                                     to={`/eviction-map/${stage.stage_id}`}

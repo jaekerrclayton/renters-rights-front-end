@@ -19,12 +19,17 @@ const EvicMap = ({documentData}) => {
         <Row className="welcome-message">
               <Alert className="text-box" variant="success">
               <Alert.Heading>{documentData.title}</Alert.Heading>
+              <hr />
               <p>
                 {documentData.introduction}
               </p>
-              <button className="button" onClick={() => setShow(true)}>
-                {documentData.browse}
-              </button>
+              <hr />
+              <p className="mb-0">
+                    <button className="button" onClick={() => setShow(true)}>
+                      {documentData.browse}
+                    </button>
+              </p>
+
             </Alert>
               </Row>
              

@@ -1,6 +1,7 @@
 import React, {useState, useEffect}from "react";
 import axios from 'axios';
 import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container'; 
 import NewQuestion from "./QuestionForm";
 import Posts from './Posts';
 import ResourcesAbbr from "../resources/ResourceAbbr";
@@ -36,10 +37,13 @@ function Contact({resourceData, answeredQuestions}) {
   // const v = (numberOnline !== 1 ? 'volunteers' : 'volunteer');
 
   return (
+    <main>
+
+    <Container style={{ width: '40rem' }}  >
       <div id='contactInfo'>
-        <Row>
-          <h3>{answeredQuestions.title}</h3>
-        </Row>
+        {/* <Row> */}
+          {/* <h3>{answeredQuestions.title}</h3> */}
+        {/* </Row> */}
         <Row>
             <Posts answeredQuestions={answeredQuestions}/>
         </Row>
@@ -53,10 +57,13 @@ function Contact({resourceData, answeredQuestions}) {
           <div>{answeredQuestions.urgent}</div>
           <h6 className='section_title'>{numberOnline} {answeredQuestions.current}</h6>
         </Row>
+    
         <Row>
           <ResourcesAbbr resourceData={resourceData}/>
         </Row>
       </div>
+      </Container>
+    </main> 
   );
 }
 

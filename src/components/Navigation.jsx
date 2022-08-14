@@ -23,7 +23,7 @@ function OffCanvasNav({changeLanguage, translations}) {
       {[false].map((expand) => (
         <Navbar id="nav-nav" key={expand} expand={expand} className="mb-5">
           <Container fluid>
-              <NavLink id="nav-nav"className="navbar-brand" to="/">
+              <NavLink id="nav-header"className="navbar-brand" to="/">
                 {translations.main}
               </NavLink>
               <button className='button' style={{'text-align':'right'}} value={translations.lngButton} onClick={changeLanguageCallback}>{translations.lngButton}</button>
