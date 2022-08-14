@@ -12,7 +12,11 @@
         "resourceDescription":"Find local resources",
         "questionDescription":"Submit your own question, or browse most frequently asked questions",
         "footer":"This site provides legal information, not advice. For Legal Aid : Contact a Lawyer",
-        "lngButton":"Español"
+        "lngButton":"Español",
+        "send":"send",
+        "name":"Name",
+        "email":"Email",
+        "info":"Explain how you're willing to volunteer."
     },
     "es":
     {
@@ -27,6 +31,10 @@
         "resourceDescription":"Encuentre recursos locales",
         "questionDescription":"Envíe su propia pregunta o explore las preguntas más frecuentes",
         "footer":"Este sitio proporciona información legal, no asesoramiento. Para asistencia legal: Póngase en contacto con un abogado",
-        "lngButton":"English"
+        "lngButton":"English",
+        "send":"enviar",
+        "name":"Nombre",
+        "email":"Correo Electrónico",
+        "info":"SPANISH Explain how you're willing to volunteer."
     }
 }
