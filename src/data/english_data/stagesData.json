@@ -2,42 +2,42 @@
     {
       "stage_id": 1, 
       "title": "Notice To Vacate",
-      "important": "SOMETHING IMPORTANT", 
-      "sub_title": "This is the first notice",
-      "info": "This is the first warning -- you are not currently being evicted, but you need to prepare! Read on to understand your eviction and see what the next steps are",
+      "sub_title": "This is the first notice, the landlord must give 5 days notice before requesting an official eviction if you have violated your lease in some way.",
+      "important": "This is not an official eviction! An eviction is a legal process.", 
+      "info": "The notice doesn't have to be from the court, but it needs to be tacked to your door or mailed to you. It can be handwritten or a legal notice of eviction. A text message is NOT a valid Notice to Vacate. It is the first step of an eviction.", 
       "documents": ["vacate1", "vacate2", "vacate3"],
-      "about_notice": ["about notice div info", "second div info", "third div info"], 
+      "about_notice": ["**WATCH OUT** In Louisiana this notice may be waived in your lease. Look for 'Waiver of Notice', which means that your landlord does not have to give 5 days' notice.", "If your lease expires and the landlord does not want to renew it, they must notify you 30 days in advance.", "If you are on a month-to-month lease (oral or written), the landlord must give you at least 10 days notice" ], 
       "nextSteps": "Next Steps:",
-      "next_steps": "link to next",
-      "additional_resources": ["where to reach out- maybe hover", "another place to talk to maybe route to other page? ", "aaand another resource"]
+      "next_steps": "If you do not vacate and fail to reach an agreement, your landlord will have to file a lawsuit in court to ask for a 'Rule for Possession.' ",
+      "additional_resources": ["It is recommended you seek legal council if you are planning to fight your eviction"]
     },
 
 
     {
       "stage_id": 2, 
       "title": "Possession of Property",
-      "important": "SOMETHING IMPORTANT", 
-      "sub_title": "You have a court hearing approaching",
-      "info": "You have been summoned to court to argue against eviction. It is important that you secure a lawyer if you plan to go to court, read on to figure out how to understand your eviction notice & what you can do to prepare for court",
+      "sub_title": "The Order of Possession indicates the trial date when you can go and present your case to a judge. The reason for eviction must be in the order and must be the same reason as stated in the Notice to Vacate." , 
+      "important": "It is highly recommended that you contact legal services if you intend to discuss your case in court.", 
+      "info": "The order indicates the date on which you have to go to court. This date will not be until after 3 days after the summons. The citation will be pasted on your door. If you live in the East Bank, it will also be mailed to you. The news has to clarify the cause of the eviction.",
       "documents": ["order1", "order2"],
       "about_notice": ["first div info", "second div info", "third div info"],
       "nextSteps": "Next Steps:", 
       "next_steps": "link to next",
-      "additional_resources": ["where to reach out", "another place to talk to ", "aaand another resource"]
+      "additional_resources": ["If you had already vacated the property, you should still inform the court that you have moved prior to your trial--", "This prevents an eviction being placed on your record."]
   
     },
   
     {
       "stage_id": 3, 
-      "title": "Preparing For Court",
-      "important": "SOMETHING IMPORTANT", 
+      "title": "What should I bring to court?",
       "sub_title": "Documents to gather & things to do!",
-      "info": "Here are some things to consider before your eviction hearing. Here are some tips about what kinds of documents you want to gather, texts you should save to show to a judge, thinking about if you have potential witnesses to come with you & how to try to appeal ur eviction before it even begins",
+      "important": "It is recommended that you speak with a lawyer regarding your potential defenses. If interpretation services are needed, you may also call the court in advance to request them.", 
+      "info": "Take all the evidence you have with you to court – this is the time you have to defend yourself.", 
       "documents": ["courtPrep"],
-      "about_notice": [ "maybe instead : about_notice is just where  courtPrep data Comes in???"], 
+      "about_notice": [ ""], 
       "nextSteps": "Next Steps:",
-      "next_steps": "link to next",
-      "additional_resources": ["where to reach out", "another place to talk to ", "aaand another resource"]
+      "next_steps": "If you do not have a legal defense, you can always vacate before the date indicated, and you should always inform the court. If you think you have a defense, you should present your case in front of the judge.",
+      "additional_resources": ["Plan ahead - If you wish to be able to appeal the order and remain in your home during the appeal, you must file a 'Response' before the court date.", "If you do not file a response with the court, you can still appeal, but you must vacate the property while the appeal is pending." ]
   
     },
   
@@ -45,29 +45,29 @@
       
     {
       "stage_id": 4, 
-      "title": "After Court Hearing",
-      "important": "SOMETHING IMPORTANT", 
-      "sub_title": "Depending on the outcome of your hearing, you have some options",
-      "info": "Potential Outcomes ( -- maybe make separte route to if you win / lose / appeal / didn't go) :: If your court date has past and you have lost or did not go, it's important you prepare quickly. But also, there are things your landlord cannot legally do even when you don't leave ",
+      "title": "What happens the day of my trial?",
+      "sub_title": "Be sure to arrive early and check in with the staff in the courtroom. In court, all landlords and tenants sit in front of the judge. At this time, you will have the opportunity to defend yourself and show your evidence.", 
+      "important": "Consent Judgment: If your landlord agrees to a payment plan or a later move date, you can ask the court for a 'Consent Judgment' – even when they can't reach an agreement before going to court. It's a good way to avoid an eviction on your record.", 
+      "info": "If you lose your case, you may have to leave within 24 hours of the Judgment coming to your door. You can ask the judge for more time during your trial,",
       "documents": ["vacate1"],
       "nextSteps": "Next Steps:",
-      "about_notice": ["first div info", "second div info", "third div info"], 
+      "about_notice": ["The landlord cannot 'prove' their case by sharing other people have 'said' if they are not present. This is heresay."], 
       "next_steps": "link to next",
-      "additional_resources": ["where to reach out", "another place to talk to ", "aaand another resource"]
+      "additional_resources": ["If you lose your case, you must move in the time period determined at trial.", "If you think the judge made a wrong decision, your case can be appealed.", "Unless you have an 'Answer' that gives you permission to remain in your home during the appeal process." ]
   
     },
   
   
     {
       "stage_id": 5, 
-      "title": "Writ of Possession",
-      "sub_title": "You have lost your case (or didn't go) & here is what to do next",
-      "info": "Potential Outcomes (route to if you win / lose etc ): If you've gotten this notice, it is important that you move out as soon as posisble. Here is what to expect within 24 hours of receiving this notice. Some tips on how to move out to avoid losing your deposit or having to deal with the constable/sheriff",
+      "title": "Judgment: Writ of Possession",
+      "sub_title": "If you have received this order, your case has already been lost and you have 24 hours to leave the house (not including the weekends).", 
+      "info": "This is NOT an arrest warrant. However, it allows the sheriff to remove you and your belongings from your house. The landlord cannot physically remove you or your belongs, and has to fild for a 'Writ of Possession' or 'Order of Possession' in order for a sheriff or constable to remove you",
       "documents": ["judgment1", "judgment2"], 
       "nextSteps": "Next Steps:",
-      "about_notice": ["first div info", "second div info", "third div info"], 
-      "next_steps": "link to next (link to nested route of timeline of post-losing eviction)",
-      "additional_resources": ["where to reach out", "another place to talk to ", "aaand another resource"]
+      "about_notice": [""], 
+      "next_steps": "",
+      "additional_resources": ["You can visit the 'Resources' page to explore types of assistance we may be able to offer you",  "On the 'Frequently Asked Questions' page, we offer information on appealing your eviction."]
   
     }
 
