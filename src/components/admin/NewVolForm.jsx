@@ -43,7 +43,7 @@ const NewVolunteer = ({translations}) => {
                     <label>{translations.info}</label>
                     <textarea name="message" />
                 </Row>
-                <input className="button" type="submit" value="send" />
+                <input className="button" type="submit" value={translations.send} />
             </form>
             </Row>
         </Container>
