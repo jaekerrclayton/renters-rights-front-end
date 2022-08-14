@@ -18,25 +18,12 @@ function Posts({answeredQuestions}) {
 
   return (
     <div>
-      <div class="container">
-          <div class="row align-items-center my-5">
-            <div class="col-lg-7">
-              <img
-                class="img-fluid rounded mb-4 mb-lg-0"
-                src=""
-                alt=""
-              />
-            </div>
-            <Row>
-              <h1 class="font-weight-light">{answeredQuestions.FAQ}</h1>
-            </Row>
-            <Row>
+
               <Accordion>
                 {getPosts}
               </Accordion>
-            </Row>
-          </div>
-      </div>
+       
+
     </div>
   );
 }

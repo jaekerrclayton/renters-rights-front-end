@@ -32,7 +32,7 @@ const ResourcesAbbr = ({resourceData}) => {
         <main>
 
 
-        <Container style={{ width: '40rem' }}  >
+        <Container style={{ width: '60rem' }}  >
 
               <Alert className="text-box" variant="success">
                     <Alert.Heading>{resourceData.title}</Alert.Heading>

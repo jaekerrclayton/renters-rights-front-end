@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import NewQuestion from "./QuestionForm";
 import Posts from './Posts';
 import ResourcesAbbr from "../resources/ResourceAbbr";
+import Alert from 'react-bootstrap/Alert'; 
 export const URL='https://renters-rights-back-end.herokuapp.com/admin/';
 
 
@@ -39,30 +40,42 @@ function Contact({resourceData, answeredQuestions}) {
   return (
     <main>
 
-    <Container style={{ width: '40rem' }}  >
-      <div id='contactInfo'>
-        {/* <Row> */}
-          {/* <h3>{answeredQuestions.title}</h3> */}
-        {/* </Row> */}
-        <Row>
-            <Posts answeredQuestions={answeredQuestions}/>
-        </Row>
-        <Row>
-          <p>{answeredQuestions.instructions}</p>
-        </Row>
-        <Row id='questionBox'>
-          <NewQuestion answeredQuestions={answeredQuestions} />
-        </Row>
-        <Row>
-          <div>{answeredQuestions.urgent}</div>
-          <h6 className='section_title'>{numberOnline} {answeredQuestions.current}</h6>
-        </Row>
+    <Container style={{ width: '60rem' }}  >
+
+      <Alert className="text-box" variant="success">
+        <Alert.Heading>{answeredQuestions.FAQ}</Alert.Heading>
+
+        <hr />
+        <h6 className='section_title'>{numberOnline} {answeredQuestions.current}</h6>
+        <p>{answeredQuestions.urgent}</p>
+      <hr />
+        <p style={{
+                        maxHeight: 'calc(75vh - 210px)',
+                        overflowY: 'auto'
+                    }}>
+              <Posts answeredQuestions={answeredQuestions}/>
+
+        </p>
+      </Alert> 
     
-        <Row>
-          <ResourcesAbbr resourceData={resourceData}/>
-        </Row>
-      </div>
+          
       </Container>
+
+      <ResourcesAbbr resourceData={resourceData}/>
+
+      <Container style={{ width: '60rem' }}  >
+      <Alert id='questionBox' className="text-box" variant="success">
+      <p>{answeredQuestions.instructions}</p>
+      <p id='questionBox' style={{
+                        maxHeight: 'calc(50vh - 210px)',
+                        overflowY: 'auto'
+                    }}>
+      <NewQuestion answeredQuestions={answeredQuestions} />
+
+      </p>
+      </Alert>
+      </Container>
+     
     </main> 
   );
 }
