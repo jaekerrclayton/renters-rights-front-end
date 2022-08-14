@@ -236,20 +236,20 @@ const documentData = {
             stage_title: "Judgment",  
             docInfo : [
                     {info_id: 9,
-                    title: "Your name versus your landlord", 
-                    sub_title: "Check if this information is accurate. Is this the person you pay your lease to ? Consider contacting your landlord to see if there is a way of preventing your eviction from happening. Check out above 'Causes for Evicion' to learn about potential defenses!" ,  
+                    title: "Case Number", 
+                    sub_title:"Here you should find your case number if you have any questions regarding how much time you have to leave your home. If you wish to appeal your case, you may also do so. This process is described on the next slide.",
                     placement: "bottom" 
                 }, 
                     {
                     info_id: 10,
-                    title: "Court Location", 
-                    sub_title: "This might look like an official eviciton - but it is just a warning that a hearing could take place. If you do end up facing eviction, this is likely where the court will be held", 
+                    title: "Court Decision", 
+                    sub_title: "If you have received this notice, your eviction is official. This is an example of a judgment in favor of the landlord. From the time of receiving this notice, you have 24 hours to vacate the property.", 
                     placement: "top" 
                 }, 
                     {
                     info_id: 11,
-                    title: "Cause of Eviction" , 
-                    sub_title: "Why you're being evicted - is there something you could do to change the situation ? Consider causes of eviction above, and check out potential defenses." , 
+                    title: "Time given to vacate" , 
+                    sub_title: "Your landlord cannot forcefully remove you or your things from the house, but if you do not leave within 24 hours (weekend not included), the landlord is able to call the court to have you forcefully removed by a constable or sheriff" , 
                     placement: "top" 
                 }
                     ]
@@ -260,38 +260,26 @@ const documentData = {
             docInfo: [
                         {
                         info_id: 12, 
-                        title: "Time given to respond to eviction",
-                        sub_title: "From the day you have received this notice, the Landlord has given you 5 days to respond. After these five days, the landlord can go to court to request a hearing.", 
+                        title: "Case number",
+                        sub_title: "Here you should find your case number if you have any questions regarding how much time you have to leave your home. If you wish to appeal your case, you may also do so. This process is described on the next slide", 
                         placement: "top"
     
                         }, 
                         {
                         info_id: 13,
-                        title: "Cause for Eviction" , 
-                        sub_title: "Your notice should say why you're being evicted. Look above for different defenses for types of evictions.", 
+                        title: "Court decision" , 
+                        sub_title: "Your landlord cannot forcefully remove you or your things from the house, but if you do not leave within 24 hours (weekend not included), the landlord is able to call the court to have you forcefully removed by a constable or sheriff", 
                         placement: "bottom"
                     },
                     {
                         info_id: 14, 
-                        title: "Time given to respond to eviction",
-                        sub_title: "From the day you have received this notice, the Landlord has given you 5 days to respond. After these five days, the landlord can go to court to request a hearing.", 
+                        title: "Appealing your eviction",
+                        sub_title: "If you wish to appeal your eviction, this is also possible. Regardless, you should move out in the allotted time and until another hearing occurs.", 
                         placement: "top"
     
                     },
-                    {
-                        info_id: 15, 
-                        title: "Time given to respond to eviction",
-                        sub_title: "From the day you have received this notice, the Landlord has given you 5 days to respond. After these five days, the landlord can go to court to request a hearing.", 
-                        placement: "top"
-    
-                    },
-                    {
-                        info_id: 16, 
-                        title: "Time given to respond to eviction",
-                        sub_title: "From the day you have received this notice, the Landlord has given you 5 days to respond. After these five days, the landlord can go to court to request a hearing.", 
-                        placement: "top"
-    
-                        },  
+
+
                 ]   
         
         }, 
