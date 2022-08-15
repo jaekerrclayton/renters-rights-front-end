@@ -45,7 +45,7 @@ const EvicMap = ({documentData}) => {
             <Alert className="text-box" variant="success">
             <Alert.Heading>Can my landlord ...?</Alert.Heading>
             <hr/>
-              <p>
+              {/* <p> */}
 
 
             {/* <div id="llNo" > */}
@@ -133,12 +133,12 @@ const EvicMap = ({documentData}) => {
               
               
                   </Carousel>
-                  </p>
+                  {/* </p> */}
                   <hr/>
                   </Alert>
               {/* </div> */}
               </Row>
-             
+            
 
       <Modal
         show={show}

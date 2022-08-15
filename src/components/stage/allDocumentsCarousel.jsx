@@ -49,7 +49,7 @@ const AllDocumentsCarousel = ({documentData, stage_id}) => {
                     <Popover.Header as="h3">{box.title}</Popover.Header>
                     
                     <Popover.Body>
-                        <strong>{box.sub_title}</strong> Check this info.
+                        <strong>{box.sub_title}</strong>
                     </Popover.Body>
                     </Popover> 
                 }

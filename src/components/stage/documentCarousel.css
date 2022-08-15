@@ -8,11 +8,12 @@
 
 .my-container #btn-1 {
     position: absolute; 
-    top: 16%; 
-    left: 30%; 
+    top: 10%; 
+    left: 25%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 173, 76, 0.288);
+    background-color: transparent;
+    color: transparent;
     padding: 3% 12%;
     border:burlywood; 
     border-radius: 1rem; 
@@ -22,11 +23,12 @@
 
 .my-container #btn-2{
     position: absolute; 
-    top: 17%; 
-    left: 67%; 
+    top: 11%; 
+    left: 72%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 173, 76, 0.288);
+    background-color: transparent;
+    color: transparent;
     padding: 5% 10%;
     border:burlywood; 
     border-radius: 1rem; 
@@ -40,8 +42,9 @@
     left: 49%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 173, 76, 0.288);
-    padding: 8% 33%;
+    background-color: transparent;
+    color: transparent;
+    padding: 8% 40%;
     border:burlywood; 
     border-radius: 1rem; 
 
@@ -49,12 +52,13 @@
 
 .my-container #btn-4{
     position: absolute; 
-    top: 26%; 
+    top: 24%; 
     left: 49%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 173, 76, 0.288);
-    padding: 3% 15%;
+    background-color: transparent;
+    color: transparent;
+    padding: 3% 20%;
     border:burlywood; 
     border-radius: 1rem; 
 
@@ -63,12 +67,13 @@
 
 .my-container #btn-5{
     position: absolute; 
-    top: 44%; 
-    left: 49%; 
+    top: 45%; 
+    left: 50%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 173, 76, 0.288);
-    padding: 10% 32%;
+    background-color: transparent;
+    color: transparent;
+    padding: 14% 38%;
     border:burlywood; 
     border-radius: 1rem; 
 
@@ -76,12 +81,13 @@
 
 .my-container #btn-6{
     position: absolute; 
-    top: 23%; 
-    left: 49%; 
+    top: 20%; 
+    left: 47%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 173, 76, 0.288);
-    padding: 8% 29%;
+    background-color: transparent;
+    color: transparent;
+    padding: 10% 37%;
     border:burlywood; 
     border-radius: 1rem; 
 
@@ -89,12 +95,13 @@
 
 .my-container #btn-7{
     position: absolute; 
-    top: 44%; 
+    top: 46%; 
     left: 49%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 173, 76, 0.288);
-    padding: 10% 32%;
+    background-color: transparent;
+    color: transparent;
+    padding: 13% 37%;
     border:burlywood; 
     border-radius: 1rem; 
 
@@ -102,12 +109,13 @@
 
 .my-container #btn-8{
     position: absolute; 
-    top: 67%; 
+    top: 74%; 
     left: 49%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 173, 76, 0.288);
-    padding: 8% 32%;
+    background-color: transparent;
+    color: transparent;
+    padding: 10% 38%;
     border:burlywood; 
     border-radius: 1rem; 
 
@@ -120,11 +128,12 @@
 
 .my-container #btn-9 {
     position: absolute; 
-    top: 20%; 
-    left: 70%; 
+    top: 15%; 
+    left: 77%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 150, 18, 0.349);
+    background-color: transparent;
+    color: transparent;
     padding: 8% 18%;
     border:burlywood; 
     border-radius: 1rem; 
@@ -137,7 +146,8 @@
     left: 49%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 173, 76, 0.288);
+    background-color: transparent;
+    color: transparent;
     padding: 10% 37%;
     border:burlywood; 
     border-radius: 1rem; 
@@ -146,28 +156,28 @@
 
 .my-container #btn-11{
     position: absolute; 
-    top: 62%; 
+    top: 68%; 
     left: 49%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 173, 76, 0.288);
-    padding: 5% 37%;
+    background-color: transparent;
+    color: transparent;
+    padding: 5% 44%;
     border:burlywood; 
     border-radius: 1rem; 
-
 }
 
 .my-container #btn-12{
     position: absolute; 
-    top: 18%; 
-    left: 73%; 
+    top: 13%; 
+    left: 79%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 173, 76, 0.288);
-    padding: 10% 14%;
+    background-color: transparent;
+    color: transparent;
+    padding: 12% 16%;
     border:burlywood; 
     border-radius: 1rem; 
-
 }
 
 .my-container #btn-13{
@@ -176,8 +186,9 @@
     left: 49%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 173, 76, 0.288);
-    padding: 4% 38%;
+    background-color: transparent;
+    color: transparent;
+    padding: 6% 42%;
     border:burlywood; 
     border-radius: 1rem; 
 
@@ -185,12 +196,13 @@
 
 .my-container #btn-14{
     position: absolute; 
-    top: 52%; 
+    top: 56%; 
     left: 49%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(238, 173, 76, 0.288);
-    padding: 3% 38%;
+    background-color: transparent;
+    color: transparent;
+    padding: 7% 38%;
     border:burlywood; 
     border-radius: 1rem; 
 
@@ -228,12 +240,13 @@
 
 .my-container #btn-17 {
     position: absolute; 
-    top: 25%; 
-    left: 32%; 
+    top: 18%; 
+    left: 26%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(175, 50, 50, 0);
-    padding: 10% 20%;
+    background-color: transparent;
+    color: transparent;
+    padding: 13% 23%;
     border:burlywood; 
     border-radius: 1rem; 
 
@@ -241,12 +254,13 @@
 
 .my-container #btn-18{
     position: absolute; 
-    top: 25%; 
-    left: 70%; 
+    top: 21%; 
+    left: 77%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(175, 50, 50, 0);
-    padding: 5% 10%;
+    background-color: transparent;
+    color: transparent;
+    padding: 10% 20%;
     border:burlywood; 
     border-radius: 1rem; 
 
@@ -254,12 +268,13 @@
 
 .my-container #btn-19{
     position: absolute; 
-    top: 50%; 
+    top: 48%; 
     left: 50%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(175, 50, 50, 0);
-    padding: 11% 35%;
+    background-color: transparent;
+    color: transparent;
+    padding: 16% 35%;
     border:burlywood; 
     border-radius: 1rem; 
 
@@ -267,12 +282,13 @@
 
 .my-container #btn-20{
     position: absolute; 
-    top: 84%; 
-    left: 49%; 
+    top: 90%; 
+    left: 47%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(175, 50, 50, 0);
-    padding: 8% 35%;
+    background-color: transparent;
+    color: transparent;
+    padding: 9% 42%;
     border:burlywood; 
     border-radius: 1rem; 
 
@@ -280,36 +296,39 @@
 
 .my-container #btn-21{
     position: absolute; 
-    top: 11%; 
-    left: 48%; 
+    top: 5%; 
+    left: 47%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(175, 50, 50, 0);
-    padding: 3% 31%;
+    background-color: transparent;
+    color: transparent;
+    padding: 3% 38%;
     border:burlywood; 
     border-radius: 1rem; 
 
 }
 .my-container #btn-22{
     position: absolute; 
-    top: 48%; 
+    top: 51%; 
     left: 49%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(175, 50, 50, 0);
-    padding: 14% 32%;
+    background-color: transparent;
+    color: transparent;
+    padding: 17% 32%;
     border:burlywood; 
     border-radius: 1rem; 
 
 }
 .my-container #btn-23{
     position: absolute; 
-    top: 75%; 
-    left: 49%; 
+    top: 84%; 
+    left: 47%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(175, 50, 50, 0);
-    padding: 9% 33%;
+    background-color: transparent;
+    color: transparent;
+    padding: 13% 38%;
     border:burlywood; 
     border-radius: 1rem; 
 
@@ -325,7 +344,8 @@
     left: 30%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(230, 29, 29, 0);
+    background-color: transparent;
+    color: transparent;
     padding: 12% 12%;
     border: solid; 
     border:burlywood; 
@@ -335,11 +355,12 @@
 
 .my-container #btn-25{
     position: absolute; 
-    top: 24%; 
-    left: 68%; 
+    top: 22%; 
+    left: 73%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(230, 29, 29, 0);
+    background-color: transparent;
+    color: transparent;
     padding: 12% 12%;
     border: solid; 
     border:burlywood; 
@@ -349,11 +370,12 @@
 
 .my-container #btn-26{
     position: absolute; 
-    top: 70%; 
-    left: 30%; 
+    top: 82%; 
+    left: 25%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(230, 29, 29, 0);
+    background-color: transparent;
+    color: transparent;
     padding: 17% 13%;
     border: solid; 
     border:burlywood; 
@@ -363,11 +385,12 @@
 
 .my-container #btn-27{
     position: absolute; 
-    top: 65%; 
-    left: 68%; 
+    top: 69%; 
+    left: 75%; 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgba(230, 29, 29, 0);
+    background-color: transparent;
+    color: transparent;
     padding: 17% 13%;
     border: solid; 
     border:burlywood; 
