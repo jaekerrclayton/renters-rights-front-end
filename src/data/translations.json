@@ -16,7 +16,8 @@
         "send":"send",
         "name":"Name",
         "email":"Email",
-        "info":"Explain how you're willing to volunteer."
+        "info":"Message",
+        "instructions":"Please include in your message which languages you speak and if you're interested in a specific area of volunteering (ie. hotline, translation, moving support, etc.)."
     },
     "es":
     {
@@ -35,6 +36,7 @@
         "send":"enviar",
         "name":"Nombre",
         "email":"Correo Electrónico",
-        "info":"SPANISH Explain how you're willing to volunteer."
+        "info":"Mensaje",
+        "instructions":"SPANISH Please include in your message which languages you speak and if you're interested in a specific area of volunteering (ie. hotline, translation, moving support, etc.)."
     }
 }

@@ -27,9 +27,12 @@ const NewVolunteer = ({translations}) => {
     
     return (
         <Container style={{ width: '50rem' }}  >
-            <p>
-                <h4>{translations.apply}</h4>
-            </p>
+            <Alert className="text-box" variant="success">
+                <p>
+                    <h4>{translations.apply}</h4>
+                    {translations.instructions}
+                </p>
+            </Alert>
             <Alert className="text-box" variant="success">
                     <form ref={form} onSubmit={sendEmail} className="volunteerForm">
                         <Row>
