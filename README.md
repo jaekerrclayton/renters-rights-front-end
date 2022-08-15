@@ -20,6 +20,9 @@
 - mark a hotline volunteer as online or offline
 - view volunteer schedules
 
+# Demo
+For a deployed example, visit https://renters-rights-front-end.herokuapp.com/
+
 # Installation
 
 1. Fork and clone this repository.
