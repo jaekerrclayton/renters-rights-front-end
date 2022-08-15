@@ -60,7 +60,7 @@ function OffCanvasNav({changeLanguage, translations}) {
                       </NavDropdown.Item>
                       <NavDropdown.Divider />
                       <NavDropdown.Item href="#action5">
-                        <NavLink className="nav-link" to="/admin">
+                        <NavLink className="nav-link" to="/login">
                           {translations.admin}
                         </NavLink>
                       </NavDropdown.Item>

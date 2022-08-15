@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### User Features:
+- click through information pages about the stages of eviction in New Orleans, LA
+- toggle between English and Spanish for all pages at any point on the website
+- scroll through example documents to identify user's eviction status
+- hover over important sections of example documents to learn more about the text
+- read questions that were already answered and submit new ones via form
+- complete a separate form to volunteer with the organization that maintains the app
+- select specific causes and read through the ways they may be able to fight eviction
+- access links to legal aid
+- view number of people on help hotline
 
-## Available Scripts
+### App Administrative Features:
+- view volunteers information (id, name, languages, position, online status, email, and schedule)
+- add a new volunteer (with auto-generated id)
+- delete a volunteer
+- add a schedule to a volunteer
+- change information and/or schedule of a volunteer
+- mark a hotline volunteer as online or offline
+- view volunteer schedules
 
-In the project directory, you can run:
+# Demo
+For a deployed example, visit https://renters-rights-front-end.herokuapp.com/
 
-### `npm start`
+# Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork and clone this repository.
+2. Install dependencies by running npm install.
+3. Create an EmailJs account along with a template that uses "user_name", "user_email", and "message".
+4. Add EmailJs API keys to .env file:
+      - REACT_APP_SERVICE_ID= *YOUR SERVICE ID*
+      - REACT_APP_TEMPLATE_ID= *YOUR TEMPLATE ID FROM STEP 3*
+      - REACT_APP_USER_ID= *YOUR PUBLIC USER KEY*
+6. Create a backend for this app forking and cloning https://github.com/jaekerrclayton/renters-rights-back-end.
+7. Add backend URL to .env file:
+      - REACT_APP_BACKEND_URL= *YOUR BACKEND URL*
+8. Data shared with users can be updated in the JSON files.

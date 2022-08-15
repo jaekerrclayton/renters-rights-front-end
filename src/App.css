@@ -22,6 +22,19 @@ main{
     /* text-align: center; */
   }
 
+.padded{
+  padding: 2em;
+  width: 70%;
+}
+
+/* .extra-padded{
+  width: 70%;
+  text-align: center;
+} */
+
+h2 {
+  text-align: left;
+}
 
     /* SELECT FONT FAMILY */
   /* code {

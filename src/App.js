@@ -14,7 +14,8 @@ import {
   Stages,
   Stage,
   ResourcesAbbr,
-  NewVolForm
+  NewVolForm,
+  LogIn
 } from "./components";
 import resourceData from './data/english_data/resourceData.json'; 
 import esResourceData from './data/spanish_data/resourceData.json';
@@ -63,7 +64,8 @@ const App = () => {
         <Route path="/" element={<Home translations={language.general}/>} />
         <Route path="resources" element={<ResourcesAbbr resourceData={language.resources}/>} />
         <Route path="/contact" element={<Contact resourceData={language.resources} answeredQuestions={language.questions}/>} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/login" element={<LogIn />} />
+        <Route path="/admin" element={<Admin/>}/>
         <Route path="/volunteers" element={<NewVolForm translations={language.general}/>} />
         <Route path="/map-home" element={<EvicMap documentData={language.documents}/>} />
         <Route path="/eviction-map" element={<Stages stageData={language.stages}/>}>
