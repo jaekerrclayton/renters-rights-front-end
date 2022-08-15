@@ -26,10 +26,10 @@
 2. Install dependencies by running npm install.
 3. Create an EmailJs account along with a template that uses "user_name", "user_email", and "message".
 4. Add EmailJs API keys to .env file:
-      REACT_APP_SERVICE_ID= *YOUR SERVICE ID*
-      REACT_APP_TEMPLATE_ID= *YOUR TEMPLATE ID FROM STEP 3*
-      REACT_APP_USER_ID= *YOUR PUBLIC USER KEY*
+      - REACT_APP_SERVICE_ID= *YOUR SERVICE ID*
+      - REACT_APP_TEMPLATE_ID= *YOUR TEMPLATE ID FROM STEP 3*
+      - REACT_APP_USER_ID= *YOUR PUBLIC USER KEY*
 6. Create a backend for this app forking and cloning https://github.com/jaekerrclayton/renters-rights-back-end.
 7. Add backend URL to .env file:
-      REACT_APP_BACKEND_URL= *YOUR BACKEND URL*
+      - REACT_APP_BACKEND_URL= *YOUR BACKEND URL*
 8. Data shared with users can be updated in the JSON files.
