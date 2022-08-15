@@ -142,27 +142,27 @@ const documentData = {
         docInfo:
         
                 [
-                        {
+                    {
                         info_id: 21,
-                        title: "asdfasd",
-                        sub_title: "asdfasd",
+                        title: "Case number",
+                        sub_title: "You can call the court at any time to request a translator in advance, or request an extension. Your case number is important in gathering any additional information you may need to provide to the court",
                         placement: "top",
-                    
+                   
                         },
                         {
                         info_id: 22,
-                        title: "asdf", 
-                        sub_title: "asdfasdf",
-                        placement: "bottom",
-                        
+                        title: "Cause of Eviction",
+                        sub_title: "The order is required to explain the reason you are being evicted", 
+                        placement: "bottom"
+ 
+                       
                         },
                         {
                         info_id: 23,
-                        title: "asdfad",
-                        sub_title: "asdf",
+                        title: "Location of Court", 
+                        sub_title: "This is the number to call for any questions or continuances",
                         placement: "top",
-                        
-                        }
+                    }
                 
             
                     ] 
