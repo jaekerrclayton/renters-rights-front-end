@@ -14,45 +14,50 @@ function Home({translations}) {
       <Container >
         <Row>
           <Col>
-            <Card style={{ width: '15rem'}}>
-            <Card.Img id="icon" variant="top" src={evicIcon} />
-              <NavLink className="nav-link" to="/map-home">
+            <Card style={{ width: '15rem', height: '20rem' }}>
+            {/* <Card.Img id="icon" variant="top" src={evicIcon} /> */}
                 <Card.Body>
-                  <Card.Title>{translations.map}</Card.Title>
+                  {/* <Card.Title>{translations.map}</Card.Title> */}
                   <Card.Text>
+                  <img alt="evicIcon" id="icon" variant="top" src={evicIcon} />
+                    <NavLink className="nav-link" to="/map-home">
+                      <button class="button">{translations.map}</button>
+                    </NavLink>
                     {translations.mapDescription}
-                    <button class="button">link</button>
                   </Card.Text>              
                 </Card.Body>
-              </NavLink>
+          
             </Card>
           </Col> 
           <Col>
-            <Card style={{ width: '15rem' }}>
-            <Card.Img id="icon" variant="top" src={resIcon} />
+            <Card style={{ width: '15rem', height: '20rem' }}>
+            {/* <Card.Img id="icon" variant="top" src={resIcon} /> */}
                 <NavLink className="nav-link" to="/resources">
                   <Card.Body>
-                    <Card.Title>{translations.resources}</Card.Title>
                     <Card.Text>
+                    <img alt='res-icon' id="icon" variant="top" src={resIcon} />
+                      <NavLink className="nav-link" to="/resources">
+                        <button class="button">{translations.resources}</button>
+                      </NavLink>
                       {translations.resourceDescription}
-                      <button class="button">link</button>
                     </Card.Text>
                   </Card.Body>
                 </NavLink>  
             </Card>
           </Col>
           <Col>
-            <Card style={{ width: '15rem' }}>
-              <Card.Img id="icon" variant="top" src={faqIcon} />
-              <NavLink className="nav-link" to="/contact">
+            <Card style={{ width: '15rem', height: '20rem' }}>
+              {/* <Card.Img id="icon" variant="top" src={faqIcon} /> */}
                 <Card.Body>
-                  <Card.Title>{translations.questions}</Card.Title>
+                  {/* <Card.Title>{translations.questions}</Card.Title> */}
                   <Card.Text>
+                  <img alt="faq-icon" id="icon" src={faqIcon} />
+                    <NavLink className="nav-link" to="/contact">
+                    <button class="button">{translations.questions}</button>
                     {translations.questionDescription}
-                    <button class="button">link</button>
+                    </NavLink> 
                   </Card.Text>             
                 </Card.Body>
-              </NavLink> 
             </Card>
           </Col>   
         </Row>

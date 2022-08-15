@@ -15,11 +15,11 @@ body {
     -moz-osx-font-smoothing: grayscale; */
     
   }
-
+/* 
   .main{
     align-items: center;
     padding: 10%;
-  }
+  } */
 
 
 
@@ -123,6 +123,25 @@ body {
  }
 
 
+ #llno{
+   text-align: center;
+   align-items: center;
+   max-height: fit-content;
+   max-width: fit-content;
+   /* padding: 50em; */
+   /* width: 300px;
+   height: 300px;  */
+
+
+ }
+
+ #llNo img{
+   /* text-align: center; */
+   width: 250px;
+   height: 250px; 
+ } 
+
+
 /* ******************************************************* */
  /* BUTTONS FOR ALL PAGES -- EXCEPT DROPDOWN BUTTONS */
  /* ******************************************************* */
@@ -215,13 +234,13 @@ body {
 }
 
 #icon {
-  
-  height: 200px;
-  width: 200px;
+
+  height: 10.3em;
+  width: 10.3em;
 
 }
 .card:hover{
-  background-color: #eeb89d;
+  background-color: #eeb89d3f;
 }
 
 /* ******************************************************* */
@@ -244,7 +263,7 @@ body {
 }
 
 .modal-content{
-  background-color: #a0bbbbda;
+  background-color: #a0bbbbf8;
 
 }
 

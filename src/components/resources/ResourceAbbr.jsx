@@ -29,7 +29,7 @@ const ResourcesAbbr = ({resourceData}) => {
         </div>))
 
     return (
-        <main>
+        // <main>
 
 
         <Container style={{ width: '50rem' }}  >
@@ -71,7 +71,7 @@ const ResourcesAbbr = ({resourceData}) => {
         </Container>
 
           
-</main>
+// </main>
     );
 }
 
