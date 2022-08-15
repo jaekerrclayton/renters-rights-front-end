@@ -5,7 +5,8 @@ import order1 from '../documents/order1.jpeg';
 import order2 from '../documents/order2.jpeg';
 import judgment1 from '../documents/judgment1.jpeg';
 import judgment2 from '../documents/judgment2.jpeg';
-import courtPrep from '../documents/courtPrep.png';
+import courtPrep1 from '../documents/courtPrep1.png'; 
+import courtPrep2 from '../documents/courtPrep2.png'; 
  
  
 const documentData = {
@@ -169,35 +170,17 @@ const documentData = {
    3: [
  
        {
-           id: courtPrep,
+           id: courtPrep1,
            stage_id: 3,
            docInfo: [
  
-               {
- 
-                   info_id: 24,
-                   title: "Evidencia fotográfica",
-                   sub_title: "Traiga cualquier foto de su apartamento que desee mostrar al juez",
-                   placement: "top"
- 
- 
-               },
+
                {
  
                    info_id: 25,
                    title: "Mensajes de Texto o de Correo Electrónico",
                    sub_title: "Cualquier mensaje de texto o correspondencia escrita con su arrendador, también, LOUISIANA ES UN ESTADO EN CUAL TENEMOS EL DERECHO A GRABAR ** usted está legalmente autorizado a grabar cualquier conversación con su arrendador sin su conocimiento, y puede ser utilizado en la corte para apoyar su caso",
                    placement: "left"
- 
-               },
- 
- 
-               {
- 
-                   info_id: 26,
-                   title: "Testigos",
-                   sub_title: "Cualquiera que pueda apoyar su versión de la historia: amigo, vecino, familiar - le puede acompañar a su caso para hablar en su favor",
-                   placement: "top"
  
                },
  
@@ -214,7 +197,34 @@ const documentData = {
  
  
            ]
-       }
+       },
+       {
+        id: courtPrep2,
+        stage_id: 3,
+        docInfo: [
+
+            {
+
+                info_id: 24,
+                title: "Evidencia fotográfica",
+                sub_title: "Traiga cualquier foto de su apartamento que desee mostrar al juez",
+                placement: "top"
+
+
+            },
+
+            {
+
+                info_id: 26,
+                title: "Testigos",
+                sub_title: "Cualquiera que pueda apoyar su versión de la historia: amigo, vecino, familiar - le puede acompañar a su caso para hablar en su favor",
+                placement: "top"
+
+            },
+
+
+        ]
+    }
  
  
  

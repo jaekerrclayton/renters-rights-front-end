@@ -14,7 +14,7 @@ function Home({translations}) {
       <Container >
         <Row>
           <Col>
-            <Card style={{ width: '15rem', height: '20rem' }}>
+            <Card style={{ width: '15rem', height: '15rem' }}>
             {/* <Card.Img id="icon" variant="top" src={evicIcon} /> */}
                 <Card.Body>
                   {/* <Card.Title>{translations.map}</Card.Title> */}
@@ -24,7 +24,7 @@ function Home({translations}) {
                       <button class="button">{translations.map}</button>
                     </NavLink>
                     <p>
-                      {translations.mapDescription}
+                      {/* {translations.mapDescription} */}
                     </p>
                   </Card.Text>              
                 </Card.Body>
@@ -32,7 +32,7 @@ function Home({translations}) {
             </Card>
           </Col> 
           <Col>
-            <Card style={{ width: '15rem', height: '20rem' }}>
+            <Card style={{ width: '15rem', height: '15rem' }}>
             {/* <Card.Img id="icon" variant="top" src={resIcon} /> */}
                 <NavLink className="nav-link" to="/resources">
                   <Card.Body>
@@ -42,7 +42,7 @@ function Home({translations}) {
                         <button class="button">{translations.resources}</button>
                       </NavLink>
                       <p>
-                        {translations.resourceDescription}
+                        {/* {translations.resourceDescription} */}
                       </p>
                     </Card.Text>
                   </Card.Body>
@@ -50,7 +50,7 @@ function Home({translations}) {
             </Card>
           </Col>
           <Col>
-            <Card style={{ width: '15rem', height: '20rem' }}>
+            <Card style={{ width: '15rem', height: '15rem' }}>
               {/* <Card.Img id="icon" variant="top" src={faqIcon} /> */}
                 <Card.Body>
                   {/* <Card.Title>{translations.questions}</Card.Title> */}
@@ -60,7 +60,7 @@ function Home({translations}) {
                     <button class="button">{translations.questions}</button>
                     </NavLink>
                     <p>
-                      {translations.questionDescription}
+                      {/* {translations.questionDescription} */}
                     </p>
                   </Card.Text>             
                 </Card.Body>
