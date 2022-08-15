@@ -25,7 +25,7 @@ const Stage = ({documentData, stageData, typeData}) => {
   console.log(stage.documents);
 
   return (
-    <>
+    <main>
 
     <Container className="stages-all-map">
       <Row>
@@ -66,7 +66,7 @@ const Stage = ({documentData, stageData, typeData}) => {
       </Row>
   </Container>
 
-  </>
+  </main>
 
 
   );

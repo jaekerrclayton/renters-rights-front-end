@@ -2,7 +2,7 @@
 
 body {
     flex-direction: column;
-    margin: 0;
+    margin: 0em;
     /* background:rgba(144, 170, 243, 0.466); */
     background: #f9f3e7;
     /* background-color: #294a66; */
@@ -11,11 +11,17 @@ body {
       sans-serif;
       /* FONT COLOR FOR ALL PAGES */
     color:#31302f;
-    
     /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
     
   }
+
+  .main{
+    align-items: center;
+    padding: 10%;
+  }
+
+
 
 
     /* SELECT FONT FAMILY */
@@ -201,12 +207,17 @@ body {
 .card{
   background-color: #f3cebb00;
   margin:.5em;
-  height: 200px;
-  width: 300px;
+  align-items: center;
+  /* height: 200px;
+  width: 300px; */
   /* border-radius: 8000px;  */
   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+}
 
-
+#icon {
+  
+  height: 200px;
+  width: 200px;
 
 }
 .card:hover{
@@ -233,7 +244,7 @@ body {
 }
 
 .modal-content{
-  background-color: #899fa5d8;
+  background-color: #a0bbbbda;
 
 }
 
@@ -250,7 +261,7 @@ body {
 /* OVERRIDE DEFAULT BACKGROUND COLOR FOR 'ALERT' BOXES */
 /* ******************************************************* */
 .text-box{
-  background-color: #c6e0e0;
+  background-color: #c6e0e000;
   border: 1px solid;
   border-radius: 16px;
   border-color: #221506;

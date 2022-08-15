@@ -15,6 +15,7 @@ const EvicMap = ({documentData}) => {
   
   return (
 
+    <main>
       <Container style={{ width: '20rem' }}>
         <Row className="welcome-message">
               <Alert className="text-box" variant="success">
@@ -52,6 +53,7 @@ const EvicMap = ({documentData}) => {
         </Modal.Body>
       </Modal>
     </Container>
+    </main>
   );
 }
 
