@@ -16,12 +16,14 @@ body {
     
   }
 
-  main{
+main{
     /* align-items: center; */
     padding-bottom: 3em;
   }
 
-
+img{
+  text-align: center;
+}
 
 
     /* SELECT FONT FAMILY */
@@ -123,23 +125,22 @@ body {
  }
 
 
- #llno{
-   text-align: center;
-   align-items: center;
-   max-height: fit-content;
-   max-width: fit-content;
+#llNo{
+  text-align: center;
+  align-items: center;
+  max-height: fit-content;
+  max-width: fit-content;
    /* padding: 50em; */
-   /* width: 300px;
+  /* width: 300px;
    height: 300px;  */
+}
 
-
- }
-
- #llNo img{
+#llNo img{
    /* text-align: center; */
-   width: 250px;
-   height: 250px; 
- } 
+  width: 250px;
+  height: 250px;
+  text-align: center; 
+} 
 
 
 /* ******************************************************* */
@@ -231,6 +232,10 @@ body {
   width: 300px; */
   /* border-radius: 8000px;  */
   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+}
+
+.card-text{
+  text-align: center;
 }
 
 #icon {

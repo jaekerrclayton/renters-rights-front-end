@@ -23,7 +23,9 @@ function Home({translations}) {
                     <NavLink className="nav-link" to="/map-home">
                       <button class="button">{translations.map}</button>
                     </NavLink>
-                    {translations.mapDescription}
+                    <p>
+                      {translations.mapDescription}
+                    </p>
                   </Card.Text>              
                 </Card.Body>
           
@@ -39,7 +41,9 @@ function Home({translations}) {
                       <NavLink className="nav-link" to="/resources">
                         <button class="button">{translations.resources}</button>
                       </NavLink>
-                      {translations.resourceDescription}
+                      <p>
+                        {translations.resourceDescription}
+                      </p>
                     </Card.Text>
                   </Card.Body>
                 </NavLink>  
@@ -54,8 +58,10 @@ function Home({translations}) {
                   <img alt="faq-icon" id="icon" src={faqIcon} />
                     <NavLink className="nav-link" to="/contact">
                     <button class="button">{translations.questions}</button>
-                    {translations.questionDescription}
-                    </NavLink> 
+                    </NavLink>
+                    <p>
+                      {translations.questionDescription}
+                    </p>
                   </Card.Text>             
                 </Card.Body>
             </Card>
