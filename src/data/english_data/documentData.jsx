@@ -5,7 +5,8 @@ import order1 from '../documents/order1.jpeg';
 import order2 from '../documents/order2.jpeg'; 
 import judgment1 from '../documents/judgment1.jpeg';
 import judgment2 from '../documents/judgment2.jpeg';
-import courtPrep from '../documents/courtPrep.png'; 
+import courtPrep1 from '../documents/courtPrep1.png'; 
+import courtPrep2 from '../documents/courtPrep2.png'; 
 
 
 const documentData = {
@@ -172,7 +173,38 @@ const documentData = {
     3: [
 
         {
-            id: courtPrep, 
+            id: courtPrep1, 
+            stage_id: 3, 
+            docInfo: [
+
+
+                {
+
+                    info_id: 25, 
+                    title: "Text messages", 
+                    sub_title: "Any text messages or written correspondance with your landlord -- ** LOUISIANA IS A RIGHT TO RECORD STATE ** you are legally allowed to record any conversations with your landlord without their knowledge, and can be used in court to support your case", 
+                    placement: "left"
+
+                }, 
+
+
+
+                {
+
+                    info_id: 27, 
+                    title: "All important documents!", 
+                    sub_title: "Bring a copy of your lease if you have one, any reciepts from repairs you may have done, or any evidence that may help you", 
+                    placement: "top"
+
+                }, 
+                
+
+
+
+            ]
+        },
+        {
+            id: courtPrep2, 
             stage_id: 3, 
             docInfo: [
 
@@ -185,14 +217,6 @@ const documentData = {
 
 
                 }, 
-                {
-
-                    info_id: 25, 
-                    title: "Text messages", 
-                    sub_title: "Any text messages or written correspondance with your landlord -- ** LOUISIANA IS A RIGHT TO RECORD STATE ** you are legally allowed to record any conversations with your landlord without their knowledge, and can be used in court to support your case", 
-                    placement: "left"
-
-                }, 
 
 
                 {
@@ -203,21 +227,13 @@ const documentData = {
                     placement: "top"
 
                 }, 
-
-
-                {
-
-                    info_id: 27, 
-                    title: "All important documents!", 
-                    sub_title: "Bring a copy of your lease if you have one, any reciepts from repairs you may have done, or any evidence that may help you", 
-                    placement: "top"
-
-                }, 
+                
 
 
 
             ]
         }
+
 
 
 
@@ -262,7 +278,7 @@ const documentData = {
                         info_id: 12, 
                         title: "Case number",
                         sub_title: "Here you should find your case number if you have any questions regarding how much time you have to leave your home. If you wish to appeal your case, you may also do so. This process is described on the next slide", 
-                        placement: "top"
+                        placement: "left"
     
                         }, 
                         {

@@ -259,7 +259,7 @@ const documentData = {
                        info_id: 12,
                    title: "Número de su Caso",
                    sub_title: "Aquí debe encontrar su número de caso si tiene alguna pregunta sobre cuánto tiempo tiene para salir de su casa. Si desea apelar su caso, también puede hacerlo. Este proceso se describe en la siguiente pagina." , 
-                       placement: "top"
+                       placement: "left"
   
                        },
                        {
