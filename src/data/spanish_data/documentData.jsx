@@ -69,7 +69,7 @@ const documentData = {
                        info_id: 6,
                        title: "Fecha de la noticia",
                        sub_title:  "Desde el día en que ha recibido este aviso (excluyendo fines de semana), el propietario le ha dado 5 días para responder. Después de estos cinco días, el propietario puede ir a la corte para solicitar una audiencia",
-                       placement: "right" 
+                       placement: "top" 
                    },
   
                    {
@@ -81,7 +81,7 @@ const documentData = {
                    {   info_id: 8,
                        title: "Como contactarse con su propietario",
                        sub_title: "Dependiendo de su relación con su propietario, puede considerar tratar de evitar que ocurra el desalojo. Si usted intenta llegar a un acuerdo, toma pruebas y hablar por escrito",
-                       placement: "right" 
+                       placement: "top" 
                    }
                ]
            }
@@ -99,7 +99,7 @@ const documentData = {
                {info_id: 17,
                title: "Motivo de Desalojo",
                sub_title: "Debe estar en el orden, y por el mismo motivo que figura en la Notificación de Desalojo, se puede explorar en la sección de ‘Causas de desalojo’ para ver ejemplos de causas frecuentes y defensas comunes ",
-               placement: "bottom"
+               placement: "top"
                }
                ,
           
@@ -107,7 +107,7 @@ const documentData = {
                info_id: 18,
                title: "El Número de su Caso",
                sub_title: "Se puede llamar a la corte para pedir ayuda de interpretación antes de su caso, y para averiguar la fecha y hora de su caso. Si usted decide mudarse antes de la fecha de su caso, todavía tiene que notificar a la corte para que se cancelan su caso.",
-               placement: "bottom"
+               placement: "top"
                }
                ,
           
@@ -197,7 +197,7 @@ const documentData = {
                    info_id: 26,
                    title: "Testigos",
                    sub_title: "Cualquiera que pueda apoyar su versión de la historia: amigo, vecino, familiar - le puede acompañar a su caso para hablar en su favor",
-                   placement: "left"
+                   placement: "top"
  
                },
  

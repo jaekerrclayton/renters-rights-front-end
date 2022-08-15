@@ -72,7 +72,7 @@ const documentData = {
                         info_id: 6,
                         title: "Date of notice", 
                         sub_title:  "five business days after receiving this notice, your landlord can go to court to request a hearing.",
-                        placement: "right"  
+                        placement: "top"  
                     }, 
     
                     {
@@ -84,7 +84,7 @@ const documentData = {
                     {   info_id: 8,
                         title: "Your landlord's contact information.", 
                         sub_title: "Depending on your relationship with your landlord, you may consider communicating with your landlord to try to prevent the eviction from happening",
-                        placement: "right"  
+                        placement: "top"  
                     } 
                 ]
             }
@@ -102,7 +102,7 @@ const documentData = {
                 {info_id: 17, 
                 title: "Cause of Eviction",
                 sub_title: "The order is required to explain the reason you are being evicted", 
-                placement: "bottom"
+                placement: "top"
                 }
                 , 
             
@@ -110,7 +110,7 @@ const documentData = {
                 info_id: 18,
                 title: "Case Number",
                 sub_title: "You can call the court at any time to request a translator in advance, or request an extension. Your case number is important in gathering any additional information you may need to provide to the court",
-                placement: "bottom"
+                placement: "top"
                 }
                 , 
             
@@ -200,7 +200,7 @@ const documentData = {
                     info_id: 26, 
                     title: "Witnesses", 
                     sub_title: "Anyone who can support your side of the story - friend, neighbor, family", 
-                    placement: "left"
+                    placement: "top"
 
                 }, 
 
