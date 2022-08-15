@@ -65,12 +65,12 @@ const EditVolForm = ({onDeleteVolCallback, onEditVolCallback, name, email, type,
                 </Col>
             </Row>
             <Row>
-                <button className="button-new-board-submit" type="submit">
+                <button className="button" type="submit">
                     Update Volunteer 
                 </button>
             </Row>
             <Row>
-                <button onClick={deleteVolunteerData}>
+                <button className="button" onClick={deleteVolunteerData}>
                     Delete Volunteer
                 </button>
             </Row>

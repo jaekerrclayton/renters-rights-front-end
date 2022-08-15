@@ -61,7 +61,7 @@ const Volunteer = (props) => {
                 </Col>
             </Row>
             <Row>{props.schedule===null ? <ChangeScheduleForm volunteerId={props.volunteerId} onChangeSchedCallback={props.onAddSchedCallback}/> : <Schedule props={props.schedule}/>}</Row>
-            <Row><button onClick={() => {setDisplayForm({'display':!displayForm.display})}}>Edit {props.name} Profile</button></Row>
+            <Row><button className="button" onClick={() => {setDisplayForm({'display':!displayForm.display})}}>Edit {props.name} Profile</button></Row>
             <Row>
                 <div style={{display: displayForm.display ? '' : 'none'}}>
                     <EditVolForm 

@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import URL from './Admin';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 import { Accordion } from 'react-bootstrap';
+import Row from 'react-bootstrap/Row';
+export const URL= process.env.REACT_APP_BACKEND_URL;
 
 const ScheduleList = () => {
     const [schedules, setSchedules] = useState([{sunAm:[], sunPm:[], monAm:[], monPm:[], tueAm:[], tuePm:[], wedAm:[], wedPm:[], thuAm:[], thuPm:[], friAm:[], friPm:[], satAm:[], satPm:[]}]);
 
     useEffect(() => {
-        axios.get(URL + 'admin/schedules')
+        axios.get(URL + 'schedules')
         .then((res) =>{
+            console.log(res.data);
             let orderedSchedules = {
                 sunAm:[], 
                 sunPm:[], 
@@ -137,25 +139,27 @@ const ScheduleList = () => {
                     <Accordion.Item eventKey='Monday'>
                         <Accordion.Header>Monday</Accordion.Header>
                         <Accordion.Body>
-                            <p>
+                            <Row>
                                 <b>AM:</b>
-                                <ul>
-                                    {monAmMap}
-                                </ul>
-                            </p>
-                            <p>
+                                {monAmMap}
+                            </Row>
+                            <Row>
                                 <b>PM:</b>
                                 {monPmMap}
-                            </p>
+                            </Row>
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey='Tuesday'>
                         <Accordion.Header>Tuesday</Accordion.Header>
                         <Accordion.Body>
-                            <b>AM:</b> 
-                            {tueAmMap}
-                            <b>PM:</b> 
-                            {tuePmMap}
+                            <p>
+                                <b>AM:</b> 
+                                {tueAmMap}
+                            </p>
+                            <p>
+                                <b>PM:</b> 
+                                {tuePmMap}
+                            </p>
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey='Wednesday'>

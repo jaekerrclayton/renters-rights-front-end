@@ -24,8 +24,6 @@ const AllDocumentsCarousel = ({documentData, stage_id}) => {
     }
 
     return (
-    // <div>
-
     <div class="my-container">
     <Carousel variant="dark" slide={false}>
     {documents.map((doc) => (
@@ -68,7 +66,7 @@ const AllDocumentsCarousel = ({documentData, stage_id}) => {
     ))}
     </Carousel>
     </div> 
-  );
+    );
 }
 
 export default AllDocumentsCarousel;

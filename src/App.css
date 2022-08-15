@@ -19,11 +19,8 @@ body {
 main{
     /* align-items: center; */
     padding-bottom: 3em;
+    /* text-align: center; */
   }
-
-img{
-  text-align: center;
-}
 
 
     /* SELECT FONT FAMILY */
@@ -50,7 +47,8 @@ img{
   }
 
   .offcanvas{
-    background-color: #d2e5e7e0;
+    background-color: #c6e0e0e0;
+      /* #c6e0e0 */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
 
@@ -83,23 +81,21 @@ img{
     background-color: #a895db;
     color:red;
   } */
- 
 
 /* ******************************************************* */
   /* ALL ACCORDIONS */
 /* ******************************************************* */
- .accordion-item{
+.accordion-item{
    /* background-color: rgb(30, 168, 210); */
    /* border-color: rgb(30, 168, 210); */
-   border-radius: 16px;
-   background-color: #93aba200;
+  border-radius: 16px;
+  background-color: #93aba200;
    /* border-width: 5px;  */
-   border-color: #93aba200;
-   color:rgb(56, 17, 3);
-   
- }
+  border-color: #93aba200;
+  color:#32363d;
+}
 
- .accordion-body{
+.accordion-body{
   background-color: #a1425aad;
   background-color: #93aba20c;
   /* border: 2px double #b6ac96; */
@@ -107,23 +103,33 @@ img{
   border-radius: 16px;
   /* color: #1c1947; */
   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
- }
+}
 
 
 
- .accordion-button:not(collapsed){
+.accordion-button:not(collapsed){
     border-radius: 16px;
-   background-color: #ccdad407 !important;
-   border-color: red;
-   color:#294a66;
- }
+  background-color: #ccdad407 !important;
+  border-color: red;
+  color:#294a66;
+}
 
- .accordion-button:focus{
+.accordion-button:not(.collapsed){
+border-radius: 16px;
+background-color: #ccdad407 !important;
+border-color: red;
+color:#294a66 !important;
+}
+
+.accordion-button:focus{
   border-radius: 16px;
-   background-color: #ccdad4da !important;
-   color: rgb(19, 67, 95);
- }
+  background-color: #ccdad4da !important;
+  color: rgb(19, 67, 95);
+}
 
+/* .accordion-button::after{
+  color: #294a66;
+} */
 
 #llNo{
   text-align: center;
@@ -146,9 +152,9 @@ img{
 /* ******************************************************* */
  /* BUTTONS FOR ALL PAGES -- EXCEPT DROPDOWN BUTTONS */
  /* ******************************************************* */
- .button{
+.button{
   background-color: #c6e0e0;
-  border: 1px double #181716;
+  border: 2px double #181716;
   color:#E0FBFC;
   color: #3b3333;
   padding:.3em;
@@ -160,7 +166,7 @@ img{
 }
 
 .button:hover{
-  background-color: #b2dacb;
+  background-color: #d9f4f4;
   border: 2px double #b6ac96;
   /* color:white; */
   /* border: none; */
@@ -178,7 +184,7 @@ img{
 /* ALL DROPDOWN BUTTONS */
 /* ******************************************************* */
 #dropdown-basic {
-  background-color: #75928700;
+  background-color: #c6e0e0;
   border: 1px double #3f3c35;
   border-radius: 16px;
   color: #3b3333;
@@ -188,7 +194,7 @@ img{
 
 #dropdown-basic:hover{
   /* color:#72280b; */
-  background-color: #80a196e0;
+  background-color: #d9f4f4;
 }
 
 .dropdown-item:hover{
@@ -196,7 +202,7 @@ img{
 }
 
 .dropdown-menu {
-  background-color: #6c7a76f8;
+  background-color: #d9f4f4;
   color: #682020;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -290,7 +296,8 @@ img{
   border-radius: 16px;
   border-color: #221506;
   color: #32363d;
-  min-width: 400px;
+  /* min-width: 400px; */
+  /* text-align: center; */
   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
   
 }
@@ -341,9 +348,14 @@ img{
 /* EVICTION STAGE (by stage) */
 /* ******************************************************* */
 .stages-all-map{
-    padding-top: 2em;
+    /* padding-top: 2em; */
     padding-bottom: 5em;
     height: 60vh; 
+    max-width: 550px;
+}
+
+#add-padding{
+  padding-top: 2em;
 }
 
 /* #about-notice {
@@ -353,13 +365,16 @@ img{
 
 .my-container{
     max-width: 550px;
-    position:absolute;
+    /* position:absolute; */
+    /* align-content: center; */
     width: auto; 
     max-height: fit-content;
     padding-bottom: 10%; 
     padding-top: 0%; 
     padding-right: 5%;
     padding-left: 5%;
+    text-align: center;
+    float: none !important;
 
     /* padding-bottom: 10%;  */
     /* background-color: rgba(41, 143, 184, 0.678); */
@@ -373,10 +388,11 @@ img{
     /* max-width: 750px; */
     padding: 0%;
     width: 100%;
-    min-width: 400px;
+    height: auto;
+    /* min-width: 400px; */
     /* height: auto; */
     /* margin: auto;  */
-    justify-content: center;
+    /* justify-content: center; */
 
     text-align: center;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
