@@ -22,8 +22,7 @@ const EvicMap = ({documentData}) => {
   return (
 
     <main>
-      <Container style={{ width: '30rem' }}>
-        <Row className="welcome-message">
+      <Container>
               <Alert className="text-box" variant="success">
               <Alert.Heading>{documentData.title}</Alert.Heading>
               <hr />
@@ -39,9 +38,7 @@ const EvicMap = ({documentData}) => {
 
 
             </Alert>
-            </Row> 
             
-            <Row>
             <Alert className="text-box" variant="success">
             <Alert.Heading>Can my landlord ...?</Alert.Heading>
             <hr/>
@@ -137,13 +134,11 @@ const EvicMap = ({documentData}) => {
                   <hr/>
                   </Alert>
               {/* </div> */}
-              </Row>
-            
 
       <Modal
         show={show}
         onHide={() => setShow(false)}
-        dialogClassName="modal-80w"
+        dialogClassName="modal-30w"
         aria-labelledby="example-custom-modal-styling-title"
       >
         <Modal.Header closeButton>

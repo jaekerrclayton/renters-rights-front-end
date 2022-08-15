@@ -27,10 +27,9 @@ const Stage = ({documentData, stageData, typeData}) => {
   return (
     <main>
 
-    <Container className="stages-all-map">
-      <Row>
-      <Col sm>
-        
+    <Container className="stages-all-map" id="add-padding">
+      {/* <Row>
+      <Col> */}
           <Alert className="text-box" variant="success">
                   <Alert.Heading>{stage.title}</Alert.Heading>
                   <hr />
@@ -56,14 +55,13 @@ const Stage = ({documentData, stageData, typeData}) => {
                   </p>
           </Alert>
       
-      </Col>
-      <Col sm>
-
+      {/* </Col>
+      <Col> */}
             <div>
-                  <DocumentCarousel documentData={documentData} stage_id={stage.stage_id}  />
+                  <DocumentCarousel documentData={documentData} stage_id={stage.stage_id} />
             </div>
-          </Col>
-      </Row>
+          {/* </Col>
+      </Row> */}
   </Container>
 
   </main>

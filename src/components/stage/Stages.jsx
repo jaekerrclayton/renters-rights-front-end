@@ -21,8 +21,8 @@ const Stages = ({stageData}) => {
 
     return (
         <main>
-            <Container flex>
-                <Nav justify flex>
+            <Container flex className="stages-all-map" >
+                <Nav justify flex className="max-width">
                             {stages
                                 .map((stage) => ( 
                             <Nav.Item>

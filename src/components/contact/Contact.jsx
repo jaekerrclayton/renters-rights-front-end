@@ -40,7 +40,7 @@ function Contact({resourceData, answeredQuestions}) {
   return (
     <main>
 
-    <Container style={{ width: '50rem' }}  >
+    <Container>
 
       <Alert className="text-box" variant="success">
         <Alert.Heading>{answeredQuestions.FAQ}</Alert.Heading>
@@ -63,7 +63,7 @@ function Contact({resourceData, answeredQuestions}) {
 
       <ResourcesAbbr resourceData={resourceData}/>
 
-      <Container style={{ width: '50rem' }}  >
+      <Container>
       <Alert id='questionBox' className="text-box" variant="success">
       <p>{answeredQuestions.instructions}</p>
       <p id='questionBox' 
