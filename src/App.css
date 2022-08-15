@@ -15,11 +15,11 @@ body {
     -moz-osx-font-smoothing: grayscale; */
     
   }
-/* 
-  .main{
-    align-items: center;
-    padding: 10%;
-  } */
+
+  main{
+    /* align-items: center; */
+    padding-bottom: 3em;
+  }
 
 
 
@@ -407,9 +407,8 @@ body {
 #questionBox {
     padding-left: 3em;
     padding-right: 3em;
-    padding-bottom: 3em;
+    /* padding-bottom: 3em; */
 }
-
 
 /* ******************************************************* */
 /* ADMIN */
@@ -425,4 +424,7 @@ section {
   font-weight: bold;
 }
 
-
+.volunteerForm {
+  padding-left: 3em;
+  padding-right: 3em;
+}

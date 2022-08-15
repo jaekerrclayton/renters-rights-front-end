@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
-import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Alert from 'react-bootstrap/Alert'; 
-// import resourceData from '../data/english_data/resourceData.json'; 
 
 const ResourcesAbbr = ({resourceData}) => {
-    console.log(resourceData.resources[0]);
     let resources = resourceData.resources;
-    const [currentResource, setCurrentResource] = useState(resources[1]);
+    const [currentResource, setCurrentResource] = useState(resources[0]);
     const [displayResources, setDisplayResources] = useState({1:true, 2:false, 3:false, 4:false});
 
     const displayResource = (e) => {
@@ -29,12 +26,10 @@ const ResourcesAbbr = ({resourceData}) => {
         </div>))
 
     return (
-        // <main>
-
 
         <Container style={{ width: '50rem' }}  >
 
-              <Alert className="text-box" variant="success">
+            <Alert className="text-box" variant="success">
                     <Alert.Heading>{resourceData.title}</Alert.Heading>
                     <hr />
 
@@ -47,11 +42,11 @@ const ResourcesAbbr = ({resourceData}) => {
                             </button>
                         ))}
                 </nav>
-     
-              </p>
-              <hr />
+    
+                </p>
+                <hr />
         
-              <p style={{
+                <p style={{
                         maxHeight: 'calc(75vh - 210px)',
                         overflowY: 'auto'
                     }}>
@@ -64,14 +59,10 @@ const ResourcesAbbr = ({resourceData}) => {
                     </main>
                 </div>
                 </p>
-      
-              
 
         </Alert>
         </Container>
 
-          
-// </main>
     );
 }
 

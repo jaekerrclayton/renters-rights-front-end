@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Row from 'react-bootstrap/Row';
 import { Container } from 'react-bootstrap';
+import Alert from 'react-bootstrap/Alert'; 
 
 
 const NewVolunteer = ({translations}) => {
@@ -25,27 +26,27 @@ const NewVolunteer = ({translations}) => {
     }
     
     return (
-        <Container>
-            <Row>
+        <Container style={{ width: '50rem' }}  >
+            <p>
                 <h4>{translations.apply}</h4>
-            </Row>
-            <Row>
-            <form ref={form} onSubmit={sendEmail}>
-                <Row>
-                    <label>{translations.name}:</label>
-                    <input type="text" name="user_name" />
-                </Row>
-                <Row>
-                    <label>{translations.email}:</label>
-                    <input type="email" name="user_email" />
-                </Row>
-                <Row>
-                    <label>{translations.info}</label>
-                    <textarea name="message" />
-                </Row>
-                <input className="button" type="submit" value={translations.send} />
-            </form>
-            </Row>
+            </p>
+            <Alert className="text-box" variant="success">
+                    <form ref={form} onSubmit={sendEmail} className="volunteerForm">
+                        <Row>
+                            <label>{translations.name}:</label>
+                            <input type="text" name="user_name" />
+                        </Row>
+                        <Row>
+                            <label>{translations.email}:</label>
+                            <input type="email" name="user_email" />
+                        </Row>
+                        <Row>
+                            <label>{translations.info}</label>
+                            <textarea rows={5} columns={5} name="message" />
+                        </Row>
+                        <input className="button" type="submit" value={translations.send} />
+                    </form>
+            </Alert>
         </Container>
     );
 };

@@ -92,7 +92,7 @@ const ChangeScheduleForm = (props) => {
                     </Form.Group>
                 </Col>
                 <Col>
-                    <button className="button-new-board-submit" type="submit">
+                    <button className="button" type="submit">
                     Update Volunteer Schedule
                     </button>
                 </Col>
