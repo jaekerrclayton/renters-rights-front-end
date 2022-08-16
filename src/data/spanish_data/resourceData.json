@@ -11,7 +11,7 @@
                                 "title": " Centro de Acción de Vivienda Justa de Louisiana (LAFHAC) ", 
                                 "phone_number": "(504) 555-5555",
                                 "email": "lafhacemail@email.com",
-                                "summary": "Asistencia para el desalojo y asistencia contra la discriminación : IF YOUR LANDLORD IS THREATENING TO CALL ICE, CALL IMMEDIATELY. ",
+                                "summary": "Si su arrendador amenaza con llamar a ICE, llame de inmediato. Asistencia para el desalojo y asistencia contra la discriminación : Servicios legales generales para cualquier persona que se enfrente a la discriminación por motivos de raza, color, religión, sexo, discapacidad, estado familiar (tener hijos) y / u origen nacional.",
                                 "about": "LAFHAC puede proporcionar asistencia legal para desalojos independientemente de su estatus migratorio. Por favor, llame con la mayor anticipación posible para asegurarse de que está representado. Aunque el correo de voz está en inglés, hay trabajadores de habla hispana disponibles para ayudarle."
                             
                             }, 
@@ -30,7 +30,7 @@
 
     },
     {   "resourceId": 2, 
-        "type": "Spanish Mutual Aid", 
+        "type": "Ayuda Mutua", 
         "about_resource": "general summary of what mutual aid can offer", 
         "resource_list": [
 

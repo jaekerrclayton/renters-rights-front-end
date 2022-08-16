@@ -73,7 +73,7 @@ body {
 
 main{
     /* align-items: center; */
-    padding-bottom: 3em;
+    padding: 3em;
     /* text-align: center; */
   }
 
@@ -306,6 +306,7 @@ color:#294a66 !important;
 .container{
   align-items: center;
   width: 80vw;
+  /* height: 70vh; */
   /* max-width: 800px; */
   align-items: center;
   /* padding-bottom: 3em; */
