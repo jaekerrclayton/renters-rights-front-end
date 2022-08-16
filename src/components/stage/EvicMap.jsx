@@ -7,11 +7,7 @@ import MapCarousel from "./mapCarousel";
 import Modal from 'react-bootstrap/Modal';
 import Alert from 'react-bootstrap/Alert';
 import Carousel from 'react-bootstrap/Carousel'; 
-import lights from './noIcons/lights.png'; 
-import lock from './noIcons/lock.png'; 
-import cops from './noIcons/cops.png'; 
-import move from './noIcons/move.png'; 
-import no from './noIcons/no.png'; 
+
 
 
 
@@ -46,7 +42,7 @@ const EvicMap = ({documentData}) => {
 
 
             {/* <div id="llNo" > */}
-              <Carousel  id="llNo" variant="dark" slide={false} >
+              {/* <Carousel  id="llNo" variant="dark" slide={false} >
               <Carousel.Item>                          
                       <img
                         // className="d-md-block w-40"
@@ -129,7 +125,7 @@ const EvicMap = ({documentData}) => {
                     </Carousel.Item>
               
               
-                  </Carousel>
+                  </Carousel> */}
                   {/* </p> */}
                   <hr/>
                   </Alert>

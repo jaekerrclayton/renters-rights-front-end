@@ -17,8 +17,15 @@
         "name":"Name",
         "email":"Email",
         "info":"Message",
-        "instructions":"Please include in your message which languages you speak and if you're interested in a specific area of volunteering (ie. hotline, translation, moving support, etc.)."
-    },
+        "instructions":"Please include in your message which languages you speak and if you're interested in a specific area of volunteering (ie. hotline, translation, moving support, etc.).",
+        "can_ll": "Can my landlord ..? ",
+        "cops": "call the cops? ", 
+        "lights": "shut off my gas / lights/ water? ",
+        "locks": "change the locks or kick me out of the house?",
+        "move": "remove my things from my home?"
+
+        
+    },  
     "es":
     {
         "main":"Derechos de Inquilinos: New Orleans, Louisiana",
@@ -37,6 +44,11 @@
         "name":"Nombre",
         "email":"Correo Electrónico",
         "info":"Mensaje",
-        "instructions":"SPANISH Please include in your message which languages you speak and if you're interested in a specific area of volunteering (ie. hotline, translation, moving support, etc.)."
+        "instructions":"SPANISH Please include in your message which languages you speak and if you're interested in a specific area of volunteering (ie. hotline, translation, moving support, etc.).", 
+        "can_ll": "Puede mi propitario ..? ",
+        "cops": "llamar a la policia ? ", 
+        "lights": "cortar el gas / la luz/ el agua ? ",
+        "locks": "cambiar las cerraduras ?",
+        "move": "sacar mis cosas de la casa ?"
     }
 }

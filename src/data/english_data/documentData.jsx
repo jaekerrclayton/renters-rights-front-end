@@ -7,6 +7,12 @@ import judgment1 from '../documents/judgment1.jpeg';
 import judgment2 from '../documents/judgment2.jpeg';
 import courtPrep1 from '../documents/courtPrep1.png'; 
 import courtPrep2 from '../documents/courtPrep2.png'; 
+import cops from '../documents/noIcons/cops.png'; 
+import lights from '../documents/noIcons/lights.png'; 
+import move from '../documents/noIcons/move.png'; 
+import no from '../documents/noIcons/no.png'; 
+import lock from '../documents/noIcons/lock.png'; 
+
 
 
 const documentData = {
@@ -17,8 +23,13 @@ const documentData = {
     browse:'Browse document examples',
     notice:'Do any of these look like your notice?',
 
-    landlord_legal: "Can my landlord...?", 
-    options: ["cut power", "call cops", "change locks"], 
+
+    can_ll: "Can my landlord ..? ",
+    cops : {text: "call the cops? ", image: cops } , 
+    lights :{ text: "shut off my gas / lights/ water? ", image: lights}, 
+    locks: {text: "change the locks or kick me out of the house?", image: lock},
+    move: {text: "remove my things from my home?", image: move}, 
+    no: {text: "", image: no}, 
 
     1 : [
         {   id: vacate1,

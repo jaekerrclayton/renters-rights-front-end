@@ -7,6 +7,12 @@ import judgment1 from '../documents/judgment1.jpeg';
 import judgment2 from '../documents/judgment2.jpeg';
 import courtPrep1 from '../documents/courtPrep1.png'; 
 import courtPrep2 from '../documents/courtPrep2.png'; 
+import cops from '../documents/noIcons/cops.png'; 
+import lights from '../documents/noIcons/lights.png'; 
+import move from '../documents/noIcons/move.png'; 
+import no from '../documents/noIcons/no.png'; 
+import lock from '../documents/noIcons/lock.png'; 
+
  
  
 const documentData = {
@@ -17,6 +23,17 @@ const documentData = {
    close:'clos me',
    browse:'Haz click para ver ejemplos de documentos:',
    notice:'Usted ha recibido un documento aparecido? Se puede seleccionarlo para ver más información',
+
+   can_ll: "¿Puede el propietario ..? ",
+   cops : {text: "¿call the cops? ", image: cops } , 
+   lights :{ text: "¿quitar la luz / agua / gas? ", image: lights}, 
+   locks: {text: "¿cambiar las cerraduras ?", image: lock },
+   move: {text: "¿ sacar mis cosas de la casa ?", image: move}, 
+   no : no,
+   
+
+
+
    1 : [
        {   id: vacate1,
            stage_id:  1,
