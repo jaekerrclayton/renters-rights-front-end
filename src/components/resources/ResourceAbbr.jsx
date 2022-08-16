@@ -22,6 +22,7 @@ const ResourcesAbbr = ({resourceData}) => {
             <h6>{resource.title}</h6>
             <p>{resourceData.phone}: {resource.phone_number}</p>
             <p>{resourceData.email}: {resource.email}</p>
+            <p>{resource.summary}</p>
             <p>{resource.about}</p>
         </div>))
 

@@ -11,15 +11,15 @@
                             {   "resource_id": 1,
                                 "title": "Southeast Louisian Legal Services (SLLS)", 
                                 "phone_number": "987298729",
-                                "email": "this@email.com",
-                                "summary": "quick summary",
-                                "about": "can offer legal aid"
+                                "email": "lafhacemail@email.com",
+                                "summary": "Provides free, civil legal aid to low-income people in six offices, across 22 parishes throughout southeast Louisiana. ",
+                                "about": "With the passing of Right to Council in Orleans Parish, can represent most people."
                             
                             },
                             {   "resource_id": 2,
                                 "title": "LAFHAC", 
                                 "phone_number":  "(504) 596-2100, or (877) 445-2100",
-                                "email": "another@email.com",
+                                "email": "sllsemail@email.com",
                                 "summary": "If your landlord is threatening to call ICE call immediately, General legal services for anyone facing discrimination on the basis of race, color, religion, sex, disability, family status (having children), and/or national origin.",
                                 "about": "As a result of the COVID-19 pandemic, LaFHAC offers free legal representation to people facing eviction in Orleans and Jefferson Parishes. "
                             
