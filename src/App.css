@@ -109,7 +109,8 @@ h2 {
   }
 
   footer{
-    background: #eeddd4;
+    background: #f7e0d6f5;
+    color:#423e3a;
     font-family: 'Bebas Neue', cursive;
     font-size:20px;
   }
@@ -133,6 +134,14 @@ h2 {
 
   .offcanvas nav:hover{
     background-color: cornflowerblue;
+  }
+
+  .popover{
+    background-color: #c6e0e0f3;
+  }
+
+  .popover-header{
+    background-color: #eeb89d3f;
   }
 
 
@@ -192,7 +201,7 @@ h2 {
   border-radius: 16px;
   background-color: #ccdad407 !important;
   border-color: red;
-  color:#294a66;
+  color:#354350;
 }
 
 .accordion-button:not(.collapsed){
@@ -315,7 +324,7 @@ color:#294a66 !important;
 
 #llinfo{
   top: 3%;
-  color: #202853;
+  color: #3d4468;
   font-family: 'Bebas Neue', cursive;
   font-size: 1.6em;
   background-color: rgba(0, 128, 0, 0);

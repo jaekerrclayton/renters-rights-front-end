@@ -25,6 +25,7 @@ const documentData = {
 
 
     can_ll: "Can my landlord ..? ",
+    ll_disclaimer: "It is illegal for your landlord to do any of these things, they must go through the full eviction process in order to remove you from your home ",
     ll_slides: [
         {text: "", image: no}, 
        {text: "call the cops? ", image: cops } , 
