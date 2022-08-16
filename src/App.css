@@ -5,6 +5,8 @@ body {
     margin: 0em;
     /* background:rgba(144, 170, 243, 0.466); */
     background: #f9f3e7;
+    font-size: .8em;
+
     /* background-color: #294a66; */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -14,7 +16,30 @@ body {
     /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
     
+
   }
+
+  h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+ 
+  }
+
+  h5 {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 27px;
+  }
+
+  .alerth4 {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 27px;
+  }
+
+
+
+
+
+  
 
 main{
     /* align-items: center; */
@@ -48,13 +73,15 @@ h2 {
 
 
   #nav-nav{
-    background: #f9f3e7;
+    background: #eeb89d15;
     color:#31302f;
-    /* box-shadow: 0 5px 5px 0 rgba(105, 90, 90, 0.2), 0 5px 5px 0 rgba(0,0,0,0.19); */
+    box-shadow: .2px .2px .2px rgba(105, 90, 90, 0.2), .4px px 2px 0 rgba(0,0,0,0.19);
   }
 
   #nav-header{
-    color:#31302f;
+    color:#746b62;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 20px;
 
   }
 
@@ -77,7 +104,7 @@ h2 {
   /* ALL TEXT ON PAGES (EXCEPT NAV BAR & THINGS IN SPECIAL CONTAINERS MENU */
   /* ******************************************************* */
   a {
-    color:rgba(68, 10, 134, 0.822);
+    /* color:rgba(68, 10, 134, 0.822); */
     text-decoration: none;
   }
   a:hover {
@@ -236,7 +263,7 @@ color:#294a66 !important;
 .container{
   align-items: center;
   width: 85vw;
-  /* max-width: 900px; */
+  /* max-width: 800px; */
   align-items: center;
   /* padding-bottom: 3em; */
 }
@@ -252,11 +279,16 @@ color:#294a66 !important;
   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
 }
 
-.card-img{
-  height:min-content;
+#llinfo{
+  top: 0%;
+  color: #202853;
+  
+  font-size: 1em;
+  background-color: rgba(0, 128, 0, 0);
 
 
 }
+
 
 .card-img-overlay{
   text-align: center;
@@ -269,8 +301,8 @@ color:#294a66 !important;
 
 #icon {
 
-  height: 12em;
-  width: 12em;
+  height: 16em;
+  width: 16em;
 
 }
 .card:hover{
@@ -302,6 +334,7 @@ color:#294a66 !important;
 }
 
 
+
 /* ******************************************************* */
 /* OFF-CANVASE MENU TO LEARN ABOUT EVICTION CAUSES */
 /* ******************************************************* */
@@ -315,6 +348,7 @@ color:#294a66 !important;
 /* ******************************************************* */
 .text-box{
   background-color: #c6e0e000;
+  font-size: .95em;
   border: 1px solid;
   border-radius: 16px;
   border-color: #221506;

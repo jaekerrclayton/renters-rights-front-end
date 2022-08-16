@@ -39,7 +39,7 @@ const Stage = ({documentData, stageData, typeData}) => {
                             }}>
                           <p>{stage.sub_title}</p>
                           <p>{stage.info}</p>
-                          <h5>{stage.important}</h5>
+                          <b>{stage.important}</b>
                           {stage.about_notice.map((fact) => (
                               <p>{fact}</p>
                           ))}

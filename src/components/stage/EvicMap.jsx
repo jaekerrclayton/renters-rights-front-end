@@ -38,23 +38,24 @@ const EvicMap = ({documentData}) => {
             </Alert>
             
             <Alert className="text-box" variant="success">
-            <Alert.Heading>{documentData.can_ll}</Alert.Heading>
+            <Alert.Heading><h6>{documentData.can_ll}</h6></Alert.Heading>
             <hr/>
             
 
             <Row>
               {documentData['ll_slides'].map((can_do) => (
                 <Col>
-                <Card style={{ width: '10rem', height: '10rem' }}>
+                <Card style={{ width: '13rem', height: '12rem' }}>
                   <Card.Body>
-                  {/* <Card.Text> */}
-                  {/* <Card.ImgOverlay> */}
-                      {/* <p>{can_do.text}</p> */}
-                  {/* </Card.ImgOverlay> */}
+                  <Card.Text>
+                  <img id="icon"  alt="ll-no" src={can_do.image} />
+                  <Card.ImgOverlay id="llinfo">
+                      <p>{can_do.text}</p>
+                  </Card.ImgOverlay>
       
-                  <Card.Img alt="ll-no" src={can_do.image} />
+                  
                     
-                    {/* </Card.Text> */}
+                    </Card.Text>
                   </Card.Body>
                </Card>
                </Col>

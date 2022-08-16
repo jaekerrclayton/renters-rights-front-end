@@ -26,11 +26,17 @@ const documentData = {
 
     can_ll: "Can my landlord ..? ",
     ll_slides: [
+        {text: "", image: no}, 
        {text: "call the cops? ", image: cops } , 
+       {text: "", image: no}, 
         {text: "shut off my gas / lights/ water? ", image: lights}, 
+        {text: "", image: no}, 
         {text: "change the locks or kick me out of the house?", image: lock},
+        {text: "", image: no}, 
         {text: "remove my things from my home?", image: move}, 
         {text: "", image: no}, 
+
+ 
 
     ], 
 
