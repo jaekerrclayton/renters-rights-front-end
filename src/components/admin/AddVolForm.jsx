@@ -78,7 +78,7 @@ const AddVolForm = ({onAddVolCallback}) => {
             <Row>
                 <Col>
                     <Form.Group controlId="type">
-                        <h4>Type:</h4>
+                    <Form.Label>Type:</Form.Label>
                         <Form.Check type="checkbox" name="type" label="Hotline" value="Hotline" onChange={changeChecked}/>
                         <Form.Check type="checkbox" name="type" label="Translation" value="Translation" onChange={changeChecked}/>
                         <Form.Check type="checkbox" name="type" label="Legal" value="Legal" onChange={changeChecked}/>
@@ -87,7 +87,7 @@ const AddVolForm = ({onAddVolCallback}) => {
                 </Col>
                 <Col>
                     <Form.Group controlId="language">
-                        <h4>Language:</h4>
+                    <Form.Label>Language:</Form.Label>
                         <Form.Check type="checkbox" label="English" value="English" onChange={changeChecked}/>
                         <Form.Check type="checkbox" label="Spanish" value="Spanish" onChange={changeChecked}/>
                         <Form.Control type="text" name='language' placeholder="other" onChange={handleChange}/>
