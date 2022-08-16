@@ -65,6 +65,7 @@ const EvicMap = ({documentData}) => {
 
             <hr/>
             <h6>{documentData.ll_disclaimer}</h6>
+            <hr/>
             </Alert>
             
 

@@ -21,8 +21,8 @@
       "info": "The order indicates the date on which you have to go to court. This date will not be until after 3 days after the summons. The citation will be pasted on your door. If you live in the East Bank, it will also be mailed to you. The news has to clarify the cause of the eviction.",
       "documents": ["order1", "order2"],
       "about_notice": [""],
-      "nextSteps": "Next Steps:", 
-      "next_steps": "link to next",
+      "nextSteps": "", 
+      "next_steps": "",
       "additional_resources": ["If you had already vacated the property, you should still inform the court that you have moved prior to your trial--", "This prevents an eviction being placed on your record."]
   
     },

@@ -57,6 +57,7 @@ const TypesAbbr = ({typeDataJson}) => {
                     {getDropDown}
                 </Dropdown.Menu>
         </Dropdown>
+
         <Offcanvas id="cause-menu" placement='start' scroll={true} backdrop={true} show={show} onHide={handleClose}>
             <Offcanvas.Header closeButton>
                 <Offcanvas.Title>
@@ -76,6 +77,7 @@ const TypesAbbr = ({typeDataJson}) => {
                             <p style={{display: displayTypes[1] ? 'none': ''}}>
                                 <main  class='type' style={{ padding: "1rem" }}>
                                     <h4 class='type-title'>{currentType.cause}</h4>
+                                    <hr/>
                                     <h6 class='type-description'>{currentType.description}</h6>
                                     <div >
                                         <p>{currentType.landlordNeeds}</p>

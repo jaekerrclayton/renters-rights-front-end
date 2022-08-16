@@ -19,7 +19,7 @@ function Home({translations}) {
         <Row>
           
           <Col>
-            <Card style={{ width: '15rem', height: '15rem' }}>
+            <Card style={{ width: '14.5rem', height: '14.5rrem' }}>
             {/* <Card.Img id="icon" variant="top" src={evicIcon} /> */}
             <NavLink className="nav-link" to="/map-home">
                 <Card.Body>
@@ -35,7 +35,7 @@ function Home({translations}) {
             </Card>
           </Col> 
           <Col>
-            <Card style={{ width: '15rem', height: '15rem' }}>
+            <Card style={{ width: '14.5rem', height: '14.5rem' }}>
                 <NavLink className="nav-link" to="/resources">
                   <Card.Body>
                     <Card.Text>
@@ -49,7 +49,7 @@ function Home({translations}) {
             </Card>
           </Col>
           <Col>
-            <Card style={{ width: '15rem', height: '15rem' }}>
+            <Card style={{ width: '14.5rem', height: '14.5rem' }}>
               <NavLink className="nav-link" to="/contact">
                 <Card.Body>
 
@@ -66,6 +66,8 @@ function Home({translations}) {
             </Card>
           </Col>   
         </Row>
+        <hr />
+        <hr />
       </Container>
     </div>
   );
