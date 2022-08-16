@@ -22,6 +22,20 @@ body {
   h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 45px;
+    color: rgb(52, 63, 70);
+ 
+  }
+
+  h4{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.7em;
+
+  }
+
+  h6 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    color: rgb(52, 63, 70);
  
   }
 
@@ -73,9 +87,15 @@ h2 {
 
 
   #nav-nav{
-    background: #eeb89d15;
+    background: #eeb89d2c;
     color:#31302f;
     box-shadow: .2px .2px .2px rgba(105, 90, 90, 0.2), .4px px 2px 0 rgba(0,0,0,0.19);
+  }
+
+  footer{
+    background: #f3e4dc;
+    font-family: 'Bebas Neue', cursive;
+    font-size:20px;
   }
 
   #nav-header{
@@ -151,7 +171,9 @@ h2 {
 
 
 .accordion-button:not(collapsed){
-    border-radius: 16px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 14px;
+  border-radius: 16px;
   background-color: #ccdad407 !important;
   border-color: red;
   color:#294a66;
@@ -170,30 +192,22 @@ color:#294a66 !important;
   color: rgb(19, 67, 95);
 }
 
-/* .accordion-button::after{
-  color: #294a66;
-} */
-
-/* #llNo{
-  text-align: center;
-  align-items: center;
-  max-height: fit-content;
-  max-width: fit-content;
-   /* padding: 50em; */
-  /* width: 300px;
-   height: 300px;  */
-
 
 
 /* ******************************************************* */
  /* BUTTONS FOR ALL PAGES -- EXCEPT DROPDOWN BUTTONS */
  /* ******************************************************* */
 .button{
+  font-family: 'Bebas Neue', cursive;
   background-color: #c6e0e0;
-  border: 2px double #181716;
+  border: 1px double #181716;
   color:#E0FBFC;
   color: #3b3333;
-  padding:.3em;
+  padding-top: .05em;
+  padding-bottom: .05em;
+  padding-right: .5em;
+  padding-left: .5em;
+
   /* border: none; */
   border-radius:16px;
   margin: .5em;
@@ -220,6 +234,8 @@ color:#294a66 !important;
 /* ALL DROPDOWN BUTTONS */
 /* ******************************************************* */
 #dropdown-basic {
+  
+  font-family: 'Bebas Neue', cursive;
   background-color: #c6e0e0;
   border: 1px double #3f3c35;
   border-radius: 16px;
@@ -238,7 +254,9 @@ color:#294a66 !important;
 }
 
 .dropdown-menu {
-  background-color: #d9f4f4;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 16px;
+  background-color: #d9f4f4e8;
   color: #682020;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -262,7 +280,7 @@ color:#294a66 !important;
 
 .container{
   align-items: center;
-  width: 85vw;
+  width: 80vw;
   /* max-width: 800px; */
   align-items: center;
   /* padding-bottom: 3em; */
@@ -280,10 +298,10 @@ color:#294a66 !important;
 }
 
 #llinfo{
-  top: 0%;
+  top: 3%;
   color: #202853;
-  
-  font-size: 1em;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.6em;
   background-color: rgba(0, 128, 0, 0);
 
 
@@ -316,7 +334,7 @@ color:#294a66 !important;
 /* position of click - button for selecting proper document */
 #doc-button-link{
     position:absolute;
-    top: 45%; 
+    top: 50%; 
     left: 50%; 
     text-align: center;
     transform: translate(-50%, -50%);
@@ -333,6 +351,9 @@ color:#294a66 !important;
 
 }
 
+.modal-title{
+  font-family: 'Bebas Neue', cursive;
+}
 
 
 /* ******************************************************* */
@@ -358,6 +379,11 @@ color:#294a66 !important;
   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
   
 }
+
+.alert-heading{
+  /* color:red; */
+  font-family: 'Bebas Neue', cursive;
+}
 /* 
 .carousel{
   margin:3%
@@ -366,6 +392,7 @@ color:#294a66 !important;
 /* COLOR / SIZE ETC FOR 5 EVIC STAGE BUTTONS */
 
 .number-button:not(active){
+  font-family: 'Bebas Neue', cursive;
   border: 1px solid #131211;
   /* background-color: #257aa13a; */
   color:#201f1e;
@@ -373,10 +400,10 @@ color:#294a66 !important;
   /* width: 5em; */
   /* height: 500px;  */
   border-radius: 50px;
-  padding-top: .07em;
-  padding-bottom: .07em;
-  padding-right: .4em;
-  padding-left: .4em;
+  padding-top: .13em;
+  padding-bottom: .09em;
+  padding-right: .5em;
+  padding-left: .5em;
 
   /* padding: .05em; */
 

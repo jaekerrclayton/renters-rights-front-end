@@ -17,7 +17,7 @@ const MapCarousel = ({documentData}) => {
               />
               <Carousel.Caption id="doc-button-link">
                 <NavLink className="nav-link" to={`/eviction-map/${document.stage_id}`}>
-                  <button className="button">{document.stage_title}</button>
+                  <h6><button className="button">{document.stage_title}</button></h6>
                 </NavLink>
               </Carousel.Caption>
             </Carousel.Item>
@@ -31,7 +31,7 @@ const MapCarousel = ({documentData}) => {
               />
               <Carousel.Caption id="doc-button-link">
                 <NavLink className="nav-link" to={`/eviction-map/${document.stage_id}`}>
-                  <button className="button">{document.stage_title}</button>
+                <h6><button className="button">{document.stage_title}</button></h6>
                 </NavLink>
               </Carousel.Caption>
             </Carousel.Item>
@@ -47,7 +47,7 @@ const MapCarousel = ({documentData}) => {
               />
               <Carousel.Caption id="doc-button-link"> 
                 <NavLink className="nav-link" to={`/eviction-map/${document.stage_id}`}>
-                  <button className="button">{document.stage_title}</button>
+                <h4><button className="button">{document.stage_title}</button></h4>
                 </NavLink>
               </Carousel.Caption>
             </Carousel.Item>

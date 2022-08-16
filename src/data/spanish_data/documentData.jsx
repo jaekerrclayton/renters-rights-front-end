@@ -27,7 +27,7 @@ const documentData = {
    can_ll: "¿Puede el propietario ..? ",
    ll_slides: [
             {text: "", image: no}, 
-            {text: "¿call the cops? ", image: cops } , 
+            {text: "¿llamar a la policia? ", image: cops } , 
             {text: "", image: no}, 
             { text: "¿quitar la luz / agua / gas? ", image: lights},
             {text: "", image: no},  

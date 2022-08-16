@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 const Footer = ({translations}) => {
   return (
     <div className="footer">
-      <footer id="nav-nav" class="py-sm-0 fixed-bottom">
+      <footer class="py-sm-0 fixed-bottom">
         {/* <div class="container"> */}
           <p class="m-1 text-center">
               {/* <p>some text</p> */}
