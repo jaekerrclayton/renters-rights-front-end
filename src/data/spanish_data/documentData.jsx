@@ -25,7 +25,7 @@ const documentData = {
    notice:'Usted ha recibido un documento aparecido? Se puede seleccionarlo para ver más información',
 
    can_ll: "¿Puede el propietario ..? ",
-   ll_disclaimer: "It is illegal for your landlord to do any of these things, they must go through the full eviction process to remove you from your home ",
+   ll_disclaimer: "Es ilegal que su arrendador haga cualquiera de estas cosas, debe pasar por el proceso completo de desalojo para sacarle de su hogar",
    ll_slides: [
             {text: "", image: no}, 
             {text: "¿llamar a la policia? ", image: cops } , 
