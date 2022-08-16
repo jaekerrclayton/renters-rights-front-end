@@ -11,39 +11,37 @@ import resIcon from '../data/documents/icons/res-icon.png';
 function Home({translations}) {
   return (
     <div className="home">
-      <Container >
+      <Container>
+        <Row>
+        <h1>{translations.main}</h1>
+        </Row>
+        
         <Row>
           <Col>
             <Card style={{ width: '15rem', height: '15rem' }}>
             {/* <Card.Img id="icon" variant="top" src={evicIcon} /> */}
+            <NavLink className="nav-link" to="/map-home">
                 <Card.Body>
-                  {/* <Card.Title>{translations.map}</Card.Title> */}
                   <Card.Text>
                   <img alt="evicIcon" id="icon" variant="top" src={evicIcon} />
-                    <NavLink className="nav-link" to="/map-home">
-                      <button class="button">{translations.map}</button>
-                    </NavLink>
-                    <p>
-                      {/* {translations.mapDescription} */}
-                    </p>
+                  <Card.ImgOverlay>
+                      <h5>{translations.map}</h5> 
+                  </Card.ImgOverlay>
                   </Card.Text>              
                 </Card.Body>
+                </NavLink>
           
             </Card>
           </Col> 
           <Col>
             <Card style={{ width: '15rem', height: '15rem' }}>
-            {/* <Card.Img id="icon" variant="top" src={resIcon} /> */}
                 <NavLink className="nav-link" to="/resources">
                   <Card.Body>
                     <Card.Text>
                     <img alt='res-icon' id="icon" variant="top" src={resIcon} />
-                      <NavLink className="nav-link" to="/resources">
-                        <button class="button">{translations.resources}</button>
-                      </NavLink>
-                      <p>
-                        {/* {translations.resourceDescription} */}
-                      </p>
+                    <Card.ImgOverlay>
+                        <h5>{translations.resources}</h5>
+                      </Card.ImgOverlay>
                     </Card.Text>
                   </Card.Body>
                 </NavLink>  
@@ -51,19 +49,19 @@ function Home({translations}) {
           </Col>
           <Col>
             <Card style={{ width: '15rem', height: '15rem' }}>
-              {/* <Card.Img id="icon" variant="top" src={faqIcon} /> */}
+              <NavLink className="nav-link" to="/contact">
                 <Card.Body>
-                  {/* <Card.Title>{translations.questions}</Card.Title> */}
+
                   <Card.Text>
                   <img alt="faq-icon" id="icon" src={faqIcon} />
-                    <NavLink className="nav-link" to="/contact">
-                    <button class="button">{translations.questions}</button>
-                    </NavLink>
-                    <p>
-                      {/* {translations.questionDescription} */}
-                    </p>
+                  <Card.ImgOverlay>
+                   
+                    <h5>{translations.questions}</h5>
+                    
+                    </Card.ImgOverlay>
                   </Card.Text>             
                 </Card.Body>
+                </NavLink>
             </Card>
           </Col>   
         </Row>

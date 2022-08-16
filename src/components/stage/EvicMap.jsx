@@ -7,6 +7,8 @@ import MapCarousel from "./mapCarousel";
 import Modal from 'react-bootstrap/Modal';
 import Alert from 'react-bootstrap/Alert';
 import Carousel from 'react-bootstrap/Carousel'; 
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col'; 
 
 
 
@@ -36,100 +38,33 @@ const EvicMap = ({documentData}) => {
             </Alert>
             
             <Alert className="text-box" variant="success">
-            <Alert.Heading>Can my landlord ...?</Alert.Heading>
+            <Alert.Heading>{documentData.can_ll}</Alert.Heading>
             <hr/>
-              {/* <p> */}
+            
 
+            <Row>
+              {documentData['ll_slides'].map((can_do) => (
+                <Col>
+                <Card style={{ width: '10rem', height: '10rem' }}>
+                  <Card.Body>
+                  {/* <Card.Text> */}
+                  {/* <Card.ImgOverlay> */}
+                      {/* <p>{can_do.text}</p> */}
+                  {/* </Card.ImgOverlay> */}
+      
+                  <Card.Img alt="ll-no" src={can_do.image} />
+                    
+                    {/* </Card.Text> */}
+                  </Card.Body>
+               </Card>
+               </Col>
 
-            {/* <div id="llNo" > */}
-              {/* <Carousel  id="llNo" variant="dark" slide={false} >
-              <Carousel.Item>                          
-                      <img
-                        // className="d-md-block w-40"
-                        src={no}
-                        alt="vacate docs"
-                      />
-                      <Carousel.Caption>
-                        Can my Landlord??
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                  <Carousel.Item>                          
-                      <img
-                        // className="d-md-block w-40"
-                        src={lights}
-                        alt="vacate docs"
-                      />
-                      <Carousel.Caption >
-                        Can my Landlord??
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>                          
-                      <img
-                        // className="d-md-block w-40"
-                        src={no}
-                        alt="vacate docs"
-                      />
-                      <Carousel.Caption >
-                        Can my Landlord??
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>                          
-                      <img
-                        // className="d-md-block w-40"
-                        src={move}
-                        alt="vacate docs"
-                      />
-                      <Carousel.Caption >
-                        Can my Landlord??
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>                          
-                      <img
-                        // className="d-md-block w-40"
-                        src={no}
-                        alt="vacate docs"
-                      />
-                      <Carousel.Caption>
-                        Can my Landlord??
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>                          
-                      <img
-                        // className="d-md-block w-40"
-                        src={cops}
-                        alt="vacate docs"
-                      />
-                      <Carousel.Caption>
-                        Can my Landlord??
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>                          
-                      <img
-                        // className="d-md-block w-40"
-                        src={no}
-                        alt="vacate docs"
-                      />
-                      <Carousel.Caption>
-                        Can my Landlord??
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>                          
-                      <img
-                        // className="d-md-block w-40"
-                        src={lock}
-                        alt="vacate docs"
-                      />
-                      <Carousel.Caption >
-                        Can my Landlord??
-                      </Carousel.Caption>
-                    </Carousel.Item>
-              
-              
-                  </Carousel> */}
-                  {/* </p> */}
-                  <hr/>
-                  </Alert>
-              {/* </div> */}
+              ))}
+            </Row>
+
+            <hr/>
+            </Alert>
+            
 
       <Modal
         show={show}

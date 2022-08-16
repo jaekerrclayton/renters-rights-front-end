@@ -36,6 +36,7 @@ h2 {
   text-align: left;
 }
 
+
     /* SELECT FONT FAMILY */
   /* code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -44,6 +45,8 @@ h2 {
 /* ******************************************************* */
   /* HEADER AND FOOTER BACKGROUND COLOR AND FONT COLOR */
 /* ******************************************************* */
+
+
   #nav-nav{
     background: #f9f3e7;
     color:#31302f;
@@ -144,7 +147,7 @@ color:#294a66 !important;
   color: #294a66;
 } */
 
-#llNo{
+/* #llNo{
   text-align: center;
   align-items: center;
   max-height: fit-content;
@@ -152,14 +155,7 @@ color:#294a66 !important;
    /* padding: 50em; */
   /* width: 300px;
    height: 300px;  */
-}
 
-#llNo img{
-   /* text-align: center; */
-  width: 250px;
-  height: 250px;
-  text-align: center; 
-} 
 
 
 /* ******************************************************* */
@@ -230,27 +226,41 @@ color:#294a66 !important;
 /* ******************************************************* */
 .home {
     padding-top: 1em;
+    padding-bottom: 1em;
     padding: 3em;
+    text-align:center;
     align-items: center;
-  
-    align-items: center;
-    /* text-align:center; */
     margin: auto;
-    /* margin-left: 7rem; */
 }
 
-/* .container{
+.container{
   align-items: center;
-} */
+  width: 85vw;
+  /* max-width: 900px; */
+  align-items: center;
+  /* padding-bottom: 3em; */
+}
 
 .card{
   background-color: #f3cebb00;
-  margin:.5em;
+  margin: .5em;
   align-items: center;
+  /* objectFit: cover; */
   /* height: 200px;
   width: 300px; */
   /* border-radius: 8000px;  */
   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+}
+
+.card-img{
+  height:min-content;
+
+
+}
+
+.card-img-overlay{
+  text-align: center;
+  top: 76%;
 }
 
 .card-text{
@@ -259,8 +269,8 @@ color:#294a66 !important;
 
 #icon {
 
-  height: 10.3em;
-  width: 10.3em;
+  height: 12em;
+  width: 12em;
 
 }
 .card:hover{

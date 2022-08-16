@@ -13,7 +13,7 @@ import move from '../documents/noIcons/move.png';
 import no from '../documents/noIcons/no.png'; 
 import lock from '../documents/noIcons/lock.png'; 
 
- 
+
  
 const documentData = {
  
@@ -25,11 +25,15 @@ const documentData = {
    notice:'Usted ha recibido un documento aparecido? Se puede seleccionarlo para ver más información',
 
    can_ll: "¿Puede el propietario ..? ",
-   cops : {text: "¿call the cops? ", image: cops } , 
-   lights :{ text: "¿quitar la luz / agua / gas? ", image: lights}, 
-   locks: {text: "¿cambiar las cerraduras ?", image: lock },
-   move: {text: "¿ sacar mis cosas de la casa ?", image: move}, 
-   no : no,
+   ll_slides: [
+            {text: "¿call the cops? ", image: cops } , 
+            { text: "¿quitar la luz / agua / gas? ", image: lights}, 
+            {text: "¿cambiar las cerraduras ?", image: lock },
+            {text: "¿ sacar mis cosas de la casa ?", image: move}, 
+            {text: "", image: no}, 
+
+   ], 
+
    
 
 
@@ -197,7 +201,7 @@ const documentData = {
                    info_id: 25,
                    title: "Mensajes de Texto o de Correo Electrónico",
                    sub_title: "Cualquier mensaje de texto o correspondencia escrita con su arrendador, también, LOUISIANA ES UN ESTADO EN CUAL TENEMOS EL DERECHO A GRABAR ** usted está legalmente autorizado a grabar cualquier conversación con su arrendador sin su conocimiento, y puede ser utilizado en la corte para apoyar su caso",
-                   placement: "left"
+                   placement: "top"
  
                },
  
