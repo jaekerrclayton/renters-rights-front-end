@@ -32,16 +32,16 @@
             "description" : "A landlord can start an eviction when a tenant has failed to pay rent on time.",
             "landlordNeeds" : "",
             "renterRights" : [
-                {"Defense":"Tenant Paid Rent",
-                "Description":"If you paid rent on time or the landlord accepted rent after the Notice to Vacate, you have a defense to eviction."},
-                {"Defense":"Landlord Refused Rent", 
-                "Description":"The tenant may have a defense to eviction if the tenant can prove the landlord refused to accept the rent."},
-                {"Defense":"Landlord Usually Accepts Late Rent", 
-                "Description":"There may be a defense to eviction if the tenant paid late and can show proof that the landlord has previously accepted rent late."},
-                {"Defense":"Deductions for Repairs", 
-                "Description": "If you paid rent minus the cost of repairs you did to the property, you will need to show proof that you provided repairs, the cost of repairs, and a request for reimbursment from the landlord"},
-                {"Defense":"Uninhabitable Property",
-                "Description":"If you can provide proof that the unit was uninhabitable at the time of rent due to the landlord, you may have a defense to eviction."}
+                {"Defense":"Pero ya ha pagado la renta",
+                "Description":"Si pagó el alquiler a tiempo o el propietario aceptó el alquiler después del Aviso de desalojo, tiene una defensa contra el desalojo."},
+                {"Defense":"El propietario rechazó su pago", 
+                "Description":"Puede tener una defensa contra el desalojo si se puede probar que el propietario se negó a aceptar el alquiler."},
+                {"Defense":"El propietario generalmente acepta el pago atardado", 
+                "Description":"Puede haber una defensa contra el desalojo si es custumbre pagar tarde y puede mostrar pruebas de que el propietario ha aceptado previamente el alquiler rechazado."},
+                {"Defense":"Deducciones por reparaciones", 
+                "Description": "Si pagó el alquiler menos el costo de las reparaciones que hizo a la propiedad, deberá mostrar pruebas de que proporcionó reparaciones, el costo de las reparaciones y una solicitud de reembolso del propietario."},
+                {"Defense":"Propiedad inhabitable",
+                "Description":"Si puede proporcionar pruebas de que la unidad era inhabitable en el momento del alquiler debido al propietario, es posible que tenga una defensa contra el desalojo."}
                 ]
             },
             {"typeId":"4",
@@ -49,8 +49,8 @@
             "description":"El propietario no renueva su alquiler (sea tipo mes a mes o anual)",
             "landlordNeeds" : "El propietario le debe notificar 10 días antes de la finalización del contrato si es mes a mes, y 30 días antes de la finalización del contrato si es anual. Si usted no se muda, su propietario tiene que ir a la corte para presentar la demanda de desalojo.",
             "renterRights" : [
-                {"Defense":"Active Lease",
-                "Description":"A landlord cannot legally evict you before the expiration of your written lease without a cause."}
+                {"Defense":"Arrendamiento activo",
+                "Description":"Un arrendador no puede desalojarlo legalmente antes del vencimiento de su contrato de arrendamiento por escrito sin una causa."}
                 ]
             }
         ]}
