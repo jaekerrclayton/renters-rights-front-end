@@ -29,6 +29,8 @@ import translations from "./data/translations.json";
 import typeDataJson from './data/english_data/evictionTypesData.json';
 import esTypeDataJson from './data/spanish_data/evictionTypesData.json';
 
+
+
 const App = () => {
   const [language, setLanguage] = useState({general:translations.en, resources:resourceData, questions:answeredQuestions, documents:documentData, stages:stageData, types:typeDataJson});
 
