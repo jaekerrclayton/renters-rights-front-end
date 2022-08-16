@@ -22,7 +22,7 @@ const documentData = {
    introduction:'El desalojo es un proceso legal en el cual el propietario solicita a la corte una Orden de Posesión de su propia casa. En este sitio, estamos para guiarle sobre el proceso legal de un desalojo, para que usted sepa sus derechos paso a paso. Si usted recibe un aviso de desahucio, es recomandable que se consulta con un abogado sobre las opciones disponibles.',
    close:'clos me',
    browse:'Haz click para ver ejemplos de documentos:',
-   notice:'Usted ha recibido un documento aparecido? Se puede seleccionarlo para ver más información',
+   notice:'¿Usted ha recibido un documento aparecido? Se puede seleccionarlo para ver más información',
 
    can_ll: "¿Puede el propietario ..? ",
    ll_disclaimer: "Es ilegal que su arrendador haga cualquiera de estas cosas, debe pasar por el proceso completo de desalojo para sacarle de su hogar",
