@@ -20,9 +20,9 @@ const ResourcesAbbr = ({resourceData}) => {
     const resourceList = currentResource['resource_list'].map((resource) => (
         <div>
             <h6>{resource.title}</h6>
-            <p>{resource.about}</p>
             <p>{resourceData.phone}: {resource.phone_number}</p>
             <p>{resourceData.email}: {resource.email}</p>
+            <p>{resource.about}</p>
         </div>))
 
     return (

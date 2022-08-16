@@ -17,6 +17,7 @@ function Home({translations}) {
         </Row>
         
         <Row>
+          
           <Col>
             <Card style={{ width: '15rem', height: '15rem' }}>
             {/* <Card.Img id="icon" variant="top" src={evicIcon} /> */}
