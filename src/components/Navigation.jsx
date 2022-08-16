@@ -21,7 +21,7 @@ function OffCanvasNav({changeLanguage, translations}) {
   return (    
     <>
       {[false].map((expand) => (
-        <Navbar id="nav-nav" key={expand} expand={expand} className="mb-5" fluid>
+        <Navbar id="nav-nav" key={expand} expand={expand} className="py-sm-0" fluid>
           {/* <Container> */}
               <NavLink id="nav-header"className="navbar-brand" to="/">
                 {translations.main}
