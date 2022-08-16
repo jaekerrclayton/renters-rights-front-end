@@ -127,7 +127,7 @@ h2 {
   }
 
   .offcanvas{
-    background-color: #c6e0e0e0;
+    background-color: #bdc7c7f6;
       /* #c6e0e0 */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
@@ -281,7 +281,7 @@ color:#294a66 !important;
 .dropdown-menu {
   font-family: 'Bebas Neue', cursive;
   font-size: 16px;
-  background-color: #d9f4f4e8;
+  background-color: #bbd3d3ee;
   color: #682020;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
